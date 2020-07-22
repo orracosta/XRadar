@@ -1,4 +1,6 @@
 ﻿using AlbionRada.Player;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using PcapDotNet.Core;
 using PcapDotNet.Packets;
 using PcapDotNet.Packets.IpV4;
@@ -19,7 +21,7 @@ using System.Windows.Forms;
 
 namespace AlbionRadar
 {
-    public partial class Options : Form
+    public partial class Options : MaterialForm
     {
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
@@ -28,6 +30,10 @@ namespace AlbionRadar
         public Options()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
 
             radarMap.Show();
             radarMap.Left = 50;
@@ -45,6 +51,10 @@ namespace AlbionRadar
             radarThread.Priority = ThreadPriority.Highest;
             radarThread.Start();
 
+        }
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            Environment.Exit(0);
         }
         #region RadarMap
         private void drawerThread()
@@ -130,6 +140,10 @@ namespace AlbionRadar
                 Thread.Sleep(50);
             }
         }
+        #endregion
+
+        #region OptionEvents
+
         #endregion
 
         #region photonPackageParser
