@@ -30,14 +30,17 @@ namespace AlbionRadar
         public Options()
         {
             InitializeComponent();
+            Settings.loadSettings(this);
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, (Accent)Primary.BlueGrey500, TextShade.WHITE);
 
             radarMap.Show();
-            radarMap.Left = 50;
-            radarMap.Top = 50;
+
+            radarMap.Left = (int)radarPosX.Value;
+            radarMap.Top = (int)radarPosY.Value;
         }
         private void Options_Load(object sender, EventArgs e)
         {
@@ -143,7 +146,32 @@ namespace AlbionRadar
         #endregion
 
         #region OptionEvents
+        private void MoveRadarValueChanged(object sender, EventArgs e)
+        {
+            if (radarMap.InvokeRequired)
+            {
+                radarMap.Invoke((Action)(() =>
+                {
+                    radarMap.Left = int.Parse(radarPosX.Value.ToString());
+                    radarMap.Top = int.Parse(radarPosY.Value.ToString());
+                }));
+            }
+            else
+            {
+                radarMap.Left = int.Parse(radarPosX.Value.ToString());
+                radarMap.Top = int.Parse(radarPosY.Value.ToString());
+            }
+            Settings.saveSettings(this);
+        }
+        private void showRadar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.showRadar.Checked)
+                radarMap.Show();
+            else
+                radarMap.Hide();
 
+            Settings.saveSettings(this);
+        }
         #endregion
 
         #region photonPackageParser
@@ -198,6 +226,6 @@ namespace AlbionRadar
 
             photonParser.ReceivePacket(udp.Payload.ToArray());
         }
-        #endregion
+        #endregion        
     }
 }
