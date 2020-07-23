@@ -49,6 +49,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.removeAlliance = new FontAwesome.Sharp.IconButton();
+            this.addAlliance = new FontAwesome.Sharp.IconButton();
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
+            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.exportAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.importAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,26 +76,15 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.removeAlliance = new FontAwesome.Sharp.IconButton();
-            this.addAlliance = new FontAwesome.Sharp.IconButton();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radarPosX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radarPosY)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -102,6 +103,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -383,6 +385,176 @@
             this.tabPage3.Text = "Guildas e Alianças";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(25, 141);
+            this.label6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Size = new System.Drawing.Size(71, 18);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Alianças";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel11.Controls.Add(this.removeAlliance);
+            this.panel11.Controls.Add(this.addAlliance);
+            this.panel11.Controls.Add(this.listBox3);
+            this.panel11.Controls.Add(this.materialDivider5);
+            this.panel11.Controls.Add(this.listBox4);
+            this.panel11.Controls.Add(this.materialDivider6);
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Controls.Add(this.panel13);
+            this.panel11.Controls.Add(this.panel14);
+            this.panel11.Controls.Add(this.panel15);
+            this.panel11.Location = new System.Drawing.Point(13, 150);
+            this.panel11.Margin = new System.Windows.Forms.Padding(10);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(346, 120);
+            this.panel11.TabIndex = 9;
+            // 
+            // removeAlliance
+            // 
+            this.removeAlliance.FlatAppearance.BorderSize = 0;
+            this.removeAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            this.removeAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.removeAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.removeAlliance.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.removeAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.removeAlliance.IconSize = 24;
+            this.removeAlliance.Location = new System.Drawing.Point(158, 75);
+            this.removeAlliance.Name = "removeAlliance";
+            this.removeAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.removeAlliance.Rotation = 0D;
+            this.removeAlliance.Size = new System.Drawing.Size(30, 30);
+            this.removeAlliance.TabIndex = 12;
+            this.removeAlliance.UseVisualStyleBackColor = false;
+            // 
+            // addAlliance
+            // 
+            this.addAlliance.FlatAppearance.BorderSize = 0;
+            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
+            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.addAlliance.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.addAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.addAlliance.IconSize = 24;
+            this.addAlliance.Location = new System.Drawing.Point(158, 25);
+            this.addAlliance.Name = "addAlliance";
+            this.addAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.addAlliance.Rotation = 0D;
+            this.addAlliance.Size = new System.Drawing.Size(30, 30);
+            this.addAlliance.TabIndex = 11;
+            this.addAlliance.UseVisualStyleBackColor = false;
+            // 
+            // listBox3
+            // 
+            this.listBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox3.Font = new System.Drawing.Font("Roboto Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox3.ForeColor = System.Drawing.Color.White;
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.Items.AddRange(new object[] {
+            "Guild1",
+            "Guild2",
+            "Guild3",
+            "Guild4",
+            "Guild5",
+            "Guild6",
+            "Guild7"});
+            this.listBox3.Location = new System.Drawing.Point(201, 33);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(130, 65);
+            this.listBox3.TabIndex = 9;
+            // 
+            // materialDivider5
+            // 
+            this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider5.Depth = 0;
+            this.materialDivider5.Location = new System.Drawing.Point(196, 25);
+            this.materialDivider5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider5.Name = "materialDivider5";
+            this.materialDivider5.Padding = new System.Windows.Forms.Padding(5);
+            this.materialDivider5.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider5.TabIndex = 10;
+            this.materialDivider5.Text = "materialDivider5";
+            // 
+            // listBox4
+            // 
+            this.listBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.listBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox4.Font = new System.Drawing.Font("Roboto Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox4.ForeColor = System.Drawing.Color.White;
+            this.listBox4.FormattingEnabled = true;
+            this.listBox4.Items.AddRange(new object[] {
+            "Guild1",
+            "Guild2",
+            "Guild3",
+            "Guild4",
+            "Guild5",
+            "Guild6",
+            "Guild7"});
+            this.listBox4.Location = new System.Drawing.Point(15, 33);
+            this.listBox4.Name = "listBox4";
+            this.listBox4.Size = new System.Drawing.Size(130, 65);
+            this.listBox4.TabIndex = 4;
+            // 
+            // materialDivider6
+            // 
+            this.materialDivider6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider6.Depth = 0;
+            this.materialDivider6.Location = new System.Drawing.Point(10, 25);
+            this.materialDivider6.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider6.Name = "materialDivider6";
+            this.materialDivider6.Padding = new System.Windows.Forms.Padding(5);
+            this.materialDivider6.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider6.TabIndex = 8;
+            this.materialDivider6.Text = "materialDivider6";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel12.Location = new System.Drawing.Point(344, 2);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(2, 116);
+            this.panel12.TabIndex = 3;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(0, 2);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(2, 116);
+            this.panel13.TabIndex = 2;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel14.Location = new System.Drawing.Point(0, 118);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(346, 2);
+            this.panel14.TabIndex = 1;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(346, 2);
+            this.panel15.TabIndex = 0;
+            // 
             // exportAllysButton
             // 
             this.exportAllysButton.AutoSize = true;
@@ -594,175 +766,17 @@
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(25, 141);
-            this.label6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Size = new System.Drawing.Size(71, 18);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Alianças";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel11.Controls.Add(this.removeAlliance);
-            this.panel11.Controls.Add(this.addAlliance);
-            this.panel11.Controls.Add(this.listBox3);
-            this.panel11.Controls.Add(this.materialDivider5);
-            this.panel11.Controls.Add(this.listBox4);
-            this.panel11.Controls.Add(this.materialDivider6);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.panel13);
-            this.panel11.Controls.Add(this.panel14);
-            this.panel11.Controls.Add(this.panel15);
-            this.panel11.Location = new System.Drawing.Point(13, 150);
-            this.panel11.Margin = new System.Windows.Forms.Padding(10);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(346, 120);
-            this.panel11.TabIndex = 9;
-            // 
-            // removeAlliance
-            // 
-            this.removeAlliance.FlatAppearance.BorderSize = 0;
-            this.removeAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.removeAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.removeAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.removeAlliance.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.removeAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.removeAlliance.IconSize = 24;
-            this.removeAlliance.Location = new System.Drawing.Point(158, 75);
-            this.removeAlliance.Name = "removeAlliance";
-            this.removeAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.removeAlliance.Rotation = 0D;
-            this.removeAlliance.Size = new System.Drawing.Size(30, 30);
-            this.removeAlliance.TabIndex = 12;
-            this.removeAlliance.UseVisualStyleBackColor = false;
-            // 
-            // addAlliance
-            // 
-            this.addAlliance.FlatAppearance.BorderSize = 0;
-            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.addAlliance.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.addAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.addAlliance.IconSize = 24;
-            this.addAlliance.Location = new System.Drawing.Point(158, 25);
-            this.addAlliance.Name = "addAlliance";
-            this.addAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.addAlliance.Rotation = 0D;
-            this.addAlliance.Size = new System.Drawing.Size(30, 30);
-            this.addAlliance.TabIndex = 11;
-            this.addAlliance.UseVisualStyleBackColor = false;
-            // 
-            // listBox3
-            // 
-            this.listBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
-            this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox3.Font = new System.Drawing.Font("Roboto Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox3.ForeColor = System.Drawing.Color.White;
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Items.AddRange(new object[] {
-            "Guild1",
-            "Guild2",
-            "Guild3",
-            "Guild4",
-            "Guild5",
-            "Guild6",
-            "Guild7"});
-            this.listBox3.Location = new System.Drawing.Point(201, 33);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(130, 65);
-            this.listBox3.TabIndex = 9;
-            // 
-            // materialDivider5
-            // 
-            this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider5.Depth = 0;
-            this.materialDivider5.Location = new System.Drawing.Point(196, 25);
-            this.materialDivider5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider5.Name = "materialDivider5";
-            this.materialDivider5.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider5.Size = new System.Drawing.Size(140, 80);
-            this.materialDivider5.TabIndex = 10;
-            this.materialDivider5.Text = "materialDivider5";
-            // 
-            // listBox4
-            // 
-            this.listBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
-            this.listBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox4.Font = new System.Drawing.Font("Roboto Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox4.ForeColor = System.Drawing.Color.White;
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Items.AddRange(new object[] {
-            "Guild1",
-            "Guild2",
-            "Guild3",
-            "Guild4",
-            "Guild5",
-            "Guild6",
-            "Guild7"});
-            this.listBox4.Location = new System.Drawing.Point(15, 33);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(130, 65);
-            this.listBox4.TabIndex = 4;
-            // 
-            // materialDivider6
-            // 
-            this.materialDivider6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider6.Depth = 0;
-            this.materialDivider6.Location = new System.Drawing.Point(10, 25);
-            this.materialDivider6.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
-            this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider6.Name = "materialDivider6";
-            this.materialDivider6.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider6.Size = new System.Drawing.Size(140, 80);
-            this.materialDivider6.TabIndex = 8;
-            this.materialDivider6.Text = "materialDivider6";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel12.Location = new System.Drawing.Point(344, 2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(2, 116);
-            this.panel12.TabIndex = 3;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(0, 2);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(2, 116);
-            this.panel13.TabIndex = 2;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 118);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(346, 2);
-            this.panel14.TabIndex = 1;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(346, 2);
-            this.panel15.TabIndex = 0;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(188, 221);
+            this.label7.Margin = new System.Windows.Forms.Padding(5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 17);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Exibir radar";
             // 
             // Options
             // 
@@ -788,8 +802,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radarPosY)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -844,6 +858,7 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label7;
     }
 }
 

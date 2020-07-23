@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,9 +24,7 @@ namespace AlbionRadar
 {
     public partial class Options : MaterialForm
     {
-        PrivateFontCollection modernFont = new PrivateFontCollection();
-
-        //modernFont.
+        private readonly PrivateFontCollection privateFontCollection = new PrivateFontCollection();
 
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
@@ -33,7 +32,9 @@ namespace AlbionRadar
 
         public Options()
         {
-            InitializeComponent();
+            LoadFont(Properties.Resources.Roboto_Regular);
+            LoadFont(Properties.Resources.Roboto_Light);
+
             Settings.loadSettings(this);
 
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -63,7 +64,7 @@ namespace AlbionRadar
         {
             Environment.Exit(Environment.ExitCode);
         }
-
+        
         #region RadarMap
         private void drawerThread()
         {
@@ -235,6 +236,23 @@ namespace AlbionRadar
 
             photonParser.ReceivePacket(udp.Payload.ToArray());
         }
-        #endregion        
+        #endregion
+
+        #region other
+        [DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pvd, [In] ref uint pcFonts);
+        private FontFamily LoadFont(byte[] fontResource)
+        {
+            int dataLength = fontResource.Length;
+            IntPtr fontPtr = Marshal.AllocCoTaskMem(dataLength);
+            Marshal.Copy(fontResource, 0, fontPtr, dataLength);
+
+            uint cFonts = 0;
+            AddFontMemResourceEx(fontPtr, (uint)fontResource.Length, IntPtr.Zero, ref cFonts);
+            privateFontCollection.AddMemoryFont(fontPtr, dataLength);
+
+            return privateFontCollection.Families.Last();
+        }
+        #endregion
     }
 }
