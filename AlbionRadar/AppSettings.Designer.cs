@@ -58,5 +58,29 @@ namespace AlbionRadar {
                 this["showRadar"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showMobs {
+            get {
+                return ((bool)(this["showMobs"]));
+            }
+            set {
+                this["showMobs"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showPlayers {
+            get {
+                return ((bool)(this["showPlayers"]));
+            }
+            set {
+                this["showPlayers"] = value;
+            }
+        }
     }
 }

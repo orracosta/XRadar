@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadarMap));
             this.SuspendLayout();
             // 
             // RadarMap
@@ -38,11 +39,11 @@
             this.ClientSize = new System.Drawing.Size(800, 800);
             this.ControlBox = false;
             this.ForeColor = System.Drawing.Color.Transparent;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RadarMap";
-            this.ShowIcon = false;
-            this.Text = "RadarMap";
+            this.Text = "Albion Radar";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.RadarMap_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.RadarMap_Paint);

@@ -23,6 +23,10 @@ namespace AlbionRadar
 {
     public partial class Options : MaterialForm
     {
+        PrivateFontCollection modernFont = new PrivateFontCollection();
+
+        //modernFont.
+
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
         PhotonParser photonParser;
@@ -57,8 +61,9 @@ namespace AlbionRadar
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
-            Environment.Exit(0);
+            Environment.Exit(Environment.ExitCode);
         }
+
         #region RadarMap
         private void drawerThread()
         {
@@ -95,7 +100,7 @@ namespace AlbionRadar
                     g.ScaleTransform(scale, scale);
 
                     // Se for para mostrar os players
-                    if (true)
+                    if (showPlayers.Checked)
                     {
                         localX = playerHandler.localPlayerPosX();
                         localY = playerHandler.localPlayerPosY();
@@ -170,6 +175,10 @@ namespace AlbionRadar
             else
                 radarMap.Hide();
 
+            Settings.saveSettings(this);
+        }
+        private void others_CheckedChanged(object sender, EventArgs e)
+        {
             Settings.saveSettings(this);
         }
         #endregion

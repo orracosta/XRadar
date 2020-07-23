@@ -214,5 +214,19 @@ namespace AlbionRadar
         static extern bool DeleteObject(IntPtr hObject);
 
         #endregion
+
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerPixelAlphaForm));
+            this.SuspendLayout();
+            // 
+            // PerPixelAlphaForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "PerPixelAlphaForm";
+            this.ResumeLayout(false);
+
+        }
     }
 }
