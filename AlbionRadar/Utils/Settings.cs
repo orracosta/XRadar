@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,18 @@ namespace AlbionRadar
         {
             AppSettings s = new AppSettings();
 
-            s.radarPosX = (int)form.radarPosX.Value;
-            s.radarPosY = (int)form.radarPosY.Value;
-            s.showRadar = form.showRadar.Checked;
+            String[] guildsList = new string[form.lbTrustGuilds.Items.Count];
+            String[] allianceList = new string[form.lbTrustAlliances.Items.Count];
+
+            form.lbTrustGuilds.Items.CopyTo(guildsList, 0);
+            form.lbTrustAlliances.Items.CopyTo(allianceList, 0);
+
+            s.trustGuilds = JsonConvert.SerializeObject(guildsList.ToArray());
+            s.TrustAlliances = JsonConvert.SerializeObject(allianceList.ToArray());
+
+            s.radarPosX = (int)form.nRadarPosX.Value;
+            s.radarPosY = (int)form.nRadarPosY.Value;
+            s.showRadar = form.cbShowRadar.Checked;
 
             s.Save();
 
@@ -23,9 +33,12 @@ namespace AlbionRadar
         {
             AppSettings s = new AppSettings();
 
-            form.radarPosX.Value = s.radarPosX;
-            form.radarPosY.Value = s.radarPosY;
-            form.showRadar.Checked = s.showRadar;
+            foreach (String guild in JsonConvert.DeserializeObject<List<string>>(s.trustGuilds)) form.lbTrustGuilds.Items.Add(guild);
+            foreach (String alliance in JsonConvert.DeserializeObject<List<string>>(s.TrustAlliances)) form.lbTrustAlliances.Items.Add(alliance);
+
+            form.nRadarPosX.Value = s.radarPosX;
+            form.nRadarPosY.Value = s.radarPosY;
+            form.cbShowRadar.Checked = s.showRadar;
         }
     }
 }

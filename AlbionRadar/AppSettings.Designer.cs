@@ -82,5 +82,29 @@ namespace AlbionRadar {
                 this["showPlayers"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string trustGuilds {
+            get {
+                return ((string)(this["trustGuilds"]));
+            }
+            set {
+                this["trustGuilds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TrustAlliances {
+            get {
+                return ((string)(this["TrustAlliances"]));
+            }
+            set {
+                this["TrustAlliances"] = value;
+            }
+        }
     }
 }

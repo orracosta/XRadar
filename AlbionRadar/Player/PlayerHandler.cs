@@ -22,6 +22,7 @@ namespace AlbionRadar
         public void AddPlayer(Single posX, Single posY, string nickname, string guild, string alliance, int id)
         {
             Player p = new Player(posX, posY, nickname, guild, alliance, id);
+
             if (!playersInRange.Contains(p))
                 playersInRange.Add(p);
         }
@@ -36,6 +37,8 @@ namespace AlbionRadar
         }
         public bool RemovePlayer(int id)
         {
+            Player player = playersInRange.FirstOrDefault(x => x.Id == id);
+
             mountsInRange.RemoveAll(x => x == id);
             return playersInRange.RemoveAll(x => x.Id == id) > 0;
         }
@@ -55,7 +58,6 @@ namespace AlbionRadar
         {
             get { return MountsInRange; }
         }
-
         public void UpdateLocalPlayerPosition(Single posX, Single posY)
         {
             localPlayer.PosX = posX;
@@ -70,21 +72,17 @@ namespace AlbionRadar
         }
         internal bool UpdatePlayerPosition(int id, float posX, float posY)
         {
-            bool isPlayer = false;
-
-            playersInRange.ForEach(p =>
+            var player = playersInRange.FirstOrDefault(x => x.Id == id);
+            if (player != null)
             {
-                if (p.Id == id)
-                {
-                    p.PosX = posX;
-                    p.PosY = posY;
+                player.PosX = posX;
+                player.PosY = posY;
 
-                    isPlayer = true;
-                }
-            });
+                return true;
 
-            return isPlayer;
+            }
 
+            return false;
         }
         public Single localPlayerPosX()
         {

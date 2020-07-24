@@ -1,6 +1,7 @@
 ﻿using AlbionRada.Player;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Newtonsoft.Json;
 using PcapDotNet.Core;
 using PcapDotNet.Packets;
 using PcapDotNet.Packets.IpV4;
@@ -14,7 +15,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,17 +24,14 @@ namespace AlbionRadar
 {
     public partial class Options : MaterialForm
     {
-        private readonly PrivateFontCollection privateFontCollection = new PrivateFontCollection();
-
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
         PhotonParser photonParser;
 
         public Options()
         {
-            LoadFont(Properties.Resources.Roboto_Regular);
-            LoadFont(Properties.Resources.Roboto_Light);
 
+            InitializeComponent();
             Settings.loadSettings(this);
 
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -44,8 +41,8 @@ namespace AlbionRadar
 
             radarMap.Show();
 
-            radarMap.Left = (int)radarPosX.Value;
-            radarMap.Top = (int)radarPosY.Value;
+            radarMap.Left = (int)nRadarPosX.Value;
+            radarMap.Top = (int)nRadarPosY.Value;
         }
         private void Options_Load(object sender, EventArgs e)
         {
@@ -59,6 +56,7 @@ namespace AlbionRadar
             radarThread.Priority = ThreadPriority.Highest;
             radarThread.Start();
 
+            AllyListTimer.Start();
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
@@ -72,7 +70,7 @@ namespace AlbionRadar
             Single localY;
 
             Pen linePen = new Pen(Color.FromArgb(155, 255, 255, 0), 2);
-            Font font = new Font("Arial", 2.8f, FontStyle.Regular);
+            Font font = new Font("Calibri", 3f, FontStyle.Regular);
             
             float scale = 2.6f;
             int HEIGHT = 350,
@@ -101,7 +99,7 @@ namespace AlbionRadar
                     g.ScaleTransform(scale, scale);
 
                     // Se for para mostrar os players
-                    if (showPlayers.Checked)
+                    if (cbShowPlayers.Checked)
                     {
                         localX = playerHandler.localPlayerPosX();
                         localY = playerHandler.localPlayerPosY();
@@ -125,6 +123,10 @@ namespace AlbionRadar
                             Single hY = p.PosY - localY;
 
                             Brush playerBrush = !playerHandler.playerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
+
+                            if (lbTrustGuilds.Items.Contains(p.Guild) || lbTrustAlliances.Items.Contains(p.Alliance))
+                                playerBrush = !playerHandler.playerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
+
                             g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
 
                             g.TranslateTransform(hX, hY);
@@ -152,26 +154,111 @@ namespace AlbionRadar
         #endregion
 
         #region OptionEvents
+        private void AllyListTimer_Tick(object sender, EventArgs e)
+        {
+            String[] guildsList = new string[lbGuildsInRange.Items.Count];
+            String[] allianceList = new string[lbAlliancesInRange.Items.Count];
+
+            lbGuildsInRange.Items.CopyTo(guildsList, 0);
+            lbAlliancesInRange.Items.CopyTo(allianceList, 0);
+
+            foreach (String guild in guildsList)
+            {
+                if (playerHandler.PlayersInRange.FirstOrDefault(x => x.Guild == guild) != null)
+                    continue;
+                else
+                    lbGuildsInRange.Items.Remove(guild);
+            }
+
+            foreach (String alliance in allianceList)
+            {
+                if (playerHandler.PlayersInRange.FirstOrDefault(x => x.Alliance == alliance) != null)
+                    continue;
+                else
+                    lbAlliancesInRange.Items.Remove(alliance);
+            }
+
+            playerHandler.PlayersInRange.ForEach(p =>
+            {
+                if (p.Guild.Length > 0 && !lbGuildsInRange.Items.Contains(p.Guild) && !lbTrustGuilds.Items.Contains(p.Guild))
+                    lbGuildsInRange.Items.Add(p.Guild);
+
+                if (p.Alliance.Length > 0 && !lbAlliancesInRange.Items.Contains(p.Alliance) && !lbTrustAlliances.Items.Contains(p.Alliance))
+                    lbAlliancesInRange.Items.Add(p.Alliance);
+            });
+        }
+
+        private void addGuild_Click(object sender, EventArgs e)
+        {
+            var guild = lbGuildsInRange.SelectedItem;
+
+            if (guild != null)
+            {
+                lbTrustGuilds.Items.Add(guild);
+                lbGuildsInRange.Items.Remove(guild);
+
+                Settings.saveSettings(this);
+            }
+        }
+
+        private void addAlliance_Click(object sender, EventArgs e)
+        {
+            var alliance = lbAlliancesInRange.SelectedItem;
+
+            if (alliance != null)
+            {
+                lbTrustAlliances.Items.Add(alliance);
+                lbAlliancesInRange.Items.Remove(alliance);
+
+                Settings.saveSettings(this);
+            }
+        }
+
+        private void removeGuild_Click(object sender, EventArgs e)
+        {
+            var guild = lbTrustGuilds.SelectedItem;
+
+            if (guild != null)
+            {
+                lbGuildsInRange.Items.Add(guild);
+                lbTrustGuilds.Items.Remove(guild);
+
+                Settings.saveSettings(this);
+            }
+        }
+
+        private void removeAlliance_Click(object sender, EventArgs e)
+        {
+            var alliance = lbTrustAlliances.SelectedItem;
+
+            if (alliance != null)
+            {
+                lbAlliancesInRange.Items.Add(alliance);
+                lbTrustAlliances.Items.Remove(alliance);
+
+                Settings.saveSettings(this);
+            }
+        }
         private void MoveRadarValueChanged(object sender, EventArgs e)
         {
             if (radarMap.InvokeRequired)
             {
                 radarMap.Invoke((Action)(() =>
                 {
-                    radarMap.Left = int.Parse(radarPosX.Value.ToString());
-                    radarMap.Top = int.Parse(radarPosY.Value.ToString());
+                    radarMap.Left = int.Parse(nRadarPosX.Value.ToString());
+                    radarMap.Top = int.Parse(nRadarPosY.Value.ToString());
                 }));
             }
             else
             {
-                radarMap.Left = int.Parse(radarPosX.Value.ToString());
-                radarMap.Top = int.Parse(radarPosY.Value.ToString());
+                radarMap.Left = int.Parse(nRadarPosX.Value.ToString());
+                radarMap.Top = int.Parse(nRadarPosY.Value.ToString());
             }
             Settings.saveSettings(this);
         }
         private void showRadar_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.showRadar.Checked)
+            if (this.cbShowRadar.Checked)
                 radarMap.Show();
             else
                 radarMap.Hide();
@@ -238,21 +325,6 @@ namespace AlbionRadar
         }
         #endregion
 
-        #region other
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pvd, [In] ref uint pcFonts);
-        private FontFamily LoadFont(byte[] fontResource)
-        {
-            int dataLength = fontResource.Length;
-            IntPtr fontPtr = Marshal.AllocCoTaskMem(dataLength);
-            Marshal.Copy(fontResource, 0, fontPtr, dataLength);
-
-            uint cFonts = 0;
-            AddFontMemResourceEx(fontPtr, (uint)fontResource.Length, IntPtr.Zero, ref cFonts);
-            privateFontCollection.AddMemoryFont(fontPtr, dataLength);
-
-            return privateFontCollection.Families.Last();
-        }
-        #endregion
+        
     }
 }
