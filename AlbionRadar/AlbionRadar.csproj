@@ -103,6 +103,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>AppSettings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Harvestable\Harvestable.cs" />
+    <Compile Include="Harvestable\HarvestableHandler.cs" />
+    <Compile Include="Mobs\Mob.cs" />
+    <Compile Include="Mobs\MobHandler.cs" />
     <Compile Include="Options.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,5 +191,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

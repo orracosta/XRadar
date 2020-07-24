@@ -162,9 +162,19 @@ namespace AlbionRadar
             lbGuildsInRange.Items.CopyTo(guildsList, 0);
             lbAlliancesInRange.Items.CopyTo(allianceList, 0);
 
+            List<Player> pList = new List<Player>();
+            lock (this.playerHandler.PlayersInRange)
+            {
+                try
+                {
+                    pList = this.playerHandler.PlayersInRange.ToList();
+                }
+                catch (Exception e2) { }
+            }
+
             foreach (String guild in guildsList)
             {
-                if (playerHandler.PlayersInRange.FirstOrDefault(x => x.Guild == guild) != null)
+                if (pList.FirstOrDefault(x => x.Guild == guild) != null)
                     continue;
                 else
                     lbGuildsInRange.Items.Remove(guild);
@@ -172,13 +182,13 @@ namespace AlbionRadar
 
             foreach (String alliance in allianceList)
             {
-                if (playerHandler.PlayersInRange.FirstOrDefault(x => x.Alliance == alliance) != null)
+                if (pList.FirstOrDefault(x => x.Alliance == alliance) != null)
                     continue;
                 else
                     lbAlliancesInRange.Items.Remove(alliance);
             }
 
-            playerHandler.PlayersInRange.ForEach(p =>
+            pList.ForEach(p =>
             {
                 if (p.Guild.Length > 0 && !lbGuildsInRange.Items.Contains(p.Guild) && !lbTrustGuilds.Items.Contains(p.Guild))
                     lbGuildsInRange.Items.Add(p.Guild);
