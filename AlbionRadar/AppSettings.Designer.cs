@@ -85,7 +85,7 @@ namespace AlbionRadar {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("[]")]
         public string trustGuilds {
             get {
                 return ((string)(this["trustGuilds"]));
@@ -97,13 +97,37 @@ namespace AlbionRadar {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string TrustAlliances {
+        [global::System.Configuration.DefaultSettingValueAttribute("[]")]
+        public string trustAlliances {
             get {
-                return ((string)(this["TrustAlliances"]));
+                return ((string)(this["trustAlliances"]));
             }
             set {
-                this["TrustAlliances"] = value;
+                this["trustAlliances"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool alertSound {
+            get {
+                return ((bool)(this["alertSound"]));
+            }
+            set {
+                this["alertSound"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("cbName")]
+        public string displayOption {
+            get {
+                return ((string)(this["displayOption"]));
+            }
+            set {
+                this["displayOption"] = value;
             }
         }
     }

@@ -5,16 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AlbionRadar
 {
     class PacketHandler : PhotonParser
     {
         PlayerHandler playerHandler;
+        MobsHandler mobsHandler;
 
-        public PacketHandler(PlayerHandler playerHandler)
+        public PacketHandler(PlayerHandler playerHandler, MobsHandler mobsHandler)
         {
             this.playerHandler = playerHandler;
+            this.mobsHandler = mobsHandler;
         }
 
         protected override void OnEvent(byte code, Dictionary<byte, object> parameters)
@@ -39,6 +42,9 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evMounted:
                     onMounted(parameters);
+                    break;
+                case EventCodes.evNewMob:
+                    onNewMob(parameters);
                     break;
                 case EventCodes.evLeave:
                     onLeaveEvent(parameters);
@@ -109,14 +115,32 @@ namespace AlbionRadar
             string alliance = oGuild == null ? "" : oAlliance.ToString();
             Single[] pos = (Single[])parameters[13];
 
+            Settings.needBeepSound(guild, alliance);
             playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id);
+        }
+        private void onNewMob(Dictionary<byte, object> parameters)
+        {
+            int id = int.Parse(parameters[0].ToString());
+            int typeId = int.Parse(parameters[1].ToString());
+            Single[] loc = (Single[])parameters[8];
+            DateTime timeA = new DateTime(long.Parse(parameters[9].ToString()));
+            DateTime timeB = new DateTime(long.Parse(parameters[16].ToString()));
+            DateTime timeC = new DateTime(long.Parse(parameters[20].ToString()));
+            Single posX = (Single)loc[0];
+            Single posY = (Single)loc[1];
+            int health = int.Parse(parameters[13].ToString());
+            int rarity = int.Parse(parameters[20].ToString());
+
+            mobsHandler.AddMob(id, typeId, posX, posY, health);
         }
         private void onLeaveEvent(Dictionary<byte, object> parameters)
         {
             int id = int.Parse(parameters[0].ToString());
 
             if (playerHandler.RemovePlayer(id))
-                playerHandler.RemovePlayer(id);
+                playerHandler.RemoveMount(id);
+            else
+                mobsHandler.RemoveMob(id);
         }
         private void onEntityMovementEvent(Dictionary<byte, object> parameters)
         {
@@ -126,6 +150,9 @@ namespace AlbionRadar
             Single posY = BitConverter.ToSingle(a, 13);
 
             bool isPlayer = playerHandler.UpdatePlayerPosition(id, posX, posY);
+
+            if (!isPlayer)
+                mobsHandler.UpdateMobPosition(id, posX, posY);
         }
         #endregion
 

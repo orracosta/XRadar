@@ -18,10 +18,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="trustGuilds" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">[]</Value>
     </Setting>
-    <Setting Name="TrustAlliances" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="trustAlliances" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[]</Value>
+    </Setting>
+    <Setting Name="alertSound" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="displayOption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cbName</Value>
     </Setting>
   </Settings>
 </SettingsFile>

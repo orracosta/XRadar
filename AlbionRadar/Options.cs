@@ -26,6 +26,7 @@ namespace AlbionRadar
     {
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
+        MobsHandler mobsHandler = new MobsHandler();
         PhotonParser photonParser;
 
         public Options()
@@ -44,9 +45,16 @@ namespace AlbionRadar
             radarMap.Left = (int)nRadarPosX.Value;
             radarMap.Top = (int)nRadarPosY.Value;
         }
+        protected override void OnLoad(EventArgs e)
+        {
+            //this.Font = new Font(this.Font.FontFamily, this.Font.SizeInPoints * 125 / 96);
+            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            base.OnLoad(e);
+        }
         private void Options_Load(object sender, EventArgs e)
         {
-            photonParser = new PacketHandler(playerHandler);
+
+            photonParser = new PacketHandler(playerHandler, mobsHandler);
 
             Thread photonThread = new Thread(() => createListener());
             photonThread.Priority = ThreadPriority.Highest;
@@ -98,12 +106,11 @@ namespace AlbionRadar
 
                     g.ScaleTransform(scale, scale);
 
-                    // Se for para mostrar os players
+                    localX = playerHandler.localPlayerPosX();
+                    localY = playerHandler.localPlayerPosY();
+
                     if (cbShowPlayers.Checked)
                     {
-                        localX = playerHandler.localPlayerPosX();
-                        localY = playerHandler.localPlayerPosY();
-
                         List<Player> pList = new List<Player>();
                         lock (this.playerHandler.PlayersInRange)
                         {
@@ -129,13 +136,45 @@ namespace AlbionRadar
 
                             g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
 
-                            g.TranslateTransform(hX, hY);
-                            g.RotateTransform(135f);
+                            if (!cbNone.Checked)
+                            {
+                                g.TranslateTransform(hX, hY);
+                                g.RotateTransform(135f);
 
-                            g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
+                                if (cbName.Checked)
+                                    g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
+                                else if(cbGuild.Checked)
+                                    g.DrawString(p.Guild, font, Brushes.White, 2, -5);
+                                else
+                                    g.DrawString(p.Alliance, font, Brushes.White, 2, -5);
 
-                            g.RotateTransform(-135f);
-                            g.TranslateTransform(-hX, -hY);
+
+                                g.RotateTransform(-135f);
+                                g.TranslateTransform(-hX, -hY);
+                            }
+                        }
+                    }
+
+                    if(cbShowMobs.Checked)
+                    {
+                        List<Mob> mList = new List<Mob>();
+                        lock (this.mobsHandler.MobList)
+                        {
+                            try
+                            {
+                                mList = this.mobsHandler.MobList.ToList();
+                            }
+                            catch (Exception e2) { }
+                        }
+
+                        foreach (Mob m in mList)
+                        {
+                            Single hX = -1 * m.PosX + localX;
+                            Single hY = m.PosY - localY;
+
+                            Brush mobBrush = Brushes.LightGray;
+
+                            g.FillEllipse(mobBrush, hX, hY, 1.5f, 1.5f);
                         }
                     }
 
@@ -333,8 +372,7 @@ namespace AlbionRadar
 
             photonParser.ReceivePacket(udp.Payload.ToArray());
         }
-        #endregion
 
-        
+        #endregion
     }
 }

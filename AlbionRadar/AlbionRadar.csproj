@@ -75,6 +75,7 @@
     <Reference Include="PhotonPackageParser, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PhotonPackageParser.4.0.0\lib\net471\PhotonPackageParser.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Protocol16, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PhotonPackageParser.4.0.0\lib\net471\Protocol16.dll</HintPath>

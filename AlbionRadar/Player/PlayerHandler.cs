@@ -37,14 +37,11 @@ namespace AlbionRadar
         }
         public bool RemovePlayer(int id)
         {
-            Player player = playersInRange.FirstOrDefault(x => x.Id == id);
-
-            mountsInRange.RemoveAll(x => x == id);
             return playersInRange.RemoveAll(x => x.Id == id) > 0;
         }
         public bool RemoveMount(int id)
         {
-            return mountsInRange.RemoveAll(y => y == id) > 0;
+            return mountsInRange.RemoveAll(x => x == id) > 0;
         }
         internal List<Player> PlayersInRange
         {
