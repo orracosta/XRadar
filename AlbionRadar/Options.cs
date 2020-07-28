@@ -16,6 +16,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -293,6 +294,77 @@ namespace AlbionRadar
         #endregion
 
         #region OptionEvents
+        private void exportAllysButton_Click(object sender, EventArgs e)
+        {
+            string alliances = JsonConvert.SerializeObject(lbTrustAlliances.Items);
+            string guilds = JsonConvert.SerializeObject(lbTrustGuilds.Items);
+
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "JSON|*.json";
+            saveFileDialog1.Title = "Exportar lista de alianças e guildas";
+            saveFileDialog1.FileName = "allys.json";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK && saveFileDialog1.FileName != "")
+            {
+                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+
+                StreamWriter writer = new StreamWriter(fs);
+
+                writer.Write("{\n \"guilds\": " + guilds + ", \n \"alliances\": " + alliances + "\n}");
+                writer.Close();
+
+                fs.Close();
+            }
+        }
+
+        private void importAllysButton_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "JSON|*.json";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    filePath = openFileDialog.FileName;
+
+                    //Read the contents of the file into a stream
+                    var fileStream = openFileDialog.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        fileContent = reader.ReadToEnd();
+                    }
+
+                    dynamic trustAlliances = JsonConvert.DeserializeObject(fileContent);
+                    foreach (var item in trustAlliances)
+                    {
+                        if (item.Name == "guilds")
+                        {
+                            lbTrustGuilds.Items.Clear();
+
+                            foreach (var guild in item.Value)
+                                lbTrustGuilds.Items.Add(guild.Value);
+                        }
+                        else if (item.Name == "alliances")
+                        {
+                            lbTrustAlliances.Items.Clear();
+
+                            foreach (var alliance in item.Value)
+                                lbTrustAlliances.Items.Add(alliance.Value);
+                        }
+                    }
+
+                    Settings.saveSettings(this);
+                }
+            }
+        }
         private void AllyListTimer_Tick(object sender, EventArgs e)
         {
             String[] guildsList = new string[lbGuildsInRange.Items.Count];
@@ -475,14 +547,5 @@ namespace AlbionRadar
 
         #endregion
 
-        private void exportAllysButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void importAllysButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
