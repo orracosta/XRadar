@@ -58,6 +58,8 @@ namespace AlbionRadar
                 case EventCodes.evNewHarvestableObject:
                     onNewHarvestableObject(parameters);
                     break;
+                case EventCodes.evNewSimpleHarvestableObject:
+                    break;
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);
                     break;

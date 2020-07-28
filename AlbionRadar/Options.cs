@@ -155,8 +155,8 @@ namespace AlbionRadar
                             if (h == null)
                                 continue;
 
-                            if (h.Size == 0) 
-                                continue;
+                            /*if (h.Size == 0) 
+                                continue;*/
 
                             TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
 
