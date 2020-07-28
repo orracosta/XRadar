@@ -26,7 +26,8 @@ namespace AlbionRadar
             s.trustGuilds = JsonConvert.SerializeObject(guildsList.ToArray());
             s.trustAlliances = JsonConvert.SerializeObject(allianceList.ToArray());
 
-            s.displayOption = form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>().FirstOrDefault(r => r.Checked).Name;
+            s.displayOption = form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
+                .FirstOrDefault(r => r.Checked).Name;
 
             s.radarPosX = (int)form.nRadarPosX.Value;
             s.radarPosY = (int)form.nRadarPosY.Value;
@@ -34,6 +35,17 @@ namespace AlbionRadar
             s.showPlayers = form.cbShowPlayers.Checked;
             s.showMobs = form.cbShowMobs.Checked;
             s.alertSound = form.cbAlertSound.Checked;
+            s.showHarvestable = form.cbShowHarvestable.Checked;
+
+            //TierList
+            s.showTier1 = form.cbShowTier1.Checked;
+            s.showTier2 = form.cbShowTier2.Checked;
+            s.showTier3 = form.cbShowTier3.Checked;
+            s.showTier4 = form.cbShowTier4.Checked;
+            s.showTier5 = form.cbShowTier5.Checked;
+            s.showTier6 = form.cbShowTier6.Checked;
+            s.showTier7 = form.cbShowTier7.Checked;
+            s.showTier8 = form.cbShowTier8.Checked;
 
             s.Save();
 
@@ -57,6 +69,17 @@ namespace AlbionRadar
             form.cbShowPlayers.Checked = s.showPlayers;
             form.cbShowMobs.Checked = s.showMobs;
             form.cbAlertSound.Checked = s.alertSound;
+            form.cbShowHarvestable.Checked = s.showHarvestable;
+
+            //TierList
+            form.cbShowTier1.Checked = s.showTier1;
+            form.cbShowTier2.Checked = s.showTier2;
+            form.cbShowTier3.Checked = s.showTier3;
+            form.cbShowTier4.Checked = s.showTier4;
+            form.cbShowTier5.Checked = s.showTier5;
+            form.cbShowTier6.Checked = s.showTier6;
+            form.cbShowTier7.Checked = s.showTier7;
+            form.cbShowTier8.Checked = s.showTier8;
         }
 
         public static void needBeepSound(String guild, String alliance)

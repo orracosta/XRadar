@@ -130,5 +130,113 @@ namespace AlbionRadar {
                 this["displayOption"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool showTier1 {
+            get {
+                return ((bool)(this["showTier1"]));
+            }
+            set {
+                this["showTier1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool showTier2 {
+            get {
+                return ((bool)(this["showTier2"]));
+            }
+            set {
+                this["showTier2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool showTier3 {
+            get {
+                return ((bool)(this["showTier3"]));
+            }
+            set {
+                this["showTier3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showTier4 {
+            get {
+                return ((bool)(this["showTier4"]));
+            }
+            set {
+                this["showTier4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showTier5 {
+            get {
+                return ((bool)(this["showTier5"]));
+            }
+            set {
+                this["showTier5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showTier6 {
+            get {
+                return ((bool)(this["showTier6"]));
+            }
+            set {
+                this["showTier6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showTier7 {
+            get {
+                return ((bool)(this["showTier7"]));
+            }
+            set {
+                this["showTier7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showTier8 {
+            get {
+                return ((bool)(this["showTier8"]));
+            }
+            set {
+                this["showTier8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showHarvestable {
+            get {
+                return ((bool)(this["showHarvestable"]));
+            }
+            set {
+                this["showHarvestable"] = value;
+            }
+        }
     }
 }

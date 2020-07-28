@@ -1,4 +1,5 @@
 ﻿using AlbionRada.Player;
+using AlbionRadar.Properties;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Newtonsoft.Json;
@@ -15,6 +16,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -27,6 +29,7 @@ namespace AlbionRadar
         RadarMap radarMap = new RadarMap();
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
+        HarvestableHandler harvestableHandler = new HarvestableHandler();
         PhotonParser photonParser;
 
         public Options()
@@ -34,6 +37,7 @@ namespace AlbionRadar
 
             InitializeComponent();
             Settings.loadSettings(this);
+            MobInfo.loadMobList();
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
@@ -54,7 +58,7 @@ namespace AlbionRadar
         private void Options_Load(object sender, EventArgs e)
         {
 
-            photonParser = new PacketHandler(playerHandler, mobsHandler);
+            photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler);
 
             Thread photonThread = new Thread(() => createListener());
             photonThread.Priority = ThreadPriority.Highest;
@@ -72,6 +76,17 @@ namespace AlbionRadar
         }
         
         #region RadarMap
+        SolidBrush[] harvestBrushes = {
+                new SolidBrush(Color.FromArgb(255, 52, 52, 52)),
+                new SolidBrush(Color.FromArgb(255, 99, 83, 73)),
+                new SolidBrush(Color.FromArgb(255, 63, 81, 49)),
+                new SolidBrush(Color.FromArgb(255, 48, 54, 98)),
+                new SolidBrush(Color.FromArgb(255, 119, 34, 26)),
+                new SolidBrush(Color.FromArgb(255, 192, 107, 42)),
+                new SolidBrush(Color.FromArgb(255, 209, 176, 68)),
+                new SolidBrush(Color.FromArgb(255, 208, 208, 208))
+            };
+
         private void drawerThread()
         {
             Single localX;
@@ -109,18 +124,112 @@ namespace AlbionRadar
                     localX = playerHandler.localPlayerPosX();
                     localY = playerHandler.localPlayerPosY();
 
+                    List<Harvestable> hList = new List<Harvestable>();
+                    List<Mob> mList = new List<Mob>();
+                    List<Player> pList = new List<Player>();
+
+                    lock (this.playerHandler.PlayersInRange)
+                    {
+                        try { hList = this.harvestableHandler.HarvestableList.ToList(); }
+                        catch (Exception e2) { }
+                    }
+
+                    lock (this.mobsHandler.MobList)
+                    {
+                        try { mList = this.mobsHandler.MobList.ToList(); }
+                        catch (Exception e2) { }
+                    }
+
+                    lock (this.playerHandler.PlayersInRange)
+                    {
+                        try { pList = this.playerHandler.PlayersInRange.ToList(); }
+                        catch (Exception e2) { }
+                    }
+
+                    if (cbShowHarvestable.Checked)
+                    {
+                        foreach (Harvestable h in hList)
+                        {
+                            if (h == null)
+                                continue;
+
+                            if (h.Size == 0) continue;
+
+                            String cbName = "cbShowTier" + h.Tier;
+                            var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                .FirstOrDefault(r => r.Name == cbName).Checked;
+
+                            if (!canShowTier)
+                                continue;
+
+                            String iconName = h.getMapInfo() + "_" + h.Charges;
+                            Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
+
+                            if (iconImage == null)
+                                continue;
+
+                            float iconWidth = iconImage.Width / 20;
+                            float iconHeight = iconImage.Height / 20;
+
+                            Single hX = -1 * h.PosX + localX;
+                            Single hY = h.PosY - localY;
+
+                            g.FillEllipse(harvestBrushes[h.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
+                            g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
+                        }
+                    }
+
+                    if (cbShowMobs.Checked || cbShowHarvestable.Checked)
+                    {
+                        foreach (Mob m in mList)
+                        {
+                            if (m == null)
+                                continue;
+
+                            Single hX = -1 * m.PosX + localX;
+                            Single hY = m.PosY - localY;
+
+                            /*g.TranslateTransform(hX, hY);
+                            g.RotateTransform(135f);
+
+                            g.DrawString(m.TypeId.ToString(), font, Brushes.White, 2, -5);
+
+                            g.RotateTransform(-135f);
+                            g.TranslateTransform(-hX, -hY);*/
+
+                            if (cbShowMobs.Checked)
+                            {
+                                Brush mobBrush = Brushes.LightGray;
+                                g.FillEllipse(mobBrush, hX, hY, 1.5f, 1.5f);
+                            }
+
+                            if(cbShowHarvestable.Checked && m.MobInfo != null)
+                            {
+                                String cbName = "cbShowTier" + m.MobInfo.Tier;
+
+                                var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                    .FirstOrDefault(r => r.Name == cbName).Checked;
+
+                                if (!canShowTier)
+                                    continue;
+
+                                String iconName =  m.MobInfo.getMapInfo(m.TypeId) + "_" + m.EnchantmentLevel;
+                                Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
+
+                                if (iconImage == null)
+                                    continue;
+
+                                float iconWidth = iconImage.Width / 20;
+                                float iconHeight = iconImage.Height / 20;
+
+                                g.FillEllipse(harvestBrushes[m.MobInfo.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
+                                g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
+                            }
+                        }
+                    }
+
                     if (cbShowPlayers.Checked)
                     {
-                        List<Player> pList = new List<Player>();
-                        lock (this.playerHandler.PlayersInRange)
-                        {
-                            try
-                            {
-                                pList = this.playerHandler.PlayersInRange.ToList();
-                            }
-                            catch (Exception e2) { }
-                        }
-
                         foreach (Player p in pList)
                         {
                             if (p == null)
@@ -143,7 +252,7 @@ namespace AlbionRadar
 
                                 if (cbName.Checked)
                                     g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
-                                else if(cbGuild.Checked)
+                                else if (cbGuild.Checked)
                                     g.DrawString(p.Guild, font, Brushes.White, 2, -5);
                                 else
                                     g.DrawString(p.Alliance, font, Brushes.White, 2, -5);
@@ -152,29 +261,6 @@ namespace AlbionRadar
                                 g.RotateTransform(-135f);
                                 g.TranslateTransform(-hX, -hY);
                             }
-                        }
-                    }
-
-                    if(cbShowMobs.Checked)
-                    {
-                        List<Mob> mList = new List<Mob>();
-                        lock (this.mobsHandler.MobList)
-                        {
-                            try
-                            {
-                                mList = this.mobsHandler.MobList.ToList();
-                            }
-                            catch (Exception e2) { }
-                        }
-
-                        foreach (Mob m in mList)
-                        {
-                            Single hX = -1 * m.PosX + localX;
-                            Single hY = m.PosY - localY;
-
-                            Brush mobBrush = Brushes.LightGray;
-
-                            g.FillEllipse(mobBrush, hX, hY, 1.5f, 1.5f);
                         }
                     }
 

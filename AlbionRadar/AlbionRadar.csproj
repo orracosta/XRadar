@@ -106,8 +106,11 @@
     </Compile>
     <Compile Include="Harvestable\Harvestable.cs" />
     <Compile Include="Harvestable\HarvestableHandler.cs" />
+    <Compile Include="Harvestable\HarvestableType.cs" />
     <Compile Include="Mobs\Mob.cs" />
     <Compile Include="Mobs\MobHandler.cs" />
+    <Compile Include="Mobs\MobInfo.cs" />
+    <Compile Include="Mobs\MobTypes.cs" />
     <Compile Include="Options.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +164,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\mobs.json" />
     <None Include="Resources\Roboto-Black.ttf" />
     <None Include="Resources\Roboto-BlackItalic.ttf" />
     <None Include="Resources\Roboto-Bold.ttf" />
@@ -179,6 +183,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\pelego-1.png" />
+    <None Include="Resources\pelego-0.png" />
+    <None Include="Resources\pedra-3.png" />
+    <None Include="Resources\pedra-2.png" />
+    <None Include="Resources\pedra-1.png" />
+    <None Include="Resources\pedra-0.png" />
+    <None Include="Resources\minerio-3.png" />
+    <None Include="Resources\minerio-2.png" />
+    <None Include="Resources\minerio-1.png" />
+    <None Include="Resources\minerio-0.png" />
+    <None Include="Resources\madeira-3.png" />
+    <None Include="Resources\madeira-2.png" />
+    <None Include="Resources\madeira-1.png" />
+    <None Include="Resources\madeira-0.png" />
+    <None Include="Resources\fibra-3.png" />
+    <None Include="Resources\fibra-2.png" />
+    <None Include="Resources\fibra-1.png" />
+    <None Include="Resources\fibra-0.png" />
+    <None Include="Resources\back-8.png" />
+    <None Include="Resources\back-7.png" />
+    <None Include="Resources\back-6.png" />
+    <None Include="Resources\back-5.png" />
+    <None Include="Resources\back-4.png" />
+    <None Include="Resources\back-3.png" />
+    <None Include="Resources\back-2.png" />
+    <None Include="Resources\back-1.png" />
+    <None Include="Resources\pelego-3.png" />
+    <None Include="Resources\pelego-2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

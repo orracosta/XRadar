@@ -61,122 +61,212 @@ namespace AlbionRadar.Properties {
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Black {
+        internal static System.Drawing.Bitmap fibra_0 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Black", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("fibra_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fibra_1 {
+            get {
+                object obj = ResourceManager.GetObject("fibra_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fibra_2 {
+            get {
+                object obj = ResourceManager.GetObject("fibra_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fibra_3 {
+            get {
+                object obj = ResourceManager.GetObject("fibra_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madeira_0 {
+            get {
+                object obj = ResourceManager.GetObject("madeira_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madeira_1 {
+            get {
+                object obj = ResourceManager.GetObject("madeira_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madeira_2 {
+            get {
+                object obj = ResourceManager.GetObject("madeira_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madeira_3 {
+            get {
+                object obj = ResourceManager.GetObject("madeira_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minerio_0 {
+            get {
+                object obj = ResourceManager.GetObject("minerio_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minerio_1 {
+            get {
+                object obj = ResourceManager.GetObject("minerio_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minerio_2 {
+            get {
+                object obj = ResourceManager.GetObject("minerio_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minerio_3 {
+            get {
+                object obj = ResourceManager.GetObject("minerio_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
-        internal static byte[] Roboto_BlackItalic {
+        internal static byte[] mobs {
             get {
-                object obj = ResourceManager.GetObject("Roboto_BlackItalic", resourceCulture);
+                object obj = ResourceManager.GetObject("mobs", resourceCulture);
                 return ((byte[])(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Bold {
+        internal static System.Drawing.Bitmap pedra_0 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Bold", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pedra_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_BoldItalic {
+        internal static System.Drawing.Bitmap pedra_1 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_BoldItalic", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pedra_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Italic {
+        internal static System.Drawing.Bitmap pedra_2 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Italic", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pedra_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Light {
+        internal static System.Drawing.Bitmap pedra_3 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Light", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pedra_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_LightItalic {
+        internal static System.Drawing.Bitmap pelego_0 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_LightItalic", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pelego_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Medium {
+        internal static System.Drawing.Bitmap pelego_1 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Medium", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pelego_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_MediumItalic {
+        internal static System.Drawing.Bitmap pelego_2 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_MediumItalic", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pelego_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Roboto_Regular {
+        internal static System.Drawing.Bitmap pelego_3 {
             get {
-                object obj = ResourceManager.GetObject("Roboto_Regular", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] Roboto_Thin {
-            get {
-                object obj = ResourceManager.GetObject("Roboto_Thin", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] Roboto_ThinItalic {
-            get {
-                object obj = ResourceManager.GetObject("Roboto_ThinItalic", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("pelego_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

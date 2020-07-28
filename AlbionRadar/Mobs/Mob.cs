@@ -14,6 +14,7 @@ namespace AlbionRadar
         Single posY;
         int health;
         byte enchantmentLevel;
+        MobInfo mobInfo;
 
         public Mob(int id, int typeId, Single posX, Single posY, int health, byte enchantmentLevel)
         {
@@ -23,6 +24,7 @@ namespace AlbionRadar
             this.posY = posY;
             this.health = health;
             this.enchantmentLevel = enchantmentLevel;
+            mobInfo = MobInfo.getMobInfo(typeId);
         }
         public override string ToString()
         {
@@ -58,6 +60,12 @@ namespace AlbionRadar
         {
             get { return enchantmentLevel; }
             set { enchantmentLevel = value; }
+        }
+
+        internal MobInfo MobInfo
+        {
+            get { return mobInfo; }
+            set { mobInfo = value; }
         }
     }
 }

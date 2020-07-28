@@ -64,8 +64,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel16 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -93,25 +91,58 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.pTierList = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbShowTier3 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbShowTier2 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cbShowTier1 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
+            this.label21 = new System.Windows.Forms.Label();
+            this.cbShowTier4 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cbShowTier5 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cbShowTier6 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.cbShowTier7 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cbShowTier8 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cbShowHarvestable = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosY)).BeginInit();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.pTierList.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
             // 
             this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
+            this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(19, 119);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(10, 20, 10, 0);
@@ -168,7 +199,7 @@
             this.pCbDisplayOptions.Location = new System.Drawing.Point(189, 10);
             this.pCbDisplayOptions.Margin = new System.Windows.Forms.Padding(10);
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
-            this.pCbDisplayOptions.Size = new System.Drawing.Size(170, 175);
+            this.pCbDisplayOptions.Size = new System.Drawing.Size(170, 184);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
             // label7
@@ -326,7 +357,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel17.Location = new System.Drawing.Point(168, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(2, 171);
+            this.panel17.Size = new System.Drawing.Size(2, 180);
             this.panel17.TabIndex = 3;
             // 
             // panel18
@@ -335,14 +366,14 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(2, 171);
+            this.panel18.Size = new System.Drawing.Size(2, 180);
             this.panel18.TabIndex = 2;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel19.Location = new System.Drawing.Point(0, 173);
+            this.panel19.Location = new System.Drawing.Point(0, 182);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(170, 2);
             this.panel19.TabIndex = 1;
@@ -372,6 +403,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.cbShowHarvestable);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cbShowMobs);
             this.panel1.Controls.Add(this.label3);
@@ -389,7 +422,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 175);
+            this.panel1.Size = new System.Drawing.Size(170, 184);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -397,7 +430,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 127);
+            this.label4.Location = new System.Drawing.Point(34, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 17);
@@ -411,7 +444,7 @@
             this.cbShowMobs.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowMobs.Depth = 0;
             this.cbShowMobs.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowMobs.Location = new System.Drawing.Point(5, 120);
+            this.cbShowMobs.Location = new System.Drawing.Point(5, 116);
             this.cbShowMobs.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowMobs.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowMobs.MouseState = MaterialSkin.MouseState.HOVER;
@@ -428,7 +461,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(34, 97);
+            this.label3.Location = new System.Drawing.Point(34, 95);
             this.label3.Margin = new System.Windows.Forms.Padding(5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 17);
@@ -442,7 +475,7 @@
             this.cbShowPlayers.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowPlayers.Depth = 0;
             this.cbShowPlayers.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowPlayers.Location = new System.Drawing.Point(5, 90);
+            this.cbShowPlayers.Location = new System.Drawing.Point(5, 88);
             this.cbShowPlayers.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowPlayers.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowPlayers.MouseState = MaterialSkin.MouseState.HOVER;
@@ -573,7 +606,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(168, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 171);
+            this.panel5.Size = new System.Drawing.Size(2, 180);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -582,14 +615,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 171);
+            this.panel4.Size = new System.Drawing.Size(2, 180);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 173);
+            this.panel3.Location = new System.Drawing.Point(0, 182);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(170, 2);
             this.panel3.TabIndex = 1;
@@ -602,24 +635,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(170, 2);
             this.panel2.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panel16);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(372, 311);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Coleta";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel16
-            // 
-            this.panel16.Location = new System.Drawing.Point(65, 88);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(205, 171);
-            this.panel16.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -979,6 +994,253 @@
             this.panel10.Size = new System.Drawing.Size(346, 2);
             this.panel10.TabIndex = 0;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.panel25);
+            this.tabPage2.Controls.Add(this.pTierList);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(372, 311);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Coleta";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(201, 1);
+            this.label17.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label17.Name = "label17";
+            this.label17.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label17.Size = new System.Drawing.Size(49, 17);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "Mobs";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(25, 1);
+            this.label13.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label13.Name = "label13";
+            this.label13.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Size = new System.Drawing.Size(92, 17);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Tier de Items";
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel25.Controls.Add(this.panel26);
+            this.panel25.Controls.Add(this.panel27);
+            this.panel25.Controls.Add(this.panel28);
+            this.panel25.Controls.Add(this.panel29);
+            this.panel25.Location = new System.Drawing.Point(189, 10);
+            this.panel25.Margin = new System.Windows.Forms.Padding(10);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(170, 175);
+            this.panel25.TabIndex = 12;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel26.Location = new System.Drawing.Point(168, 2);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(2, 171);
+            this.panel26.TabIndex = 3;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel27.Location = new System.Drawing.Point(0, 2);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(2, 171);
+            this.panel27.TabIndex = 2;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel28.Location = new System.Drawing.Point(0, 173);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(170, 2);
+            this.panel28.TabIndex = 1;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel29.Location = new System.Drawing.Point(0, 0);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(170, 2);
+            this.panel29.TabIndex = 0;
+            // 
+            // pTierList
+            // 
+            this.pTierList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pTierList.Controls.Add(this.label25);
+            this.pTierList.Controls.Add(this.cbShowTier8);
+            this.pTierList.Controls.Add(this.label24);
+            this.pTierList.Controls.Add(this.cbShowTier7);
+            this.pTierList.Controls.Add(this.label23);
+            this.pTierList.Controls.Add(this.cbShowTier6);
+            this.pTierList.Controls.Add(this.label22);
+            this.pTierList.Controls.Add(this.cbShowTier5);
+            this.pTierList.Controls.Add(this.label21);
+            this.pTierList.Controls.Add(this.cbShowTier4);
+            this.pTierList.Controls.Add(this.label14);
+            this.pTierList.Controls.Add(this.cbShowTier3);
+            this.pTierList.Controls.Add(this.label15);
+            this.pTierList.Controls.Add(this.cbShowTier2);
+            this.pTierList.Controls.Add(this.label16);
+            this.pTierList.Controls.Add(this.cbShowTier1);
+            this.pTierList.Controls.Add(this.panel21);
+            this.pTierList.Controls.Add(this.panel22);
+            this.pTierList.Controls.Add(this.panel23);
+            this.pTierList.Controls.Add(this.panel24);
+            this.pTierList.Location = new System.Drawing.Point(13, 10);
+            this.pTierList.Margin = new System.Windows.Forms.Padding(10);
+            this.pTierList.Name = "pTierList";
+            this.pTierList.Size = new System.Drawing.Size(170, 257);
+            this.pTierList.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(34, 79);
+            this.label14.Margin = new System.Windows.Forms.Padding(5);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 17);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Exibir tier III";
+            // 
+            // cbShowTier3
+            // 
+            this.cbShowTier3.AutoSize = true;
+            this.cbShowTier3.Checked = true;
+            this.cbShowTier3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier3.Depth = 0;
+            this.cbShowTier3.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier3.Location = new System.Drawing.Point(5, 72);
+            this.cbShowTier3.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier3.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier3.Name = "cbShowTier3";
+            this.cbShowTier3.Ripple = true;
+            this.cbShowTier3.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier3.TabIndex = 10;
+            this.cbShowTier3.Text = " ";
+            this.cbShowTier3.UseVisualStyleBackColor = true;
+            this.cbShowTier3.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(34, 51);
+            this.label15.Margin = new System.Windows.Forms.Padding(5);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(71, 17);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Exibir tier II";
+            // 
+            // cbShowTier2
+            // 
+            this.cbShowTier2.AutoSize = true;
+            this.cbShowTier2.Checked = true;
+            this.cbShowTier2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier2.Depth = 0;
+            this.cbShowTier2.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier2.Location = new System.Drawing.Point(5, 44);
+            this.cbShowTier2.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier2.Name = "cbShowTier2";
+            this.cbShowTier2.Ripple = true;
+            this.cbShowTier2.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier2.TabIndex = 8;
+            this.cbShowTier2.Text = " ";
+            this.cbShowTier2.UseVisualStyleBackColor = true;
+            this.cbShowTier2.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(34, 23);
+            this.label16.Margin = new System.Windows.Forms.Padding(5);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(68, 17);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Exibir tier I";
+            // 
+            // cbShowTier1
+            // 
+            this.cbShowTier1.AutoSize = true;
+            this.cbShowTier1.Checked = true;
+            this.cbShowTier1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier1.Depth = 0;
+            this.cbShowTier1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier1.Location = new System.Drawing.Point(5, 16);
+            this.cbShowTier1.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier1.Name = "cbShowTier1";
+            this.cbShowTier1.Ripple = true;
+            this.cbShowTier1.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier1.TabIndex = 2;
+            this.cbShowTier1.Text = " ";
+            this.cbShowTier1.UseVisualStyleBackColor = true;
+            this.cbShowTier1.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel21.Location = new System.Drawing.Point(168, 2);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(2, 253);
+            this.panel21.TabIndex = 3;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel22.Location = new System.Drawing.Point(0, 2);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(2, 253);
+            this.panel22.TabIndex = 2;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel23.Location = new System.Drawing.Point(0, 255);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(170, 2);
+            this.panel23.TabIndex = 1;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(0, 0);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(170, 2);
+            this.panel24.TabIndex = 0;
+            // 
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
@@ -994,6 +1256,191 @@
             // 
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(34, 107);
+            this.label21.Margin = new System.Windows.Forms.Padding(5);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(76, 17);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Exibir tier IV";
+            // 
+            // cbShowTier4
+            // 
+            this.cbShowTier4.AutoSize = true;
+            this.cbShowTier4.Checked = true;
+            this.cbShowTier4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier4.Depth = 0;
+            this.cbShowTier4.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier4.Location = new System.Drawing.Point(5, 100);
+            this.cbShowTier4.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier4.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier4.Name = "cbShowTier4";
+            this.cbShowTier4.Ripple = true;
+            this.cbShowTier4.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier4.TabIndex = 12;
+            this.cbShowTier4.Text = " ";
+            this.cbShowTier4.UseVisualStyleBackColor = true;
+            this.cbShowTier4.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(34, 135);
+            this.label22.Margin = new System.Windows.Forms.Padding(5);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 17);
+            this.label22.TabIndex = 15;
+            this.label22.Text = "Exibir tier V";
+            // 
+            // cbShowTier5
+            // 
+            this.cbShowTier5.AutoSize = true;
+            this.cbShowTier5.Checked = true;
+            this.cbShowTier5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier5.Depth = 0;
+            this.cbShowTier5.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier5.Location = new System.Drawing.Point(5, 128);
+            this.cbShowTier5.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier5.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier5.Name = "cbShowTier5";
+            this.cbShowTier5.Ripple = true;
+            this.cbShowTier5.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier5.TabIndex = 14;
+            this.cbShowTier5.Text = " ";
+            this.cbShowTier5.UseVisualStyleBackColor = true;
+            this.cbShowTier5.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(34, 163);
+            this.label23.Margin = new System.Windows.Forms.Padding(5);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(76, 17);
+            this.label23.TabIndex = 17;
+            this.label23.Text = "Exibir tier VI";
+            // 
+            // cbShowTier6
+            // 
+            this.cbShowTier6.AutoSize = true;
+            this.cbShowTier6.Checked = true;
+            this.cbShowTier6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier6.Depth = 0;
+            this.cbShowTier6.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier6.Location = new System.Drawing.Point(5, 156);
+            this.cbShowTier6.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier6.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier6.Name = "cbShowTier6";
+            this.cbShowTier6.Ripple = true;
+            this.cbShowTier6.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier6.TabIndex = 16;
+            this.cbShowTier6.Text = " ";
+            this.cbShowTier6.UseVisualStyleBackColor = true;
+            this.cbShowTier6.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(34, 191);
+            this.label24.Margin = new System.Windows.Forms.Padding(5);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 17);
+            this.label24.TabIndex = 19;
+            this.label24.Text = "Exibir tier VII";
+            // 
+            // cbShowTier7
+            // 
+            this.cbShowTier7.AutoSize = true;
+            this.cbShowTier7.Checked = true;
+            this.cbShowTier7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier7.Depth = 0;
+            this.cbShowTier7.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier7.Location = new System.Drawing.Point(5, 184);
+            this.cbShowTier7.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier7.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier7.Name = "cbShowTier7";
+            this.cbShowTier7.Ripple = true;
+            this.cbShowTier7.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier7.TabIndex = 18;
+            this.cbShowTier7.Text = " ";
+            this.cbShowTier7.UseVisualStyleBackColor = true;
+            this.cbShowTier7.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(34, 219);
+            this.label25.Margin = new System.Windows.Forms.Padding(5);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 17);
+            this.label25.TabIndex = 21;
+            this.label25.Text = "Exibir tier VIII";
+            // 
+            // cbShowTier8
+            // 
+            this.cbShowTier8.AutoSize = true;
+            this.cbShowTier8.Checked = true;
+            this.cbShowTier8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier8.Depth = 0;
+            this.cbShowTier8.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier8.Location = new System.Drawing.Point(5, 212);
+            this.cbShowTier8.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier8.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier8.Name = "cbShowTier8";
+            this.cbShowTier8.Ripple = true;
+            this.cbShowTier8.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier8.TabIndex = 20;
+            this.cbShowTier8.Text = " ";
+            this.cbShowTier8.UseVisualStyleBackColor = true;
+            this.cbShowTier8.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(34, 151);
+            this.label18.Margin = new System.Windows.Forms.Padding(5);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(98, 17);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Exibir coletaveis";
+            // 
+            // cbShowHarvestable
+            // 
+            this.cbShowHarvestable.AutoSize = true;
+            this.cbShowHarvestable.Checked = true;
+            this.cbShowHarvestable.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowHarvestable.Depth = 0;
+            this.cbShowHarvestable.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowHarvestable.Location = new System.Drawing.Point(5, 144);
+            this.cbShowHarvestable.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowHarvestable.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowHarvestable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowHarvestable.Name = "cbShowHarvestable";
+            this.cbShowHarvestable.Ripple = true;
+            this.cbShowHarvestable.Size = new System.Drawing.Size(30, 30);
+            this.cbShowHarvestable.TabIndex = 12;
+            this.cbShowHarvestable.Text = " ";
+            this.cbShowHarvestable.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
@@ -1019,11 +1466,15 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosY)).EndInit();
-            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.pTierList.ResumeLayout(false);
+            this.pTierList.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1032,7 +1483,6 @@
 
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel1;
@@ -1089,12 +1539,42 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel16;
         public System.Windows.Forms.Panel pCbDisplayOptions;
         public MaterialSkin.Controls.MaterialRadioButton cbName;
         public MaterialSkin.Controls.MaterialRadioButton cbNone;
         public MaterialSkin.Controls.MaterialRadioButton cbAlliance;
         public MaterialSkin.Controls.MaterialRadioButton cbGuild;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel pTierList;
+        private System.Windows.Forms.Label label14;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier3;
+        private System.Windows.Forms.Label label15;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier2;
+        private System.Windows.Forms.Label label16;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier1;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Label label23;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier6;
+        private System.Windows.Forms.Label label22;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier5;
+        private System.Windows.Forms.Label label21;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier4;
+        private System.Windows.Forms.Label label24;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier7;
+        private System.Windows.Forms.Label label25;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowTier8;
+        private System.Windows.Forms.Label label18;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowHarvestable;
     }
 }
 
