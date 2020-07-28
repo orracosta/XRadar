@@ -47,6 +47,19 @@ namespace AlbionRadar
             s.showTier7 = form.cbShowTier7.Checked;
             s.showTier8 = form.cbShowTier8.Checked;
 
+            //Resources
+            s.mobFilterFibra = form.cbMobFilterFibra.Checked;
+            s.mobFilterPedra = form.cbMobFilterPedra.Checked;
+            s.mobFilterPelego = form.cbMobFilterPelego.Checked;
+            s.mobFilterMinerio = form.cbMobFilterMinerio.Checked;
+            s.mobFilterMadeira = form.cbMobFilterMadeira.Checked;
+
+            s.resourceFilterFibra = form.cbResourceFilterFibra.Checked;
+            s.resourceFilterPedra = form.cbResourceFilterPedra.Checked;
+            s.resourceFilterPelego = form.cbResourceFilterPelego.Checked;
+            s.resourceFilterMinerio = form.cbResourceFilterMinerio.Checked;
+            s.resourceFilterMadeira = form.cbResourceFilterMadeira.Checked;
+
             s.Save();
 
         }
@@ -80,6 +93,19 @@ namespace AlbionRadar
             form.cbShowTier6.Checked = s.showTier6;
             form.cbShowTier7.Checked = s.showTier7;
             form.cbShowTier8.Checked = s.showTier8;
+
+            //Resources
+            form.cbMobFilterFibra.Checked = s.mobFilterFibra;
+            form.cbMobFilterPedra.Checked = s.mobFilterPedra;
+            form.cbMobFilterPelego.Checked = s.mobFilterPelego;
+            form.cbMobFilterMinerio.Checked = s.mobFilterMinerio;
+            form.cbMobFilterMadeira.Checked = s.mobFilterMadeira;
+
+            form.cbResourceFilterFibra.Checked = s.resourceFilterFibra;
+            form.cbResourceFilterPedra.Checked = s.resourceFilterPedra;
+            form.cbResourceFilterPelego.Checked = s.resourceFilterPelego;
+            form.cbResourceFilterMinerio.Checked = s.resourceFilterMinerio;
+            form.cbResourceFilterMadeira.Checked = s.resourceFilterMadeira;
         }
 
         public static void needBeepSound(String guild, String alliance)

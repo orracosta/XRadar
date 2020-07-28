@@ -15,6 +15,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Globalization;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -153,13 +154,24 @@ namespace AlbionRadar
                             if (h == null)
                                 continue;
 
-                            if (h.Size == 0) continue;
+                            if (h.Size == 0) 
+                                continue;
+
+                            TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
 
                             String cbName = "cbShowTier" + h.Tier;
-                            var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                .FirstOrDefault(r => r.Name == cbName).Checked;
+                            String cbNameFilter = "cbResourceFilter" + myTI.ToTitleCase(h.getMapInfo());
 
-                            if (!canShowTier)
+                            var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                .FirstOrDefault(r => r.Name == cbName);
+
+                            var canShowResource = this.pFilterResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                .FirstOrDefault(r => r.Name == cbNameFilter);
+
+                            if (canShowTier != null && !canShowTier.Checked)
+                                continue;
+
+                            if (canShowResource != null && !canShowResource.Checked)
                                 continue;
 
                             String iconName = h.getMapInfo() + "_" + h.Charges;
@@ -189,13 +201,6 @@ namespace AlbionRadar
                             Single hX = -1 * m.PosX + localX;
                             Single hY = m.PosY - localY;
 
-                            /*g.TranslateTransform(hX, hY);
-                            g.RotateTransform(135f);
-
-                            g.DrawString(m.TypeId.ToString(), font, Brushes.White, 2, -5);
-
-                            g.RotateTransform(-135f);
-                            g.TranslateTransform(-hX, -hY);*/
 
                             if (cbShowMobs.Checked)
                             {
@@ -205,12 +210,21 @@ namespace AlbionRadar
 
                             if(cbShowHarvestable.Checked && m.MobInfo != null)
                             {
+                                TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
+
                                 String cbName = "cbShowTier" + m.MobInfo.Tier;
+                                String cbNameFilter = "cbMobFilter" + myTI.ToTitleCase(m.MobInfo.getMapInfo(m.TypeId));
 
                                 var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                    .FirstOrDefault(r => r.Name == cbName).Checked;
+                                    .FirstOrDefault(r => r.Name == cbName);
 
-                                if (!canShowTier)
+                                var canShowResource = this.pFilterMobResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                    .FirstOrDefault(r => r.Name == cbNameFilter);
+
+                                if (canShowTier != null && !canShowTier.Checked)
+                                    continue;
+
+                                if (canShowResource != null && !canShowResource.Checked)
                                     continue;
 
                                 String iconName =  m.MobInfo.getMapInfo(m.TypeId) + "_" + m.EnchantmentLevel;
@@ -460,5 +474,15 @@ namespace AlbionRadar
         }
 
         #endregion
+
+        private void exportAllysButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void importAllysButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

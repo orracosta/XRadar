@@ -50,6 +50,8 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cbShowHarvestable = new MaterialSkin.Controls.MaterialCheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbShowMobs = new MaterialSkin.Controls.MaterialCheckBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -94,12 +96,22 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
+            this.pFilterMobResource = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.pTierList = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cbShowTier8 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.cbShowTier7 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cbShowTier6 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cbShowTier5 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cbShowTier4 = new MaterialSkin.Controls.MaterialCheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cbShowTier3 = new MaterialSkin.Controls.MaterialCheckBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -112,18 +124,32 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.label21 = new System.Windows.Forms.Label();
-            this.cbShowTier4 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.cbShowTier5 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cbShowTier6 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.cbShowTier7 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.cbShowTier8 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.cbShowHarvestable = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cbMobFilterPelego = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cbMobFilterMinerio = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.cbMobFilterPedra = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.cbMobFilterFibra = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pFilterResource = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.cbResourceFilterPelego = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.cbResourceFilterMinerio = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cbResourceFilterPedra = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cbResourceFilterFibra = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.cbMobFilterMadeira = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.cbResourceFilterMadeira = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -134,8 +160,9 @@
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel25.SuspendLayout();
+            this.pFilterMobResource.SuspendLayout();
             this.pTierList.SuspendLayout();
+            this.pFilterResource.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -424,6 +451,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 184);
             this.panel1.TabIndex = 0;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(34, 151);
+            this.label18.Margin = new System.Windows.Forms.Padding(5);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(98, 17);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Exibir coletaveis";
+            // 
+            // cbShowHarvestable
+            // 
+            this.cbShowHarvestable.AutoSize = true;
+            this.cbShowHarvestable.Checked = true;
+            this.cbShowHarvestable.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowHarvestable.Depth = 0;
+            this.cbShowHarvestable.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowHarvestable.Location = new System.Drawing.Point(5, 144);
+            this.cbShowHarvestable.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowHarvestable.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowHarvestable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowHarvestable.Name = "cbShowHarvestable";
+            this.cbShowHarvestable.Ripple = true;
+            this.cbShowHarvestable.Size = new System.Drawing.Size(30, 30);
+            this.cbShowHarvestable.TabIndex = 12;
+            this.cbShowHarvestable.Text = " ";
+            this.cbShowHarvestable.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -822,6 +879,7 @@
             this.exportAllysButton.TabIndex = 8;
             this.exportAllysButton.Text = "Exportar";
             this.exportAllysButton.UseVisualStyleBackColor = true;
+            this.exportAllysButton.Click += new System.EventHandler(this.exportAllysButton_Click);
             // 
             // importAllysButton
             // 
@@ -837,6 +895,7 @@
             this.importAllysButton.TabIndex = 7;
             this.importAllysButton.Text = "Importar";
             this.importAllysButton.UseVisualStyleBackColor = true;
+            this.importAllysButton.Click += new System.EventHandler(this.importAllysButton_Click);
             // 
             // label5
             // 
@@ -996,9 +1055,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.pFilterResource);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.panel25);
+            this.tabPage2.Controls.Add(this.pFilterMobResource);
             this.tabPage2.Controls.Add(this.pTierList);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -1017,9 +1078,9 @@
             this.label17.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.label17.Name = "label17";
             this.label17.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label17.Size = new System.Drawing.Size(49, 17);
+            this.label17.Size = new System.Drawing.Size(71, 17);
             this.label17.TabIndex = 13;
-            this.label17.Text = "Mobs";
+            this.label17.Text = "Monstros";
             // 
             // label13
             // 
@@ -1034,18 +1095,28 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "Tier de Items";
             // 
-            // panel25
+            // pFilterMobResource
             // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel25.Controls.Add(this.panel26);
-            this.panel25.Controls.Add(this.panel27);
-            this.panel25.Controls.Add(this.panel28);
-            this.panel25.Controls.Add(this.panel29);
-            this.panel25.Location = new System.Drawing.Point(189, 10);
-            this.panel25.Margin = new System.Windows.Forms.Padding(10);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(170, 175);
-            this.panel25.TabIndex = 12;
+            this.pFilterMobResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pFilterMobResource.Controls.Add(this.label33);
+            this.pFilterMobResource.Controls.Add(this.cbMobFilterMadeira);
+            this.pFilterMobResource.Controls.Add(this.label20);
+            this.pFilterMobResource.Controls.Add(this.cbMobFilterPelego);
+            this.pFilterMobResource.Controls.Add(this.label26);
+            this.pFilterMobResource.Controls.Add(this.cbMobFilterMinerio);
+            this.pFilterMobResource.Controls.Add(this.label27);
+            this.pFilterMobResource.Controls.Add(this.cbMobFilterPedra);
+            this.pFilterMobResource.Controls.Add(this.label28);
+            this.pFilterMobResource.Controls.Add(this.cbMobFilterFibra);
+            this.pFilterMobResource.Controls.Add(this.panel26);
+            this.pFilterMobResource.Controls.Add(this.panel27);
+            this.pFilterMobResource.Controls.Add(this.panel28);
+            this.pFilterMobResource.Controls.Add(this.panel29);
+            this.pFilterMobResource.Location = new System.Drawing.Point(189, 10);
+            this.pFilterMobResource.Margin = new System.Windows.Forms.Padding(10);
+            this.pFilterMobResource.Name = "pFilterMobResource";
+            this.pFilterMobResource.Size = new System.Drawing.Size(170, 122);
+            this.pFilterMobResource.TabIndex = 12;
             // 
             // panel26
             // 
@@ -1053,7 +1124,7 @@
             this.panel26.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel26.Location = new System.Drawing.Point(168, 2);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(2, 171);
+            this.panel26.Size = new System.Drawing.Size(2, 118);
             this.panel26.TabIndex = 3;
             // 
             // panel27
@@ -1062,14 +1133,14 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel27.Location = new System.Drawing.Point(0, 2);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(2, 171);
+            this.panel27.Size = new System.Drawing.Size(2, 118);
             this.panel27.TabIndex = 2;
             // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel28.Location = new System.Drawing.Point(0, 173);
+            this.panel28.Location = new System.Drawing.Point(0, 120);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(170, 2);
             this.panel28.TabIndex = 1;
@@ -1111,6 +1182,161 @@
             this.pTierList.Name = "pTierList";
             this.pTierList.Size = new System.Drawing.Size(170, 257);
             this.pTierList.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(34, 219);
+            this.label25.Margin = new System.Windows.Forms.Padding(5);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 17);
+            this.label25.TabIndex = 21;
+            this.label25.Text = "Exibir tier VIII";
+            // 
+            // cbShowTier8
+            // 
+            this.cbShowTier8.AutoSize = true;
+            this.cbShowTier8.Checked = true;
+            this.cbShowTier8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier8.Depth = 0;
+            this.cbShowTier8.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier8.Location = new System.Drawing.Point(5, 212);
+            this.cbShowTier8.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier8.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier8.Name = "cbShowTier8";
+            this.cbShowTier8.Ripple = true;
+            this.cbShowTier8.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier8.TabIndex = 20;
+            this.cbShowTier8.Text = " ";
+            this.cbShowTier8.UseVisualStyleBackColor = true;
+            this.cbShowTier8.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(34, 191);
+            this.label24.Margin = new System.Windows.Forms.Padding(5);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 17);
+            this.label24.TabIndex = 19;
+            this.label24.Text = "Exibir tier VII";
+            // 
+            // cbShowTier7
+            // 
+            this.cbShowTier7.AutoSize = true;
+            this.cbShowTier7.Checked = true;
+            this.cbShowTier7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier7.Depth = 0;
+            this.cbShowTier7.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier7.Location = new System.Drawing.Point(5, 184);
+            this.cbShowTier7.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier7.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier7.Name = "cbShowTier7";
+            this.cbShowTier7.Ripple = true;
+            this.cbShowTier7.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier7.TabIndex = 18;
+            this.cbShowTier7.Text = " ";
+            this.cbShowTier7.UseVisualStyleBackColor = true;
+            this.cbShowTier7.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(34, 163);
+            this.label23.Margin = new System.Windows.Forms.Padding(5);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(76, 17);
+            this.label23.TabIndex = 17;
+            this.label23.Text = "Exibir tier VI";
+            // 
+            // cbShowTier6
+            // 
+            this.cbShowTier6.AutoSize = true;
+            this.cbShowTier6.Checked = true;
+            this.cbShowTier6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier6.Depth = 0;
+            this.cbShowTier6.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier6.Location = new System.Drawing.Point(5, 156);
+            this.cbShowTier6.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier6.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier6.Name = "cbShowTier6";
+            this.cbShowTier6.Ripple = true;
+            this.cbShowTier6.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier6.TabIndex = 16;
+            this.cbShowTier6.Text = " ";
+            this.cbShowTier6.UseVisualStyleBackColor = true;
+            this.cbShowTier6.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(34, 135);
+            this.label22.Margin = new System.Windows.Forms.Padding(5);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 17);
+            this.label22.TabIndex = 15;
+            this.label22.Text = "Exibir tier V";
+            // 
+            // cbShowTier5
+            // 
+            this.cbShowTier5.AutoSize = true;
+            this.cbShowTier5.Checked = true;
+            this.cbShowTier5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier5.Depth = 0;
+            this.cbShowTier5.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier5.Location = new System.Drawing.Point(5, 128);
+            this.cbShowTier5.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier5.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier5.Name = "cbShowTier5";
+            this.cbShowTier5.Ripple = true;
+            this.cbShowTier5.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier5.TabIndex = 14;
+            this.cbShowTier5.Text = " ";
+            this.cbShowTier5.UseVisualStyleBackColor = true;
+            this.cbShowTier5.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(34, 107);
+            this.label21.Margin = new System.Windows.Forms.Padding(5);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(76, 17);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Exibir tier IV";
+            // 
+            // cbShowTier4
+            // 
+            this.cbShowTier4.AutoSize = true;
+            this.cbShowTier4.Checked = true;
+            this.cbShowTier4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowTier4.Depth = 0;
+            this.cbShowTier4.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowTier4.Location = new System.Drawing.Point(5, 100);
+            this.cbShowTier4.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowTier4.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowTier4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowTier4.Name = "cbShowTier4";
+            this.cbShowTier4.Ripple = true;
+            this.cbShowTier4.Size = new System.Drawing.Size(30, 30);
+            this.cbShowTier4.TabIndex = 12;
+            this.cbShowTier4.Text = " ";
+            this.cbShowTier4.UseVisualStyleBackColor = true;
+            this.cbShowTier4.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label14
             // 
@@ -1257,190 +1483,387 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // label21
+            // label20
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(34, 107);
-            this.label21.Margin = new System.Windows.Forms.Padding(5);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 17);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "Exibir tier IV";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(108, 51);
+            this.label20.Margin = new System.Windows.Forms.Padding(5);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(46, 17);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Pelego";
             // 
-            // cbShowTier4
+            // cbMobFilterPelego
             // 
-            this.cbShowTier4.AutoSize = true;
-            this.cbShowTier4.Checked = true;
-            this.cbShowTier4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowTier4.Depth = 0;
-            this.cbShowTier4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowTier4.Location = new System.Drawing.Point(5, 100);
-            this.cbShowTier4.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowTier4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowTier4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowTier4.Name = "cbShowTier4";
-            this.cbShowTier4.Ripple = true;
-            this.cbShowTier4.Size = new System.Drawing.Size(30, 30);
-            this.cbShowTier4.TabIndex = 12;
-            this.cbShowTier4.Text = " ";
-            this.cbShowTier4.UseVisualStyleBackColor = true;
-            this.cbShowTier4.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            this.cbMobFilterPelego.AutoSize = true;
+            this.cbMobFilterPelego.Checked = true;
+            this.cbMobFilterPelego.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMobFilterPelego.Depth = 0;
+            this.cbMobFilterPelego.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbMobFilterPelego.Location = new System.Drawing.Point(79, 44);
+            this.cbMobFilterPelego.Margin = new System.Windows.Forms.Padding(0);
+            this.cbMobFilterPelego.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbMobFilterPelego.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbMobFilterPelego.Name = "cbMobFilterPelego";
+            this.cbMobFilterPelego.Ripple = true;
+            this.cbMobFilterPelego.Size = new System.Drawing.Size(30, 30);
+            this.cbMobFilterPelego.TabIndex = 28;
+            this.cbMobFilterPelego.Text = " ";
+            this.cbMobFilterPelego.UseVisualStyleBackColor = true;
+            this.cbMobFilterPelego.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label22
+            // label26
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(34, 135);
-            this.label22.Margin = new System.Windows.Forms.Padding(5);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 17);
-            this.label22.TabIndex = 15;
-            this.label22.Text = "Exibir tier V";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(108, 23);
+            this.label26.Margin = new System.Windows.Forms.Padding(5);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(52, 17);
+            this.label26.TabIndex = 27;
+            this.label26.Text = "Minério";
             // 
-            // cbShowTier5
+            // cbMobFilterMinerio
             // 
-            this.cbShowTier5.AutoSize = true;
-            this.cbShowTier5.Checked = true;
-            this.cbShowTier5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowTier5.Depth = 0;
-            this.cbShowTier5.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowTier5.Location = new System.Drawing.Point(5, 128);
-            this.cbShowTier5.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowTier5.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowTier5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowTier5.Name = "cbShowTier5";
-            this.cbShowTier5.Ripple = true;
-            this.cbShowTier5.Size = new System.Drawing.Size(30, 30);
-            this.cbShowTier5.TabIndex = 14;
-            this.cbShowTier5.Text = " ";
-            this.cbShowTier5.UseVisualStyleBackColor = true;
-            this.cbShowTier5.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            this.cbMobFilterMinerio.AutoSize = true;
+            this.cbMobFilterMinerio.Checked = true;
+            this.cbMobFilterMinerio.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMobFilterMinerio.Depth = 0;
+            this.cbMobFilterMinerio.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbMobFilterMinerio.Location = new System.Drawing.Point(79, 16);
+            this.cbMobFilterMinerio.Margin = new System.Windows.Forms.Padding(0);
+            this.cbMobFilterMinerio.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbMobFilterMinerio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbMobFilterMinerio.Name = "cbMobFilterMinerio";
+            this.cbMobFilterMinerio.Ripple = true;
+            this.cbMobFilterMinerio.Size = new System.Drawing.Size(30, 30);
+            this.cbMobFilterMinerio.TabIndex = 26;
+            this.cbMobFilterMinerio.Text = " ";
+            this.cbMobFilterMinerio.UseVisualStyleBackColor = true;
+            this.cbMobFilterMinerio.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label23
+            // label27
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(34, 163);
-            this.label23.Margin = new System.Windows.Forms.Padding(5);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(76, 17);
-            this.label23.TabIndex = 17;
-            this.label23.Text = "Exibir tier VI";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(34, 51);
+            this.label27.Margin = new System.Windows.Forms.Padding(5);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(41, 17);
+            this.label27.TabIndex = 25;
+            this.label27.Text = "Pedra";
             // 
-            // cbShowTier6
+            // cbMobFilterPedra
             // 
-            this.cbShowTier6.AutoSize = true;
-            this.cbShowTier6.Checked = true;
-            this.cbShowTier6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowTier6.Depth = 0;
-            this.cbShowTier6.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowTier6.Location = new System.Drawing.Point(5, 156);
-            this.cbShowTier6.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowTier6.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowTier6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowTier6.Name = "cbShowTier6";
-            this.cbShowTier6.Ripple = true;
-            this.cbShowTier6.Size = new System.Drawing.Size(30, 30);
-            this.cbShowTier6.TabIndex = 16;
-            this.cbShowTier6.Text = " ";
-            this.cbShowTier6.UseVisualStyleBackColor = true;
-            this.cbShowTier6.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            this.cbMobFilterPedra.AutoSize = true;
+            this.cbMobFilterPedra.Checked = true;
+            this.cbMobFilterPedra.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMobFilterPedra.Depth = 0;
+            this.cbMobFilterPedra.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbMobFilterPedra.Location = new System.Drawing.Point(5, 44);
+            this.cbMobFilterPedra.Margin = new System.Windows.Forms.Padding(0);
+            this.cbMobFilterPedra.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbMobFilterPedra.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbMobFilterPedra.Name = "cbMobFilterPedra";
+            this.cbMobFilterPedra.Ripple = true;
+            this.cbMobFilterPedra.Size = new System.Drawing.Size(30, 30);
+            this.cbMobFilterPedra.TabIndex = 24;
+            this.cbMobFilterPedra.Text = " ";
+            this.cbMobFilterPedra.UseVisualStyleBackColor = true;
+            this.cbMobFilterPedra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label24
+            // label28
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(34, 191);
-            this.label24.Margin = new System.Windows.Forms.Padding(5);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 17);
-            this.label24.TabIndex = 19;
-            this.label24.Text = "Exibir tier VII";
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(34, 23);
+            this.label28.Margin = new System.Windows.Forms.Padding(5);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(36, 17);
+            this.label28.TabIndex = 23;
+            this.label28.Text = "Fibra";
             // 
-            // cbShowTier7
+            // cbMobFilterFibra
             // 
-            this.cbShowTier7.AutoSize = true;
-            this.cbShowTier7.Checked = true;
-            this.cbShowTier7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowTier7.Depth = 0;
-            this.cbShowTier7.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowTier7.Location = new System.Drawing.Point(5, 184);
-            this.cbShowTier7.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowTier7.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowTier7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowTier7.Name = "cbShowTier7";
-            this.cbShowTier7.Ripple = true;
-            this.cbShowTier7.Size = new System.Drawing.Size(30, 30);
-            this.cbShowTier7.TabIndex = 18;
-            this.cbShowTier7.Text = " ";
-            this.cbShowTier7.UseVisualStyleBackColor = true;
-            this.cbShowTier7.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            this.cbMobFilterFibra.AutoSize = true;
+            this.cbMobFilterFibra.Checked = true;
+            this.cbMobFilterFibra.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMobFilterFibra.Depth = 0;
+            this.cbMobFilterFibra.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbMobFilterFibra.Location = new System.Drawing.Point(5, 16);
+            this.cbMobFilterFibra.Margin = new System.Windows.Forms.Padding(0);
+            this.cbMobFilterFibra.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbMobFilterFibra.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbMobFilterFibra.Name = "cbMobFilterFibra";
+            this.cbMobFilterFibra.Ripple = true;
+            this.cbMobFilterFibra.Size = new System.Drawing.Size(30, 30);
+            this.cbMobFilterFibra.TabIndex = 22;
+            this.cbMobFilterFibra.Text = " ";
+            this.cbMobFilterFibra.UseVisualStyleBackColor = true;
+            this.cbMobFilterFibra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label25
+            // label19
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(34, 219);
-            this.label25.Margin = new System.Windows.Forms.Padding(5);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(82, 17);
-            this.label25.TabIndex = 21;
-            this.label25.Text = "Exibir tier VIII";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(201, 136);
+            this.label19.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label19.Name = "label19";
+            this.label19.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label19.Size = new System.Drawing.Size(68, 17);
+            this.label19.TabIndex = 15;
+            this.label19.Text = "Recursos";
             // 
-            // cbShowTier8
+            // pFilterResource
             // 
-            this.cbShowTier8.AutoSize = true;
-            this.cbShowTier8.Checked = true;
-            this.cbShowTier8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowTier8.Depth = 0;
-            this.cbShowTier8.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowTier8.Location = new System.Drawing.Point(5, 212);
-            this.cbShowTier8.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowTier8.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowTier8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowTier8.Name = "cbShowTier8";
-            this.cbShowTier8.Ripple = true;
-            this.cbShowTier8.Size = new System.Drawing.Size(30, 30);
-            this.cbShowTier8.TabIndex = 20;
-            this.cbShowTier8.Text = " ";
-            this.cbShowTier8.UseVisualStyleBackColor = true;
-            this.cbShowTier8.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            this.pFilterResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pFilterResource.Controls.Add(this.label34);
+            this.pFilterResource.Controls.Add(this.label29);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterMadeira);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterPelego);
+            this.pFilterResource.Controls.Add(this.label30);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterMinerio);
+            this.pFilterResource.Controls.Add(this.label31);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterPedra);
+            this.pFilterResource.Controls.Add(this.label32);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterFibra);
+            this.pFilterResource.Controls.Add(this.panel25);
+            this.pFilterResource.Controls.Add(this.panel30);
+            this.pFilterResource.Controls.Add(this.panel31);
+            this.pFilterResource.Controls.Add(this.panel32);
+            this.pFilterResource.Location = new System.Drawing.Point(189, 145);
+            this.pFilterResource.Margin = new System.Windows.Forms.Padding(10);
+            this.pFilterResource.Name = "pFilterResource";
+            this.pFilterResource.Size = new System.Drawing.Size(170, 122);
+            this.pFilterResource.TabIndex = 14;
             // 
-            // label18
+            // label29
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(34, 151);
-            this.label18.Margin = new System.Windows.Forms.Padding(5);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 17);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Exibir coletaveis";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(108, 51);
+            this.label29.Margin = new System.Windows.Forms.Padding(5);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(46, 17);
+            this.label29.TabIndex = 29;
+            this.label29.Text = "Pelego";
             // 
-            // cbShowHarvestable
+            // cbResourceFilterPelego
             // 
-            this.cbShowHarvestable.AutoSize = true;
-            this.cbShowHarvestable.Checked = true;
-            this.cbShowHarvestable.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowHarvestable.Depth = 0;
-            this.cbShowHarvestable.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowHarvestable.Location = new System.Drawing.Point(5, 144);
-            this.cbShowHarvestable.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowHarvestable.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowHarvestable.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowHarvestable.Name = "cbShowHarvestable";
-            this.cbShowHarvestable.Ripple = true;
-            this.cbShowHarvestable.Size = new System.Drawing.Size(30, 30);
-            this.cbShowHarvestable.TabIndex = 12;
-            this.cbShowHarvestable.Text = " ";
-            this.cbShowHarvestable.UseVisualStyleBackColor = true;
+            this.cbResourceFilterPelego.AutoSize = true;
+            this.cbResourceFilterPelego.Checked = true;
+            this.cbResourceFilterPelego.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterPelego.Depth = 0;
+            this.cbResourceFilterPelego.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterPelego.Location = new System.Drawing.Point(79, 44);
+            this.cbResourceFilterPelego.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterPelego.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterPelego.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterPelego.Name = "cbResourceFilterPelego";
+            this.cbResourceFilterPelego.Ripple = true;
+            this.cbResourceFilterPelego.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterPelego.TabIndex = 28;
+            this.cbResourceFilterPelego.Text = " ";
+            this.cbResourceFilterPelego.UseVisualStyleBackColor = true;
+            this.cbResourceFilterPelego.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(108, 23);
+            this.label30.Margin = new System.Windows.Forms.Padding(5);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(52, 17);
+            this.label30.TabIndex = 27;
+            this.label30.Text = "Minério";
+            // 
+            // cbResourceFilterMinerio
+            // 
+            this.cbResourceFilterMinerio.AutoSize = true;
+            this.cbResourceFilterMinerio.Checked = true;
+            this.cbResourceFilterMinerio.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterMinerio.Depth = 0;
+            this.cbResourceFilterMinerio.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterMinerio.Location = new System.Drawing.Point(79, 16);
+            this.cbResourceFilterMinerio.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterMinerio.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterMinerio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterMinerio.Name = "cbResourceFilterMinerio";
+            this.cbResourceFilterMinerio.Ripple = true;
+            this.cbResourceFilterMinerio.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterMinerio.TabIndex = 26;
+            this.cbResourceFilterMinerio.Text = " ";
+            this.cbResourceFilterMinerio.UseVisualStyleBackColor = true;
+            this.cbResourceFilterMinerio.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(34, 51);
+            this.label31.Margin = new System.Windows.Forms.Padding(5);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 17);
+            this.label31.TabIndex = 25;
+            this.label31.Text = "Pedra";
+            // 
+            // cbResourceFilterPedra
+            // 
+            this.cbResourceFilterPedra.AutoSize = true;
+            this.cbResourceFilterPedra.Checked = true;
+            this.cbResourceFilterPedra.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterPedra.Depth = 0;
+            this.cbResourceFilterPedra.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterPedra.Location = new System.Drawing.Point(5, 44);
+            this.cbResourceFilterPedra.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterPedra.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterPedra.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterPedra.Name = "cbResourceFilterPedra";
+            this.cbResourceFilterPedra.Ripple = true;
+            this.cbResourceFilterPedra.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterPedra.TabIndex = 24;
+            this.cbResourceFilterPedra.Text = " ";
+            this.cbResourceFilterPedra.UseVisualStyleBackColor = true;
+            this.cbResourceFilterPedra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(34, 23);
+            this.label32.Margin = new System.Windows.Forms.Padding(5);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(36, 17);
+            this.label32.TabIndex = 23;
+            this.label32.Text = "Fibra";
+            // 
+            // cbResourceFilterFibra
+            // 
+            this.cbResourceFilterFibra.AutoSize = true;
+            this.cbResourceFilterFibra.Checked = true;
+            this.cbResourceFilterFibra.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterFibra.Depth = 0;
+            this.cbResourceFilterFibra.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterFibra.Location = new System.Drawing.Point(5, 16);
+            this.cbResourceFilterFibra.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterFibra.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterFibra.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterFibra.Name = "cbResourceFilterFibra";
+            this.cbResourceFilterFibra.Ripple = true;
+            this.cbResourceFilterFibra.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterFibra.TabIndex = 22;
+            this.cbResourceFilterFibra.Text = " ";
+            this.cbResourceFilterFibra.UseVisualStyleBackColor = true;
+            this.cbResourceFilterFibra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel25.Location = new System.Drawing.Point(168, 2);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(2, 118);
+            this.panel25.TabIndex = 3;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel30.Location = new System.Drawing.Point(0, 2);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(2, 118);
+            this.panel30.TabIndex = 2;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel31.Location = new System.Drawing.Point(0, 120);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(170, 2);
+            this.panel31.TabIndex = 1;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(170, 2);
+            this.panel32.TabIndex = 0;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(34, 81);
+            this.label33.Margin = new System.Windows.Forms.Padding(5);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(56, 17);
+            this.label33.TabIndex = 31;
+            this.label33.Text = "Madeira";
+            // 
+            // cbMobFilterMadeira
+            // 
+            this.cbMobFilterMadeira.AutoSize = true;
+            this.cbMobFilterMadeira.Checked = true;
+            this.cbMobFilterMadeira.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMobFilterMadeira.Depth = 0;
+            this.cbMobFilterMadeira.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbMobFilterMadeira.Location = new System.Drawing.Point(5, 74);
+            this.cbMobFilterMadeira.Margin = new System.Windows.Forms.Padding(0);
+            this.cbMobFilterMadeira.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbMobFilterMadeira.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbMobFilterMadeira.Name = "cbMobFilterMadeira";
+            this.cbMobFilterMadeira.Ripple = true;
+            this.cbMobFilterMadeira.Size = new System.Drawing.Size(30, 30);
+            this.cbMobFilterMadeira.TabIndex = 30;
+            this.cbMobFilterMadeira.Text = " ";
+            this.cbMobFilterMadeira.UseVisualStyleBackColor = true;
+            this.cbMobFilterMadeira.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(34, 80);
+            this.label34.Margin = new System.Windows.Forms.Padding(5);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(56, 17);
+            this.label34.TabIndex = 33;
+            this.label34.Text = "Madeira";
+            // 
+            // cbResourceFilterMadeira
+            // 
+            this.cbResourceFilterMadeira.AutoSize = true;
+            this.cbResourceFilterMadeira.Checked = true;
+            this.cbResourceFilterMadeira.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterMadeira.Depth = 0;
+            this.cbResourceFilterMadeira.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterMadeira.Location = new System.Drawing.Point(5, 73);
+            this.cbResourceFilterMadeira.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterMadeira.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterMadeira.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterMadeira.Name = "cbResourceFilterMadeira";
+            this.cbResourceFilterMadeira.Ripple = true;
+            this.cbResourceFilterMadeira.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterMadeira.TabIndex = 32;
+            this.cbResourceFilterMadeira.Text = " ";
+            this.cbResourceFilterMadeira.UseVisualStyleBackColor = true;
+            this.cbResourceFilterMadeira.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // Options
             // 
@@ -1472,9 +1895,12 @@
             this.panel6.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.panel25.ResumeLayout(false);
+            this.pFilterMobResource.ResumeLayout(false);
+            this.pFilterMobResource.PerformLayout();
             this.pTierList.ResumeLayout(false);
             this.pTierList.PerformLayout();
+            this.pFilterResource.ResumeLayout(false);
+            this.pFilterResource.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1547,7 +1973,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel pFilterMobResource;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel28;
@@ -1575,6 +2001,32 @@
         public MaterialSkin.Controls.MaterialCheckBox cbShowTier8;
         private System.Windows.Forms.Label label18;
         public MaterialSkin.Controls.MaterialCheckBox cbShowHarvestable;
+        private System.Windows.Forms.Label label20;
+        public MaterialSkin.Controls.MaterialCheckBox cbMobFilterPelego;
+        private System.Windows.Forms.Label label26;
+        public MaterialSkin.Controls.MaterialCheckBox cbMobFilterMinerio;
+        private System.Windows.Forms.Label label27;
+        public MaterialSkin.Controls.MaterialCheckBox cbMobFilterPedra;
+        private System.Windows.Forms.Label label28;
+        public MaterialSkin.Controls.MaterialCheckBox cbMobFilterFibra;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Panel pFilterResource;
+        private System.Windows.Forms.Label label29;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterPelego;
+        private System.Windows.Forms.Label label30;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMinerio;
+        private System.Windows.Forms.Label label31;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterPedra;
+        private System.Windows.Forms.Label label32;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterFibra;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Label label33;
+        public MaterialSkin.Controls.MaterialCheckBox cbMobFilterMadeira;
+        private System.Windows.Forms.Label label34;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMadeira;
     }
 }
 

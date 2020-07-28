@@ -238,5 +238,125 @@ namespace AlbionRadar {
                 this["showHarvestable"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool mobFilterFibra {
+            get {
+                return ((bool)(this["mobFilterFibra"]));
+            }
+            set {
+                this["mobFilterFibra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool mobFilterPedra {
+            get {
+                return ((bool)(this["mobFilterPedra"]));
+            }
+            set {
+                this["mobFilterPedra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool mobFilterPelego {
+            get {
+                return ((bool)(this["mobFilterPelego"]));
+            }
+            set {
+                this["mobFilterPelego"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool mobFilterMinerio {
+            get {
+                return ((bool)(this["mobFilterMinerio"]));
+            }
+            set {
+                this["mobFilterMinerio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool resourceFilterFibra {
+            get {
+                return ((bool)(this["resourceFilterFibra"]));
+            }
+            set {
+                this["resourceFilterFibra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool resourceFilterPedra {
+            get {
+                return ((bool)(this["resourceFilterPedra"]));
+            }
+            set {
+                this["resourceFilterPedra"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool resourceFilterPelego {
+            get {
+                return ((bool)(this["resourceFilterPelego"]));
+            }
+            set {
+                this["resourceFilterPelego"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool resourceFilterMinerio {
+            get {
+                return ((bool)(this["resourceFilterMinerio"]));
+            }
+            set {
+                this["resourceFilterMinerio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool mobFilterMadeira {
+            get {
+                return ((bool)(this["mobFilterMadeira"]));
+            }
+            set {
+                this["mobFilterMadeira"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool resourceFilterMadeira {
+            get {
+                return ((bool)(this["resourceFilterMadeira"]));
+            }
+            set {
+                this["resourceFilterMadeira"] = value;
+            }
+        }
     }
 }
