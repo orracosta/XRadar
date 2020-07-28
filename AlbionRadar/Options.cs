@@ -79,14 +79,14 @@ namespace AlbionRadar
         
         #region RadarMap
         SolidBrush[] harvestBrushes = {
-                new SolidBrush(Color.FromArgb(255, 52, 52, 52)),
-                new SolidBrush(Color.FromArgb(255, 99, 83, 73)),
-                new SolidBrush(Color.FromArgb(255, 63, 81, 49)),
-                new SolidBrush(Color.FromArgb(255, 48, 54, 98)),
-                new SolidBrush(Color.FromArgb(255, 119, 34, 26)),
-                new SolidBrush(Color.FromArgb(255, 192, 107, 42)),
-                new SolidBrush(Color.FromArgb(255, 209, 176, 68)),
-                new SolidBrush(Color.FromArgb(255, 208, 208, 208))
+                new SolidBrush(Color.FromArgb(200, 52, 52, 52)),
+                new SolidBrush(Color.FromArgb(200, 99, 83, 73)),
+                new SolidBrush(Color.FromArgb(200, 63, 81, 49)),
+                new SolidBrush(Color.FromArgb(200, 48, 54, 98)),
+                new SolidBrush(Color.FromArgb(200, 119, 34, 26)),
+                new SolidBrush(Color.FromArgb(200, 192, 107, 42)),
+                new SolidBrush(Color.FromArgb(200, 209, 176, 68)),
+                new SolidBrush(Color.FromArgb(200, 208, 208, 208))
             };
 
         private void drawerThread()
@@ -155,8 +155,8 @@ namespace AlbionRadar
                             if (h == null)
                                 continue;
 
-                            /*if (h.Size == 0) 
-                                continue;*/
+                            if (h.Size == 0) 
+                                continue;
 
                             TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
 
