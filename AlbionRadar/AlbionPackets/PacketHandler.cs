@@ -58,17 +58,19 @@ namespace AlbionRadar
                 case EventCodes.evNewHarvestableObject:
                     onNewHarvestableObject(parameters);
                     break;
-                case EventCodes.evNewSimpleHarvestableObject:
-                    break;
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);
                     break;
                 case EventCodes.evJoinFinished:
                     onJoinFinished(parameters);
                     break;
+                case EventCodes.evHarvestableChangeState:
+                    onHarvestableChangeState(parameters);
+                    break;
                 default:
                     break;
             }
+            //debugEventInfo(parameters, evCode, "OnEvent");
 
         }
         protected override void OnRequest(byte operationCode, Dictionary<byte, object> parameters)
@@ -88,7 +90,8 @@ namespace AlbionRadar
                 default:
                     break;
             }
-            debugOperationInfo(parameters, opCode, "OnRequest");
+
+            //debugOperationInfo(parameters, opCode, "OnRequest");
 
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
@@ -99,7 +102,7 @@ namespace AlbionRadar
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
             OperationCodes opCode = (OperationCodes)iCode;
-            debugOperationInfo(parameters, opCode, "OnResponse");
+            //debugOperationInfo(parameters, opCode, "OnResponse");
 
         }
         private void debugEventInfo(Dictionary<byte, object> parameters, EventCodes evCode, String typeInfo)
@@ -114,7 +117,7 @@ namespace AlbionRadar
             string jsonPacket;
             jsonPacket = JsonConvert.SerializeObject(parameters.ToArray());
 
-            //Debug.WriteLine("[{0}]{1}: {2}", typeInfo, opCode, jsonPacket);
+            Debug.WriteLine("[{0}]{1}: {2}", typeInfo, opCode, jsonPacket);
         }
 
         #region OnEvents
@@ -226,6 +229,17 @@ namespace AlbionRadar
             byte size = 0;
 
             harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, size);
+        }
+        private void onHarvestableChangeState(Dictionary<byte, object> parameters)
+        {
+            int id = int.Parse(parameters[0].ToString());
+            byte charges = byte.Parse(parameters[2].ToString());
+            byte amount = 0;
+
+            if (parameters.ContainsKey(1))
+                amount = byte.Parse(parameters[1].ToString());
+
+            harvestableHandler.UpdateHarvestable(id, amount, charges);
         }
         private void onMobChangeState(Dictionary<byte, object> parameters)
         {

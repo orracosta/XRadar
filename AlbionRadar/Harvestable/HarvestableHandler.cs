@@ -22,10 +22,6 @@ namespace AlbionRadar
             {
                 harvestableList.Add(h);
             }
-            else 
-            {
-                UpdateHarvestable(h.Id, h.Charges);
-            }
         }
         public bool RemoveHarvestable(int id)
         {
@@ -37,14 +33,14 @@ namespace AlbionRadar
         }
 
 
-        internal void UpdateHarvestable(int harvestableId, byte charges)
+        internal void UpdateHarvestable(int harvestableId, byte size, byte charges)
         {
             Harvestable h = harvestableList.FirstOrDefault(x => x.Id == harvestableId);
             if(h != null)
             {
+                h.Size = size;
                 h.Charges = charges;
             }
-
         }
     }
 }
