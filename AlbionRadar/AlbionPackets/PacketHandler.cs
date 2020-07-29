@@ -143,6 +143,9 @@ namespace AlbionRadar
         }
         private void onNewMob(Dictionary<byte, object> parameters)
         {
+            if (!parameters.ContainsKey(13))
+                return;
+
             int id = int.Parse(parameters[0].ToString());
             int typeId = int.Parse(parameters[1].ToString());
             Single[] loc = (Single[])parameters[8];
