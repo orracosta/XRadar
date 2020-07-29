@@ -1,5 +1,6 @@
 ﻿using AlbionRada.Player;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,37 +10,38 @@ namespace AlbionRadar
 {
     public class PlayerHandler
     {
-        private List<Player> playersInRange;
-        private List<int> mountsInRange;
+        private ConcurrentDictionary<int, Player> playersInRange;
+        private ConcurrentDictionary<int, int> mountsInRange;
         private Player localPlayer;
 
         public PlayerHandler()
         {
-            playersInRange = new List<Player>();
-            mountsInRange = new List<int>();
+            playersInRange = new ConcurrentDictionary<int, Player>();
+            mountsInRange = new ConcurrentDictionary<int, int>();
             localPlayer = new Player();
         }
         public void AddPlayer(Single posX, Single posY, string nickname, string guild, string alliance, int id)
         {
-            Player p = new Player(posX, posY, nickname, guild, alliance, id);
-
-            if (!playersInRange.Contains(p))
-                playersInRange.Add(p);
+            if (!playersInRange.Any(x => x.Key == id))
+            {
+                Player p = new Player(posX, posY, nickname, guild, alliance, id);
+                playersInRange.TryAdd(id, p);
+            }
         }
         public void AddMount(int id)
         {
-            if (!mountsInRange.Contains(id))
-                mountsInRange.Add(id);
+            if (!mountsInRange.Any(x => x.Key == id))
+                mountsInRange.TryAdd(id, id);
         }
         public bool RemovePlayer(int id)
         {
-            return playersInRange.RemoveAll(x => x.Id == id) > 0;
+            return playersInRange.TryRemove(id, out _);
         }
         public bool RemoveMount(int id)
         {
-            return mountsInRange.RemoveAll(x => x == id) > 0;
+            return mountsInRange.TryRemove(id, out _);
         }
-        internal List<Player> PlayersInRange
+        internal ConcurrentDictionary<int, Player> PlayersInRange
         {
             get { return playersInRange; }
         }
@@ -65,17 +67,13 @@ namespace AlbionRadar
         }
         internal bool UpdatePlayerPosition(int id, float posX, float posY)
         {
-            var player = playersInRange.FirstOrDefault(x => x.Id == id);
-            if (player != null)
-            {
-                player.PosX = posX;
-                player.PosY = posY;
+            if (!playersInRange.Any(x => x.Key == id))
+                return false;
 
-                return true;
+            playersInRange[id].PosX = posX;
+            playersInRange[id].PosY = posY;
 
-            }
-
-            return false;
+            return true;
         }
         public Single localPlayerPosX()
         {
@@ -87,7 +85,7 @@ namespace AlbionRadar
         }
         public bool PlayerIsMounted(int id)
         {
-            return mountsInRange.Contains(id);
+            return mountsInRange.Any(x => x.Key == id);
         }
     }
 }

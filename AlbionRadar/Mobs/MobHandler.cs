@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,46 +9,46 @@ namespace AlbionRadar
 {
     class MobsHandler
     {
-        private List<Mob> mobsList;
+        private ConcurrentDictionary<int, Mob> mobsList;
 
         public MobsHandler()
         {
-            mobsList = new List<Mob>();
+            mobsList = new ConcurrentDictionary<int, Mob>();
         }
 
         public void AddMob(int id, int typeId, Single posX, Single posY, int health)
         {
-            Mob h = new Mob(id, typeId, posX, posY, health, 0);
-            if (!mobsList.Contains(h))
-                mobsList.Add(h);
+            if (!mobsList.Any(x => x.Key == id))
+            {
+                Mob h = new Mob(id, typeId, posX, posY, health, 0);
+                mobsList.TryAdd(id, h);
+            }
         }
         public bool RemoveMob(int id)
         {
-            return mobsList.RemoveAll(x => x.Id == id) > 0;
+            return mobsList.TryRemove(id, out _);
         }
 
-        internal List<Mob> MobList
+        internal ConcurrentDictionary<int, Mob> MobList
         {
             get { return mobsList; }
         }
         internal bool UpdateMobPosition(int id, float posX, float posY)
         {
-            Mob mob = mobsList.FirstOrDefault(x => x.Id == id);
-            if(mob != null)
-            {
-                mob.PosX = posX;
-                mob.PosY = posY;
+            if (!mobsList.Any(x => x.Key == id))
+                return false;
 
-                return true;
-            }
+            mobsList[id].PosX = posX;
+            mobsList[id].PosY = posY;
 
-            return false;
+            return true;
         }
         internal void UpdateMobEnchantmentLevel(int mobId, byte enchantmentLevel)
         {
-            Mob m = MobList.FirstOrDefault(x => x.Id == mobId);
-            if(m != null)
-                m.EnchantmentLevel = enchantmentLevel;
+            if (!mobsList.Any(x => x.Key == mobId))
+                return;
+
+            mobsList[mobId].EnchantmentLevel = enchantmentLevel;
         }
     }
 }

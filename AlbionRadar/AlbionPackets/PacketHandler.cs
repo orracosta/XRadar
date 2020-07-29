@@ -58,6 +58,9 @@ namespace AlbionRadar
                 case EventCodes.evNewHarvestableObject:
                     onNewHarvestableObject(parameters);
                     break;
+                case EventCodes.evNewSimpleHarvestableObject:
+                    onNewSimpleHarvestableObject(parameters);
+                    break;
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);
                     break;
@@ -69,12 +72,10 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evRandomDungeonPositionInfo:
                 case EventCodes.evNewRandomDungeonExit:
-                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
                 default:
                     break;
             }
-            //debugEventInfo(parameters, evCode, "OnEvent");
 
         }
         protected override void OnRequest(byte operationCode, Dictionary<byte, object> parameters)
@@ -215,12 +216,12 @@ namespace AlbionRadar
 
                 for (int i = 0; i < a0.Count; i++)
                 {
-                    int id = (int)a0.ElementAt(i);
-                    byte type = (byte)a1[i];
-                    byte tier = (byte)a2[i];
+                    int id = int.Parse(a0.ElementAt(i).ToString());
+                    byte type = byte.Parse(a1[i].ToString());
+                    byte tier = byte.Parse(a2[i].ToString());
                     Single posX = (Single)a3[i * 2];
                     Single posY = (Single)a3[i * 2 + 1];
-                    Byte count = (byte)a4[i];
+                    Byte count = byte.Parse(a4[i].ToString());
                     byte charges = (byte)0;
                     harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, count);
                 }
@@ -240,9 +241,16 @@ namespace AlbionRadar
             Single posX = (Single)loc[0];
             Single posY = (Single)loc[1];
             byte charges = byte.Parse(parameters[11].ToString());
-            byte size = 0;
+            byte size = (byte)0;
+
+            if (parameters.ContainsKey(10))
+                size = byte.Parse(parameters[10].ToString());
 
             harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, size);
+        }
+        private void onNewSimpleHarvestableObject(Dictionary<byte, object> parameters)
+        {
+            int id = int.Parse(parameters[0].ToString());
         }
         private void onHarvestableChangeState(Dictionary<byte, object> parameters)
         {

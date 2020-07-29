@@ -133,32 +133,12 @@ namespace AlbionRadar
                     localX = playerHandler.localPlayerPosX();
                     localY = playerHandler.localPlayerPosY();
 
-                    List<Harvestable> hList = new List<Harvestable>();
-                    List<Mob> mList = new List<Mob>();
-                    List<Player> pList = new List<Player>();
-
-                    lock (this.playerHandler.PlayersInRange)
-                    {
-                        try { hList = this.harvestableHandler.HarvestableList.ToList(); }
-                        catch (Exception e2) { }
-                    }
-
-                    lock (this.mobsHandler.MobList)
-                    {
-                        try { mList = this.mobsHandler.MobList.ToList(); }
-                        catch (Exception e2) { }
-                    }
-
-                    lock (this.playerHandler.PlayersInRange)
-                    {
-                        try { pList = this.playerHandler.PlayersInRange.ToList(); }
-                        catch (Exception e2) { }
-                    }
-
                     if (cbShowHarvestable.Checked)
                     {
-                        foreach (Harvestable h in hList)
+                        foreach (var item in harvestableHandler.HarvestableList)
                         {
+                            var h = item.Value;
+
                             if (h == null)
                                 continue;
 
@@ -201,8 +181,10 @@ namespace AlbionRadar
 
                     if (cbShowMobs.Checked || cbShowHarvestable.Checked)
                     {
-                        foreach (Mob m in mList)
+                        foreach (var item in mobsHandler.MobList)
                         {
+                            var m = item.Value;
+
                             if (m == null)
                                 continue;
 
@@ -252,10 +234,9 @@ namespace AlbionRadar
 
                     if (cbShowPlayers.Checked)
                     {
-                        foreach (Player p in pList)
+                        foreach (var item in playerHandler.PlayersInRange)
                         {
-                            if (p == null)
-                                continue;
+                            var p = item.Value;
 
                             Single hX = -1 * p.PosX + localX;
                             Single hY = p.PosY - localY;
@@ -380,19 +361,9 @@ namespace AlbionRadar
             lbGuildsInRange.Items.CopyTo(guildsList, 0);
             lbAlliancesInRange.Items.CopyTo(allianceList, 0);
 
-            List<Player> pList = new List<Player>();
-            lock (this.playerHandler.PlayersInRange)
-            {
-                try
-                {
-                    pList = this.playerHandler.PlayersInRange.ToList();
-                }
-                catch (Exception e2) { }
-            }
-
             foreach (String guild in guildsList)
             {
-                if (pList.FirstOrDefault(x => x.Guild == guild) != null)
+                if (playerHandler.PlayersInRange.Any(x => x.Value.Guild == guild))
                     continue;
                 else
                     lbGuildsInRange.Items.Remove(guild);
@@ -400,20 +371,22 @@ namespace AlbionRadar
 
             foreach (String alliance in allianceList)
             {
-                if (pList.FirstOrDefault(x => x.Alliance == alliance) != null)
+                if (playerHandler.PlayersInRange.Any(x => x.Value.Alliance == alliance))
                     continue;
                 else
                     lbAlliancesInRange.Items.Remove(alliance);
             }
 
-            pList.ForEach(p =>
+            foreach (var item in playerHandler.PlayersInRange)
             {
+                var p = item.Value;
+
                 if (p.Guild.Length > 0 && !lbGuildsInRange.Items.Contains(p.Guild) && !lbTrustGuilds.Items.Contains(p.Guild))
                     lbGuildsInRange.Items.Add(p.Guild);
 
                 if (p.Alliance.Length > 0 && !lbAlliancesInRange.Items.Contains(p.Alliance) && !lbTrustAlliances.Items.Contains(p.Alliance))
                     lbAlliancesInRange.Items.Add(p.Alliance);
-            });
+            }
         }
 
         private void addGuild_Click(object sender, EventArgs e)
