@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,39 +9,40 @@ namespace AlbionRadar
 {
     class HarvestableHandler
     {
-        private List<Harvestable> harvestableList;
+        private ConcurrentDictionary<int, Harvestable> harvestableList;
 
         public HarvestableHandler()
         {
-            harvestableList = new List<Harvestable>();
+            harvestableList = new ConcurrentDictionary<int, Harvestable>();
         }
 
         public void AddHarvestable(int id, byte type, byte tier, Single posX, Single posY, byte charges, byte size)
         {
-            Harvestable h = new Harvestable(id, type, tier, posX, posY, charges, size);
-            if (!harvestableList.Contains(h))
+            if (!harvestableList.Any(x => x.Key == id))
             {
-                harvestableList.Add(h);
+                Harvestable h = new Harvestable(id, type, tier, posX, posY, charges, size);
+                harvestableList.TryAdd(id, h);
+            }
+            else 
+            {
+                UpdateHarvestable(id, size, charges);
             }
         }
         public bool RemoveHarvestable(int id)
         {
-            return harvestableList.RemoveAll(x => x.Id == id) > 0;
+            return harvestableList.TryRemove(id, out _);
         }
-        internal List<Harvestable> HarvestableList
+        internal ConcurrentDictionary<int, Harvestable> HarvestableList
         {
             get { return harvestableList; }
         }
-
-
         internal void UpdateHarvestable(int harvestableId, byte size, byte charges)
         {
-            Harvestable h = harvestableList.FirstOrDefault(x => x.Id == harvestableId);
-            if(h != null)
-            {
-                h.Size = size;
-                h.Charges = charges;
-            }
+            if (!harvestableList.Any(x => x.Key == harvestableId))
+                return;
+
+            harvestableList[harvestableId].Size = size;
+            harvestableList[harvestableId].Charges = charges;
         }
     }
 }
