@@ -189,18 +189,18 @@ namespace AlbionRadar
         }
         private void onNewSimpleHarvestableObjectList(Dictionary<byte, object> parameters)
         {
-            List<int> a0 = new List<int>();
+            List<int> idList = new List<int>();
             if (parameters[0].GetType() == typeof(Byte[]))
             {
                 Byte[] typeListByte = (Byte[])parameters[0]; //list of types
                 foreach (Byte b in typeListByte)
-                    a0.Add(b);
+                    idList.Add(b);
             }
             else if (parameters[0].GetType() == typeof(Int16[]))
             {
                 Int16[] typeListByte = (Int16[])parameters[0]; //list of types
                 foreach (Int16 b in typeListByte)
-                    a0.Add(b);
+                    idList.Add(b);
             }
             else
             {
@@ -209,20 +209,21 @@ namespace AlbionRadar
             }
             try
             {
-                Byte[] a1 = (Byte[])parameters[1]; //list of types
-                Byte[] a2 = (Byte[])parameters[2]; //list of tiers
-                Single[] a3 = (Single[])parameters[3]; //list of positions X1, Y1, X2, Y2 ...
-                Byte[] a4 = (Byte[])parameters[4]; //size
+                Byte[] typesList = (Byte[])parameters[1]; //list of types
+                Byte[] tiersList = (Byte[])parameters[2]; //list of tiers
+                Single[] posList = (Single[])parameters[3]; //list of positions X1, Y1, X2, Y2 ...
+                Byte[] sizeList = (Byte[])parameters[4]; //size
 
-                for (int i = 0; i < a0.Count; i++)
+                for (int i = 0; i < idList.Count; i++)
                 {
-                    int id = int.Parse(a0.ElementAt(i).ToString());
-                    byte type = byte.Parse(a1[i].ToString());
-                    byte tier = byte.Parse(a2[i].ToString());
-                    Single posX = (Single)a3[i * 2];
-                    Single posY = (Single)a3[i * 2 + 1];
-                    Byte count = byte.Parse(a4[i].ToString());
+                    int id = int.Parse(idList.ElementAt(i).ToString());
+                    byte type = byte.Parse(typesList[i].ToString());
+                    byte tier = byte.Parse(tiersList[i].ToString());
+                    Single posX = (Single)posList[i * 2];
+                    Single posY = (Single)posList[i * 2 + 1];
+                    Byte count = byte.Parse(sizeList[i].ToString());
                     byte charges = (byte)0;
+
                     harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, count);
                 }
 
@@ -240,11 +241,14 @@ namespace AlbionRadar
             Single[] loc = (Single[])parameters[8];
             Single posX = (Single)loc[0];
             Single posY = (Single)loc[1];
-            byte charges = byte.Parse(parameters[11].ToString());
+            byte charges = (byte)0;
             byte size = (byte)0;
 
             if (parameters.ContainsKey(10))
                 size = byte.Parse(parameters[10].ToString());
+
+            if (parameters.ContainsKey(11))
+                charges = byte.Parse(parameters[11].ToString());
 
             harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, size);
         }
@@ -254,25 +258,25 @@ namespace AlbionRadar
         }
         private void onHarvestableChangeState(Dictionary<byte, object> parameters)
         {
-            int id;
-            byte charges;
+            int id = int.Parse(parameters[0].ToString());
+            byte charges = 0;
             byte amount = 0;
-
-            if (!int.TryParse(parameters[0].ToString(), out id)) return;
-            if (!byte.TryParse(parameters[2].ToString(), out charges)) return;
 
             if (parameters.ContainsKey(1))
                 amount = byte.Parse(parameters[1].ToString());
+
+            if (parameters.ContainsKey(2))
+                charges = byte.Parse(parameters[2].ToString());
 
             harvestableHandler.UpdateHarvestable(id, amount, charges);
         }
         private void onMobChangeState(Dictionary<byte, object> parameters)
         {
-            int mobId = 0;
+            int mobId = int.Parse(parameters[0].ToString());
             byte enchantmentLevel = 0;
 
-            if (!int.TryParse(parameters[0].ToString(), out mobId)) return;
-            if (!byte.TryParse(parameters[1].ToString(), out enchantmentLevel)) return;
+            if (parameters.ContainsKey(1))
+                enchantmentLevel = byte.Parse(parameters[1].ToString());
 
             mobsHandler.UpdateMobEnchantmentLevel(mobId, enchantmentLevel);
 
