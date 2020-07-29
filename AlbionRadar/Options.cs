@@ -51,15 +51,8 @@ namespace AlbionRadar
             radarMap.Left = (int)nRadarPosX.Value;
             radarMap.Top = (int)nRadarPosY.Value;
         }
-        protected override void OnLoad(EventArgs e)
-        {
-            //this.Font = new Font(this.Font.FontFamily, this.Font.SizeInPoints * 125 / 96);
-            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            base.OnLoad(e);
-        }
         private void Options_Load(object sender, EventArgs e)
         {
-
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler);
 
             try

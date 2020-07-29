@@ -176,7 +176,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(380, 337);
+            this.materialTabControl1.Size = new System.Drawing.Size(442, 337);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -188,7 +188,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(372, 311);
+            this.tabPage1.Size = new System.Drawing.Size(434, 311);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Geral";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -198,7 +198,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(201, 1);
+            this.label8.Location = new System.Drawing.Point(233, 1);
             this.label8.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
@@ -223,10 +223,10 @@
             this.pCbDisplayOptions.Controls.Add(this.panel18);
             this.pCbDisplayOptions.Controls.Add(this.panel19);
             this.pCbDisplayOptions.Controls.Add(this.panel20);
-            this.pCbDisplayOptions.Location = new System.Drawing.Point(189, 10);
+            this.pCbDisplayOptions.Location = new System.Drawing.Point(221, 10);
             this.pCbDisplayOptions.Margin = new System.Windows.Forms.Padding(10);
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
-            this.pCbDisplayOptions.Size = new System.Drawing.Size(170, 184);
+            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 184);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
             // label7
@@ -382,7 +382,7 @@
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel17.Location = new System.Drawing.Point(168, 2);
+            this.panel17.Location = new System.Drawing.Point(198, 2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(2, 180);
             this.panel17.TabIndex = 3;
@@ -402,7 +402,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel19.Location = new System.Drawing.Point(0, 182);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(170, 2);
+            this.panel19.Size = new System.Drawing.Size(200, 2);
             this.panel19.TabIndex = 1;
             // 
             // panel20
@@ -411,7 +411,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(170, 2);
+            this.panel20.Size = new System.Drawing.Size(200, 2);
             this.panel20.TabIndex = 0;
             // 
             // label1
@@ -449,7 +449,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 184);
+            this.panel1.Size = new System.Drawing.Size(200, 184);
             this.panel1.TabIndex = 0;
             // 
             // label18
@@ -661,7 +661,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(168, 2);
+            this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(2, 180);
             this.panel5.TabIndex = 3;
@@ -681,7 +681,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 182);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(170, 2);
+            this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
             // 
             // panel2
@@ -690,7 +690,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(170, 2);
+            this.panel2.Size = new System.Drawing.Size(200, 2);
             this.panel2.TabIndex = 0;
             // 
             // tabPage3
@@ -704,7 +704,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(372, 311);
+            this.tabPage3.Size = new System.Drawing.Size(434, 311);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Guildas e Alianças";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -738,7 +738,7 @@
             this.panel11.Location = new System.Drawing.Point(13, 150);
             this.panel11.Margin = new System.Windows.Forms.Padding(10);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(346, 120);
+            this.panel11.Size = new System.Drawing.Size(408, 120);
             this.panel11.TabIndex = 9;
             // 
             // removeAlliance
@@ -751,7 +751,7 @@
             this.removeAlliance.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.removeAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.removeAlliance.IconSize = 24;
-            this.removeAlliance.Location = new System.Drawing.Point(158, 75);
+            this.removeAlliance.Location = new System.Drawing.Point(189, 75);
             this.removeAlliance.Name = "removeAlliance";
             this.removeAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.removeAlliance.Rotation = 0D;
@@ -770,7 +770,7 @@
             this.addAlliance.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.addAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.addAlliance.IconSize = 24;
-            this.addAlliance.Location = new System.Drawing.Point(158, 25);
+            this.addAlliance.Location = new System.Drawing.Point(189, 25);
             this.addAlliance.Name = "addAlliance";
             this.addAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.addAlliance.Rotation = 0D;
@@ -786,21 +786,21 @@
             this.lbTrustAlliances.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrustAlliances.ForeColor = System.Drawing.Color.White;
             this.lbTrustAlliances.FormattingEnabled = true;
-            this.lbTrustAlliances.Location = new System.Drawing.Point(201, 33);
+            this.lbTrustAlliances.Location = new System.Drawing.Point(232, 33);
             this.lbTrustAlliances.Name = "lbTrustAlliances";
-            this.lbTrustAlliances.Size = new System.Drawing.Size(130, 65);
+            this.lbTrustAlliances.Size = new System.Drawing.Size(160, 65);
             this.lbTrustAlliances.TabIndex = 9;
             // 
             // materialDivider5
             // 
             this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider5.Depth = 0;
-            this.materialDivider5.Location = new System.Drawing.Point(196, 25);
+            this.materialDivider5.Location = new System.Drawing.Point(227, 25);
             this.materialDivider5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
             this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider5.Name = "materialDivider5";
             this.materialDivider5.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider5.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider5.Size = new System.Drawing.Size(170, 80);
             this.materialDivider5.TabIndex = 10;
             this.materialDivider5.Text = "materialDivider5";
             // 
@@ -813,7 +813,7 @@
             this.lbAlliancesInRange.FormattingEnabled = true;
             this.lbAlliancesInRange.Location = new System.Drawing.Point(15, 33);
             this.lbAlliancesInRange.Name = "lbAlliancesInRange";
-            this.lbAlliancesInRange.Size = new System.Drawing.Size(130, 65);
+            this.lbAlliancesInRange.Size = new System.Drawing.Size(160, 65);
             this.lbAlliancesInRange.TabIndex = 4;
             // 
             // materialDivider6
@@ -825,7 +825,7 @@
             this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider6.Name = "materialDivider6";
             this.materialDivider6.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider6.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider6.Size = new System.Drawing.Size(170, 80);
             this.materialDivider6.TabIndex = 8;
             this.materialDivider6.Text = "materialDivider6";
             // 
@@ -833,7 +833,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel12.Location = new System.Drawing.Point(344, 2);
+            this.panel12.Location = new System.Drawing.Point(406, 2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(2, 116);
             this.panel12.TabIndex = 3;
@@ -853,7 +853,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel14.Location = new System.Drawing.Point(0, 118);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(346, 2);
+            this.panel14.Size = new System.Drawing.Size(408, 2);
             this.panel14.TabIndex = 1;
             // 
             // panel15
@@ -862,7 +862,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(346, 2);
+            this.panel15.Size = new System.Drawing.Size(408, 2);
             this.panel15.TabIndex = 0;
             // 
             // exportAllysButton
@@ -871,7 +871,7 @@
             this.exportAllysButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.exportAllysButton.Depth = 0;
             this.exportAllysButton.Icon = null;
-            this.exportAllysButton.Location = new System.Drawing.Point(269, 279);
+            this.exportAllysButton.Location = new System.Drawing.Point(331, 279);
             this.exportAllysButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.exportAllysButton.Name = "exportAllysButton";
             this.exportAllysButton.Primary = true;
@@ -887,7 +887,7 @@
             this.importAllysButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.importAllysButton.Depth = 0;
             this.importAllysButton.Icon = null;
-            this.importAllysButton.Location = new System.Drawing.Point(173, 279);
+            this.importAllysButton.Location = new System.Drawing.Point(235, 279);
             this.importAllysButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.importAllysButton.Name = "importAllysButton";
             this.importAllysButton.Primary = true;
@@ -926,7 +926,7 @@
             this.panel6.Location = new System.Drawing.Point(13, 10);
             this.panel6.Margin = new System.Windows.Forms.Padding(10);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(346, 120);
+            this.panel6.Size = new System.Drawing.Size(408, 120);
             this.panel6.TabIndex = 3;
             // 
             // removeGuild
@@ -939,7 +939,7 @@
             this.removeGuild.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.removeGuild.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.removeGuild.IconSize = 24;
-            this.removeGuild.Location = new System.Drawing.Point(158, 75);
+            this.removeGuild.Location = new System.Drawing.Point(189, 75);
             this.removeGuild.Name = "removeGuild";
             this.removeGuild.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.removeGuild.Rotation = 0D;
@@ -958,7 +958,7 @@
             this.addGuild.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.addGuild.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.addGuild.IconSize = 24;
-            this.addGuild.Location = new System.Drawing.Point(158, 25);
+            this.addGuild.Location = new System.Drawing.Point(189, 25);
             this.addGuild.Name = "addGuild";
             this.addGuild.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.addGuild.Rotation = 0D;
@@ -974,21 +974,21 @@
             this.lbTrustGuilds.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrustGuilds.ForeColor = System.Drawing.Color.White;
             this.lbTrustGuilds.FormattingEnabled = true;
-            this.lbTrustGuilds.Location = new System.Drawing.Point(201, 33);
+            this.lbTrustGuilds.Location = new System.Drawing.Point(232, 33);
             this.lbTrustGuilds.Name = "lbTrustGuilds";
-            this.lbTrustGuilds.Size = new System.Drawing.Size(130, 65);
+            this.lbTrustGuilds.Size = new System.Drawing.Size(160, 65);
             this.lbTrustGuilds.TabIndex = 9;
             // 
             // materialDivider4
             // 
             this.materialDivider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider4.Depth = 0;
-            this.materialDivider4.Location = new System.Drawing.Point(196, 25);
+            this.materialDivider4.Location = new System.Drawing.Point(227, 25);
             this.materialDivider4.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
             this.materialDivider4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider4.Name = "materialDivider4";
             this.materialDivider4.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider4.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider4.Size = new System.Drawing.Size(170, 80);
             this.materialDivider4.TabIndex = 10;
             this.materialDivider4.Text = "materialDivider4";
             // 
@@ -999,21 +999,21 @@
             this.lbGuildsInRange.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGuildsInRange.ForeColor = System.Drawing.Color.White;
             this.lbGuildsInRange.FormattingEnabled = true;
-            this.lbGuildsInRange.Location = new System.Drawing.Point(15, 33);
+            this.lbGuildsInRange.Location = new System.Drawing.Point(16, 33);
             this.lbGuildsInRange.Name = "lbGuildsInRange";
-            this.lbGuildsInRange.Size = new System.Drawing.Size(130, 65);
+            this.lbGuildsInRange.Size = new System.Drawing.Size(160, 65);
             this.lbGuildsInRange.TabIndex = 4;
             // 
             // materialDivider3
             // 
             this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider3.Depth = 0;
-            this.materialDivider3.Location = new System.Drawing.Point(10, 25);
+            this.materialDivider3.Location = new System.Drawing.Point(11, 25);
             this.materialDivider3.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
             this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider3.Name = "materialDivider3";
             this.materialDivider3.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider3.Size = new System.Drawing.Size(140, 80);
+            this.materialDivider3.Size = new System.Drawing.Size(170, 80);
             this.materialDivider3.TabIndex = 8;
             this.materialDivider3.Text = "materialDivider3";
             // 
@@ -1021,7 +1021,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(344, 2);
+            this.panel7.Location = new System.Drawing.Point(406, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(2, 116);
             this.panel7.TabIndex = 3;
@@ -1041,7 +1041,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 118);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(346, 2);
+            this.panel9.Size = new System.Drawing.Size(408, 2);
             this.panel9.TabIndex = 1;
             // 
             // panel10
@@ -1050,7 +1050,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(346, 2);
+            this.panel10.Size = new System.Drawing.Size(408, 2);
             this.panel10.TabIndex = 0;
             // 
             // tabPage2
@@ -1064,7 +1064,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(372, 311);
+            this.tabPage2.Size = new System.Drawing.Size(434, 311);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Coleta";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1074,7 +1074,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(201, 136);
+            this.label19.Location = new System.Drawing.Point(231, 136);
             this.label19.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.label19.Name = "label19";
             this.label19.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
@@ -1099,10 +1099,10 @@
             this.pFilterResource.Controls.Add(this.panel30);
             this.pFilterResource.Controls.Add(this.panel31);
             this.pFilterResource.Controls.Add(this.panel32);
-            this.pFilterResource.Location = new System.Drawing.Point(189, 145);
+            this.pFilterResource.Location = new System.Drawing.Point(221, 145);
             this.pFilterResource.Margin = new System.Windows.Forms.Padding(10);
             this.pFilterResource.Name = "pFilterResource";
-            this.pFilterResource.Size = new System.Drawing.Size(170, 122);
+            this.pFilterResource.Size = new System.Drawing.Size(200, 122);
             this.pFilterResource.TabIndex = 14;
             // 
             // label34
@@ -1122,7 +1122,7 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(108, 51);
+            this.label29.Location = new System.Drawing.Point(131, 51);
             this.label29.Margin = new System.Windows.Forms.Padding(5);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(46, 17);
@@ -1155,7 +1155,7 @@
             this.cbResourceFilterPelego.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbResourceFilterPelego.Depth = 0;
             this.cbResourceFilterPelego.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbResourceFilterPelego.Location = new System.Drawing.Point(79, 44);
+            this.cbResourceFilterPelego.Location = new System.Drawing.Point(102, 44);
             this.cbResourceFilterPelego.Margin = new System.Windows.Forms.Padding(0);
             this.cbResourceFilterPelego.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbResourceFilterPelego.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1172,7 +1172,7 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(108, 23);
+            this.label30.Location = new System.Drawing.Point(131, 23);
             this.label30.Margin = new System.Windows.Forms.Padding(5);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(52, 17);
@@ -1186,7 +1186,7 @@
             this.cbResourceFilterMinerio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbResourceFilterMinerio.Depth = 0;
             this.cbResourceFilterMinerio.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbResourceFilterMinerio.Location = new System.Drawing.Point(79, 16);
+            this.cbResourceFilterMinerio.Location = new System.Drawing.Point(102, 16);
             this.cbResourceFilterMinerio.Margin = new System.Windows.Forms.Padding(0);
             this.cbResourceFilterMinerio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbResourceFilterMinerio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1264,7 +1264,7 @@
             // 
             this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel25.Location = new System.Drawing.Point(168, 2);
+            this.panel25.Location = new System.Drawing.Point(198, 2);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(2, 118);
             this.panel25.TabIndex = 3;
@@ -1284,7 +1284,7 @@
             this.panel31.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel31.Location = new System.Drawing.Point(0, 120);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(170, 2);
+            this.panel31.Size = new System.Drawing.Size(200, 2);
             this.panel31.TabIndex = 1;
             // 
             // panel32
@@ -1293,7 +1293,7 @@
             this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel32.Location = new System.Drawing.Point(0, 0);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(170, 2);
+            this.panel32.Size = new System.Drawing.Size(200, 2);
             this.panel32.TabIndex = 0;
             // 
             // label17
@@ -1301,7 +1301,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(201, 1);
+            this.label17.Location = new System.Drawing.Point(231, 1);
             this.label17.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.label17.Name = "label17";
             this.label17.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
@@ -1339,10 +1339,10 @@
             this.pFilterMobResource.Controls.Add(this.panel27);
             this.pFilterMobResource.Controls.Add(this.panel28);
             this.pFilterMobResource.Controls.Add(this.panel29);
-            this.pFilterMobResource.Location = new System.Drawing.Point(189, 10);
+            this.pFilterMobResource.Location = new System.Drawing.Point(221, 10);
             this.pFilterMobResource.Margin = new System.Windows.Forms.Padding(10);
             this.pFilterMobResource.Name = "pFilterMobResource";
-            this.pFilterMobResource.Size = new System.Drawing.Size(170, 122);
+            this.pFilterMobResource.Size = new System.Drawing.Size(200, 122);
             this.pFilterMobResource.TabIndex = 12;
             // 
             // label33
@@ -1381,7 +1381,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(108, 51);
+            this.label20.Location = new System.Drawing.Point(131, 51);
             this.label20.Margin = new System.Windows.Forms.Padding(5);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(46, 17);
@@ -1395,7 +1395,7 @@
             this.cbMobFilterPelego.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbMobFilterPelego.Depth = 0;
             this.cbMobFilterPelego.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbMobFilterPelego.Location = new System.Drawing.Point(79, 44);
+            this.cbMobFilterPelego.Location = new System.Drawing.Point(102, 44);
             this.cbMobFilterPelego.Margin = new System.Windows.Forms.Padding(0);
             this.cbMobFilterPelego.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbMobFilterPelego.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1412,7 +1412,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(108, 23);
+            this.label26.Location = new System.Drawing.Point(131, 23);
             this.label26.Margin = new System.Windows.Forms.Padding(5);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(52, 17);
@@ -1426,7 +1426,7 @@
             this.cbMobFilterMinerio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbMobFilterMinerio.Depth = 0;
             this.cbMobFilterMinerio.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbMobFilterMinerio.Location = new System.Drawing.Point(79, 16);
+            this.cbMobFilterMinerio.Location = new System.Drawing.Point(102, 16);
             this.cbMobFilterMinerio.Margin = new System.Windows.Forms.Padding(0);
             this.cbMobFilterMinerio.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbMobFilterMinerio.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1504,7 +1504,7 @@
             // 
             this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel26.Location = new System.Drawing.Point(168, 2);
+            this.panel26.Location = new System.Drawing.Point(198, 2);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(2, 118);
             this.panel26.TabIndex = 3;
@@ -1524,7 +1524,7 @@
             this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel28.Location = new System.Drawing.Point(0, 120);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(170, 2);
+            this.panel28.Size = new System.Drawing.Size(200, 2);
             this.panel28.TabIndex = 1;
             // 
             // panel29
@@ -1533,7 +1533,7 @@
             this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel29.Location = new System.Drawing.Point(0, 0);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(170, 2);
+            this.panel29.Size = new System.Drawing.Size(200, 2);
             this.panel29.TabIndex = 0;
             // 
             // pTierList
@@ -1562,7 +1562,7 @@
             this.pTierList.Location = new System.Drawing.Point(13, 10);
             this.pTierList.Margin = new System.Windows.Forms.Padding(10);
             this.pTierList.Name = "pTierList";
-            this.pTierList.Size = new System.Drawing.Size(170, 257);
+            this.pTierList.Size = new System.Drawing.Size(200, 257);
             this.pTierList.TabIndex = 3;
             // 
             // label25
@@ -1817,7 +1817,7 @@
             // 
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel21.Location = new System.Drawing.Point(168, 2);
+            this.panel21.Location = new System.Drawing.Point(198, 2);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(2, 253);
             this.panel21.TabIndex = 3;
@@ -1837,7 +1837,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel23.Location = new System.Drawing.Point(0, 255);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(170, 2);
+            this.panel23.Size = new System.Drawing.Size(200, 2);
             this.panel23.TabIndex = 1;
             // 
             // panel24
@@ -1846,7 +1846,7 @@
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 0);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(170, 2);
+            this.panel24.Size = new System.Drawing.Size(200, 2);
             this.panel24.TabIndex = 0;
             // 
             // materialTabSelector1
@@ -1870,7 +1870,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(418, 465);
+            this.ClientSize = new System.Drawing.Size(480, 460);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
