@@ -19,9 +19,7 @@ namespace AlbionRadar
         {
             Mob h = new Mob(id, typeId, posX, posY, health, 0);
             if (!mobsList.Contains(h))
-            {
                 mobsList.Add(h);
-            }
         }
         public bool RemoveMob(int id)
         {
@@ -47,7 +45,9 @@ namespace AlbionRadar
         }
         internal void UpdateMobEnchantmentLevel(int mobId, byte enchantmentLevel)
         {
-            mobsList.First(x => x.Id == mobId).EnchantmentLevel = enchantmentLevel;
+            Mob m = MobList.FirstOrDefault(x => x.Id == mobId);
+            if(m != null)
+                m.EnchantmentLevel = enchantmentLevel;
         }
     }
 }

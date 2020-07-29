@@ -62,13 +62,20 @@ namespace AlbionRadar
 
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler);
 
-            Thread photonThread = new Thread(() => createListener());
-            photonThread.Priority = ThreadPriority.Highest;
-            photonThread.Start();
+            try
+            {
+                Thread photonThread = new Thread(() => createListener());
+                photonThread.Priority = ThreadPriority.Highest;
+                photonThread.Start();
 
-            Thread radarThread = new Thread(() => drawerThread());
-            radarThread.Priority = ThreadPriority.Highest;
-            radarThread.Start();
+                Thread radarThread = new Thread(() => drawerThread());
+                radarThread.Priority = ThreadPriority.Highest;
+                radarThread.Start();
+            }
+            catch (Exception ea)
+            {
+                Console.WriteLine(ea.ToString());
+            }
 
             AllyListTimer.Start();
         }
@@ -253,10 +260,10 @@ namespace AlbionRadar
                             Single hX = -1 * p.PosX + localX;
                             Single hY = p.PosY - localY;
 
-                            Brush playerBrush = !playerHandler.playerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
+                            Brush playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
 
                             if (lbTrustGuilds.Items.Contains(p.Guild) || lbTrustAlliances.Items.Contains(p.Alliance))
-                                playerBrush = !playerHandler.playerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
+                                playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
 
                             g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
 
@@ -514,10 +521,6 @@ namespace AlbionRadar
                             // Verifique a camada de link. Caso o adaptador não seja Ethernet, ignore.
                             if (communicator.DataLink.Kind != DataLinkKind.Ethernet)
                                 return;
-
-                            // Compile o filtro
-                            using (BerkeleyPacketFilter filter = communicator.CreateFilter("ip and udp"))
-                                communicator.SetFilter(filter);
 
                             communicator.ReceivePackets(0, PacketHandler);
                         }

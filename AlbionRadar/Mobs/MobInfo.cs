@@ -62,7 +62,7 @@ namespace AlbionRadar
         }
         public string getMapInfo(int id)
         {
-            MobInfo mob = mobsInfo.Find(x => x.id == id);
+            MobInfo mob = mobsInfo.FirstOrDefault(x => x.id == id);
 
             if (mob == null)
                 return "ERR";

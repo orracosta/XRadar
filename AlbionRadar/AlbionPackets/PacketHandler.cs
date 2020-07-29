@@ -67,6 +67,10 @@ namespace AlbionRadar
                 case EventCodes.evHarvestableChangeState:
                     onHarvestableChangeState(parameters);
                     break;
+                case EventCodes.evRandomDungeonPositionInfo:
+                case EventCodes.evNewRandomDungeonExit:
+                    debugEventInfo(parameters, evCode, "OnEvent");
+                    break;
                 default:
                     break;
             }
@@ -102,6 +106,16 @@ namespace AlbionRadar
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
             OperationCodes opCode = (OperationCodes)iCode;
+
+            switch (opCode)
+            {
+                case OperationCodes.opJoin:
+                    onJoin(parameters);
+                    break;
+                default:
+                    break;
+            }
+
             //debugOperationInfo(parameters, opCode, "OnResponse");
 
         }
@@ -232,9 +246,12 @@ namespace AlbionRadar
         }
         private void onHarvestableChangeState(Dictionary<byte, object> parameters)
         {
-            int id = int.Parse(parameters[0].ToString());
-            byte charges = byte.Parse(parameters[2].ToString());
+            int id;
+            byte charges;
             byte amount = 0;
+
+            if (!int.TryParse(parameters[0].ToString(), out id)) return;
+            if (!byte.TryParse(parameters[2].ToString(), out charges)) return;
 
             if (parameters.ContainsKey(1))
                 amount = byte.Parse(parameters[1].ToString());
@@ -259,6 +276,20 @@ namespace AlbionRadar
         }
         #endregion
 
+        #region OnResponses
+        private void onJoin(Dictionary<byte, object> parameters)
+        {
+            if (!parameters.ContainsKey(9))
+                return;
+
+            Single[] location = (Single[])parameters[9];
+            Single posX = Single.Parse(location[0].ToString());
+            Single posY = Single.Parse(location[1].ToString());
+
+            playerHandler.UpdateLocalPlayerPosition(posX, posY);
+        }
+        #endregion
+
         #region OnRequests
         private void onLocalPlayerMovementRequest(Dictionary<byte, object> parameters)
         {
@@ -275,14 +306,8 @@ namespace AlbionRadar
             int id = int.Parse(parameters[0].ToString());
             bool mounted = false;
 
-            foreach (KeyValuePair<byte, object> param in parameters)
-            {
-                if (param.Key == 8)
-                {
-                    mounted = true;
-                }
-
-            }
+            if (parameters.ContainsKey(8))
+                mounted = true;
 
             playerHandler.UpdatePlayerMount(id, mounted);
         }

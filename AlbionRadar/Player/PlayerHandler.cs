@@ -28,12 +28,8 @@ namespace AlbionRadar
         }
         public void AddMount(int id)
         {
-
             if (!mountsInRange.Contains(id))
-            {
                 mountsInRange.Add(id);
-            }
-
         }
         public bool RemovePlayer(int id)
         {
@@ -89,7 +85,7 @@ namespace AlbionRadar
         {
             return localPlayer.PosY;
         }
-        public bool playerIsMounted(int id)
+        public bool PlayerIsMounted(int id)
         {
             return mountsInRange.Contains(id);
         }
