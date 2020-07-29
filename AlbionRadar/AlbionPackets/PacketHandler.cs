@@ -107,16 +107,6 @@ namespace AlbionRadar
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
             OperationCodes opCode = (OperationCodes)iCode;
-
-            switch (opCode)
-            {
-                case OperationCodes.opJoin:
-                    onJoin(parameters);
-                    break;
-                default:
-                    break;
-            }
-
             //debugOperationInfo(parameters, opCode, "OnResponse");
 
         }
@@ -285,20 +275,6 @@ namespace AlbionRadar
         {
             this.harvestableHandler.HarvestableList.Clear();
             this.mobsHandler.MobList.Clear();
-        }
-        #endregion
-
-        #region OnResponses
-        private void onJoin(Dictionary<byte, object> parameters)
-        {
-            if (!parameters.ContainsKey(9))
-                return;
-
-            Single[] location = (Single[])parameters[9];
-            Single posX = Single.Parse(location[0].ToString());
-            Single posY = Single.Parse(location[1].ToString());
-
-            playerHandler.UpdateLocalPlayerPosition(posX, posY);
         }
         #endregion
 
