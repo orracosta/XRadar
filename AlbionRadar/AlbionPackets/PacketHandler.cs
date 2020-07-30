@@ -48,6 +48,7 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evNewMob:
                     onNewMob(parameters);
+                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
                 case EventCodes.evLeave:
                     onLeaveEvent(parameters);
@@ -60,6 +61,7 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evNewSimpleHarvestableObject:
                     onNewSimpleHarvestableObject(parameters);
+                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);

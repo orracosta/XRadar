@@ -167,6 +167,17 @@ namespace AlbionRadar
                             Single hX = -1 * h.PosX + localX;
                             Single hY = h.PosY - localY;
 
+                            if(cbResourceFilterAmount.Checked && h.Tier != 1)
+                            {
+                                g.TranslateTransform(hX, hY);
+                                g.RotateTransform(135f);
+
+                                g.DrawString((h.Size * HarvestableSizes.charges[h.Tier]) + "/" + HarvestableSizes.sizes[h.Tier], font, Brushes.White, 5, -3);
+
+                                g.RotateTransform(-135f);
+                                g.TranslateTransform(-hX, -hY);
+                            }
+
                             g.FillEllipse(harvestBrushes[h.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
                             g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
                         }

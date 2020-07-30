@@ -137,6 +137,7 @@
     </Compile>
     <Compile Include="Harvestable\Harvestable.cs" />
     <Compile Include="Harvestable\HarvestableHandler.cs" />
+    <Compile Include="Harvestable\HarvestableSizes.cs" />
     <Compile Include="Harvestable\HarvestableType.cs" />
     <Compile Include="Mobs\Mob.cs" />
     <Compile Include="Mobs\MobHandler.cs" />

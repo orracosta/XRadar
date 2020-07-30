@@ -358,5 +358,17 @@ namespace AlbionRadar {
                 this["resourceFilterMadeira"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool resourceFilterAmount {
+            get {
+                return ((bool)(this["resourceFilterAmount"]));
+            }
+            set {
+                this["resourceFilterAmount"] = value;
+            }
+        }
     }
 }

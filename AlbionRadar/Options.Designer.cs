@@ -150,6 +150,8 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
+            this.label35 = new System.Windows.Forms.Label();
+            this.cbResourceFilterAmount = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -1085,6 +1087,8 @@
             // pFilterResource
             // 
             this.pFilterResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pFilterResource.Controls.Add(this.label35);
+            this.pFilterResource.Controls.Add(this.cbResourceFilterAmount);
             this.pFilterResource.Controls.Add(this.label34);
             this.pFilterResource.Controls.Add(this.label29);
             this.pFilterResource.Controls.Add(this.cbResourceFilterMadeira);
@@ -1865,6 +1869,36 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(131, 81);
+            this.label35.Margin = new System.Windows.Forms.Padding(5);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(53, 17);
+            this.label35.TabIndex = 35;
+            this.label35.Text = "Quantia";
+            // 
+            // cbResourceFilterAmount
+            // 
+            this.cbResourceFilterAmount.AutoSize = true;
+            this.cbResourceFilterAmount.Checked = true;
+            this.cbResourceFilterAmount.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterAmount.Depth = 0;
+            this.cbResourceFilterAmount.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterAmount.Location = new System.Drawing.Point(102, 74);
+            this.cbResourceFilterAmount.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterAmount.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterAmount.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterAmount.Name = "cbResourceFilterAmount";
+            this.cbResourceFilterAmount.Ripple = true;
+            this.cbResourceFilterAmount.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterAmount.TabIndex = 34;
+            this.cbResourceFilterAmount.Text = " ";
+            this.cbResourceFilterAmount.UseVisualStyleBackColor = true;
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2027,6 +2061,8 @@
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterMadeira;
         private System.Windows.Forms.Label label34;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMadeira;
+        private System.Windows.Forms.Label label35;
+        public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterAmount;
     }
 }
 

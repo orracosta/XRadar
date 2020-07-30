@@ -59,6 +59,7 @@ namespace AlbionRadar
             s.resourceFilterPelego = form.cbResourceFilterPelego.Checked;
             s.resourceFilterMinerio = form.cbResourceFilterMinerio.Checked;
             s.resourceFilterMadeira = form.cbResourceFilterMadeira.Checked;
+            s.resourceFilterAmount = form.cbResourceFilterAmount.Checked;
 
             s.Save();
 
@@ -106,6 +107,7 @@ namespace AlbionRadar
             form.cbResourceFilterPelego.Checked = s.resourceFilterPelego;
             form.cbResourceFilterMinerio.Checked = s.resourceFilterMinerio;
             form.cbResourceFilterMadeira.Checked = s.resourceFilterMadeira;
+            form.cbResourceFilterAmount.Checked = s.resourceFilterAmount;
         }
 
         public static void needBeepSound(String guild, String alliance)
