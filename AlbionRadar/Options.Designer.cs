@@ -50,6 +50,8 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.label18 = new System.Windows.Forms.Label();
             this.cbShowHarvestable = new MaterialSkin.Controls.MaterialCheckBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -152,8 +154,6 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.label36 = new System.Windows.Forms.Label();
-            this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -457,6 +457,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 209);
             this.panel1.TabIndex = 0;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(34, 178);
+            this.label36.Margin = new System.Windows.Forms.Padding(5);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(98, 17);
+            this.label36.TabIndex = 15;
+            this.label36.Text = "Exibir Dungeons";
+            // 
+            // cbShowDungeon
+            // 
+            this.cbShowDungeon.AutoSize = true;
+            this.cbShowDungeon.Checked = true;
+            this.cbShowDungeon.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowDungeon.Depth = 0;
+            this.cbShowDungeon.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowDungeon.Location = new System.Drawing.Point(5, 171);
+            this.cbShowDungeon.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowDungeon.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowDungeon.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowDungeon.Name = "cbShowDungeon";
+            this.cbShowDungeon.Ripple = true;
+            this.cbShowDungeon.Size = new System.Drawing.Size(30, 30);
+            this.cbShowDungeon.TabIndex = 14;
+            this.cbShowDungeon.Text = " ";
+            this.cbShowDungeon.UseVisualStyleBackColor = true;
+            this.cbShowDungeon.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label18
             // 
@@ -878,11 +909,12 @@
             this.exportAllysButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.exportAllysButton.Depth = 0;
             this.exportAllysButton.Icon = null;
-            this.exportAllysButton.Location = new System.Drawing.Point(331, 279);
+            this.exportAllysButton.Location = new System.Drawing.Point(301, 279);
+            this.exportAllysButton.MinimumSize = new System.Drawing.Size(120, 0);
             this.exportAllysButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.exportAllysButton.Name = "exportAllysButton";
             this.exportAllysButton.Primary = true;
-            this.exportAllysButton.Size = new System.Drawing.Size(90, 36);
+            this.exportAllysButton.Size = new System.Drawing.Size(120, 36);
             this.exportAllysButton.TabIndex = 8;
             this.exportAllysButton.Text = "Exportar";
             this.exportAllysButton.UseVisualStyleBackColor = true;
@@ -894,11 +926,12 @@
             this.importAllysButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.importAllysButton.Depth = 0;
             this.importAllysButton.Icon = null;
-            this.importAllysButton.Location = new System.Drawing.Point(235, 279);
+            this.importAllysButton.Location = new System.Drawing.Point(175, 279);
+            this.importAllysButton.MinimumSize = new System.Drawing.Size(120, 0);
             this.importAllysButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.importAllysButton.Name = "importAllysButton";
             this.importAllysButton.Primary = true;
-            this.importAllysButton.Size = new System.Drawing.Size(90, 36);
+            this.importAllysButton.Size = new System.Drawing.Size(120, 36);
             this.importAllysButton.TabIndex = 7;
             this.importAllysButton.Text = "Importar";
             this.importAllysButton.UseVisualStyleBackColor = true;
@@ -1905,41 +1938,9 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(34, 178);
-            this.label36.Margin = new System.Windows.Forms.Padding(5);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(98, 17);
-            this.label36.TabIndex = 15;
-            this.label36.Text = "Exibir Dungeons";
-            // 
-            // cbShowDungeon
-            // 
-            this.cbShowDungeon.AutoSize = true;
-            this.cbShowDungeon.Checked = true;
-            this.cbShowDungeon.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbShowDungeon.Depth = 0;
-            this.cbShowDungeon.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowDungeon.Location = new System.Drawing.Point(5, 171);
-            this.cbShowDungeon.Margin = new System.Windows.Forms.Padding(0);
-            this.cbShowDungeon.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbShowDungeon.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbShowDungeon.Name = "cbShowDungeon";
-            this.cbShowDungeon.Ripple = true;
-            this.cbShowDungeon.Size = new System.Drawing.Size(30, 30);
-            this.cbShowDungeon.TabIndex = 14;
-            this.cbShowDungeon.Text = " ";
-            this.cbShowDungeon.UseVisualStyleBackColor = true;
-            this.cbShowDungeon.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
-            // 
             // Options
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(480, 460);
             this.Controls.Add(this.materialTabSelector1);
