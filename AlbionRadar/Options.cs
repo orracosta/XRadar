@@ -32,6 +32,7 @@ namespace AlbionRadar
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
         HarvestableHandler harvestableHandler = new HarvestableHandler();
+        DungeonHandler dungeonHandler = new DungeonHandler();
         PhotonParser photonParser;
 
         public Options()
@@ -53,7 +54,7 @@ namespace AlbionRadar
         }
         private void Options_Load(object sender, EventArgs e)
         {
-            photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler);
+            photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
 
             try
             {
@@ -125,6 +126,28 @@ namespace AlbionRadar
 
                     localX = playerHandler.localPlayerPosX();
                     localY = playerHandler.localPlayerPosY();
+
+                    if(cbShowDungeon.Checked)
+                    {
+                        foreach (var item in dungeonHandler.DungeonList)
+                        {
+                            var d = item.Value;
+
+                            Single hX = -1 * d.PosX + localX;
+                            Single hY = d.PosY - localY;
+
+                            var type = d.getType();
+                            if (type == "SOLO")
+                                g.FillEllipse(Brushes.Green, hX, hY, 2.5f, 8f);
+                            else if(type == "GROUP")
+                                g.FillEllipse(Brushes.Blue, hX, hY, 4f, 8f);
+                            else if(type == "SOLO_LEGACY")
+                                g.FillEllipse(Brushes.Yellow, hX, hY, 2.5f, 8f);
+                            else
+                                g.FillEllipse(Brushes.Yellow, hX, hY, 4f, 8f);
+
+                        }
+                    }
 
                     if (cbShowHarvestable.Checked)
                     {
@@ -526,6 +549,5 @@ namespace AlbionRadar
         }
 
         #endregion
-
     }
 }

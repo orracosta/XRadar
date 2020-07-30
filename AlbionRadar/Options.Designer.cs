@@ -96,6 +96,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.pFilterResource = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.cbResourceFilterAmount = new MaterialSkin.Controls.MaterialCheckBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.cbResourceFilterMadeira = new MaterialSkin.Controls.MaterialCheckBox();
@@ -150,8 +152,8 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.label35 = new System.Windows.Forms.Label();
-            this.cbResourceFilterAmount = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -432,6 +434,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label36);
+            this.panel1.Controls.Add(this.cbShowDungeon);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.cbShowHarvestable);
             this.panel1.Controls.Add(this.label4);
@@ -451,7 +455,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 184);
+            this.panel1.Size = new System.Drawing.Size(200, 209);
             this.panel1.TabIndex = 0;
             // 
             // label18
@@ -483,6 +487,7 @@
             this.cbShowHarvestable.TabIndex = 12;
             this.cbShowHarvestable.Text = " ";
             this.cbShowHarvestable.UseVisualStyleBackColor = true;
+            this.cbShowHarvestable.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label4
             // 
@@ -665,7 +670,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 180);
+            this.panel5.Size = new System.Drawing.Size(2, 205);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -674,14 +679,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 180);
+            this.panel4.Size = new System.Drawing.Size(2, 205);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 182);
+            this.panel3.Location = new System.Drawing.Point(0, 207);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
@@ -1108,6 +1113,37 @@
             this.pFilterResource.Name = "pFilterResource";
             this.pFilterResource.Size = new System.Drawing.Size(200, 122);
             this.pFilterResource.TabIndex = 14;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(131, 81);
+            this.label35.Margin = new System.Windows.Forms.Padding(5);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(53, 17);
+            this.label35.TabIndex = 35;
+            this.label35.Text = "Quantia";
+            // 
+            // cbResourceFilterAmount
+            // 
+            this.cbResourceFilterAmount.AutoSize = true;
+            this.cbResourceFilterAmount.Checked = true;
+            this.cbResourceFilterAmount.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbResourceFilterAmount.Depth = 0;
+            this.cbResourceFilterAmount.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbResourceFilterAmount.Location = new System.Drawing.Point(102, 74);
+            this.cbResourceFilterAmount.Margin = new System.Windows.Forms.Padding(0);
+            this.cbResourceFilterAmount.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbResourceFilterAmount.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbResourceFilterAmount.Name = "cbResourceFilterAmount";
+            this.cbResourceFilterAmount.Ripple = true;
+            this.cbResourceFilterAmount.Size = new System.Drawing.Size(30, 30);
+            this.cbResourceFilterAmount.TabIndex = 34;
+            this.cbResourceFilterAmount.Text = " ";
+            this.cbResourceFilterAmount.UseVisualStyleBackColor = true;
+            this.cbResourceFilterAmount.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label34
             // 
@@ -1869,35 +1905,36 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // label35
+            // label36
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(131, 81);
-            this.label35.Margin = new System.Windows.Forms.Padding(5);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 17);
-            this.label35.TabIndex = 35;
-            this.label35.Text = "Quantia";
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(34, 178);
+            this.label36.Margin = new System.Windows.Forms.Padding(5);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(98, 17);
+            this.label36.TabIndex = 15;
+            this.label36.Text = "Exibir Dungeons";
             // 
-            // cbResourceFilterAmount
+            // cbShowDungeon
             // 
-            this.cbResourceFilterAmount.AutoSize = true;
-            this.cbResourceFilterAmount.Checked = true;
-            this.cbResourceFilterAmount.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbResourceFilterAmount.Depth = 0;
-            this.cbResourceFilterAmount.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbResourceFilterAmount.Location = new System.Drawing.Point(102, 74);
-            this.cbResourceFilterAmount.Margin = new System.Windows.Forms.Padding(0);
-            this.cbResourceFilterAmount.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbResourceFilterAmount.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbResourceFilterAmount.Name = "cbResourceFilterAmount";
-            this.cbResourceFilterAmount.Ripple = true;
-            this.cbResourceFilterAmount.Size = new System.Drawing.Size(30, 30);
-            this.cbResourceFilterAmount.TabIndex = 34;
-            this.cbResourceFilterAmount.Text = " ";
-            this.cbResourceFilterAmount.UseVisualStyleBackColor = true;
+            this.cbShowDungeon.AutoSize = true;
+            this.cbShowDungeon.Checked = true;
+            this.cbShowDungeon.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowDungeon.Depth = 0;
+            this.cbShowDungeon.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbShowDungeon.Location = new System.Drawing.Point(5, 171);
+            this.cbShowDungeon.Margin = new System.Windows.Forms.Padding(0);
+            this.cbShowDungeon.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowDungeon.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowDungeon.Name = "cbShowDungeon";
+            this.cbShowDungeon.Ripple = true;
+            this.cbShowDungeon.Size = new System.Drawing.Size(30, 30);
+            this.cbShowDungeon.TabIndex = 14;
+            this.cbShowDungeon.Text = " ";
+            this.cbShowDungeon.UseVisualStyleBackColor = true;
+            this.cbShowDungeon.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // Options
             // 
@@ -2063,6 +2100,8 @@
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMadeira;
         private System.Windows.Forms.Label label35;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterAmount;
+        private System.Windows.Forms.Label label36;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowDungeon;
     }
 }
 

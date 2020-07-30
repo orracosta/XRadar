@@ -15,12 +15,14 @@ namespace AlbionRadar
         PlayerHandler playerHandler;
         MobsHandler mobsHandler;
         HarvestableHandler harvestableHandler;
+        DungeonHandler dungeonHandler;
 
-        public PacketHandler(PlayerHandler playerHandler, MobsHandler mobsHandler, HarvestableHandler harvestableHandler)
+        public PacketHandler(PlayerHandler playerHandler, MobsHandler mobsHandler, HarvestableHandler harvestableHandler, DungeonHandler dungeonHandler)
         {
             this.playerHandler = playerHandler;
             this.mobsHandler = mobsHandler;
             this.harvestableHandler = harvestableHandler;
+            this.dungeonHandler = dungeonHandler;
         }
 
         protected override void OnEvent(byte code, Dictionary<byte, object> parameters)
@@ -41,17 +43,16 @@ namespace AlbionRadar
             switch (evCode)
             {
                 case EventCodes.evNewCharacter:
-                    onNewCharacterEvent(parameters);
+                    onNewCharacter(parameters);
                     break;
                 case EventCodes.evMounted:
                     onMounted(parameters);
                     break;
                 case EventCodes.evNewMob:
                     onNewMob(parameters);
-                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
                 case EventCodes.evLeave:
-                    onLeaveEvent(parameters);
+                    onLeave(parameters);
                     break;
                 case EventCodes.evNewSimpleHarvestableObjectList:
                     onNewSimpleHarvestableObjectList(parameters);
@@ -61,7 +62,6 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evNewSimpleHarvestableObject:
                     onNewSimpleHarvestableObject(parameters);
-                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);
@@ -72,8 +72,8 @@ namespace AlbionRadar
                 case EventCodes.evHarvestableChangeState:
                     onHarvestableChangeState(parameters);
                     break;
-                case EventCodes.evRandomDungeonPositionInfo:
                 case EventCodes.evNewRandomDungeonExit:
+                    onNewRandomDungeonExit(parameters);
                     break;
                 default:
                     break;
@@ -128,7 +128,17 @@ namespace AlbionRadar
         }
 
         #region OnEvents
-        private void onNewCharacterEvent(Dictionary<byte, object> parameters)
+        private void onNewRandomDungeonExit(Dictionary<byte, object> parameters)
+        {
+            int id = int.Parse(parameters[0].ToString());
+            Single[] loc = (Single[])parameters[1];
+            Single posX = (Single)loc[0];
+            Single posY = (Single)loc[1];
+            String type = (string)parameters[3].ToString();
+
+            dungeonHandler.AddDungeon(id, posX, posY, type);
+        }
+        private void onNewCharacter(Dictionary<byte, object> parameters)
         {
             int id = int.Parse(parameters[0].ToString());
             string nick = parameters[1].ToString();
@@ -161,7 +171,7 @@ namespace AlbionRadar
 
             mobsHandler.AddMob(id, typeId, posX, posY, health);
         }
-        private void onLeaveEvent(Dictionary<byte, object> parameters)
+        private void onLeave(Dictionary<byte, object> parameters)
         {
             int id = int.Parse(parameters[0].ToString());
 
@@ -280,6 +290,7 @@ namespace AlbionRadar
         {
             this.harvestableHandler.HarvestableList.Clear();
             this.mobsHandler.MobList.Clear();
+            this.dungeonHandler.DungeonList.Clear();
         }
         #endregion
 

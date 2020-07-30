@@ -36,6 +36,7 @@ namespace AlbionRadar
             s.showMobs = form.cbShowMobs.Checked;
             s.alertSound = form.cbAlertSound.Checked;
             s.showHarvestable = form.cbShowHarvestable.Checked;
+            s.showDungeon = form.cbShowDungeon.Checked;
 
             //TierList
             s.showTier1 = form.cbShowTier1.Checked;
@@ -84,6 +85,7 @@ namespace AlbionRadar
             form.cbShowMobs.Checked = s.showMobs;
             form.cbAlertSound.Checked = s.alertSound;
             form.cbShowHarvestable.Checked = s.showHarvestable;
+            form.cbShowDungeon.Checked = s.showDungeon;
 
             //TierList
             form.cbShowTier1.Checked = s.showTier1;

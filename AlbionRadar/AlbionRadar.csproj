@@ -135,6 +135,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>AppSettings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Dungeon\Dungeon.cs" />
+    <Compile Include="Dungeon\DungeonHandler.cs" />
     <Compile Include="Harvestable\Harvestable.cs" />
     <Compile Include="Harvestable\HarvestableHandler.cs" />
     <Compile Include="Harvestable\HarvestableSizes.cs" />
@@ -256,5 +258,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
