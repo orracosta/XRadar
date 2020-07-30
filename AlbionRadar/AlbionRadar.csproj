@@ -217,6 +217,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\dg_special.png" />
+    <None Include="Resources\dg_solo.png" />
+    <None Include="Resources\dg_group.png" />
     <None Include="Resources\pelego-1.png" />
     <None Include="Resources\pelego-0.png" />
     <None Include="Resources\pedra-3.png" />

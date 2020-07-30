@@ -127,28 +127,6 @@ namespace AlbionRadar
                     localX = playerHandler.localPlayerPosX();
                     localY = playerHandler.localPlayerPosY();
 
-                    if(cbShowDungeon.Checked)
-                    {
-                        foreach (var item in dungeonHandler.DungeonList)
-                        {
-                            var d = item.Value;
-
-                            Single hX = -1 * d.PosX + localX;
-                            Single hY = d.PosY - localY;
-
-                            var type = d.getType();
-                            if (type == "SOLO")
-                                g.FillEllipse(Brushes.Green, hX, hY, 2.5f, 8f);
-                            else if(type == "GROUP")
-                                g.FillEllipse(Brushes.Blue, hX, hY, 4f, 8f);
-                            else if(type == "SOLO_LEGACY")
-                                g.FillEllipse(Brushes.Yellow, hX, hY, 2.5f, 8f);
-                            else
-                                g.FillEllipse(Brushes.Yellow, hX, hY, 4f, 8f);
-
-                        }
-                    }
-
                     if (cbShowHarvestable.Checked)
                     {
                         foreach (var item in harvestableHandler.HarvestableList)
@@ -256,6 +234,71 @@ namespace AlbionRadar
                                 g.FillEllipse(harvestBrushes[m.MobInfo.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
                                 g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
                             }
+                        }
+                    }
+
+                    if (cbShowDungeon.Checked)
+                    {
+                        foreach (var item in dungeonHandler.DungeonList)
+                        {
+                            var d = item.Value;
+
+                            Single hX = -1 * d.PosX + localX;
+                            Single hY = d.PosY - localY;
+
+                            var type = d.getType();
+                            string typeName = "special";
+
+                            if (type == "SOLO")
+                                typeName = "solo";
+                            else if (type == "GROUP")
+                                typeName = "group";
+
+                            String iconName = "dg_" + typeName;
+                            Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
+
+                            if (iconImage == null)
+                                continue;
+
+                            if (type == "GROUP")
+                            {
+                                string dungeonName = "Portal";
+
+                                switch (item.Value.Type)
+                                {
+                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_MOR":
+                                        dungeonName = "Morgana";
+                                        break;
+                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_UND":
+                                        dungeonName = "Mortos Vivos";
+                                        break;
+                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_KPR":
+                                        dungeonName = "Gigantes";
+                                        break;
+                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_HER":
+                                        dungeonName = "Minas";
+                                        break;
+                                    case "SHARED_RANDOM_EXIT_10x10_PORTAL_SOLO_KPR_LEGACY":
+                                        dungeonName = "Evento";
+                                        break;
+                                    default:
+                                        break;
+                                }
+
+                                g.TranslateTransform(hX, hY);
+                                g.RotateTransform(135f);
+
+                                g.DrawString(dungeonName, font, Brushes.White, 4, -3);
+
+                                g.RotateTransform(-135f);
+                                g.TranslateTransform(-hX, -hY);
+                            }
+
+                            float iconWidth = iconImage.Width / 4;
+                            float iconHeight = iconImage.Height / 4;
+
+                            g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
+
                         }
                     }
 
