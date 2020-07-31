@@ -83,6 +83,10 @@ namespace AlbionRadar
         {
             return localPlayer.PosY;
         }
+        public Player getLocalPlayer()
+        {
+            return localPlayer;
+        }
         public bool PlayerIsMounted(int id)
         {
             return mountsInRange.Any(x => x.Key == id);

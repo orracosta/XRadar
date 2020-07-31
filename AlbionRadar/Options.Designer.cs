@@ -71,6 +71,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.addAlliance = new System.Windows.Forms.Button();
             this.removeAlliance = new System.Windows.Forms.Button();
             this.lbTrustAlliances = new System.Windows.Forms.ListBox();
             this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
@@ -84,6 +85,8 @@
             this.importAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.addGuild = new System.Windows.Forms.Button();
+            this.removeGuild = new System.Windows.Forms.Button();
             this.lbTrustGuilds = new System.Windows.Forms.ListBox();
             this.materialDivider4 = new MaterialSkin.Controls.MaterialDivider();
             this.lbGuildsInRange = new System.Windows.Forms.ListBox();
@@ -151,9 +154,10 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.addAlliance = new System.Windows.Forms.Button();
-            this.addGuild = new System.Windows.Forms.Button();
-            this.removeGuild = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -213,6 +217,10 @@
             // pCbDisplayOptions
             // 
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pCbDisplayOptions.Controls.Add(this.label38);
+            this.pCbDisplayOptions.Controls.Add(this.cbTagEnemies);
+            this.pCbDisplayOptions.Controls.Add(this.label37);
+            this.pCbDisplayOptions.Controls.Add(this.cbTagAllys);
             this.pCbDisplayOptions.Controls.Add(this.label7);
             this.pCbDisplayOptions.Controls.Add(this.label12);
             this.pCbDisplayOptions.Controls.Add(this.cbAlertSound);
@@ -230,7 +238,7 @@
             this.pCbDisplayOptions.Location = new System.Drawing.Point(221, 10);
             this.pCbDisplayOptions.Margin = new System.Windows.Forms.Padding(10);
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
-            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 184);
+            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 233);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
             // label7
@@ -388,7 +396,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel17.Location = new System.Drawing.Point(198, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(2, 180);
+            this.panel17.Size = new System.Drawing.Size(2, 229);
             this.panel17.TabIndex = 3;
             // 
             // panel18
@@ -397,14 +405,14 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(2, 180);
+            this.panel18.Size = new System.Drawing.Size(2, 229);
             this.panel18.TabIndex = 2;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel19.Location = new System.Drawing.Point(0, 182);
+            this.panel19.Location = new System.Drawing.Point(0, 231);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(200, 2);
             this.panel19.TabIndex = 1;
@@ -466,9 +474,9 @@
             this.label36.Location = new System.Drawing.Point(34, 178);
             this.label36.Margin = new System.Windows.Forms.Padding(5);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(98, 17);
+            this.label36.Size = new System.Drawing.Size(96, 17);
             this.label36.TabIndex = 15;
-            this.label36.Text = "Exibir Dungeons";
+            this.label36.Text = "Exibir dungeons";
             // 
             // cbShowDungeon
             // 
@@ -779,6 +787,24 @@
             this.panel11.Size = new System.Drawing.Size(408, 120);
             this.panel11.TabIndex = 9;
             // 
+            // addAlliance
+            // 
+            this.addAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addAlliance.FlatAppearance.BorderSize = 0;
+            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addAlliance.Location = new System.Drawing.Point(192, 33);
+            this.addAlliance.Name = "addAlliance";
+            this.addAlliance.Padding = new System.Windows.Forms.Padding(5);
+            this.addAlliance.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.addAlliance.Size = new System.Drawing.Size(25, 25);
+            this.addAlliance.TabIndex = 14;
+            this.addAlliance.UseVisualStyleBackColor = true;
+            this.addAlliance.Click += new System.EventHandler(this.addAlliance_Click);
+            // 
             // removeAlliance
             // 
             this.removeAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
@@ -948,6 +974,42 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(408, 120);
             this.panel6.TabIndex = 3;
+            // 
+            // addGuild
+            // 
+            this.addGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addGuild.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addGuild.FlatAppearance.BorderSize = 0;
+            this.addGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.addGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addGuild.Location = new System.Drawing.Point(192, 33);
+            this.addGuild.Name = "addGuild";
+            this.addGuild.Padding = new System.Windows.Forms.Padding(5);
+            this.addGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.addGuild.Size = new System.Drawing.Size(25, 25);
+            this.addGuild.TabIndex = 16;
+            this.addGuild.UseVisualStyleBackColor = true;
+            this.addGuild.Click += new System.EventHandler(this.addGuild_Click);
+            // 
+            // removeGuild
+            // 
+            this.removeGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
+            this.removeGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeGuild.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.removeGuild.FlatAppearance.BorderSize = 0;
+            this.removeGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.removeGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.removeGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeGuild.Location = new System.Drawing.Point(192, 73);
+            this.removeGuild.Name = "removeGuild";
+            this.removeGuild.Padding = new System.Windows.Forms.Padding(5);
+            this.removeGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.removeGuild.Size = new System.Drawing.Size(25, 25);
+            this.removeGuild.TabIndex = 15;
+            this.removeGuild.UseVisualStyleBackColor = true;
+            this.removeGuild.Click += new System.EventHandler(this.removeGuild_Click);
             // 
             // lbTrustGuilds
             // 
@@ -1880,59 +1942,65 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // addAlliance
+            // label37
             // 
-            this.addAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
-            this.addAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addAlliance.FlatAppearance.BorderSize = 0;
-            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addAlliance.Location = new System.Drawing.Point(192, 33);
-            this.addAlliance.Name = "addAlliance";
-            this.addAlliance.Padding = new System.Windows.Forms.Padding(5);
-            this.addAlliance.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addAlliance.Size = new System.Drawing.Size(25, 25);
-            this.addAlliance.TabIndex = 14;
-            this.addAlliance.UseVisualStyleBackColor = true;
-            this.addAlliance.Click += new System.EventHandler(this.addAlliance_Click);
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(34, 172);
+            this.label37.Margin = new System.Windows.Forms.Padding(5);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(73, 17);
+            this.label37.TabIndex = 22;
+            this.label37.Text = "TAG aliados";
             // 
-            // addGuild
+            // cbTagAllys
             // 
-            this.addGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
-            this.addGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.addGuild.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addGuild.FlatAppearance.BorderSize = 0;
-            this.addGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.addGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.addGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addGuild.Location = new System.Drawing.Point(192, 33);
-            this.addGuild.Name = "addGuild";
-            this.addGuild.Padding = new System.Windows.Forms.Padding(5);
-            this.addGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.addGuild.Size = new System.Drawing.Size(25, 25);
-            this.addGuild.TabIndex = 16;
-            this.addGuild.UseVisualStyleBackColor = true;
-            this.addGuild.Click += new System.EventHandler(this.addGuild_Click);
+            this.cbTagAllys.AutoSize = true;
+            this.cbTagAllys.Checked = true;
+            this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagAllys.Depth = 0;
+            this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagAllys.Location = new System.Drawing.Point(5, 165);
+            this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagAllys.Name = "cbTagAllys";
+            this.cbTagAllys.Ripple = true;
+            this.cbTagAllys.Size = new System.Drawing.Size(30, 30);
+            this.cbTagAllys.TabIndex = 21;
+            this.cbTagAllys.Text = " ";
+            this.cbTagAllys.UseVisualStyleBackColor = true;
             // 
-            // removeGuild
+            // label38
             // 
-            this.removeGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
-            this.removeGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.removeGuild.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.removeGuild.FlatAppearance.BorderSize = 0;
-            this.removeGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.removeGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.removeGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeGuild.Location = new System.Drawing.Point(192, 73);
-            this.removeGuild.Name = "removeGuild";
-            this.removeGuild.Padding = new System.Windows.Forms.Padding(5);
-            this.removeGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.removeGuild.Size = new System.Drawing.Size(25, 25);
-            this.removeGuild.TabIndex = 15;
-            this.removeGuild.UseVisualStyleBackColor = true;
-            this.removeGuild.Click += new System.EventHandler(this.removeGuild_Click);
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(34, 201);
+            this.label38.Margin = new System.Windows.Forms.Padding(5);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 17);
+            this.label38.TabIndex = 24;
+            this.label38.Text = "TAG inimigos";
+            // 
+            // cbTagEnemies
+            // 
+            this.cbTagEnemies.AutoSize = true;
+            this.cbTagEnemies.Checked = true;
+            this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagEnemies.Depth = 0;
+            this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagEnemies.Location = new System.Drawing.Point(5, 194);
+            this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagEnemies.Name = "cbTagEnemies";
+            this.cbTagEnemies.Ripple = true;
+            this.cbTagEnemies.Size = new System.Drawing.Size(30, 30);
+            this.cbTagEnemies.TabIndex = 23;
+            this.cbTagEnemies.Text = " ";
+            this.cbTagEnemies.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
@@ -2099,6 +2167,10 @@
         private System.Windows.Forms.Button addAlliance;
         private System.Windows.Forms.Button addGuild;
         private System.Windows.Forms.Button removeGuild;
+        private System.Windows.Forms.Label label38;
+        public MaterialSkin.Controls.MaterialCheckBox cbTagEnemies;
+        private System.Windows.Forms.Label label37;
+        public MaterialSkin.Controls.MaterialCheckBox cbTagAllys;
     }
 }
 

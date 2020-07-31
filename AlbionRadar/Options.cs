@@ -315,13 +315,17 @@ namespace AlbionRadar
                             Single hY = p.PosY - localY;
 
                             Brush playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
+                            bool isAlly = false;
 
                             if (lbTrustGuilds.Items.Contains(p.Guild) || lbTrustAlliances.Items.Contains(p.Alliance))
+                                isAlly = true;
+
+                            if (isAlly)
                                 playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
 
                             g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
 
-                            if (!cbNone.Checked)
+                            if (!cbNone.Checked && (isAlly && cbTagAllys.Checked || !isAlly && cbTagEnemies.Checked))
                             {
                                 g.TranslateTransform(hX, hY);
                                 g.RotateTransform(135f);

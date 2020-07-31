@@ -29,6 +29,7 @@ namespace AlbionRadar
             s.displayOption = form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
                 .FirstOrDefault(r => r.Checked).Name;
 
+            // Geral
             s.radarPosX = (int)form.nRadarPosX.Value;
             s.radarPosY = (int)form.nRadarPosY.Value;
             s.showPlayers = form.cbShowPlayers.Checked;
@@ -36,8 +37,10 @@ namespace AlbionRadar
             s.alertSound = form.cbAlertSound.Checked;
             s.showHarvestable = form.cbShowHarvestable.Checked;
             s.showDungeon = form.cbShowDungeon.Checked;
+            s.tagAllys = form.cbTagAllys.Checked;
+            s.tagEnemies = form.cbTagEnemies.Checked;
 
-            //TierList
+            // Coleta - Tier
             s.showTier1 = form.cbShowTier1.Checked;
             s.showTier2 = form.cbShowTier2.Checked;
             s.showTier3 = form.cbShowTier3.Checked;
@@ -47,7 +50,7 @@ namespace AlbionRadar
             s.showTier7 = form.cbShowTier7.Checked;
             s.showTier8 = form.cbShowTier8.Checked;
 
-            //Resources
+            // Coleta - Recursos
             s.mobFilterFibra = form.cbMobFilterFibra.Checked;
             s.mobFilterPedra = form.cbMobFilterPedra.Checked;
             s.mobFilterPelego = form.cbMobFilterPelego.Checked;
@@ -77,6 +80,7 @@ namespace AlbionRadar
             form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
                 .FirstOrDefault(r => r.Name == s.displayOption).Checked = true;
 
+            // Geral
             form.nRadarPosX.Value = s.radarPosX;
             form.nRadarPosY.Value = s.radarPosY;
             form.cbShowPlayers.Checked = s.showPlayers;
@@ -84,8 +88,10 @@ namespace AlbionRadar
             form.cbAlertSound.Checked = s.alertSound;
             form.cbShowHarvestable.Checked = s.showHarvestable;
             form.cbShowDungeon.Checked = s.showDungeon;
+            form.cbTagAllys.Checked = s.tagAllys;
+            form.cbTagEnemies.Checked = s.tagEnemies;
 
-            //TierList
+            // Coleta - Tier
             form.cbShowTier1.Checked = s.showTier1;
             form.cbShowTier2.Checked = s.showTier2;
             form.cbShowTier3.Checked = s.showTier3;
@@ -95,7 +101,7 @@ namespace AlbionRadar
             form.cbShowTier7.Checked = s.showTier7;
             form.cbShowTier8.Checked = s.showTier8;
 
-            //Resources
+            // Coleta - Recursos
             form.cbMobFilterFibra.Checked = s.mobFilterFibra;
             form.cbMobFilterPedra.Checked = s.mobFilterPedra;
             form.cbMobFilterPelego.Checked = s.mobFilterPelego;

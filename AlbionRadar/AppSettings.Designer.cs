@@ -370,5 +370,29 @@ namespace AlbionRadar {
                 this["showDungeon"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool tagAllys {
+            get {
+                return ((bool)(this["tagAllys"]));
+            }
+            set {
+                this["tagAllys"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool tagEnemies {
+            get {
+                return ((bool)(this["tagEnemies"]));
+            }
+            set {
+                this["tagEnemies"] = value;
+            }
+        }
     }
 }
