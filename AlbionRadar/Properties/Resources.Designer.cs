@@ -63,6 +63,16 @@ namespace AlbionRadar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addIcon {
+            get {
+                object obj = ResourceManager.GetObject("addIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dg_group {
             get {
                 object obj = ResourceManager.GetObject("dg_group", resourceCulture);
@@ -296,6 +306,16 @@ namespace AlbionRadar.Properties {
         internal static System.Drawing.Bitmap pelego_3 {
             get {
                 object obj = ResourceManager.GetObject("pelego_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap removeIcon {
+            get {
+                object obj = ResourceManager.GetObject("removeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

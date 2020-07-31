@@ -71,8 +71,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.removeAlliance = new FontAwesome.Sharp.IconButton();
-            this.addAlliance = new FontAwesome.Sharp.IconButton();
+            this.removeAlliance = new System.Windows.Forms.Button();
             this.lbTrustAlliances = new System.Windows.Forms.ListBox();
             this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
             this.lbAlliancesInRange = new System.Windows.Forms.ListBox();
@@ -85,8 +84,6 @@
             this.importAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.removeGuild = new FontAwesome.Sharp.IconButton();
-            this.addGuild = new FontAwesome.Sharp.IconButton();
             this.lbTrustGuilds = new System.Windows.Forms.ListBox();
             this.materialDivider4 = new MaterialSkin.Controls.MaterialDivider();
             this.lbGuildsInRange = new System.Windows.Forms.ListBox();
@@ -154,6 +151,9 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
+            this.addAlliance = new System.Windows.Forms.Button();
+            this.addGuild = new System.Windows.Forms.Button();
+            this.removeGuild = new System.Windows.Forms.Button();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -763,8 +763,8 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel11.Controls.Add(this.removeAlliance);
             this.panel11.Controls.Add(this.addAlliance);
+            this.panel11.Controls.Add(this.removeAlliance);
             this.panel11.Controls.Add(this.lbTrustAlliances);
             this.panel11.Controls.Add(this.materialDivider5);
             this.panel11.Controls.Add(this.lbAlliancesInRange);
@@ -781,41 +781,21 @@
             // 
             // removeAlliance
             // 
+            this.removeAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
+            this.removeAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeAlliance.FlatAppearance.BorderSize = 0;
-            this.removeAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.removeAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.removeAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.removeAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.removeAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.removeAlliance.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.removeAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.removeAlliance.IconSize = 24;
-            this.removeAlliance.Location = new System.Drawing.Point(189, 75);
+            this.removeAlliance.Location = new System.Drawing.Point(192, 73);
             this.removeAlliance.Name = "removeAlliance";
-            this.removeAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.removeAlliance.Rotation = 0D;
-            this.removeAlliance.Size = new System.Drawing.Size(30, 30);
-            this.removeAlliance.TabIndex = 12;
-            this.removeAlliance.UseVisualStyleBackColor = false;
+            this.removeAlliance.Padding = new System.Windows.Forms.Padding(5);
+            this.removeAlliance.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.removeAlliance.Size = new System.Drawing.Size(25, 25);
+            this.removeAlliance.TabIndex = 13;
+            this.removeAlliance.UseVisualStyleBackColor = true;
             this.removeAlliance.Click += new System.EventHandler(this.removeAlliance_Click);
-            // 
-            // addAlliance
-            // 
-            this.addAlliance.FlatAppearance.BorderSize = 0;
-            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addAlliance.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.addAlliance.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.addAlliance.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.addAlliance.IconSize = 24;
-            this.addAlliance.Location = new System.Drawing.Point(189, 25);
-            this.addAlliance.Name = "addAlliance";
-            this.addAlliance.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.addAlliance.Rotation = 0D;
-            this.addAlliance.Size = new System.Drawing.Size(30, 30);
-            this.addAlliance.TabIndex = 11;
-            this.addAlliance.UseVisualStyleBackColor = false;
-            this.addAlliance.Click += new System.EventHandler(this.addAlliance_Click);
             // 
             // lbTrustAlliances
             // 
@@ -953,8 +933,8 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel6.Controls.Add(this.removeGuild);
             this.panel6.Controls.Add(this.addGuild);
+            this.panel6.Controls.Add(this.removeGuild);
             this.panel6.Controls.Add(this.lbTrustGuilds);
             this.panel6.Controls.Add(this.materialDivider4);
             this.panel6.Controls.Add(this.lbGuildsInRange);
@@ -968,44 +948,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(408, 120);
             this.panel6.TabIndex = 3;
-            // 
-            // removeGuild
-            // 
-            this.removeGuild.FlatAppearance.BorderSize = 0;
-            this.removeGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.removeGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.removeGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeGuild.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.removeGuild.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.removeGuild.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.removeGuild.IconSize = 24;
-            this.removeGuild.Location = new System.Drawing.Point(189, 75);
-            this.removeGuild.Name = "removeGuild";
-            this.removeGuild.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.removeGuild.Rotation = 0D;
-            this.removeGuild.Size = new System.Drawing.Size(30, 30);
-            this.removeGuild.TabIndex = 12;
-            this.removeGuild.UseVisualStyleBackColor = false;
-            this.removeGuild.Click += new System.EventHandler(this.removeGuild_Click);
-            // 
-            // addGuild
-            // 
-            this.addGuild.FlatAppearance.BorderSize = 0;
-            this.addGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
-            this.addGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
-            this.addGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addGuild.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.addGuild.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.addGuild.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.addGuild.IconSize = 24;
-            this.addGuild.Location = new System.Drawing.Point(189, 25);
-            this.addGuild.Name = "addGuild";
-            this.addGuild.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.addGuild.Rotation = 0D;
-            this.addGuild.Size = new System.Drawing.Size(30, 30);
-            this.addGuild.TabIndex = 11;
-            this.addGuild.UseVisualStyleBackColor = false;
-            this.addGuild.Click += new System.EventHandler(this.addGuild_Click);
             // 
             // lbTrustGuilds
             // 
@@ -1938,6 +1880,60 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
+            // addAlliance
+            // 
+            this.addAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addAlliance.FlatAppearance.BorderSize = 0;
+            this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addAlliance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.addAlliance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addAlliance.Location = new System.Drawing.Point(192, 33);
+            this.addAlliance.Name = "addAlliance";
+            this.addAlliance.Padding = new System.Windows.Forms.Padding(5);
+            this.addAlliance.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.addAlliance.Size = new System.Drawing.Size(25, 25);
+            this.addAlliance.TabIndex = 14;
+            this.addAlliance.UseVisualStyleBackColor = true;
+            this.addAlliance.Click += new System.EventHandler(this.addAlliance_Click);
+            // 
+            // addGuild
+            // 
+            this.addGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addGuild.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addGuild.FlatAppearance.BorderSize = 0;
+            this.addGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.addGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addGuild.Location = new System.Drawing.Point(192, 33);
+            this.addGuild.Name = "addGuild";
+            this.addGuild.Padding = new System.Windows.Forms.Padding(5);
+            this.addGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.addGuild.Size = new System.Drawing.Size(25, 25);
+            this.addGuild.TabIndex = 16;
+            this.addGuild.UseVisualStyleBackColor = true;
+            this.addGuild.Click += new System.EventHandler(this.addGuild_Click);
+            // 
+            // removeGuild
+            // 
+            this.removeGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
+            this.removeGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.removeGuild.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.removeGuild.FlatAppearance.BorderSize = 0;
+            this.removeGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.removeGuild.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.removeGuild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeGuild.Location = new System.Drawing.Point(192, 73);
+            this.removeGuild.Name = "removeGuild";
+            this.removeGuild.Padding = new System.Windows.Forms.Padding(5);
+            this.removeGuild.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.removeGuild.Size = new System.Drawing.Size(25, 25);
+            this.removeGuild.TabIndex = 15;
+            this.removeGuild.UseVisualStyleBackColor = true;
+            this.removeGuild.Click += new System.EventHandler(this.removeGuild_Click);
+            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2005,12 +2001,8 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider3;
         public System.Windows.Forms.ListBox lbTrustGuilds;
         private MaterialSkin.Controls.MaterialDivider materialDivider4;
-        private FontAwesome.Sharp.IconButton addGuild;
-        private FontAwesome.Sharp.IconButton removeGuild;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel11;
-        private FontAwesome.Sharp.IconButton removeAlliance;
-        private FontAwesome.Sharp.IconButton addAlliance;
         public System.Windows.Forms.ListBox lbTrustAlliances;
         private MaterialSkin.Controls.MaterialDivider materialDivider5;
         public System.Windows.Forms.ListBox lbAlliancesInRange;
@@ -2103,6 +2095,10 @@
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterAmount;
         private System.Windows.Forms.Label label36;
         public MaterialSkin.Controls.MaterialCheckBox cbShowDungeon;
+        private System.Windows.Forms.Button removeAlliance;
+        private System.Windows.Forms.Button addAlliance;
+        private System.Windows.Forms.Button addGuild;
+        private System.Windows.Forms.Button removeGuild;
     }
 }
 
