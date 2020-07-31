@@ -231,6 +231,17 @@ namespace AlbionRadar
                                 float iconWidth = iconImage.Width / 20;
                                 float iconHeight = iconImage.Height / 20;
 
+                                if (m.Health > 20000)
+                                {
+                                    g.TranslateTransform(hX, hY);
+                                    g.RotateTransform(135f);
+
+                                    g.DrawString("Boss", font, Brushes.White, 5, -3);
+
+                                    g.RotateTransform(-135f);
+                                    g.TranslateTransform(-hX, -hY);
+                                }
+
                                 g.FillEllipse(harvestBrushes[m.MobInfo.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
                                 g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
                             }
