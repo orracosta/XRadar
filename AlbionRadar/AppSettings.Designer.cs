@@ -50,18 +50,6 @@ namespace AlbionRadar {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool showRadar {
-            get {
-                return ((bool)(this["showRadar"]));
-            }
-            set {
-                this["showRadar"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool showMobs {
             get {
                 return ((bool)(this["showMobs"]));
@@ -361,7 +349,7 @@ namespace AlbionRadar {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool resourceFilterAmount {
             get {
                 return ((bool)(this["resourceFilterAmount"]));

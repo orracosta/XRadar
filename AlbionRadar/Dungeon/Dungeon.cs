@@ -52,24 +52,13 @@ namespace AlbionRadar
         }
         public string getType()
         {
-            switch(type)
+            if (type.Contains("_SOLO")) 
             {
-                case "SHARED_RANDOM_EXIT_10x10_PORTAL_SOLO":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_KPR_SOLO":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_HER_SOLO":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_UND_SOLO":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_MOR_SOLO":
-                case "RANDOM_EXIT_10x10_KPR_LEGACY":
-                    return "SOLO";
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_PORTAL":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_KPR":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_HER":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_UND":
-                case "FOREST_GREEN_RANDOM_EXIT_10x10_MOR":
-                case "SHARED_RANDOM_EXIT_10x10_PORTAL_SOLO_KPR_LEGACY":
-                    return "GROUP";
-                default:
-                    return "NONE";
+                return "SOLO";
+            }
+            else
+            {
+                return "GROUP";
             }
         }
 

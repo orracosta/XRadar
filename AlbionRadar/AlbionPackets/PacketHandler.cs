@@ -75,6 +75,9 @@ namespace AlbionRadar
                 case EventCodes.evNewRandomDungeonExit:
                     onNewRandomDungeonExit(parameters);
                     break;
+                case EventCodes.evChatMessage:
+                    debugEventInfo(parameters, evCode, "OnEvent");
+                    break;
                 default:
                     break;
             }

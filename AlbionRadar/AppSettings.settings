@@ -8,9 +8,6 @@
     <Setting Name="radarPosY" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="showRadar" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
     <Setting Name="showMobs" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -87,7 +84,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="resourceFilterAmount" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="showDungeon" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

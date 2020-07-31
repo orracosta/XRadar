@@ -31,7 +31,6 @@ namespace AlbionRadar
 
             s.radarPosX = (int)form.nRadarPosX.Value;
             s.radarPosY = (int)form.nRadarPosY.Value;
-            s.showRadar = form.cbShowRadar.Checked;
             s.showPlayers = form.cbShowPlayers.Checked;
             s.showMobs = form.cbShowMobs.Checked;
             s.alertSound = form.cbAlertSound.Checked;
@@ -80,7 +79,6 @@ namespace AlbionRadar
 
             form.nRadarPosX.Value = s.radarPosX;
             form.nRadarPosY.Value = s.radarPosY;
-            form.cbShowRadar.Checked = s.showRadar;
             form.cbShowPlayers.Checked = s.showPlayers;
             form.cbShowMobs.Checked = s.showMobs;
             form.cbAlertSound.Checked = s.alertSound;

@@ -262,28 +262,20 @@ namespace AlbionRadar
 
                             if (type == "GROUP")
                             {
-                                string dungeonName = "Portal";
+                                string dungeonName;
 
-                                switch (item.Value.Type)
-                                {
-                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_MOR":
-                                        dungeonName = "Morgana";
-                                        break;
-                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_UND":
-                                        dungeonName = "Mortos Vivos";
-                                        break;
-                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_KPR":
-                                        dungeonName = "Gigantes";
-                                        break;
-                                    case "FOREST_GREEN_RANDOM_EXIT_10x10_HER":
-                                        dungeonName = "Minas";
-                                        break;
-                                    case "SHARED_RANDOM_EXIT_10x10_PORTAL_SOLO_KPR_LEGACY":
-                                        dungeonName = "Evento";
-                                        break;
-                                    default:
-                                        break;
-                                }
+                                if (item.Value.Type.Contains("_MOR"))
+                                    dungeonName = "Morgana";
+                                else if (item.Value.Type.Contains("_UND"))
+                                    dungeonName = "Mortos Vivos";
+                                else if (item.Value.Type.Contains("_KPR"))
+                                    dungeonName = "Gigantes";
+                                else if (item.Value.Type.Contains("_HER"))
+                                    dungeonName = "Minas";
+                                else if (item.Value.Type.Contains("_LEGACY"))
+                                    dungeonName = "Evento";
+                                else
+                                    dungeonName = "Portal";
 
                                 g.TranslateTransform(hX, hY);
                                 g.RotateTransform(135f);
