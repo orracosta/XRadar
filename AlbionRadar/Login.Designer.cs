@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.userLogin = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.passwordLogin = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
@@ -49,41 +49,41 @@
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Usuário:";
             // 
-            // materialSingleLineTextField1
+            // userLogin
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(22, 118);
-            this.materialSingleLineTextField1.Margin = new System.Windows.Forms.Padding(10);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(178, 23);
-            this.materialSingleLineTextField1.TabIndex = 1;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.userLogin.Depth = 0;
+            this.userLogin.Hint = "";
+            this.userLogin.Location = new System.Drawing.Point(22, 118);
+            this.userLogin.Margin = new System.Windows.Forms.Padding(10);
+            this.userLogin.MaxLength = 32767;
+            this.userLogin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.userLogin.Name = "userLogin";
+            this.userLogin.PasswordChar = '\0';
+            this.userLogin.SelectedText = "";
+            this.userLogin.SelectionLength = 0;
+            this.userLogin.SelectionStart = 0;
+            this.userLogin.Size = new System.Drawing.Size(178, 23);
+            this.userLogin.TabIndex = 1;
+            this.userLogin.TabStop = false;
+            this.userLogin.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField2
+            // passwordLogin
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(22, 182);
-            this.materialSingleLineTextField2.Margin = new System.Windows.Forms.Padding(10);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '*';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(178, 23);
-            this.materialSingleLineTextField2.TabIndex = 2;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = true;
+            this.passwordLogin.Depth = 0;
+            this.passwordLogin.Hint = "";
+            this.passwordLogin.Location = new System.Drawing.Point(22, 182);
+            this.passwordLogin.Margin = new System.Windows.Forms.Padding(10);
+            this.passwordLogin.MaxLength = 32767;
+            this.passwordLogin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.passwordLogin.Name = "passwordLogin";
+            this.passwordLogin.PasswordChar = '*';
+            this.passwordLogin.SelectedText = "";
+            this.passwordLogin.SelectionLength = 0;
+            this.passwordLogin.SelectionStart = 0;
+            this.passwordLogin.Size = new System.Drawing.Size(178, 23);
+            this.passwordLogin.TabIndex = 2;
+            this.passwordLogin.TabStop = false;
+            this.passwordLogin.UseSystemPasswordChar = true;
             // 
             // materialLabel2
             // 
@@ -114,6 +114,7 @@
             this.materialRaisedButton1.TabIndex = 4;
             this.materialRaisedButton1.Text = "Fazer Login";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // Login
             // 
@@ -122,15 +123,15 @@
             this.ClientSize = new System.Drawing.Size(221, 283);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.passwordLogin);
+            this.Controls.Add(this.userLogin);
             this.Controls.Add(this.materialLabel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Radar - Login";
+            this.Text = "Albion Radar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,8 +140,8 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
+        private MaterialSkin.Controls.MaterialSingleLineTextField userLogin;
+        private MaterialSkin.Controls.MaterialSingleLineTextField passwordLogin;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
