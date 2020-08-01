@@ -149,6 +149,7 @@
     <Compile Include="Options.Designer.cs">
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player\PlayerItem.cs" />
     <Compile Include="UHWID\CpuId.cs" />
     <Compile Include="UHWID\DiskId.cs" />
     <Compile Include="UHWID\UHWID.cs" />
@@ -202,6 +203,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\items.json" />
     <None Include="Resources\mobs.json" />
     <None Include="Resources\Roboto-Black.ttf" />
     <None Include="Resources\Roboto-BlackItalic.ttf" />

@@ -20,13 +20,29 @@ namespace AlbionRadar
             mountsInRange = new ConcurrentDictionary<int, int>();
             localPlayer = new Player();
         }
-        public void AddPlayer(Single posX, Single posY, string nickname, string guild, string alliance, int id)
+        public void AddPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int id, short weapon, short secundaryWeapon, short helm, short armor, short boot, short bag, short cape, short mount, short potion, short food)
         {
             if (!playersInRange.Any(x => x.Key == id))
             {
-                Player p = new Player(posX, posY, nickname, guild, alliance, id);
+                Player p = new Player(posX, posY, nickname, guild, alliance, id, weapon, secundaryWeapon, helm, armor, boot, bag, cape, mount, potion, food);
                 playersInRange.TryAdd(id, p);
             }
+        }
+        internal void UpdatePlayerEquipment(int id, short weapon, short secundaryWeapon, short helm, short armor, short boot, short bag, short cape, short mount, short potion, short food)
+        {
+            if (!playersInRange.Any(x => x.Key == id))
+                return;
+
+            playersInRange[id].Weapon = weapon;
+            playersInRange[id].SecundaryWeapon = secundaryWeapon;
+            playersInRange[id].Helm = helm;
+            playersInRange[id].Armor = armor;
+            playersInRange[id].Boot = boot;
+            playersInRange[id].Bag = bag;
+            playersInRange[id].Cape = cape;
+            playersInRange[id].Mount = mount;
+            playersInRange[id].Potion = potion;
+            playersInRange[id].Food = food;
         }
         public void AddMount(int id)
         {

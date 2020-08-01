@@ -41,6 +41,7 @@ namespace AlbionRadar
             InitializeComponent();
             Settings.loadSettings(this);
             MobInfo.loadMobList();
+            PlayerItem.loadItemList();
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
@@ -315,13 +316,24 @@ namespace AlbionRadar
                             Single hY = p.PosY - localY;
 
                             Brush playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
+
                             bool isAlly = false;
 
                             if (lbTrustGuilds.Items.Contains(p.Guild) || lbTrustAlliances.Items.Contains(p.Alliance))
                                 isAlly = true;
 
                             if (isAlly)
+                            {
                                 playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
+                            }
+                            else
+                            { 
+                                if (cbRangedMelee.Checked)
+                                {
+                                    if (PlayerItem.isRanged(p.Weapon))
+                                        playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
+                                }
+                            }
 
                             g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
 

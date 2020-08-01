@@ -34,6 +34,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.cbRangedMelee = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.cbAlertSound = new MaterialSkin.Controls.MaterialCheckBox();
@@ -154,10 +160,6 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.label37 = new System.Windows.Forms.Label();
-            this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -217,6 +219,8 @@
             // pCbDisplayOptions
             // 
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pCbDisplayOptions.Controls.Add(this.label39);
+            this.pCbDisplayOptions.Controls.Add(this.cbRangedMelee);
             this.pCbDisplayOptions.Controls.Add(this.label38);
             this.pCbDisplayOptions.Controls.Add(this.cbTagEnemies);
             this.pCbDisplayOptions.Controls.Add(this.label37);
@@ -238,8 +242,98 @@
             this.pCbDisplayOptions.Location = new System.Drawing.Point(221, 10);
             this.pCbDisplayOptions.Margin = new System.Windows.Forms.Padding(10);
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
-            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 233);
+            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 288);
             this.pCbDisplayOptions.TabIndex = 3;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(34, 230);
+            this.label39.Margin = new System.Windows.Forms.Padding(5);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(111, 17);
+            this.label39.TabIndex = 26;
+            this.label39.Text = "Cor ranged/melee";
+            // 
+            // cbRangedMelee
+            // 
+            this.cbRangedMelee.AutoSize = true;
+            this.cbRangedMelee.Checked = true;
+            this.cbRangedMelee.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRangedMelee.Depth = 0;
+            this.cbRangedMelee.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbRangedMelee.Location = new System.Drawing.Point(5, 223);
+            this.cbRangedMelee.Margin = new System.Windows.Forms.Padding(0);
+            this.cbRangedMelee.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbRangedMelee.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbRangedMelee.Name = "cbRangedMelee";
+            this.cbRangedMelee.Ripple = true;
+            this.cbRangedMelee.Size = new System.Drawing.Size(30, 30);
+            this.cbRangedMelee.TabIndex = 25;
+            this.cbRangedMelee.Text = " ";
+            this.cbRangedMelee.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(34, 201);
+            this.label38.Margin = new System.Windows.Forms.Padding(5);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 17);
+            this.label38.TabIndex = 24;
+            this.label38.Text = "TAG inimigos";
+            // 
+            // cbTagEnemies
+            // 
+            this.cbTagEnemies.AutoSize = true;
+            this.cbTagEnemies.Checked = true;
+            this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagEnemies.Depth = 0;
+            this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagEnemies.Location = new System.Drawing.Point(5, 194);
+            this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagEnemies.Name = "cbTagEnemies";
+            this.cbTagEnemies.Ripple = true;
+            this.cbTagEnemies.Size = new System.Drawing.Size(30, 30);
+            this.cbTagEnemies.TabIndex = 23;
+            this.cbTagEnemies.Text = " ";
+            this.cbTagEnemies.UseVisualStyleBackColor = true;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(34, 172);
+            this.label37.Margin = new System.Windows.Forms.Padding(5);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(73, 17);
+            this.label37.TabIndex = 22;
+            this.label37.Text = "TAG aliados";
+            // 
+            // cbTagAllys
+            // 
+            this.cbTagAllys.AutoSize = true;
+            this.cbTagAllys.Checked = true;
+            this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagAllys.Depth = 0;
+            this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagAllys.Location = new System.Drawing.Point(5, 165);
+            this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagAllys.Name = "cbTagAllys";
+            this.cbTagAllys.Ripple = true;
+            this.cbTagAllys.Size = new System.Drawing.Size(30, 30);
+            this.cbTagAllys.TabIndex = 21;
+            this.cbTagAllys.Text = " ";
+            this.cbTagAllys.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -396,7 +490,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel17.Location = new System.Drawing.Point(198, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(2, 229);
+            this.panel17.Size = new System.Drawing.Size(2, 284);
             this.panel17.TabIndex = 3;
             // 
             // panel18
@@ -405,14 +499,14 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(2, 229);
+            this.panel18.Size = new System.Drawing.Size(2, 284);
             this.panel18.TabIndex = 2;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel19.Location = new System.Drawing.Point(0, 231);
+            this.panel19.Location = new System.Drawing.Point(0, 286);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(200, 2);
             this.panel19.TabIndex = 1;
@@ -463,7 +557,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 209);
+            this.panel1.Size = new System.Drawing.Size(200, 233);
             this.panel1.TabIndex = 0;
             // 
             // label36
@@ -709,7 +803,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 205);
+            this.panel5.Size = new System.Drawing.Size(2, 229);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -718,14 +812,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 205);
+            this.panel4.Size = new System.Drawing.Size(2, 229);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 207);
+            this.panel3.Location = new System.Drawing.Point(0, 231);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
@@ -1942,66 +2036,6 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(34, 172);
-            this.label37.Margin = new System.Windows.Forms.Padding(5);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(73, 17);
-            this.label37.TabIndex = 22;
-            this.label37.Text = "TAG aliados";
-            // 
-            // cbTagAllys
-            // 
-            this.cbTagAllys.AutoSize = true;
-            this.cbTagAllys.Checked = true;
-            this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbTagAllys.Depth = 0;
-            this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagAllys.Location = new System.Drawing.Point(5, 165);
-            this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
-            this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbTagAllys.Name = "cbTagAllys";
-            this.cbTagAllys.Ripple = true;
-            this.cbTagAllys.Size = new System.Drawing.Size(30, 30);
-            this.cbTagAllys.TabIndex = 21;
-            this.cbTagAllys.Text = " ";
-            this.cbTagAllys.UseVisualStyleBackColor = true;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(34, 201);
-            this.label38.Margin = new System.Windows.Forms.Padding(5);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 17);
-            this.label38.TabIndex = 24;
-            this.label38.Text = "TAG inimigos";
-            // 
-            // cbTagEnemies
-            // 
-            this.cbTagEnemies.AutoSize = true;
-            this.cbTagEnemies.Checked = true;
-            this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbTagEnemies.Depth = 0;
-            this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagEnemies.Location = new System.Drawing.Point(5, 194);
-            this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
-            this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbTagEnemies.Name = "cbTagEnemies";
-            this.cbTagEnemies.Ripple = true;
-            this.cbTagEnemies.Size = new System.Drawing.Size(30, 30);
-            this.cbTagEnemies.TabIndex = 23;
-            this.cbTagEnemies.Text = " ";
-            this.cbTagEnemies.UseVisualStyleBackColor = true;
-            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2171,6 +2205,8 @@
         public MaterialSkin.Controls.MaterialCheckBox cbTagEnemies;
         private System.Windows.Forms.Label label37;
         public MaterialSkin.Controls.MaterialCheckBox cbTagAllys;
+        private System.Windows.Forms.Label label39;
+        public MaterialSkin.Controls.MaterialCheckBox cbRangedMelee;
     }
 }
 
