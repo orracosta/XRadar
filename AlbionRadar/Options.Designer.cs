@@ -274,6 +274,7 @@
             this.cbRangedMelee.TabIndex = 25;
             this.cbRangedMelee.Text = " ";
             this.cbRangedMelee.UseVisualStyleBackColor = true;
+            this.cbRangedMelee.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label38
             // 
@@ -304,6 +305,7 @@
             this.cbTagEnemies.TabIndex = 23;
             this.cbTagEnemies.Text = " ";
             this.cbTagEnemies.UseVisualStyleBackColor = true;
+            this.cbTagEnemies.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label37
             // 
@@ -334,6 +336,7 @@
             this.cbTagAllys.TabIndex = 21;
             this.cbTagAllys.Text = " ";
             this.cbTagAllys.UseVisualStyleBackColor = true;
+            this.cbTagAllys.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // label7
             // 
