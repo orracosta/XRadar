@@ -39,6 +39,7 @@ namespace AlbionRadar
             s.showDungeon = form.cbShowDungeon.Checked;
             s.tagAllys = form.cbTagAllys.Checked;
             s.tagEnemies = form.cbTagEnemies.Checked;
+            s.rangedMelee = form.cbRangedMelee.Checked;
 
             // Coleta - Tier
             s.showTier1 = form.cbShowTier1.Checked;
@@ -90,6 +91,7 @@ namespace AlbionRadar
             form.cbShowDungeon.Checked = s.showDungeon;
             form.cbTagAllys.Checked = s.tagAllys;
             form.cbTagEnemies.Checked = s.tagEnemies;
+            form.cbRangedMelee.Checked = s.rangedMelee;
 
             // Coleta - Tier
             form.cbShowTier1.Checked = s.showTier1;

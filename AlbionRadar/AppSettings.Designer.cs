@@ -394,5 +394,17 @@ namespace AlbionRadar {
                 this["tagEnemies"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rangedMelee {
+            get {
+                return ((bool)(this["rangedMelee"]));
+            }
+            set {
+                this["rangedMelee"] = value;
+            }
+        }
     }
 }
