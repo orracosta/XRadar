@@ -584,6 +584,10 @@ namespace AlbionRadar
                             if (communicator.DataLink.Kind != DataLinkKind.Ethernet)
                                 return;
 
+                            // Compila o filtro
+                            using (BerkeleyPacketFilter filter = communicator.CreateFilter("ip and udp"))
+                                communicator.SetFilter(filter);
+
                             communicator.ReceivePackets(0, PacketHandler);
                         }
                         catch (Exception e)
