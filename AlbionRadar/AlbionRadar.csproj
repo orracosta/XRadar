@@ -153,6 +153,12 @@
     <Compile Include="UHWID\CpuId.cs" />
     <Compile Include="UHWID\DiskId.cs" />
     <Compile Include="UHWID\UHWID.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\RadarMap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Utils\PerPixelAlphaForm.resx">
       <DependentUpon>PerPixelAlphaForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -29,6 +29,7 @@ namespace AlbionRadar
     public partial class Options : MaterialForm
     {
         RadarMap radarMap = new RadarMap();
+        UserInfo userInfo;
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
         HarvestableHandler harvestableHandler = new HarvestableHandler();
@@ -73,7 +74,11 @@ namespace AlbionRadar
             }
 
             AllyListTimer.Start();
+
+            //TODO: Refazer isso
+            userInfo = new UserInfo(this);
         }
+        public PlayerHandler PlayerHandler { get => playerHandler; }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             Environment.Exit(Environment.ExitCode);
@@ -554,6 +559,18 @@ namespace AlbionRadar
                 radarMap.Hide();
 
             Settings.saveSettings(this);
+        }
+        private void userInfoWindow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.cbUserInfoWindow.Checked)
+                userInfo.Show();
+            else
+                userInfo.Hide();
+        }
+        public void hideInfoUser ()
+        {
+            this.cbUserInfoWindow.Checked = false;
+            userInfo.Hide();
         }
         private void others_CheckedChanged(object sender, EventArgs e)
         {

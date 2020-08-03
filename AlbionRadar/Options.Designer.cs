@@ -56,6 +56,8 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
             this.label36 = new System.Windows.Forms.Label();
             this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -539,6 +541,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label40);
+            this.panel1.Controls.Add(this.cbUserInfoWindow);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.cbShowDungeon);
             this.panel1.Controls.Add(this.label18);
@@ -560,8 +564,37 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 233);
+            this.panel1.Size = new System.Drawing.Size(200, 286);
             this.panel1.TabIndex = 0;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(34, 205);
+            this.label40.Margin = new System.Windows.Forms.Padding(5);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(138, 17);
+            this.label40.TabIndex = 17;
+            this.label40.Text = "Informações de usuário";
+            // 
+            // cbUserInfoWindow
+            // 
+            this.cbUserInfoWindow.AutoSize = true;
+            this.cbUserInfoWindow.Depth = 0;
+            this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 198);
+            this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbUserInfoWindow.Name = "cbUserInfoWindow";
+            this.cbUserInfoWindow.Ripple = true;
+            this.cbUserInfoWindow.Size = new System.Drawing.Size(30, 30);
+            this.cbUserInfoWindow.TabIndex = 16;
+            this.cbUserInfoWindow.Text = " ";
+            this.cbUserInfoWindow.UseVisualStyleBackColor = true;
+            this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
             // 
             // label36
             // 
@@ -806,7 +839,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 229);
+            this.panel5.Size = new System.Drawing.Size(2, 282);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -815,14 +848,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 229);
+            this.panel4.Size = new System.Drawing.Size(2, 282);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 231);
+            this.panel3.Location = new System.Drawing.Point(0, 284);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
@@ -2210,6 +2243,8 @@
         public MaterialSkin.Controls.MaterialCheckBox cbTagAllys;
         private System.Windows.Forms.Label label39;
         public MaterialSkin.Controls.MaterialCheckBox cbRangedMelee;
+        private System.Windows.Forms.Label label40;
+        public MaterialSkin.Controls.MaterialCheckBox cbUserInfoWindow;
     }
 }
 
