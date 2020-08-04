@@ -215,18 +215,6 @@
     </Compile>
     <None Include="Resources\items.json" />
     <None Include="Resources\mobs.json" />
-    <None Include="Resources\Roboto-Black.ttf" />
-    <None Include="Resources\Roboto-BlackItalic.ttf" />
-    <None Include="Resources\Roboto-Bold.ttf" />
-    <None Include="Resources\Roboto-BoldItalic.ttf" />
-    <None Include="Resources\Roboto-Italic.ttf" />
-    <None Include="Resources\Roboto-Light.ttf" />
-    <None Include="Resources\Roboto-LightItalic.ttf" />
-    <None Include="Resources\Roboto-Medium.ttf" />
-    <None Include="Resources\Roboto-MediumItalic.ttf" />
-    <None Include="Resources\Roboto-Regular.ttf" />
-    <None Include="Resources\Roboto-Thin.ttf" />
-    <None Include="Resources\Roboto-ThinItalic.ttf" />
     <None Include="Resources\spells.json" />
   </ItemGroup>
   <ItemGroup>
@@ -235,8 +223,6 @@
   <ItemGroup>
     <Content Include="icon.ico" />
     <None Include="Resources\loading.png" />
-    <None Include="Resources\loading.gif" />
-    <None Include="Resources\loading.jpg" />
     <None Include="Resources\addIcon.png" />
     <None Include="Resources\removeIcon.png" />
     <None Include="Resources\dg_special.png" />
