@@ -153,6 +153,16 @@ namespace AlbionRadar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loading {
+            get {
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap madeira_0 {
             get {
                 object obj = ResourceManager.GetObject("madeira_0", resourceCulture);
@@ -327,6 +337,16 @@ namespace AlbionRadar.Properties {
             get {
                 object obj = ResourceManager.GetObject("removeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] spells {
+            get {
+                object obj = ResourceManager.GetObject("spells", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

@@ -28,13 +28,13 @@ namespace AlbionRadar
         {
             int index = 0;
             dynamic jsonArray = JsonConvert.DeserializeObject(Encoding.UTF8.GetString(Properties.Resources.mobs));
-            foreach (var item in jsonArray.Mobs)
+            foreach (var item in jsonArray["Mobs"]["Mob"])
             {
-                if (item.Loot != null)
+                if (item["Loot"] != null)
                 {
-                    if(item.Loot.Value != "" && item.Loot.Harvestable != null)
+                    if(item["Loot"].GetType() == typeof(Object) && item["Loot"]["Harvestable"] != null)
                     {
-                        mobsInfo.Add(new MobInfo(index, (byte)item.tier, (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item.Loot.Harvestable.type), (byte)item.Loot.Harvestable.tier));
+                        mobsInfo.Add(new MobInfo(index, (byte)item["@tier"], (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]), (byte)item["Loot"]["Harvestable"]["@tier"]));
                     }
                 }
 

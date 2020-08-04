@@ -139,7 +139,6 @@ namespace AlbionRadar
                         isBeeping = false;
                     }).Start();
                 }
-                
             }
         }
     }

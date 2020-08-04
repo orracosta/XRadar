@@ -77,7 +77,6 @@ namespace AlbionRadar
                     break;
                 case EventCodes.evCharacterEquipmentChanged:
                     onCharacterEquipmentChanged(parameters);
-                    //playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7], items[8], items[8]);
                     break;
                 default:
                     break;
@@ -153,45 +152,128 @@ namespace AlbionRadar
             string guild = oGuild == null ? "" : oGuild.ToString();
             string alliance = oGuild == null ? "" : oAlliance.ToString();
             Single[] pos = (Single[])parameters[13];
-            List<short> items = new List<short>();
+            short[] items = new short[10];
+            short[] skills = new short[6];
 
             if (parameters[33].GetType() == typeof(Byte[]))
             {
-                Byte[] itemList = (Byte[])parameters[33]; //list of types
+                int index = 0;
+                Byte[] itemList = (Byte[])parameters[33];
                 foreach (Byte b in itemList)
-                    items.Add(b);
+                {
+                    if (index >= 10)
+                        break;
+
+                    items[index] = Convert.ToInt16(b);
+                    index++;
+                }
             }
             else
             {
-                Int16[] itemList = (Int16[])parameters[33]; //list of types
+                int index = 0;
+                Int16[] itemList = (Int16[])parameters[33];
                 foreach (Int16 b in itemList)
-                    items.Add(b);
+                {
+                    if (index >= 10)
+                        break;
+
+                    items[index] = b;
+                    index++;
+                }
+            }
+
+            if (parameters[35].GetType() == typeof(Byte[]))
+            {
+                int index = 0;
+                Byte[] skillList = (Byte[])parameters[35];
+                foreach (Byte b in skillList)
+                {
+                    if (index >= 6)
+                        break;
+
+                    skills[index] = Convert.ToInt16(b);
+                    index++;
+                }
+            }
+            else
+            {
+                int index = 0;
+                Int16[] skillList = (Int16[])parameters[35];
+                foreach (Int16 b in skillList)
+                {
+                    if (index >= 6)
+                        break;
+
+                    skills[index] = b;
+                    index++;
+                }
             }
 
             Settings.needBeepSound(guild, alliance);
-            //(Single posX, Single posY, String nickname, String guild, String alliance, int id, short weapon, short secundaryWeapon, short helm, short armor, short boot, short bag, short cape, short mount, short potion, short food)
-            playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7], items[8], items[9]);
+            playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items, skills);
 
-    }
+        }
         private void onCharacterEquipmentChanged(Dictionary<byte, object> parameters)
         {
             int id = int.Parse(parameters[0].ToString());
-            List<short> items = new List<short>();
+            short[] items = new short[10];
+            short[] skills = new short[6];
 
             if (parameters[2].GetType() == typeof(Byte[]))
             {
+                int index = 0;
                 Byte[] itemList = (Byte[])parameters[2];
                 foreach (Byte b in itemList)
-                    items.Add(b);
+                {
+                    if (index >= 10)
+                        break;
+
+                    items[index] = Convert.ToInt16(b);
+                    index++;
+                }
             }
             else
             {
+                int index = 0;
                 Int16[] itemList = (Int16[])parameters[2];
                 foreach (Int16 b in itemList)
-                    items.Add(b);
+                {
+                    if (index >= 10)
+                        break;
+
+                    items[index] = b;
+                    index++;
+                }
             }
 
-            playerHandler.UpdatePlayerEquipment(id, items[0], items[1], items[2], items[3], items[4], items[5], items[6], items[7], items[8], items[9]);
+            if (parameters[5].GetType() == typeof(Byte[]))
+            {
+                int index = 0;
+                Byte[] skillList = (Byte[])parameters[5];
+                foreach (Byte b in skillList)
+                {
+                    if (index >= 6)
+                        break;
+
+                    skills[index] = Convert.ToInt16(b);
+                    index++;
+                }
+            }
+            else
+            {
+                int index = 0;
+                Int16[] skillList = (Int16[])parameters[5];
+                foreach (Int16 b in skillList)
+                {
+                    if (index >= 6)
+                        break;
+
+                    skills[index] = b;
+                    index++;
+                }
+            }
+
+            playerHandler.UpdatePlayerEquipment(id, items, skills);
         }
         private void onNewMob(Dictionary<byte, object> parameters)
         {

@@ -150,6 +150,7 @@
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
     <Compile Include="Player\PlayerItem.cs" />
+    <Compile Include="Player\PlayerSpell.cs" />
     <Compile Include="UHWID\CpuId.cs" />
     <Compile Include="UHWID\DiskId.cs" />
     <Compile Include="UHWID\UHWID.cs" />
@@ -226,12 +227,16 @@
     <None Include="Resources\Roboto-Regular.ttf" />
     <None Include="Resources\Roboto-Thin.ttf" />
     <None Include="Resources\Roboto-ThinItalic.ttf" />
+    <None Include="Resources\spells.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\loading.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\loading.jpg" />
     <None Include="Resources\addIcon.png" />
     <None Include="Resources\removeIcon.png" />
     <None Include="Resources\dg_special.png" />

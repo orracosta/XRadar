@@ -221,6 +221,8 @@
             // pCbDisplayOptions
             // 
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pCbDisplayOptions.Controls.Add(this.label40);
+            this.pCbDisplayOptions.Controls.Add(this.cbUserInfoWindow);
             this.pCbDisplayOptions.Controls.Add(this.label39);
             this.pCbDisplayOptions.Controls.Add(this.cbRangedMelee);
             this.pCbDisplayOptions.Controls.Add(this.label38);
@@ -541,8 +543,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.cbUserInfoWindow);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.cbShowDungeon);
             this.panel1.Controls.Add(this.label18);
@@ -572,19 +572,20 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(34, 205);
+            this.label40.Location = new System.Drawing.Point(34, 257);
             this.label40.Margin = new System.Windows.Forms.Padding(5);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(138, 17);
+            this.label40.Size = new System.Drawing.Size(101, 17);
             this.label40.TabIndex = 17;
-            this.label40.Text = "Informações de usuário";
+            this.label40.Text = "Inspetor de Itens";
+            this.label40.Click += new System.EventHandler(this.label40_Click);
             // 
             // cbUserInfoWindow
             // 
             this.cbUserInfoWindow.AutoSize = true;
             this.cbUserInfoWindow.Depth = 0;
             this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 198);
+            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 250);
             this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
             this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2084,7 +2085,7 @@
             this.Name = "Options";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Albion Radar";
+            this.Text = "Albion Radar 2D";
             this.Load += new System.EventHandler(this.Options_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

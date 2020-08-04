@@ -43,6 +43,7 @@ namespace AlbionRadar
             Settings.loadSettings(this);
             MobInfo.loadMobList();
             PlayerItem.loadItemList();
+            //PlayerSpell.loadSpellsList();
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
@@ -335,7 +336,7 @@ namespace AlbionRadar
                             { 
                                 if (cbRangedMelee.Checked)
                                 {
-                                    if (PlayerItem.isRanged(p.Weapon))
+                                    if (PlayerItem.isRanged(p.Items[0]))
                                         playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
                                 }
                             }
@@ -632,5 +633,10 @@ namespace AlbionRadar
         }
 
         #endregion
+
+        private void label40_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,17 +15,29 @@ namespace AlbionRada.Player
         private string alliance;
         private int id;
 
-        // items
-        private short weapon;
-        private short secundaryWeapon;
-        private short helm;
-        private short armor;
-        private short boot;
-        private short bag;
-        private short cape;
-        private short mount;
-        private short potion;
-        private short food;
+        /* ITEMS
+         * 0 = item principal
+         * 1 = item secundario
+         * 2 = elmo
+         * 3 = armadura
+         * 4 = bota
+         * 5 = bolsa
+         * 6 = capa
+         * 7 = montaria
+         * 8 = comida
+         * 9 = poção
+        */
+        private short[] items;
+
+        /* SKILLS
+         * 0 = weapon - 1
+         * 1 = weapon - 2
+         * 2 = weapon - 3
+         * 3 = chest
+         * 4 = head
+         * 5 = boots
+        */
+        private short[] skills;
 
         public Player()
         {
@@ -35,20 +47,10 @@ namespace AlbionRada.Player
             guild = "";
             alliance = "";
             id = 0;
-
-            //items
-            weapon = 0;
-            secundaryWeapon = 0;
-            helm = 0;
-            armor = 0;
-            boot = 0;
-            bag = 0;
-            cape = 0;
-            mount = 0;
-            potion = 0;
-            food = 0;
+            items = new short[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            skills = new short[] { -1, -1, -1, -1, -1, -1 };
         }
-        public Player(Single posX, Single posY, String nickname, String guild, String alliance, int id, short weapon, short secundaryWeapon, short helm, short armor, short boot, short bag, short cape, short mount, short potion, short food)
+        public Player(Single posX, Single posY, String nickname, String guild, String alliance, int id, short[] items, short[] skills)
         {
             this.posX = posX;
             this.posY = posY;
@@ -56,18 +58,8 @@ namespace AlbionRada.Player
             this.guild = guild;
             this.alliance = alliance;
             this.id = id;
-
-            // items
-            this.weapon = weapon;
-            this.secundaryWeapon = secundaryWeapon;
-            this.helm = helm;
-            this.armor = armor;
-            this.boot = boot;
-            this.bag = bag;
-            this.cape = cape;
-            this.mount = mount;
-            this.potion = potion;
-            this.food = food;
+            this.items = items;
+            this.skills = skills;
         }
         public override string ToString()
         {
@@ -103,55 +95,15 @@ namespace AlbionRada.Player
             get { return id; }
             set { id = value; }
         }
-        public short Weapon
+        public short[] Items
         {
-            get { return weapon; }
-            set { weapon = value; }
+            get { return items; }
+            set { items = value; }
         }
-        public short SecundaryWeapon
+        public short[] Skills
         {
-            get { return secundaryWeapon; }
-            set { secundaryWeapon = value; }
-        }
-        public short Helm
-        {
-            get { return helm; }
-            set { helm = value; }
-        }
-        public short Armor
-        {
-            get { return armor; }
-            set { armor = value; }
-        }
-        public short Boot
-        {
-            get { return boot; }
-            set { boot = value; }
-        }
-        public short Bag
-        {
-            get { return bag; }
-            set { bag = value; }
-        }
-        public short Cape
-        {
-            get { return cape; }
-            set { cape = value; }
-        }
-        public short Mount
-        {
-            get { return mount; }
-            set { mount = value; }
-        }
-        public short Potion
-        {
-            get { return potion; }
-            set { potion = value; }
-        }
-        public short Food
-        {
-            get { return food; }
-            set { food = value; }
+            get { return skills; }
+            set { skills = value; }
         }
     }
 }

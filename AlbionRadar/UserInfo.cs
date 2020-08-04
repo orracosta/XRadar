@@ -27,6 +27,7 @@ namespace AlbionRadar
 
             this.options = options;
             updatePlayerList.Start();
+            updatePlayerSelected.Start();
 
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -61,7 +62,12 @@ namespace AlbionRadar
 
         private void lbPlayersInRange_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedItem = ((ListBox)sender).SelectedItem;
+            showPlayerInfo();
+        }
+
+        private void showPlayerInfo()
+        {
+            var selectedItem = lbPlayersInRange.SelectedItem;
 
             if (selectedItem == null)
                 return;
@@ -69,17 +75,38 @@ namespace AlbionRadar
             Player player = options.PlayerHandler.PlayersInRange.FirstOrDefault(x => x.Value.Nickname == selectedItem.ToString()).Value;
             if (player != null)
             {
-                pFWeapon.Text = PlayerItem.getItemName(player.Weapon);
-                if (PlayerItem.isTwoHandded(player.Weapon))
-                    pSWeapon.Text = PlayerItem.getItemName(player.Weapon);
+                pFWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[0]);
+                if (PlayerItem.isTwoHandded(player.Items[0]))
+                    pSWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[0]);
                 else
-                    pSWeapon.Text = PlayerItem.getItemName(player.SecundaryWeapon);
+                    pSWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[1]);
 
-                pHelm.Text = PlayerItem.getItemName(player.Helm);
-                pArmor.Text = PlayerItem.getItemName(player.Armor);
-                pBoot.Text = PlayerItem.getItemName(player.Boot);
-                pCape.Text = PlayerItem.getItemName(player.Cape);
+                pHead.ImageLocation = PlayerItem.getItemImage(player.Items[2]);
+                pChest.ImageLocation = PlayerItem.getItemImage(player.Items[3]);
+                pBoot.ImageLocation = PlayerItem.getItemImage(player.Items[4]);
+                pBag.ImageLocation = PlayerItem.getItemImage(player.Items[5]);
+                pCape.ImageLocation = PlayerItem.getItemImage(player.Items[6]);
             }
+        }
+
+        private void updatePlayerSelected_Tick(object sender, EventArgs e)
+        {
+            if (lbPlayersInRange.Items.Count > 0 && lbPlayersInRange.SelectedItem == null)
+            {
+                lbPlayersInRange.SetSelected(0, true);
+            }
+            else if(lbPlayersInRange.Items.Count <= 0)
+            {
+                pSWeapon.ImageLocation = "";
+                pSWeapon.ImageLocation = "";
+                pHead.ImageLocation = "";
+                pChest.ImageLocation = "";
+                pBoot.ImageLocation = "";
+                pBag.ImageLocation = "";
+                pCape.ImageLocation = "";
+            }
+
+            showPlayerInfo();
         }
     }
 }

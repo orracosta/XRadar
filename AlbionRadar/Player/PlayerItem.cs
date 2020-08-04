@@ -37,7 +37,7 @@ namespace AlbionRadar
         public static bool isRanged(int itemID)
         {
             PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);
-            if (item.uniqueName.Contains("BOW") || item.uniqueName.Contains("STAFF"))
+            if (item != null && (item.uniqueName.Contains("BOW") || item.uniqueName.Contains("STAFF")))
                 return true;
             else
                 return false;
@@ -45,52 +45,19 @@ namespace AlbionRadar
         public static bool isTwoHandded(int itemID)
         {
             PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);
-            if (item.uniqueName.Contains("2H_"))
+            if (item != null && item.uniqueName.Contains("2H_"))
                 return true;
             else
                 return false;
         }
-        public static string getItemName(int itemID)
+        public static string getItemImage(int itemID)
         {
             PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);
-            string tier;
-            string enchant;
 
-            if (itemID == 0)
-                return "Nenhum Item";
-
-            if (item.uniqueName.Contains("T1_"))
-                tier = "T1";
-            else if (item.uniqueName.Contains("T2_"))
-                tier = "T2";
-            else if (item.uniqueName.Contains("T3_"))
-                tier = "T3";
-            else if (item.uniqueName.Contains("T4_"))
-                tier = "T4";
-            else if (item.uniqueName.Contains("T5_"))
-                tier = "T5";
-            else if (item.uniqueName.Contains("T6_"))
-                tier = "T6";
-            else if (item.uniqueName.Contains("T7_"))
-                tier = "T7";
-            else if (item.uniqueName.Contains("T8_"))
-                tier = "T8";
+            if (item != null && itemID != 0)
+                return "https://render.albiononline.com/v1/item/" + item.uniqueName + ".png?size=80";
             else
-                tier = "";
-
-            if (item.uniqueName.Contains("@1"))
-                enchant = ".1";
-            else if (item.uniqueName.Contains("@2"))
-                enchant = ".2";
-            else if (item.uniqueName.Contains("@3"))
-                enchant = ".3";
-            else
-                enchant = "";
-
-            if (tier == "" && enchant == "")
-                return item.localizedNames;
-            else
-                return "[" + tier + enchant + "] " + item.localizedNames;
+                return "";
         }
     }
 }
