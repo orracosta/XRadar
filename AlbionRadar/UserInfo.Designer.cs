@@ -280,6 +280,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UserInfo";
+            this.Opacity = 0.9D;
             this.ShowInTaskbar = false;
             this.Text = "Albion Radar - Inspetor";
             this.TopMost = true;

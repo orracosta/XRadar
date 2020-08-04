@@ -57,10 +57,12 @@ namespace AlbionRadar
         {
             get { return LocalPlayer; }
         }
-        internal List<int> MountsInRange
+
+        internal ConcurrentDictionary<int, int> MountsInRange 
         {
-            get { return MountsInRange; }
+            get { return mountsInRange; }
         }
+
         public void UpdateLocalPlayerPosition(Single posX, Single posY)
         {
             localPlayer.PosX = posX;

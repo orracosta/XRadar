@@ -66,9 +66,6 @@ namespace AlbionRadar
                 case EventCodes.evMobChangeState:
                     onMobChangeState(parameters);
                     break;
-                case EventCodes.evJoinFinished:
-                    onJoinFinished(parameters);
-                    break;
                 case EventCodes.evHarvestableChangeState:
                     onHarvestableChangeState(parameters);
                     break;
@@ -81,7 +78,7 @@ namespace AlbionRadar
                 default:
                     break;
             }
-
+            debugEventInfo(parameters, evCode, "OnEvent");
         }
         protected override void OnRequest(byte operationCode, Dictionary<byte, object> parameters)
         {
@@ -97,12 +94,13 @@ namespace AlbionRadar
                 case OperationCodes.opMove:
                     onLocalPlayerMovementRequest(parameters);
                     break;
+                case OperationCodes.opChangeCluster:
+                    onChangeCluster(parameters);
+                    break;
                 default:
                     break;
             }
-
-            //debugOperationInfo(parameters, opCode, "OnRequest");
-
+            debugOperationInfo(parameters, opCode, "OnRequest");
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
         {
@@ -408,12 +406,6 @@ namespace AlbionRadar
             mobsHandler.UpdateMobEnchantmentLevel(mobId, enchantmentLevel);
 
         }
-        private void onJoinFinished(Dictionary<byte, object> parameters)
-        {
-            this.harvestableHandler.HarvestableList.Clear();
-            this.mobsHandler.MobList.Clear();
-            this.dungeonHandler.DungeonList.Clear();
-        }
         #endregion
 
         #region OnRequests
@@ -426,6 +418,14 @@ namespace AlbionRadar
             Single posY = Single.Parse(location[1].ToString());
 
             playerHandler.UpdateLocalPlayerPosition(posX, posY);
+        }
+        private void onChangeCluster(Dictionary<byte, object> parameters)
+        {
+            this.harvestableHandler.HarvestableList.Clear();
+            this.mobsHandler.MobList.Clear();
+            this.dungeonHandler.DungeonList.Clear();
+            this.playerHandler.PlayersInRange.Clear();
+            this.playerHandler.MountsInRange.Clear();
         }
         private void onMounted(Dictionary<byte, object> parameters)
         {

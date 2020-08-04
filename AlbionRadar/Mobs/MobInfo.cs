@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace AlbionRadar
             {
                 if (item["Loot"] != null)
                 {
-                    if(item["Loot"].GetType() == typeof(Object) && item["Loot"]["Harvestable"] != null)
+                    if(item["Loot"].GetType() == typeof(JObject) && item["Loot"]["Harvestable"] != null)
                     {
                         mobsInfo.Add(new MobInfo(index, (byte)item["@tier"], (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]), (byte)item["Loot"]["Harvestable"]["@tier"]));
                     }

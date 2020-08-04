@@ -4,6 +4,37 @@
         "PcapDotNet.Core"
     </assembly>
     <members>
+        <member name="P:PcapDotNet.Core.SamplingMethodOneEveryCount.Value">
+            <summary>
+Indicates the number of packets (minus 1) that must be discarded before one packet got accepted. 
+In other words, if 'value = 10', the first packet is returned to the caller, while the following 9 are discarded.
+</summary>
+        </member>
+        <member name="M:PcapDotNet.Core.SamplingMethodOneEveryCount.#ctor(System.Int32)">
+            <summary>
+Constructs by giving a count.
+</summary>
+            <param name="count">1 packet out of count packets will be sampled (for each sampled packet, count-1 will be discarded).</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The given count is non-positive.</exception>
+        </member>
+        <member name="T:PcapDotNet.Core.SamplingMethodOneEveryCount">
+            <summary>
+Defines that only 1 out of count packets must be returned to the user.
+In other words, if the count is set to 10, the first packet is returned to the caller, while the following 9 are discarded.
+</summary>
+        </member>
+        <member name="M:PcapDotNet.Core.OfflinePacketCommunicator.Transmit(PcapDotNet.Core.PacketSendBuffer,System.Boolean)">
+            <summary>
+Transmit is not supported on offline captures.
+</summary>
+            <exception cref="T:System.InvalidOperationException">Thrown always.</exception>
+        </member>
+        <member name="P:PcapDotNet.Core.OfflinePacketCommunicator.TotalStatistics">
+            <summary>
+TotalStatistics is not supported on offline captures.
+</summary>
+            <exception cref="T:System.InvalidOperationException">Thrown always.</exception>
+        </member>
         <member name="M:PcapDotNet.Core.OfflinePacketDevice.Open(System.Int32,PcapDotNet.Core.PacketDeviceOpenAttributes,System.Int32)">
             <summary>
 Open a generic source in order to capture / send (WinPcap only) traffic. 
@@ -43,100 +74,6 @@ The device can opened to read packets from.
         <member name="T:PcapDotNet.Core.OfflinePacketDevice">
             <summary>
 An offline interface - a pcap file to read packets from.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.PcapLibrary.Version">
-            <summary>
-The Pcap library version.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.PcapLibrary">
-            <summary>
-This class holds methods for general pcap library functionality.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.SamplingMethodOneEveryCount.Value">
-            <summary>
-Indicates the number of packets (minus 1) that must be discarded before one packet got accepted. 
-In other words, if 'value = 10', the first packet is returned to the caller, while the following 9 are discarded.
-</summary>
-        </member>
-        <member name="M:PcapDotNet.Core.SamplingMethodOneEveryCount.#ctor(System.Int32)">
-            <summary>
-Constructs by giving a count.
-</summary>
-            <param name="count">1 packet out of count packets will be sampled (for each sampled packet, count-1 will be discarded).</param>
-            <exception cref="T:System.ArgumentOutOfRangeException">The given count is non-positive.</exception>
-        </member>
-        <member name="T:PcapDotNet.Core.SamplingMethodOneEveryCount">
-            <summary>
-Defines that only 1 out of count packets must be returned to the user.
-In other words, if the count is set to 10, the first packet is returned to the caller, while the following 9 are discarded.
-</summary>
-        </member>
-        <member name="M:PcapDotNet.Core.OfflinePacketCommunicator.Transmit(PcapDotNet.Core.PacketSendBuffer,System.Boolean)">
-            <summary>
-Transmit is not supported on offline captures.
-</summary>
-            <exception cref="T:System.InvalidOperationException">Thrown always.</exception>
-        </member>
-        <member name="P:PcapDotNet.Core.OfflinePacketCommunicator.TotalStatistics">
-            <summary>
-TotalStatistics is not supported on offline captures.
-</summary>
-            <exception cref="T:System.InvalidOperationException">Thrown always.</exception>
-        </member>
-        <member name="P:PcapDotNet.Core.SamplingMethodFirstAfterInterval.Value">
-            <summary>
-Indicates the 'waiting time' in milliseconds before one packet got accepted. 
-In other words, if 'value = 10', the first packet is returned to the caller; the next returned one will be the first packet that arrives when 10ms have elapsed.
-</summary>
-        </member>
-        <member name="M:PcapDotNet.Core.SamplingMethodFirstAfterInterval.#ctor(System.TimeSpan)">
-            <summary>
-Constructs by giving an interval as TimeSpan.
-</summary>
-            <param name="interval">The time to wait between packets sampled.</param>
-            <exception cref="T:System.ArgumentOutOfRangeException">The interval is negative or larger than 2^31 milliseconds.</exception>
-        </member>
-        <member name="M:PcapDotNet.Core.SamplingMethodFirstAfterInterval.#ctor(System.Int32)">
-            <summary>
-Constructs by giving an interval in milliseconds.
-</summary>
-            <param name="intervalInMilliseconds">The number of milliseconds to wait between packets sampled.</param>
-            <exception cref="T:System.ArgumentOutOfRangeException">The given number of milliseconds is negative.</exception>
-        </member>
-        <member name="T:PcapDotNet.Core.SamplingMethodFirstAfterInterval">
-            <summary>
-This sampling method defines that we have to return 1 packet every given time-interval.
-In other words, if the interval is set to 10 milliseconds, the first packet is returned to the caller; the next returned one will be the first packet that arrives when 10ms have elapsed.
-</summary>
-        </member>
-        <member name="M:PcapDotNet.Core.LivePacketCommunicator.Transmit(PcapDotNet.Core.PacketSendBuffer,System.Boolean)">
-            <summary>
-Send a buffer of packets to the network.
-This function transmits the content of a queue to the wire.
-<seealso cref="M:PcapDotNet.Core.PacketCommunicator.SendPacket(PcapDotNet.Packets.Packet)" /><seealso cref="T:PcapDotNet.Core.PacketSendBuffer" /></summary>
-            <param name="sendBuffer">Contains the packets to send.</param>
-            <param name="isSync">Determines if the send operation must be synchronized: if it is true, the packets are sent respecting the timestamps, otherwise they are sent as fast as possible.</param>
-            <exception cref="T:System.InvalidOperationException">An error occurred during the send. The error can be caused by a driver/adapter problem or by an inconsistent/bogus send buffer..</exception>
-            <remarks>
-                <list type="bullet">
-                    <item>Using this function is more efficient than issuing a series of SendPacket(), because the packets are buffered in the kernel driver, so the number of context switches is reduced. Therefore, expect a better throughput when using Transmit().</item>
-                    <item>When isSync is true, the packets are synchronized in the kernel with a high precision timestamp. This requires a non-negligible amount of CPU, but allows normally to send the packets with a precision of some microseconds (depending on the accuracy of the performance counter of the machine). Such a precision cannot be reached sending the packets with SendPacket().</item>
-                </list>
-            </remarks>
-        </member>
-        <member name="P:PcapDotNet.Core.LivePacketCommunicator.TotalStatistics">
-            <summary>
-Statistics on current capture.
-The values represent packet statistics from the start of the run to the time of the call. 
-</summary>
-            <exception cref="T:System.InvalidOperationException">Thrown if there is an error or the underlying packet capture doesn't support packet statistics.</exception>
-        </member>
-        <member name="T:PcapDotNet.Core.LivePacketCommunicator">
-            <summary>
-A network device packet communicator.
 </summary>
         </member>
         <member name="M:PcapDotNet.Core.LivePacketDevice.Open(System.Int32,PcapDotNet.Core.PacketDeviceOpenAttributes,System.Int32)">
@@ -187,6 +124,43 @@ There may be network devices that cannot be opened with Open() by the process ca
         <member name="T:PcapDotNet.Core.LivePacketDevice">
             <summary>
 A live interface.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.PcapLibrary.Version">
+            <summary>
+The Pcap library version.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.PcapLibrary">
+            <summary>
+This class holds methods for general pcap library functionality.
+</summary>
+        </member>
+        <member name="M:PcapDotNet.Core.LivePacketCommunicator.Transmit(PcapDotNet.Core.PacketSendBuffer,System.Boolean)">
+            <summary>
+Send a buffer of packets to the network.
+This function transmits the content of a queue to the wire.
+<seealso cref="M:PcapDotNet.Core.PacketCommunicator.SendPacket(PcapDotNet.Packets.Packet)" /><seealso cref="T:PcapDotNet.Core.PacketSendBuffer" /></summary>
+            <param name="sendBuffer">Contains the packets to send.</param>
+            <param name="isSync">Determines if the send operation must be synchronized: if it is true, the packets are sent respecting the timestamps, otherwise they are sent as fast as possible.</param>
+            <exception cref="T:System.InvalidOperationException">An error occurred during the send. The error can be caused by a driver/adapter problem or by an inconsistent/bogus send buffer..</exception>
+            <remarks>
+                <list type="bullet">
+                    <item>Using this function is more efficient than issuing a series of SendPacket(), because the packets are buffered in the kernel driver, so the number of context switches is reduced. Therefore, expect a better throughput when using Transmit().</item>
+                    <item>When isSync is true, the packets are synchronized in the kernel with a high precision timestamp. This requires a non-negligible amount of CPU, but allows normally to send the packets with a precision of some microseconds (depending on the accuracy of the performance counter of the machine). Such a precision cannot be reached sending the packets with SendPacket().</item>
+                </list>
+            </remarks>
+        </member>
+        <member name="P:PcapDotNet.Core.LivePacketCommunicator.TotalStatistics">
+            <summary>
+Statistics on current capture.
+The values represent packet statistics from the start of the run to the time of the call. 
+</summary>
+            <exception cref="T:System.InvalidOperationException">Thrown if there is an error or the underlying packet capture doesn't support packet statistics.</exception>
+        </member>
+        <member name="T:PcapDotNet.Core.LivePacketCommunicator">
+            <summary>
+A network device packet communicator.
 </summary>
         </member>
         <member name="M:PcapDotNet.Core.PacketDevice.Open">
@@ -290,14 +264,36 @@ Interface is loopback.
 No attributes apply.
 </summary>
         </member>
-        <member name="P:PcapDotNet.Core.IpV6SocketAddress.Address">
+        <member name="T:PcapDotNet.Core.SamplingMethodNone">
             <summary>
-The ip version 6 address.
+No sampling has to be done on the current capture.
+In this case, no sampling algorithms are applied to the current capture. 
 </summary>
         </member>
-        <member name="T:PcapDotNet.Core.IpV6SocketAddress">
+        <member name="P:PcapDotNet.Core.SamplingMethodFirstAfterInterval.Value">
             <summary>
-An internet protocol version 6 address for a device.
+Indicates the 'waiting time' in milliseconds before one packet got accepted. 
+In other words, if 'value = 10', the first packet is returned to the caller; the next returned one will be the first packet that arrives when 10ms have elapsed.
+</summary>
+        </member>
+        <member name="M:PcapDotNet.Core.SamplingMethodFirstAfterInterval.#ctor(System.TimeSpan)">
+            <summary>
+Constructs by giving an interval as TimeSpan.
+</summary>
+            <param name="interval">The time to wait between packets sampled.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The interval is negative or larger than 2^31 milliseconds.</exception>
+        </member>
+        <member name="M:PcapDotNet.Core.SamplingMethodFirstAfterInterval.#ctor(System.Int32)">
+            <summary>
+Constructs by giving an interval in milliseconds.
+</summary>
+            <param name="intervalInMs">The number of milliseconds to wait between packets sampled.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The given number of milliseconds is negative.</exception>
+        </member>
+        <member name="T:PcapDotNet.Core.SamplingMethodFirstAfterInterval">
+            <summary>
+This sampling method defines that we have to return 1 packet every given time-interval.
+In other words, if the interval is set to 10 milliseconds, the first packet is returned to the caller; the next returned one will be the first packet that arrives when 10ms have elapsed.
 </summary>
         </member>
         <member name="M:PcapDotNet.Core.PacketCommunicator.Dispose">
@@ -560,7 +556,7 @@ This is useful for real time applications that need the best responsiveness from
         <member name="M:PcapDotNet.Core.PacketCommunicator.SetKernelBufferSize(System.Int32)">
             <summary>
 Set the size of the kernel buffer associated with an adapter.
-If an old buffer was already created with a previous call to SetKernelBufferSize(), it is deleted and its content is discarded.
+If an old buffer was already created with a previous call to pcap_setbuff(), it is deleted and its content is discarded.
 LivePacketDevice.Open() creates a 1 MByte buffer by default.
 <!--seealso cref="LivePacketDevice::Open"/--></summary>
             <param name="size">the size of the buffer in bytes</param>
@@ -631,6 +627,12 @@ The link layer of an adapter.
 Used to receive and send packets accross the network or to read and write packets to a pcap file.
 </summary>
         </member>
+        <member name="T:PcapDotNet.Core.SamplingMethod">
+            <summary>
+This is the base sampling method class.
+Every sampling method is defined by a method and an optional value, both for internal usage.
+</summary>
+        </member>
         <member name="T:PcapDotNet.Core.PacketCommunicatorReceiveResult">
             <summary>
 The different return values when receiving from a packet communicator.
@@ -693,32 +695,6 @@ Represents a buffer of packets to be sent.
 Note that transmitting a send buffer is much more efficient than performing a series of Send(), because the send buffer is buffered at kernel level drastically decreasing the number of context switches.
 </summary>
         </member>
-        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsCaptured">
-            <summary>
-Win32 specific. Number of packets captured, i.e number of packets that are accepted by the filter, that find place in the kernel buffer and therefore that actually reach the application.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsDroppedByInterface">
-            <summary>
-Number of packets dropped by the interface.
-Not yet supported.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsDroppedByDriver">
-            <summary>
-Number of packets dropped by the driver.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsReceived">
-            <summary>
-Number of packets transited on the network.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.PacketTotalStatistics">
-            <summary>
-Statistics on capture from the start of the run. 
-</summary>
-        </member>
         <member name="P:PcapDotNet.Core.PacketSampleStatistics.AcceptedBytes">
             <summary>
 The number of bytes received during the last interval.
@@ -758,7 +734,6 @@ This is suggested for real time applications (like, for example, a bridge) that 
 Defines if the local adapter will capture its own generated traffic.
 This flag tells the underlying capture driver to drop the packets that were sent by itself.
 This is useful when building applications like bridges, that should ignore the traffic they just sent. 
-Note that this flag applies to the specific PacketCommunicator opened with it only.
 </summary>
         </member>
         <member name="F:PcapDotNet.Core.PacketDeviceOpenAttributes.NoCaptureRemote">
@@ -859,224 +834,6 @@ A packet filter, converting a high level filtering expression (see <see href="ht
 The user must dispose instances of this class to deallocate resources.
 </summary>
         </member>
-        <member name="P:PcapDotNet.Core.IpV4SocketAddress.Address">
-            <summary>
-The ip version 4 address.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.IpV4SocketAddress">
-            <summary>
-An internet protocol version 4 address for a device.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.DeviceAddress.Destination">
-            <summary>
-if not null, the destination address corresponding to the address in Address; may be null if the interface isn't a point-to-point interface 
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.DeviceAddress.Broadcast">
-            <summary>
-if not null, the broadcast address corresponding to the address in Address; may be null if the interface doesn't support broadcasts.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.DeviceAddress.Netmask">
-            <summary>
-if not null, the netmask corresponding to the address in Address. 
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.DeviceAddress.Address">
-            <summary>
-The Device Address.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.DeviceAddress">
-            <summary>
-Representation of an interface address.
-</summary>
-        </member>
-        <member name="P:PcapDotNet.Core.SocketAddress.Family">
-            <summary>
-Family (type) of the socket address.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.SocketAddress">
-            <summary>
-The base of all device addresses.
-Contains the family (type) of the address.
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.SocketAddressFamily">
-            <summary>
-The type of socket address for a device address.
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Bluetooth">
-            <summary>
-Bluetooth RFCOMM/L2CAP protocols
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.NetworkDesigners">
-            <summary>
-Network Designers OSI &amp; gateway
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.InfraredDataAssociation">
-            <summary>
-IrDA
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Ieee12844">
-            <summary>
-IEEE 1284.4 WG AF
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Cluster">
-            <summary>
-Microsoft Wolfpack
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Internet6">
-            <summary>
-Internetwork Version 6
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.AsynchronousTransferMode">
-            <summary>
-Native ATM Services
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Ban">
-            <summary>
-Banyan
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Unknown1">
-            <summary>
-Somebody is using this!
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Firefox">
-            <summary>
-Protocols from Firefox
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.VoiceView">
-            <summary>
-VoiceView
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.NetBios">
-            <summary>
-NetBios-style addresses
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.AppleTalk">
-            <summary>
-AppleTalk
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.HyperChannel">
-            <summary>
-NSC Hyperchannel
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Lat">
-            <summary>
-LAT
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.DirectDataLinkInterface">
-            <summary>
-Direct data link interface
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.DigitalEquipmentCorporationNet">
-            <summary>
-DECnet
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Sna">
-            <summary>
-IBM SNA
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Ccitt">
-            <summary>
-CCITT protocols, X.25 etc
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Datakit">
-            <summary>
-datakit protocols
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.EuropeanComputerManufactures">
-            <summary>
-european computer manufacturers
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Osi">
-            <summary>
-OSI is ISO
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Iso">
-            <summary>
-ISO protocols
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Ipx">
-            <summary>
-IPX protocols: IPX, SPX, etc.
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.NS">
-            <summary>
-XEROX NS protocols
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Chaos">
-            <summary>
-mit CHAOS protocols
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Pup">
-            <summary>
-pup protocols: e.g. BSP
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.ImpLink">
-            <summary>
-arpanet imp addresses
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Internet">
-            <summary>
-internetwork: UDP, TCP, etc.
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Unix">
-            <summary>
-local to host (pipes, portals)
-</summary>
-        </member>
-        <member name="F:&lt;unknown type&gt;.Unspecified">
-            <summary>
-unspecified
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.SamplingMethodNone">
-            <summary>
-No sampling has to be done on the current capture.
-In this case, no sampling algorithms are applied to the current capture. 
-</summary>
-        </member>
-        <member name="T:PcapDotNet.Core.SamplingMethod">
-            <summary>
-This is the base sampling method class.
-Every sampling method is defined by a method and an optional value, both for internal usage.
-</summary>
-        </member>
         <member name="P:PcapDotNet.Core.PacketTimestamp.MaximumPacketTimestamp">
             <summary>
 The maximum legal timestamp to put in a packet.
@@ -1168,6 +925,247 @@ Create the datalink from one of the well defined datalink kinds.
         <member name="T:PcapDotNet.Core.PcapDataLink">
             <summary>
 A packet communicator datalink.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.IpV6SocketAddress.Address">
+            <summary>
+The ip version 6 address.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.IpV6SocketAddress">
+            <summary>
+An internet protocol version 6 address for a device.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.IpV4SocketAddress.Address">
+            <summary>
+The ip version 4 address.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.IpV4SocketAddress">
+            <summary>
+An internet protocol version 4 address for a device.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.DeviceAddress.Destination">
+            <summary>
+if not null, the destination address corresponding to the address in Address; may be null if the interface isn't a point-to-point interface 
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.DeviceAddress.Broadcast">
+            <summary>
+if not null, the broadcast address corresponding to the address in Address; may be null if the interface doesn't support broadcasts.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.DeviceAddress.Netmask">
+            <summary>
+if not null, the netmask corresponding to the address in Address. 
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.DeviceAddress.Address">
+            <summary>
+The Device Address.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.DeviceAddress">
+            <summary>
+Representation of an interface address.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.SocketAddress.Family">
+            <summary>
+Family (type) of the socket address.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.SocketAddress">
+            <summary>
+The base of all device addresses.
+Contains the family (type) of the address.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.SocketAddressFamily">
+            <summary>
+The type of socket address for a device address.
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Bluetooth">
+            <summary>
+Bluetooth RFCOMM/L2CAP protocols
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.NetworkDesigners">
+            <summary>
+Network Designers OSI &amp; gateway
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Irda">
+            <summary>
+IrDA
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Ieee12844">
+            <summary>
+IEEE 1284.4 WG AF
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Cluster">
+            <summary>
+Microsoft Wolfpack
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Internet6">
+            <summary>
+Internetwork Version 6
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Atm">
+            <summary>
+Native ATM Services
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Ban">
+            <summary>
+Banyan
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Unknown1">
+            <summary>
+Somebody is using this!
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Firefox">
+            <summary>
+Protocols from Firefox
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.VoiceView">
+            <summary>
+VoiceView
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.NetBios">
+            <summary>
+NetBios-style addresses
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.AppleTalk">
+            <summary>
+AppleTalk
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.HyperChannel">
+            <summary>
+NSC Hyperchannel
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Lat">
+            <summary>
+LAT
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.DirectDataLinkInterface">
+            <summary>
+Direct data link interface
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.DECnet">
+            <summary>
+DECnet
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Sna">
+            <summary>
+IBM SNA
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Ccitt">
+            <summary>
+CCITT protocols, X.25 etc
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Datakit">
+            <summary>
+datakit protocols
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.EuropeanComputerManufactures">
+            <summary>
+european computer manufacturers
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Osi">
+            <summary>
+OSI is ISO
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Iso">
+            <summary>
+ISO protocols
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Ipx">
+            <summary>
+IPX protocols: IPX, SPX, etc.
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.NS">
+            <summary>
+XEROX NS protocols
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Chaos">
+            <summary>
+mit CHAOS protocols
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Pup">
+            <summary>
+pup protocols: e.g. BSP
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.ImpLink">
+            <summary>
+arpanet imp addresses
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Internet">
+            <summary>
+internetwork: UDP, TCP, etc.
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Unix">
+            <summary>
+local to host (pipes, portals)
+</summary>
+        </member>
+        <member name="F:&lt;unknown type&gt;.Unspecified">
+            <summary>
+unspecified
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsCaptured">
+            <summary>
+Win32 specific. Number of packets captured, i.e number of packets that are accepted by the filter, that find place in the kernel buffer and therefore that actually reach the application.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsDroppedByInterface">
+            <summary>
+Number of packets dropped by the interface.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsDroppedByDriver">
+            <summary>
+Number of packets dropped by the driver.
+</summary>
+        </member>
+        <member name="P:PcapDotNet.Core.PacketTotalStatistics.PacketsReceived">
+            <summary>
+Number of packets transited on the network.
+</summary>
+        </member>
+        <member name="T:PcapDotNet.Core.PacketTotalStatistics">
+            <summary>
+Statistics on capture from the start of the run. 
 </summary>
         </member>
     </members>
