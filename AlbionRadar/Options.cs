@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
@@ -621,22 +622,25 @@ namespace AlbionRadar
         }
         private void PacketHandler(Packet packet)
         {
-            IpV4Datagram ip = packet.Ethernet.IpV4;
-            UdpDatagram udp = ip.Udp;
-
-            if (udp == null || (udp.SourcePort != 5056 && udp.DestinationPort != 5056))
+            try
             {
+                IpV4Datagram ip = packet.Ethernet.IpV4;
+                UdpDatagram udp = ip.Udp;
+
+                if (udp == null || (udp.SourcePort != 5056 && udp.DestinationPort != 5056))
+                {
+                    return;
+                }
+
+                photonParser.ReceivePacket(udp.Payload.ToArray());
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Pegamos um erro!");
                 return;
             }
-
-            photonParser.ReceivePacket(udp.Payload.ToArray());
         }
 
         #endregion
-
-        private void label40_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -34,6 +34,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
             this.label39 = new System.Windows.Forms.Label();
             this.cbRangedMelee = new MaterialSkin.Controls.MaterialCheckBox();
             this.label38 = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
             this.label36 = new System.Windows.Forms.Label();
             this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -248,6 +248,35 @@
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
             this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 288);
             this.pCbDisplayOptions.TabIndex = 3;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(34, 257);
+            this.label40.Margin = new System.Windows.Forms.Padding(5);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(101, 17);
+            this.label40.TabIndex = 17;
+            this.label40.Text = "Inspetor de Itens";
+            // 
+            // cbUserInfoWindow
+            // 
+            this.cbUserInfoWindow.AutoSize = true;
+            this.cbUserInfoWindow.Depth = 0;
+            this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 250);
+            this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbUserInfoWindow.Name = "cbUserInfoWindow";
+            this.cbUserInfoWindow.Ripple = true;
+            this.cbUserInfoWindow.Size = new System.Drawing.Size(30, 30);
+            this.cbUserInfoWindow.TabIndex = 16;
+            this.cbUserInfoWindow.Text = " ";
+            this.cbUserInfoWindow.UseVisualStyleBackColor = true;
+            this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
             // 
             // label39
             // 
@@ -566,36 +595,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 286);
             this.panel1.TabIndex = 0;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(34, 257);
-            this.label40.Margin = new System.Windows.Forms.Padding(5);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(101, 17);
-            this.label40.TabIndex = 17;
-            this.label40.Text = "Inspetor de Itens";
-            this.label40.Click += new System.EventHandler(this.label40_Click);
-            // 
-            // cbUserInfoWindow
-            // 
-            this.cbUserInfoWindow.AutoSize = true;
-            this.cbUserInfoWindow.Depth = 0;
-            this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 250);
-            this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
-            this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbUserInfoWindow.Name = "cbUserInfoWindow";
-            this.cbUserInfoWindow.Ripple = true;
-            this.cbUserInfoWindow.Size = new System.Drawing.Size(30, 30);
-            this.cbUserInfoWindow.TabIndex = 16;
-            this.cbUserInfoWindow.Text = " ";
-            this.cbUserInfoWindow.UseVisualStyleBackColor = true;
-            this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
             // 
             // label36
             // 

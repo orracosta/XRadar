@@ -17,7 +17,7 @@ namespace AlbionRadar
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1006";
+        private string version = "1007";
         public Login()
         {
             InitializeComponent();

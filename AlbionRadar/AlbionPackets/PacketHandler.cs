@@ -78,7 +78,8 @@ namespace AlbionRadar
                 default:
                     break;
             }
-            debugEventInfo(parameters, evCode, "OnEvent");
+
+            //debugEventInfo(parameters, evCode, "OnEvent");
         }
         protected override void OnRequest(byte operationCode, Dictionary<byte, object> parameters)
         {
@@ -100,7 +101,7 @@ namespace AlbionRadar
                 default:
                     break;
             }
-            debugOperationInfo(parameters, opCode, "OnRequest");
+            //debugOperationInfo(parameters, opCode, "OnRequest");
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
         {
@@ -271,6 +272,7 @@ namespace AlbionRadar
                 }
             }
 
+            //Debug.WriteLine("w1:{0},w2:{1},w3:{2},c:{3},h:{4},b:{5}", skills[0], skills[1], skills[2], skills[3], skills[4], skills[5]);
             playerHandler.UpdatePlayerEquipment(id, items, skills);
         }
         private void onNewMob(Dictionary<byte, object> parameters)
