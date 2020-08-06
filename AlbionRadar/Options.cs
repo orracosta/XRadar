@@ -636,7 +636,6 @@ namespace AlbionRadar
             }
             catch (Exception e)
             {
-                Debug.WriteLine("Pegamos um erro!");
                 return;
             }
         }
