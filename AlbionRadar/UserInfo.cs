@@ -99,7 +99,6 @@ namespace AlbionRadar
             {
                 pFWeapon.ImageLocation = "";
                 pSWeapon.ImageLocation = "";
-                pSWeapon.ImageLocation = "";
                 pHead.ImageLocation = "";
                 pChest.ImageLocation = "";
                 pBoot.ImageLocation = "";
