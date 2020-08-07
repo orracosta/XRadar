@@ -54,6 +54,9 @@ namespace AlbionRadar
             {
                 var p = item.Value;
 
+                if (options.lbTrustAlliances.Items.Contains(p.Alliance) || options.lbTrustGuilds.Items.Contains(p.Guild))
+                    continue;
+
                 if (!lbPlayersInRange.Items.Contains(p.Nickname))
                     lbPlayersInRange.Items.Add(p.Nickname);
             }
@@ -98,13 +101,14 @@ namespace AlbionRadar
             }
             else if(lbPlayersInRange.Items.Count <= 0)
             {
-                pFWeapon.ImageLocation = "";
-                pSWeapon.ImageLocation = "";
-                pHead.ImageLocation = "";
-                pChest.ImageLocation = "";
-                pBoot.ImageLocation = "";
-                pBag.ImageLocation = "";
-                pCape.ImageLocation = "";
+                Image image = new Bitmap(1,1);
+                pFWeapon.Image = image;
+                pSWeapon.Image = image;
+                pHead.Image = image;
+                pChest.Image = image;
+                pBoot.Image = image;
+                pBag.Image = image;
+                pCape.Image = image;
             }
 
             showPlayerInfo();
