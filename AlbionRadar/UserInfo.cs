@@ -75,17 +75,18 @@ namespace AlbionRadar
             Player player = options.PlayerHandler.PlayersInRange.FirstOrDefault(x => x.Value.Nickname == selectedItem.ToString()).Value;
             if (player != null)
             {
-                pFWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[0]);
-                if (PlayerItem.isTwoHandded(player.Items[0]))
-                    pSWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[0]);
-                else
-                    pSWeapon.ImageLocation = PlayerItem.getItemImage(player.Items[1]);
 
-                pHead.ImageLocation = PlayerItem.getItemImage(player.Items[2]);
-                pChest.ImageLocation = PlayerItem.getItemImage(player.Items[3]);
-                pBoot.ImageLocation = PlayerItem.getItemImage(player.Items[4]);
-                pBag.ImageLocation = PlayerItem.getItemImage(player.Items[5]);
-                pCape.ImageLocation = PlayerItem.getItemImage(player.Items[6]);
+                pFWeapon.Image = PlayerItem.getItemImage(player.Items[0]);
+                if (PlayerItem.isTwoHandded(player.Items[0]))
+                    pSWeapon.Image = PlayerItem.getItemImage(player.Items[0]);
+                else
+                    pSWeapon.Image = PlayerItem.getItemImage(player.Items[1]);
+
+                pHead.Image = PlayerItem.getItemImage(player.Items[2]);
+                pChest.Image = PlayerItem.getItemImage(player.Items[3]);
+                pBoot.Image = PlayerItem.getItemImage(player.Items[4]);
+                pBag.Image = PlayerItem.getItemImage(player.Items[5]);
+                pCape.Image = PlayerItem.getItemImage(player.Items[6]);
             }
         }
 

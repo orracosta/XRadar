@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -52,14 +53,31 @@ namespace AlbionRadar
             else
                 return false;
         }
-        public static string getItemImage(int itemID)
+        public static Image getItemImage(int itemID)
         {
             PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);
 
-            if (item != null && itemID != 0)
-                return "https://render.albiononline.com/v1/item/" + item.uniqueName + ".png?size=80";
+            if(item == null || itemID == 0)
+                return new Bitmap(1, 1);
+
+            TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
+
+            string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string strWorkPath = Path.GetDirectoryName(strExeFilePath);
+            var itemImage = Path.Combine(strWorkPath, "Assets\\" + myTI.ToLower(item.uniqueName) + ".png");
+
+            if (File.Exists(itemImage))
+            {
+                return Image.FromFile(itemImage);
+            }
             else
-                return "";
+            {
+                System.Net.WebRequest request = System.Net.WebRequest.Create("https://render.albiononline.com/v1/item/" + item.uniqueName + ".png?size=80");
+                System.Net.WebResponse response = request.GetResponse();
+                Stream responseStream = response.GetResponseStream();
+
+                return new Bitmap(responseStream);
+            }
         }
     }
 }
