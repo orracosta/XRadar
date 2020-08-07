@@ -28,6 +28,7 @@ namespace AlbionRadar
             {
                 var localizedName = item["LocalizedNames"] != null ? item["LocalizedNames"]["PT-BR"] : "";
                 listItems.Add(new PlayerItem((int)item["Index"], (string)item["UniqueName"], (string)localizedName));
+                //Console.WriteLine("https://render.albiononline.com/v1/item/" + item["UniqueName"] + ".png?size=80");
             }
         }
         public static PlayerItem getItem(int itemID)

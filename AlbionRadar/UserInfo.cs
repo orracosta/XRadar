@@ -97,6 +97,7 @@ namespace AlbionRadar
             }
             else if(lbPlayersInRange.Items.Count <= 0)
             {
+                pFWeapon.ImageLocation = "";
                 pSWeapon.ImageLocation = "";
                 pSWeapon.ImageLocation = "";
                 pHead.ImageLocation = "";
