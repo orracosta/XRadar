@@ -127,7 +127,7 @@ namespace AlbionRadar
 
             if(s.alertSound && !isBeeping)
             {
-                if (!guildList.Contains(guild) || !alliance.Contains(alliance))
+                if (!guildList.Contains(guild) && !alliance.Contains(alliance))
                 {
                     isBeeping = true;
 
