@@ -92,10 +92,6 @@ namespace AlbionRadar
             AllyListTimer.Start();            
         }
         public PlayerHandler PlayerHandler { get => playerHandler; }
-        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
-        {
-            Environment.Exit(Environment.ExitCode);
-        }
 
         #region RadarMap
         SolidBrush[] harvestBrushes = {
@@ -389,6 +385,30 @@ namespace AlbionRadar
         #endregion
 
         #region OptionEvents
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            Hide();
+            notifyIcon.Visible = true;
+
+            e.Cancel = true;
+        }
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon.Visible = false;
+        }
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Settings.saveSettings(this);
+            Environment.Exit(0);
+        }
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             lootLog = new LootLog();
