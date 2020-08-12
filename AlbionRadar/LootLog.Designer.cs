@@ -119,6 +119,7 @@
             this.Controls.Add(this.copyList);
             this.Controls.Add(this.lvLootLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "LootLog";
             this.Sizable = false;
             this.Text = "LootLog";

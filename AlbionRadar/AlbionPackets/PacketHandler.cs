@@ -416,7 +416,7 @@ namespace AlbionRadar
             if (!PlayerLoot.canAdd)
                 return;
 
-            if (!parameters.ContainsKey(4) && !parameters.ContainsKey(5))
+            if (!parameters.ContainsKey(4) || !parameters.ContainsKey(5))
                 return;
 
             string userName = parameters[2].ToString();
