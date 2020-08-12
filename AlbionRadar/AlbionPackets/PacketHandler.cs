@@ -42,40 +42,40 @@ namespace AlbionRadar
 
             switch (evCode)
             {
-                case EventCodes.evNewCharacter:
+                case EventCodes.NewCharacter:
                     onNewCharacter(parameters);
                     break;
-                case EventCodes.evMounted:
+                case EventCodes.Mounted:
                     onMounted(parameters);
                     break;
-                case EventCodes.evNewMob:
+                case EventCodes.NewMob:
                     onNewMob(parameters);
                     break;
-                case EventCodes.evLeave:
+                case EventCodes.Leave:
                     onLeave(parameters);
                     break;
-                case EventCodes.evNewSimpleHarvestableObjectList:
+                case EventCodes.NewSimpleHarvestableObjectList:
                     onNewSimpleHarvestableObjectList(parameters);
                     break;
-                case EventCodes.evNewHarvestableObject:
+                case EventCodes.NewHarvestableObject:
                     onNewHarvestableObject(parameters);
                     break;
-                case EventCodes.evNewSimpleHarvestableObject:
+                case EventCodes.NewSimpleHarvestableObject:
                     onNewSimpleHarvestableObject(parameters);
                     break;
-                case EventCodes.evMobChangeState:
+                case EventCodes.MobChangeState:
                     onMobChangeState(parameters);
                     break;
-                case EventCodes.evHarvestableChangeState:
+                case EventCodes.HarvestableChangeState:
                     onHarvestableChangeState(parameters);
                     break;
-                case EventCodes.evNewRandomDungeonExit:
+                case EventCodes.NewRandomDungeonExit:
                     onNewRandomDungeonExit(parameters);
                     break;
-                case EventCodes.evCharacterEquipmentChanged:
+                case EventCodes.CharacterEquipmentChanged:
                     onCharacterEquipmentChanged(parameters);
                     break;
-                case EventCodes.evOtherGrabbedLoot:
+                case EventCodes.OtherGrabbedLoot:
                     onOtherGrabbedLoot(parameters);
                     break;
                 default:
@@ -95,10 +95,10 @@ namespace AlbionRadar
 
             switch (opCode)
             {
-                case OperationCodes.opMove:
+                case OperationCodes.Move:
                     onLocalPlayerMovementRequest(parameters);
                     break;
-                case OperationCodes.opChangeCluster:
+                case OperationCodes.ChangeCluster:
                     onChangeCluster(parameters);
                     break;
                 default:
@@ -114,6 +114,15 @@ namespace AlbionRadar
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
             OperationCodes opCode = (OperationCodes)iCode;
+
+            switch (opCode)
+            {
+                case OperationCodes.QueryGuildPlayerStats:
+                    debugOperationInfo(parameters, opCode, "OnResponse");
+                    break;
+                default:
+                    break;
+            }
             //debugOperationInfo(parameters, opCode, "OnResponse");
 
         }
