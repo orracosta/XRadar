@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -67,8 +68,13 @@ namespace AlbionRadar
                         }
                         else
                         {
-                            MessageBox.Show((string)jsonArray.errorMessage, "Albion Radar",
+                            var result = MessageBox.Show((string)jsonArray.errorMessage, "Albion Radar",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                            if (jsonArray.link != null)
+                            {
+                                Process.Start((string)jsonArray.link);
+                            }
                         }
                     }
                 }
