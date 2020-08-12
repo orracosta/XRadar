@@ -230,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\dg_corrupt.png" />
     <None Include="Resources\loading.png" />
     <None Include="Resources\addIcon.png" />
     <None Include="Resources\removeIcon.png" />

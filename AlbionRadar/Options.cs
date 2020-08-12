@@ -275,12 +275,14 @@ namespace AlbionRadar
                             Single hY = d.PosY - localY;
 
                             var type = d.getType();
-                            string typeName = "special";
+                            string typeName = "group";
 
                             if (type == "SOLO")
                                 typeName = "solo";
-                            else if (type == "GROUP")
-                                typeName = "group";
+                            else if (typeName == "CORRUPT")
+                                type = "corrupt";
+                            else if (type == "ELITE")
+                                typeName = "elite";
 
                             String iconName = "dg_" + typeName;
                             Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);

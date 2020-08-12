@@ -73,6 +73,26 @@ namespace AlbionRadar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dg_corrupt {
+            get {
+                object obj = ResourceManager.GetObject("dg_corrupt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dg_elite {
+            get {
+                object obj = ResourceManager.GetObject("dg_elite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dg_group {
             get {
                 object obj = ResourceManager.GetObject("dg_group", resourceCulture);
@@ -86,16 +106,6 @@ namespace AlbionRadar.Properties {
         internal static System.Drawing.Bitmap dg_solo {
             get {
                 object obj = ResourceManager.GetObject("dg_solo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap dg_special {
-            get {
-                object obj = ResourceManager.GetObject("dg_special", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

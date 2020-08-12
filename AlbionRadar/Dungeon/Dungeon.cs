@@ -52,14 +52,14 @@ namespace AlbionRadar
         }
         public string getType()
         {
-            if (type.Contains("_SOLO")) 
-            {
+            if (type.Contains("_CORRUPT"))
+                return "CORRUPT";
+            else if (type.Contains("_SOLO")) 
                 return "SOLO";
-            }
+            else if (type.Contains("_ELITE"))
+                return "ELITE";
             else
-            {
                 return "GROUP";
-            }
         }
 
     }
