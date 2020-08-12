@@ -37,6 +37,15 @@ namespace AlbionRadar
         {
             return listItems.FirstOrDefault(i => i.id == itemID);
         }
+        public static string getLocalizedNameItem(int itemID)
+        {
+            PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);
+
+            if (item != null)
+                return item.localizedNames;
+            else
+                return "NONE";
+        }
         public static bool isRanged(int itemID)
         {
             PlayerItem item = listItems.FirstOrDefault(i => i.id == itemID);

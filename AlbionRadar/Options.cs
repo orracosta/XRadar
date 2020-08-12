@@ -30,6 +30,7 @@ namespace AlbionRadar
     public partial class Options : MaterialForm
     {
         RadarMap radarMap = new RadarMap();
+        LootLog lootLog;
         UserInfo userInfo;
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
@@ -77,8 +78,8 @@ namespace AlbionRadar
 
             AllyListTimer.Start();
 
-            //TODO: Refazer isso
             userInfo = new UserInfo(this);
+            
         }
         public PlayerHandler PlayerHandler { get => playerHandler; }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
@@ -641,5 +642,12 @@ namespace AlbionRadar
         }
 
         #endregion
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            lootLog = new LootLog();
+            PlayerLoot.canAdd = true;
+            lootLog.Show();
+        }
     }
 }

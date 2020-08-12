@@ -162,6 +162,7 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -193,6 +194,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.materialRaisedButton1);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.pCbDisplayOptions);
             this.tabPage1.Controls.Add(this.label1);
@@ -593,7 +595,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 286);
+            this.panel1.Size = new System.Drawing.Size(200, 239);
             this.panel1.TabIndex = 0;
             // 
             // label36
@@ -839,7 +841,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 282);
+            this.panel5.Size = new System.Drawing.Size(2, 235);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -848,14 +850,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 282);
+            this.panel4.Size = new System.Drawing.Size(2, 235);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 284);
+            this.panel3.Location = new System.Drawing.Point(0, 237);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
@@ -2072,6 +2074,23 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.AutoSize = true;
+            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Icon = null;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(38, 262);
+            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(150, 0);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(150, 36);
+            this.materialRaisedButton1.TabIndex = 9;
+            this.materialRaisedButton1.Text = "Abrir LootLog";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2245,6 +2264,7 @@
         public MaterialSkin.Controls.MaterialCheckBox cbRangedMelee;
         private System.Windows.Forms.Label label40;
         public MaterialSkin.Controls.MaterialCheckBox cbUserInfoWindow;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }
 

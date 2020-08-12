@@ -75,6 +75,9 @@ namespace AlbionRadar
                 case EventCodes.evCharacterEquipmentChanged:
                     onCharacterEquipmentChanged(parameters);
                     break;
+                case EventCodes.evOtherGrabbedLoot:
+                    onOtherGrabbedLoot(parameters);
+                    break;
                 default:
                     break;
             }
@@ -407,6 +410,25 @@ namespace AlbionRadar
 
             mobsHandler.UpdateMobEnchantmentLevel(mobId, enchantmentLevel);
 
+        }
+        private void onOtherGrabbedLoot(Dictionary<byte, object> parameters)
+        {
+            if (!PlayerLoot.canAdd)
+                return;
+
+            if (!parameters.ContainsKey(4) && !parameters.ContainsKey(5))
+                return;
+
+            string userName = parameters[2].ToString();
+            short itemID = short.Parse(parameters[4].ToString());
+            int amount = int.Parse(parameters[5].ToString());
+
+            string itemName = PlayerItem.getLocalizedNameItem(itemID);
+
+            if (itemName == "NONE")
+                return;
+
+            PlayerLoot.addLog(userName, itemName, amount);
         }
         #endregion
 
