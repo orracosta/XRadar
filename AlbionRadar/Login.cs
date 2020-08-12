@@ -35,7 +35,7 @@ namespace AlbionRadar
             {
                 var hwid = UHWID.UHWID.SimpleUid;
 
-                WebRequest request = WebRequest.Create("https://www.teclandotec.com/api/loginRadar.php?login="
+                WebRequest request = WebRequest.Create("https://aoradar.xyz/api/loginRadar.php?login="
                 + userLogin.Text + "&password="
                 + passwordLogin.Text + "&hwid="
                 + hwid + "&version="
