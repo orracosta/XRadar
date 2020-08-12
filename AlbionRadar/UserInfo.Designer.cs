@@ -282,6 +282,7 @@
             this.Name = "UserInfo";
             this.Opacity = 0.9D;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Albion Radar - Inspetor";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pBootSpell)).EndInit();

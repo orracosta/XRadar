@@ -259,9 +259,9 @@
             this.label40.Location = new System.Drawing.Point(34, 257);
             this.label40.Margin = new System.Windows.Forms.Padding(5);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(101, 17);
+            this.label40.Size = new System.Drawing.Size(123, 17);
             this.label40.TabIndex = 17;
-            this.label40.Text = "Inspetor de Itens";
+            this.label40.Text = "Ver Equip. (CTRL + 1)";
             // 
             // cbUserInfoWindow
             // 

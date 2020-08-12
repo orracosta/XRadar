@@ -33,7 +33,6 @@ namespace AlbionRadar
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             options.hideInfoUser();
-            e.Cancel = true;
         }
 
         private void updatePlayerList_Tick(object sender, EventArgs e)

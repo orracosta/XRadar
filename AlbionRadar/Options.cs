@@ -20,6 +20,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Resources;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -29,6 +30,13 @@ namespace AlbionRadar
 {
     public partial class Options : MaterialForm
     {
+        const int MYACTION_HOTKEY_ID = 1;
+
+        [DllImport("user32.dll")]
+        public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);
+        [DllImport("user32.dll")]
+        public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
         RadarMap radarMap = new RadarMap();
         LootLog lootLog;
         UserInfo userInfo;
@@ -59,6 +67,11 @@ namespace AlbionRadar
         }
         private void Options_Load(object sender, EventArgs e)
         {
+            // Modifier keys codes: Alt = 1, Ctrl = 2, Shift = 4, Win = 8
+            // Compute the addition of each combination of the keys you want to be pressed
+            // ALT+CTRL = 1 + 2 = 3 , CTRL+SHIFT = 2 + 4 = 6...
+            RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID, 2, (int)Keys.D1);
+
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
 
             try
@@ -76,17 +89,14 @@ namespace AlbionRadar
                 Console.WriteLine(ea.ToString());
             }
 
-            AllyListTimer.Start();
-
-            userInfo = new UserInfo(this);
-            
+            AllyListTimer.Start();            
         }
         public PlayerHandler PlayerHandler { get => playerHandler; }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             Environment.Exit(Environment.ExitCode);
         }
-        
+
         #region RadarMap
         SolidBrush[] harvestBrushes = {
                 new SolidBrush(Color.FromArgb(200, 52, 52, 52)),
@@ -379,6 +389,12 @@ namespace AlbionRadar
         #endregion
 
         #region OptionEvents
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            lootLog = new LootLog();
+            PlayerLoot.canAdd = true;
+            lootLog.Show();
+        }
         private void exportAllysButton_Click(object sender, EventArgs e)
         {
             string alliances = JsonConvert.SerializeObject(lbTrustAlliances.Items);
@@ -566,14 +582,37 @@ namespace AlbionRadar
         private void userInfoWindow_CheckedChanged(object sender, EventArgs e)
         {
             if (this.cbUserInfoWindow.Checked)
+            {
+                userInfo = new UserInfo(this);
                 userInfo.Show();
+            }
             else
-                userInfo.Hide();
+            {
+                userInfo.Close();
+            }
+        }
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID)
+            {
+                if (this.cbUserInfoWindow.Checked)
+                {
+                    userInfo.Close();
+                    this.cbUserInfoWindow.Checked = false;
+                }
+                else
+                {
+                    userInfo = new UserInfo(this);
+                    this.cbUserInfoWindow.Checked = true;
+                    userInfo.Show();
+                }
+            }
+
+            base.WndProc(ref m);
         }
         public void hideInfoUser ()
         {
             this.cbUserInfoWindow.Checked = false;
-            userInfo.Hide();
         }
         private void others_CheckedChanged(object sender, EventArgs e)
         {
@@ -642,12 +681,5 @@ namespace AlbionRadar
         }
 
         #endregion
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-            lootLog = new LootLog();
-            PlayerLoot.canAdd = true;
-            lootLog.Show();
-        }
     }
 }
