@@ -165,9 +165,15 @@
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.panel36 = new System.Windows.Forms.Panel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
@@ -182,6 +188,7 @@
             this.pFilterMobResource.SuspendLayout();
             this.pTierList.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -200,6 +207,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label41);
+            this.tabPage1.Controls.Add(this.panel16);
             this.tabPage1.Controls.Add(this.materialRaisedButton1);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.pCbDisplayOptions);
@@ -219,12 +228,12 @@
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(38, 262);
-            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(150, 0);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(13, 262);
+            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(200, 0);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(150, 36);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(200, 36);
             this.materialRaisedButton1.TabIndex = 9;
             this.materialRaisedButton1.Text = "Abrir LootLog";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -239,24 +248,14 @@
             this.label8.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.Size = new System.Drawing.Size(43, 17);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Jogadores";
+            this.label8.Text = "Tags";
             // 
             // pCbDisplayOptions
             // 
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pCbDisplayOptions.Controls.Add(this.label40);
-            this.pCbDisplayOptions.Controls.Add(this.cbUserInfoWindow);
-            this.pCbDisplayOptions.Controls.Add(this.label39);
-            this.pCbDisplayOptions.Controls.Add(this.cbRangedMelee);
-            this.pCbDisplayOptions.Controls.Add(this.label38);
-            this.pCbDisplayOptions.Controls.Add(this.cbTagEnemies);
-            this.pCbDisplayOptions.Controls.Add(this.label37);
-            this.pCbDisplayOptions.Controls.Add(this.cbTagAllys);
-            this.pCbDisplayOptions.Controls.Add(this.label7);
             this.pCbDisplayOptions.Controls.Add(this.label12);
-            this.pCbDisplayOptions.Controls.Add(this.cbAlertSound);
             this.pCbDisplayOptions.Controls.Add(this.cbNone);
             this.pCbDisplayOptions.Controls.Add(this.label11);
             this.pCbDisplayOptions.Controls.Add(this.cbAlliance);
@@ -271,7 +270,7 @@
             this.pCbDisplayOptions.Location = new System.Drawing.Point(221, 10);
             this.pCbDisplayOptions.Margin = new System.Windows.Forms.Padding(10);
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
-            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 288);
+            this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 135);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
             // label40
@@ -279,19 +278,19 @@
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(34, 257);
+            this.label40.Location = new System.Drawing.Point(34, 67);
             this.label40.Margin = new System.Windows.Forms.Padding(5);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(123, 17);
+            this.label40.Size = new System.Drawing.Size(135, 17);
             this.label40.TabIndex = 17;
-            this.label40.Text = "Ver Equip. (CTRL + 1)";
+            this.label40.Text = "Exibir Equip. (CTRL + 1)";
             // 
             // cbUserInfoWindow
             // 
             this.cbUserInfoWindow.AutoSize = true;
             this.cbUserInfoWindow.Depth = 0;
             this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 250);
+            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 60);
             this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
             this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
@@ -308,7 +307,7 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(34, 230);
+            this.label39.Location = new System.Drawing.Point(34, 107);
             this.label39.Margin = new System.Windows.Forms.Padding(5);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(111, 17);
@@ -322,7 +321,7 @@
             this.cbRangedMelee.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbRangedMelee.Depth = 0;
             this.cbRangedMelee.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbRangedMelee.Location = new System.Drawing.Point(5, 223);
+            this.cbRangedMelee.Location = new System.Drawing.Point(5, 100);
             this.cbRangedMelee.Margin = new System.Windows.Forms.Padding(0);
             this.cbRangedMelee.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbRangedMelee.MouseState = MaterialSkin.MouseState.HOVER;
@@ -339,7 +338,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(34, 201);
+            this.label38.Location = new System.Drawing.Point(34, 78);
             this.label38.Margin = new System.Windows.Forms.Padding(5);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(80, 17);
@@ -353,7 +352,7 @@
             this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbTagEnemies.Depth = 0;
             this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagEnemies.Location = new System.Drawing.Point(5, 194);
+            this.cbTagEnemies.Location = new System.Drawing.Point(5, 71);
             this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
             this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
@@ -370,7 +369,7 @@
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(34, 172);
+            this.label37.Location = new System.Drawing.Point(34, 49);
             this.label37.Margin = new System.Windows.Forms.Padding(5);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(73, 17);
@@ -384,7 +383,7 @@
             this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbTagAllys.Depth = 0;
             this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagAllys.Location = new System.Drawing.Point(5, 165);
+            this.cbTagAllys.Location = new System.Drawing.Point(5, 42);
             this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
             this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
@@ -401,7 +400,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 143);
+            this.label7.Location = new System.Drawing.Point(34, 20);
             this.label7.Margin = new System.Windows.Forms.Padding(5);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 17);
@@ -413,7 +412,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(33, 113);
+            this.label12.Location = new System.Drawing.Point(33, 106);
             this.label12.Margin = new System.Windows.Forms.Padding(5);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 17);
@@ -427,7 +426,7 @@
             this.cbAlertSound.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbAlertSound.Depth = 0;
             this.cbAlertSound.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbAlertSound.Location = new System.Drawing.Point(5, 136);
+            this.cbAlertSound.Location = new System.Drawing.Point(5, 13);
             this.cbAlertSound.Margin = new System.Windows.Forms.Padding(0);
             this.cbAlertSound.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbAlertSound.MouseState = MaterialSkin.MouseState.HOVER;
@@ -444,7 +443,7 @@
             this.cbNone.AutoSize = true;
             this.cbNone.Depth = 0;
             this.cbNone.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbNone.Location = new System.Drawing.Point(5, 106);
+            this.cbNone.Location = new System.Drawing.Point(5, 99);
             this.cbNone.Margin = new System.Windows.Forms.Padding(0);
             this.cbNone.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbNone.MouseState = MaterialSkin.MouseState.HOVER;
@@ -461,7 +460,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(33, 84);
+            this.label11.Location = new System.Drawing.Point(33, 77);
             this.label11.Margin = new System.Windows.Forms.Padding(5);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 17);
@@ -473,7 +472,7 @@
             this.cbAlliance.AutoSize = true;
             this.cbAlliance.Depth = 0;
             this.cbAlliance.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbAlliance.Location = new System.Drawing.Point(5, 77);
+            this.cbAlliance.Location = new System.Drawing.Point(5, 70);
             this.cbAlliance.Margin = new System.Windows.Forms.Padding(0);
             this.cbAlliance.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbAlliance.MouseState = MaterialSkin.MouseState.HOVER;
@@ -490,7 +489,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(33, 56);
+            this.label10.Location = new System.Drawing.Point(33, 49);
             this.label10.Margin = new System.Windows.Forms.Padding(5);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 17);
@@ -502,7 +501,7 @@
             this.cbGuild.AutoSize = true;
             this.cbGuild.Depth = 0;
             this.cbGuild.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbGuild.Location = new System.Drawing.Point(5, 49);
+            this.cbGuild.Location = new System.Drawing.Point(5, 42);
             this.cbGuild.Margin = new System.Windows.Forms.Padding(0);
             this.cbGuild.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbGuild.MouseState = MaterialSkin.MouseState.HOVER;
@@ -519,7 +518,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(33, 27);
+            this.label9.Location = new System.Drawing.Point(33, 20);
             this.label9.Margin = new System.Windows.Forms.Padding(5);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 17);
@@ -532,7 +531,7 @@
             this.cbName.Checked = true;
             this.cbName.Depth = 0;
             this.cbName.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbName.Location = new System.Drawing.Point(5, 20);
+            this.cbName.Location = new System.Drawing.Point(5, 13);
             this.cbName.Margin = new System.Windows.Forms.Padding(0);
             this.cbName.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbName.MouseState = MaterialSkin.MouseState.HOVER;
@@ -551,7 +550,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel17.Location = new System.Drawing.Point(198, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(2, 284);
+            this.panel17.Size = new System.Drawing.Size(2, 131);
             this.panel17.TabIndex = 3;
             // 
             // panel18
@@ -560,14 +559,14 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(2, 284);
+            this.panel18.Size = new System.Drawing.Size(2, 131);
             this.panel18.TabIndex = 2;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel19.Location = new System.Drawing.Point(0, 286);
+            this.panel19.Location = new System.Drawing.Point(0, 133);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(200, 2);
             this.panel19.TabIndex = 1;
@@ -597,6 +596,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label40);
+            this.panel1.Controls.Add(this.cbUserInfoWindow);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.cbShowDungeon);
             this.panel1.Controls.Add(this.label18);
@@ -618,7 +619,7 @@
             this.panel1.Location = new System.Drawing.Point(13, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 239);
+            this.panel1.Size = new System.Drawing.Size(200, 247);
             this.panel1.TabIndex = 0;
             // 
             // label36
@@ -626,7 +627,7 @@
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(34, 178);
+            this.label36.Location = new System.Drawing.Point(34, 208);
             this.label36.Margin = new System.Windows.Forms.Padding(5);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(96, 17);
@@ -640,7 +641,7 @@
             this.cbShowDungeon.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowDungeon.Depth = 0;
             this.cbShowDungeon.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowDungeon.Location = new System.Drawing.Point(5, 171);
+            this.cbShowDungeon.Location = new System.Drawing.Point(5, 201);
             this.cbShowDungeon.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowDungeon.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowDungeon.MouseState = MaterialSkin.MouseState.HOVER;
@@ -657,7 +658,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(34, 151);
+            this.label18.Location = new System.Drawing.Point(34, 181);
             this.label18.Margin = new System.Windows.Forms.Padding(5);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(98, 17);
@@ -671,7 +672,7 @@
             this.cbShowHarvestable.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowHarvestable.Depth = 0;
             this.cbShowHarvestable.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowHarvestable.Location = new System.Drawing.Point(5, 144);
+            this.cbShowHarvestable.Location = new System.Drawing.Point(5, 174);
             this.cbShowHarvestable.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowHarvestable.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowHarvestable.MouseState = MaterialSkin.MouseState.HOVER;
@@ -688,7 +689,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 123);
+            this.label4.Location = new System.Drawing.Point(34, 153);
             this.label4.Margin = new System.Windows.Forms.Padding(5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 17);
@@ -702,7 +703,7 @@
             this.cbShowMobs.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowMobs.Depth = 0;
             this.cbShowMobs.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowMobs.Location = new System.Drawing.Point(5, 116);
+            this.cbShowMobs.Location = new System.Drawing.Point(5, 146);
             this.cbShowMobs.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowMobs.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowMobs.MouseState = MaterialSkin.MouseState.HOVER;
@@ -719,7 +720,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(34, 95);
+            this.label3.Location = new System.Drawing.Point(34, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 17);
@@ -733,7 +734,7 @@
             this.cbShowPlayers.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowPlayers.Depth = 0;
             this.cbShowPlayers.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowPlayers.Location = new System.Drawing.Point(5, 88);
+            this.cbShowPlayers.Location = new System.Drawing.Point(5, 118);
             this.cbShowPlayers.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowPlayers.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowPlayers.MouseState = MaterialSkin.MouseState.HOVER;
@@ -750,12 +751,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 67);
+            this.label2.Location = new System.Drawing.Point(34, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(132, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Exibir radar";
+            this.label2.Text = "Exibir radar (CTRL + 2)";
             // 
             // cbShowRadar
             // 
@@ -764,7 +765,7 @@
             this.cbShowRadar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbShowRadar.Depth = 0;
             this.cbShowRadar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbShowRadar.Location = new System.Drawing.Point(5, 60);
+            this.cbShowRadar.Location = new System.Drawing.Point(5, 89);
             this.cbShowRadar.Margin = new System.Windows.Forms.Padding(0);
             this.cbShowRadar.MouseLocation = new System.Drawing.Point(-1, -1);
             this.cbShowRadar.MouseState = MaterialSkin.MouseState.HOVER;
@@ -864,7 +865,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(198, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2, 235);
+            this.panel5.Size = new System.Drawing.Size(2, 243);
             this.panel5.TabIndex = 3;
             // 
             // panel4
@@ -873,14 +874,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 235);
+            this.panel4.Size = new System.Drawing.Size(2, 243);
             this.panel4.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 237);
+            this.panel3.Location = new System.Drawing.Point(0, 245);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 1;
@@ -2111,30 +2112,100 @@
             this.toolStripSeparator1,
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 80);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 20);
-            this.toolStripMenuItem1.Text = "Sair";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(134, 58);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 20);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(133, 20);
             this.toolStripMenuItem2.Text = "Abrir Radar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(130, 6);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(2);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(133, 20);
+            this.toolStripMenuItem1.Text = "Sair";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(233, 149);
+            this.label41.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label41.Name = "label41";
+            this.label41.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label41.Size = new System.Drawing.Size(74, 17);
+            this.label41.TabIndex = 22;
+            this.label41.Text = "Jogadores";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel16.Controls.Add(this.label39);
+            this.panel16.Controls.Add(this.panel33);
+            this.panel16.Controls.Add(this.panel34);
+            this.panel16.Controls.Add(this.cbRangedMelee);
+            this.panel16.Controls.Add(this.panel35);
+            this.panel16.Controls.Add(this.panel36);
+            this.panel16.Controls.Add(this.label38);
+            this.panel16.Controls.Add(this.cbAlertSound);
+            this.panel16.Controls.Add(this.label7);
+            this.panel16.Controls.Add(this.cbTagEnemies);
+            this.panel16.Controls.Add(this.cbTagAllys);
+            this.panel16.Controls.Add(this.label37);
+            this.panel16.Location = new System.Drawing.Point(221, 158);
+            this.panel16.Margin = new System.Windows.Forms.Padding(10);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(200, 140);
+            this.panel16.TabIndex = 21;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel33.Location = new System.Drawing.Point(198, 2);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(2, 136);
+            this.panel33.TabIndex = 3;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel34.Location = new System.Drawing.Point(0, 2);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(2, 136);
+            this.panel34.TabIndex = 2;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel35.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel35.Location = new System.Drawing.Point(0, 138);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(200, 2);
+            this.panel35.TabIndex = 1;
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel36.Location = new System.Drawing.Point(0, 0);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(200, 2);
+            this.panel36.TabIndex = 0;
             // 
             // Options
             // 
@@ -2172,6 +2243,8 @@
             this.pTierList.ResumeLayout(false);
             this.pTierList.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2316,6 +2389,12 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Label label41;
+        public System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Panel panel36;
     }
 }
 

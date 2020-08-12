@@ -31,6 +31,7 @@ namespace AlbionRadar
     public partial class Options : MaterialForm
     {
         const int MYACTION_HOTKEY_ID = 1;
+        const int MYACTION_HOTKEY_ID2 = 2;
 
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);
@@ -71,6 +72,7 @@ namespace AlbionRadar
             // Compute the addition of each combination of the keys you want to be pressed
             // ALT+CTRL = 1 + 2 = 3 , CTRL+SHIFT = 2 + 4 = 6...
             RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID, 2, (int)Keys.D1);
+            RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID2, 2, (int)Keys.D2);
 
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
 
@@ -626,6 +628,21 @@ namespace AlbionRadar
                     this.cbUserInfoWindow.Checked = true;
                     userInfo.Show();
                 }
+            }
+            else if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID2)
+            {
+                if (this.cbShowRadar.Checked)
+                {
+                    radarMap.Hide();
+                    this.cbShowRadar.Checked = false;
+                }
+                else
+                {
+                    radarMap.Show();
+                    this.cbShowRadar.Checked = true;
+                }
+
+                Settings.saveSettings(this);
             }
 
             base.WndProc(ref m);
