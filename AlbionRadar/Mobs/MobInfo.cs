@@ -35,6 +35,7 @@ namespace AlbionRadar
                 {
                     if(item["Loot"].GetType() == typeof(JObject) && item["Loot"]["Harvestable"] != null)
                     {
+                        var type = (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]);
                         mobsInfo.Add(new MobInfo(index, (byte)item["@tier"], (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]), (byte)item["Loot"]["Harvestable"]["@tier"]));
                     }
                 }
@@ -78,6 +79,11 @@ namespace AlbionRadar
                 case HarvestableType.WOOD_CRITTER_DEAD:
                 case HarvestableType.WOOD_GUARDIAN_RED:
                 case HarvestableType.WOOD_MINIGUARDIAN_RED:
+                case HarvestableType.WOOD_CRITTER_FOREST:
+                case HarvestableType.WOOD_CRITTER_FOREST_VETERAN:
+                case HarvestableType.WOOD_CRITTER_FOREST_ELITE:
+                case HarvestableType.WOOD_GUARDIAN_FOREST:
+                case HarvestableType.WOOD_MINIGUARDIAN_FOREST:
                     return "madeira";
                 case HarvestableType.ROCK:
                 case HarvestableType.ROCK_BIG:
@@ -87,6 +93,11 @@ namespace AlbionRadar
                 case HarvestableType.ROCK_CRITTER_RANDOM_DUNGEON:
                 case HarvestableType.ROCK_GUARDIAN_RED:
                 case HarvestableType.ROCK_MINIGUARDIAN_RED:
+                case HarvestableType.ROCK_CRITTER_FOREST:
+                case HarvestableType.ROCK_CRITTER_FOREST_VETERAN:
+                case HarvestableType.ROCK_CRITTER_FOREST_ELITE:
+                case HarvestableType.ROCK_GUARDIAN_FOREST:
+                case HarvestableType.ROCK_MINIGUARDIAN_FOREST:
                     return "pedra";
                 case HarvestableType.FIBER:
                 case HarvestableType.FIBER_BIG:
@@ -94,6 +105,11 @@ namespace AlbionRadar
                 case HarvestableType.FIBER_GUARDIAN_RED:
                 case HarvestableType.FIBER_GUARDIAN_DEAD:
                 case HarvestableType.FIBER_MINIGUARDIAN_RED:
+                case HarvestableType.FIBER_CRITTER_FOREST:
+                case HarvestableType.FIBER_CRITTER_FOREST_VETERAN:
+                case HarvestableType.FIBER_CRITTER_FOREST_ELITE:
+                case HarvestableType.FIBER_GUARDIAN_FOREST:
+                case HarvestableType.FIBER_MINIGUARDIAN_FOREST:
                     return "fibra";
                 case HarvestableType.HIDE:
                 case HarvestableType.HIDE_FOREST:
@@ -108,6 +124,11 @@ namespace AlbionRadar
                 case HarvestableType.HIDE_MINIGUARDIAN:
                 case HarvestableType.HIDE_FOREST_BIG:
                 case HarvestableType.HIDE_STEPPE_BIG:
+                case HarvestableType.HIDE_CRITTER_FOREST:
+                case HarvestableType.HIDE_CRITTER_FOREST_VETERAN:
+                case HarvestableType.HIDE_CRITTER_FOREST_ELITE:
+                case HarvestableType.HIDE_GUARDIAN_FOREST:
+                case HarvestableType.HIDE_MINIGUARDIAN_FOREST:
                 case HarvestableType.DEADRAT:
                     return "pelego";
                 case HarvestableType.ORE:
@@ -117,6 +138,11 @@ namespace AlbionRadar
                 case HarvestableType.ORE_CRITTER_DEAD:
                 case HarvestableType.ORE_GUARDIAN_RED:
                 case HarvestableType.ORE_MINIGUARDIAN_RED:
+                case HarvestableType.ORE_CRITTER_FOREST:
+                case HarvestableType.ORE_CRITTER_FOREST_VETERAN:
+                case HarvestableType.ORE_CRITTER_FOREST_ELITE:
+                case HarvestableType.ORE_GUARDIAN_FOREST:
+                case HarvestableType.ORE_MINIGUARDIAN_FOREST:
                     return "minerio";
                 case HarvestableType.SILVERCOINS_NODE:
                 case HarvestableType.SILVERCOINS_NODE_RICH:
