@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -81,11 +82,11 @@ namespace AlbionRadar
             }
             else
             {
-                System.Net.WebRequest request = System.Net.WebRequest.Create("https://render.albiononline.com/v1/item/" + item.uniqueName + ".png?size=80");
-                System.Net.WebResponse response = request.GetResponse();
-                Stream responseStream = response.GetResponseStream();
+                //System.Net.WebRequest request = System.Net.WebRequest.Create("https://render.albiononline.com/v1/item1/" + item.uniqueName + ".png?size=80");
+                //System.Net.WebResponse response = request.GetResponse();
+                //Stream responseStream = response.GetResponseStream();
 
-                return new Bitmap(responseStream);
+                return new Bitmap(1,1);
             }
         }
     }
