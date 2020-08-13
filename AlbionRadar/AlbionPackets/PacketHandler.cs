@@ -468,16 +468,5 @@ namespace AlbionRadar
             playerHandler.UpdatePlayerMount(id, mounted);
         }
         #endregion
-
-        #region OnResponse
-        private void onQueryGuildPlayerStats(Dictionary<byte, object> parameters)
-        {
-            Byte[][] players = (Byte[][])parameters[0];
-
-
-            //Encoding.UTF8.GetString(players.pay, 1, players.payload.Length - 1);
-            Console.WriteLine(Encoding.ASCII.GetString(players[0]));
-        }
-        #endregion
     }
 }
