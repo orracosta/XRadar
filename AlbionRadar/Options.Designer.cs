@@ -32,20 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.cbRangedMelee = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.cbAlertSound = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
+            this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
+            this.label37 = new System.Windows.Forms.Label();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label8 = new System.Windows.Forms.Label();
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.cbRangedMelee = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.cbAlertSound = new MaterialSkin.Controls.MaterialCheckBox();
             this.cbNone = new MaterialSkin.Controls.MaterialRadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.cbAlliance = new MaterialSkin.Controls.MaterialRadioButton();
@@ -59,6 +63,8 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
             this.label36 = new System.Windows.Forms.Label();
             this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -168,14 +174,9 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosX)).BeginInit();
@@ -188,7 +189,6 @@
             this.pFilterMobResource.SuspendLayout();
             this.pTierList.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -221,6 +221,200 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Geral";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(233, 149);
+            this.label41.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.label41.Name = "label41";
+            this.label41.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label41.Size = new System.Drawing.Size(74, 17);
+            this.label41.TabIndex = 22;
+            this.label41.Text = "Jogadores";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel16.Controls.Add(this.label39);
+            this.panel16.Controls.Add(this.panel33);
+            this.panel16.Controls.Add(this.panel34);
+            this.panel16.Controls.Add(this.cbRangedMelee);
+            this.panel16.Controls.Add(this.panel35);
+            this.panel16.Controls.Add(this.panel36);
+            this.panel16.Controls.Add(this.label38);
+            this.panel16.Controls.Add(this.cbAlertSound);
+            this.panel16.Controls.Add(this.label7);
+            this.panel16.Controls.Add(this.cbTagEnemies);
+            this.panel16.Controls.Add(this.cbTagAllys);
+            this.panel16.Controls.Add(this.label37);
+            this.panel16.Location = new System.Drawing.Point(221, 158);
+            this.panel16.Margin = new System.Windows.Forms.Padding(10);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(200, 140);
+            this.panel16.TabIndex = 21;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(34, 107);
+            this.label39.Margin = new System.Windows.Forms.Padding(5);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(111, 17);
+            this.label39.TabIndex = 26;
+            this.label39.Text = "Cor ranged/melee";
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel33.Location = new System.Drawing.Point(198, 2);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(2, 136);
+            this.panel33.TabIndex = 3;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel34.Location = new System.Drawing.Point(0, 2);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(2, 136);
+            this.panel34.TabIndex = 2;
+            // 
+            // cbRangedMelee
+            // 
+            this.cbRangedMelee.AutoSize = true;
+            this.cbRangedMelee.Checked = true;
+            this.cbRangedMelee.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRangedMelee.Depth = 0;
+            this.cbRangedMelee.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbRangedMelee.Location = new System.Drawing.Point(5, 100);
+            this.cbRangedMelee.Margin = new System.Windows.Forms.Padding(0);
+            this.cbRangedMelee.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbRangedMelee.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbRangedMelee.Name = "cbRangedMelee";
+            this.cbRangedMelee.Ripple = true;
+            this.cbRangedMelee.Size = new System.Drawing.Size(30, 30);
+            this.cbRangedMelee.TabIndex = 25;
+            this.cbRangedMelee.Text = " ";
+            this.cbRangedMelee.UseVisualStyleBackColor = true;
+            this.cbRangedMelee.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel35.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel35.Location = new System.Drawing.Point(0, 138);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(200, 2);
+            this.panel35.TabIndex = 1;
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel36.Location = new System.Drawing.Point(0, 0);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(200, 2);
+            this.panel36.TabIndex = 0;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(34, 78);
+            this.label38.Margin = new System.Windows.Forms.Padding(5);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 17);
+            this.label38.TabIndex = 24;
+            this.label38.Text = "TAG inimigos";
+            // 
+            // cbAlertSound
+            // 
+            this.cbAlertSound.AutoSize = true;
+            this.cbAlertSound.Checked = true;
+            this.cbAlertSound.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbAlertSound.Depth = 0;
+            this.cbAlertSound.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbAlertSound.Location = new System.Drawing.Point(5, 13);
+            this.cbAlertSound.Margin = new System.Windows.Forms.Padding(0);
+            this.cbAlertSound.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbAlertSound.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbAlertSound.Name = "cbAlertSound";
+            this.cbAlertSound.Ripple = true;
+            this.cbAlertSound.Size = new System.Drawing.Size(30, 30);
+            this.cbAlertSound.TabIndex = 12;
+            this.cbAlertSound.Text = " ";
+            this.cbAlertSound.UseVisualStyleBackColor = true;
+            this.cbAlertSound.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(34, 20);
+            this.label7.Margin = new System.Windows.Forms.Padding(5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Alerta sonoro";
+            // 
+            // cbTagEnemies
+            // 
+            this.cbTagEnemies.AutoSize = true;
+            this.cbTagEnemies.Checked = true;
+            this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagEnemies.Depth = 0;
+            this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagEnemies.Location = new System.Drawing.Point(5, 71);
+            this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagEnemies.Name = "cbTagEnemies";
+            this.cbTagEnemies.Ripple = true;
+            this.cbTagEnemies.Size = new System.Drawing.Size(30, 30);
+            this.cbTagEnemies.TabIndex = 23;
+            this.cbTagEnemies.Text = " ";
+            this.cbTagEnemies.UseVisualStyleBackColor = true;
+            this.cbTagEnemies.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // cbTagAllys
+            // 
+            this.cbTagAllys.AutoSize = true;
+            this.cbTagAllys.Checked = true;
+            this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTagAllys.Depth = 0;
+            this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbTagAllys.Location = new System.Drawing.Point(5, 42);
+            this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
+            this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbTagAllys.Name = "cbTagAllys";
+            this.cbTagAllys.Ripple = true;
+            this.cbTagAllys.Size = new System.Drawing.Size(30, 30);
+            this.cbTagAllys.TabIndex = 21;
+            this.cbTagAllys.Text = " ";
+            this.cbTagAllys.UseVisualStyleBackColor = true;
+            this.cbTagAllys.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(34, 49);
+            this.label37.Margin = new System.Windows.Forms.Padding(5);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(73, 17);
+            this.label37.TabIndex = 22;
+            this.label37.Text = "TAG aliados";
             // 
             // materialRaisedButton1
             // 
@@ -273,140 +467,6 @@
             this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 135);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(34, 67);
-            this.label40.Margin = new System.Windows.Forms.Padding(5);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(135, 17);
-            this.label40.TabIndex = 17;
-            this.label40.Text = "Exibir Equip. (CTRL + 1)";
-            // 
-            // cbUserInfoWindow
-            // 
-            this.cbUserInfoWindow.AutoSize = true;
-            this.cbUserInfoWindow.Depth = 0;
-            this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 60);
-            this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
-            this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbUserInfoWindow.Name = "cbUserInfoWindow";
-            this.cbUserInfoWindow.Ripple = true;
-            this.cbUserInfoWindow.Size = new System.Drawing.Size(30, 30);
-            this.cbUserInfoWindow.TabIndex = 16;
-            this.cbUserInfoWindow.Text = " ";
-            this.cbUserInfoWindow.UseVisualStyleBackColor = true;
-            this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(34, 107);
-            this.label39.Margin = new System.Windows.Forms.Padding(5);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(111, 17);
-            this.label39.TabIndex = 26;
-            this.label39.Text = "Cor ranged/melee";
-            // 
-            // cbRangedMelee
-            // 
-            this.cbRangedMelee.AutoSize = true;
-            this.cbRangedMelee.Checked = true;
-            this.cbRangedMelee.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRangedMelee.Depth = 0;
-            this.cbRangedMelee.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbRangedMelee.Location = new System.Drawing.Point(5, 100);
-            this.cbRangedMelee.Margin = new System.Windows.Forms.Padding(0);
-            this.cbRangedMelee.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbRangedMelee.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbRangedMelee.Name = "cbRangedMelee";
-            this.cbRangedMelee.Ripple = true;
-            this.cbRangedMelee.Size = new System.Drawing.Size(30, 30);
-            this.cbRangedMelee.TabIndex = 25;
-            this.cbRangedMelee.Text = " ";
-            this.cbRangedMelee.UseVisualStyleBackColor = true;
-            this.cbRangedMelee.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(34, 78);
-            this.label38.Margin = new System.Windows.Forms.Padding(5);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 17);
-            this.label38.TabIndex = 24;
-            this.label38.Text = "TAG inimigos";
-            // 
-            // cbTagEnemies
-            // 
-            this.cbTagEnemies.AutoSize = true;
-            this.cbTagEnemies.Checked = true;
-            this.cbTagEnemies.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbTagEnemies.Depth = 0;
-            this.cbTagEnemies.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagEnemies.Location = new System.Drawing.Point(5, 71);
-            this.cbTagEnemies.Margin = new System.Windows.Forms.Padding(0);
-            this.cbTagEnemies.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbTagEnemies.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbTagEnemies.Name = "cbTagEnemies";
-            this.cbTagEnemies.Ripple = true;
-            this.cbTagEnemies.Size = new System.Drawing.Size(30, 30);
-            this.cbTagEnemies.TabIndex = 23;
-            this.cbTagEnemies.Text = " ";
-            this.cbTagEnemies.UseVisualStyleBackColor = true;
-            this.cbTagEnemies.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(34, 49);
-            this.label37.Margin = new System.Windows.Forms.Padding(5);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(73, 17);
-            this.label37.TabIndex = 22;
-            this.label37.Text = "TAG aliados";
-            // 
-            // cbTagAllys
-            // 
-            this.cbTagAllys.AutoSize = true;
-            this.cbTagAllys.Checked = true;
-            this.cbTagAllys.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbTagAllys.Depth = 0;
-            this.cbTagAllys.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbTagAllys.Location = new System.Drawing.Point(5, 42);
-            this.cbTagAllys.Margin = new System.Windows.Forms.Padding(0);
-            this.cbTagAllys.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbTagAllys.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbTagAllys.Name = "cbTagAllys";
-            this.cbTagAllys.Ripple = true;
-            this.cbTagAllys.Size = new System.Drawing.Size(30, 30);
-            this.cbTagAllys.TabIndex = 21;
-            this.cbTagAllys.Text = " ";
-            this.cbTagAllys.UseVisualStyleBackColor = true;
-            this.cbTagAllys.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 17);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Alerta sonoro";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -418,25 +478,6 @@
             this.label12.Size = new System.Drawing.Size(63, 17);
             this.label12.TabIndex = 20;
             this.label12.Text = "Nenhuma";
-            // 
-            // cbAlertSound
-            // 
-            this.cbAlertSound.AutoSize = true;
-            this.cbAlertSound.Checked = true;
-            this.cbAlertSound.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbAlertSound.Depth = 0;
-            this.cbAlertSound.Font = new System.Drawing.Font("Roboto", 10F);
-            this.cbAlertSound.Location = new System.Drawing.Point(5, 13);
-            this.cbAlertSound.Margin = new System.Windows.Forms.Padding(0);
-            this.cbAlertSound.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbAlertSound.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbAlertSound.Name = "cbAlertSound";
-            this.cbAlertSound.Ripple = true;
-            this.cbAlertSound.Size = new System.Drawing.Size(30, 30);
-            this.cbAlertSound.TabIndex = 12;
-            this.cbAlertSound.Text = " ";
-            this.cbAlertSound.UseVisualStyleBackColor = true;
-            this.cbAlertSound.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // cbNone
             // 
@@ -621,6 +662,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 247);
             this.panel1.TabIndex = 0;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(34, 67);
+            this.label40.Margin = new System.Windows.Forms.Padding(5);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(135, 17);
+            this.label40.TabIndex = 17;
+            this.label40.Text = "Exibir Equip. (CTRL + 1)";
+            // 
+            // cbUserInfoWindow
+            // 
+            this.cbUserInfoWindow.AutoSize = true;
+            this.cbUserInfoWindow.Depth = 0;
+            this.cbUserInfoWindow.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cbUserInfoWindow.Location = new System.Drawing.Point(5, 60);
+            this.cbUserInfoWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.cbUserInfoWindow.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbUserInfoWindow.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbUserInfoWindow.Name = "cbUserInfoWindow";
+            this.cbUserInfoWindow.Ripple = true;
+            this.cbUserInfoWindow.Size = new System.Drawing.Size(30, 30);
+            this.cbUserInfoWindow.TabIndex = 16;
+            this.cbUserInfoWindow.Text = " ";
+            this.cbUserInfoWindow.UseVisualStyleBackColor = true;
+            this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
             // 
             // label36
             // 
@@ -2137,76 +2207,6 @@
             this.toolStripMenuItem1.Text = "Sair";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(233, 149);
-            this.label41.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label41.Size = new System.Drawing.Size(74, 17);
-            this.label41.TabIndex = 22;
-            this.label41.Text = "Jogadores";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel16.Controls.Add(this.label39);
-            this.panel16.Controls.Add(this.panel33);
-            this.panel16.Controls.Add(this.panel34);
-            this.panel16.Controls.Add(this.cbRangedMelee);
-            this.panel16.Controls.Add(this.panel35);
-            this.panel16.Controls.Add(this.panel36);
-            this.panel16.Controls.Add(this.label38);
-            this.panel16.Controls.Add(this.cbAlertSound);
-            this.panel16.Controls.Add(this.label7);
-            this.panel16.Controls.Add(this.cbTagEnemies);
-            this.panel16.Controls.Add(this.cbTagAllys);
-            this.panel16.Controls.Add(this.label37);
-            this.panel16.Location = new System.Drawing.Point(221, 158);
-            this.panel16.Margin = new System.Windows.Forms.Padding(10);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(200, 140);
-            this.panel16.TabIndex = 21;
-            // 
-            // panel33
-            // 
-            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel33.Location = new System.Drawing.Point(198, 2);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(2, 136);
-            this.panel33.TabIndex = 3;
-            // 
-            // panel34
-            // 
-            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel34.Location = new System.Drawing.Point(0, 2);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(2, 136);
-            this.panel34.TabIndex = 2;
-            // 
-            // panel35
-            // 
-            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel35.Location = new System.Drawing.Point(0, 138);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(200, 2);
-            this.panel35.TabIndex = 1;
-            // 
-            // panel36
-            // 
-            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel36.Location = new System.Drawing.Point(0, 0);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(200, 2);
-            this.panel36.TabIndex = 0;
-            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2224,6 +2224,8 @@
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.pCbDisplayOptions.ResumeLayout(false);
             this.pCbDisplayOptions.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -2243,8 +2245,6 @@
             this.pTierList.ResumeLayout(false);
             this.pTierList.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
             this.ResumeLayout(false);
 
         }

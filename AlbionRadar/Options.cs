@@ -279,8 +279,8 @@ namespace AlbionRadar
 
                             if (type == "SOLO")
                                 typeName = "solo";
-                            else if (typeName == "CORRUPT")
-                                type = "corrupt";
+                            else if (type == "CORRUPT")
+                                typeName = "corrupt";
                             else if (type == "ELITE")
                                 typeName = "elite";
 
@@ -415,9 +415,12 @@ namespace AlbionRadar
         }
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            lootLog = new LootLog();
-            PlayerLoot.canAdd = true;
-            lootLog.Show();
+            if (lootLog == null || !lootLog.Visible)
+            {
+                lootLog = new LootLog();
+                PlayerLoot.canAdd = true;
+                lootLog.Show();
+            }
         }
         private void exportAllysButton_Click(object sender, EventArgs e)
         {
