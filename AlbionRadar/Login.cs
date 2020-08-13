@@ -18,7 +18,7 @@ namespace AlbionRadar
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1100";
+        private string version = "1102";
         public Login()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace AlbionRadar
             {
                 var hwid = UHWID.UHWID.SimpleUid;
 
-                WebRequest request = WebRequest.Create("https://aoradar.xyz/api/loginRadar.php?login="
+                WebRequest request = WebRequest.Create("https://teclandotec.com/api/loginRadar.php?login="
                 + userLogin.Text + "&password="
                 + passwordLogin.Text + "&hwid="
                 + hwid + "&version="
