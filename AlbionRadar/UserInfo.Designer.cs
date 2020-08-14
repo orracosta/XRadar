@@ -283,7 +283,7 @@
             this.Opacity = 0.9D;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Albion Radar - Inspetor";
+            this.Text = "Inspecionar Itens";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pBootSpell)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pChestSpell)).EndInit();

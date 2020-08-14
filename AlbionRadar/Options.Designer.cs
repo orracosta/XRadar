@@ -2219,7 +2219,7 @@
             this.Name = "Options";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Albion Radar 2D";
+            this.Text = "Configurações e Opções";
             this.Load += new System.EventHandler(this.Options_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

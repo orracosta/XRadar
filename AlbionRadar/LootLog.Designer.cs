@@ -122,7 +122,7 @@
             this.MinimizeBox = false;
             this.Name = "LootLog";
             this.Sizable = false;
-            this.Text = "LootLog";
+            this.Text = "Histórico de Loot";
             this.ResumeLayout(false);
             this.PerformLayout();
 

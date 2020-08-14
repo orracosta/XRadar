@@ -107,21 +107,13 @@ namespace AlbionRadar
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
         {
-            parameters.TryGetValue((byte)253, out object val);
+            return;
+            /*parameters.TryGetValue((byte)253, out object val);
             if (val == null) return;
 
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
-            OperationCodes opCode = (OperationCodes)iCode;
-
-            switch (opCode)
-            {
-                case OperationCodes.Join:
-                    break;
-                default:
-                    //debugOperationInfo(parameters, opCode, "OnResponse");
-                    break;
-            }
+            OperationCodes opCode = (OperationCodes)iCode;*/
         }
         private void debugEventInfo(Dictionary<byte, object> parameters, EventCodes evCode, String typeInfo)
         {

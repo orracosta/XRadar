@@ -131,7 +131,7 @@
             this.Name = "Login";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Albion Radar - Login";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
