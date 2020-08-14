@@ -389,25 +389,7 @@ namespace AlbionNetwork2D
         #endregion
 
         #region OptionEvents
-        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
-        {
-            Hide();
-            notifyIcon.Visible = true;
 
-            e.Cancel = true;
-        }
-        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            notifyIcon.Visible = false;
-        }
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            notifyIcon.Visible = false;
-        }
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Settings.saveSettings(this);

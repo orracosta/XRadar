@@ -169,11 +169,6 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
-            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -188,7 +183,6 @@
             this.pFilterResource.SuspendLayout();
             this.pFilterMobResource.SuspendLayout();
             this.pTierList.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -2168,45 +2162,6 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
-            // notifyIcon
-            // 
-            this.notifyIcon.ContextMenuStrip = this.contextMenuStrip1;
-            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "Albion Radar 2D";
-            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripSeparator1,
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(134, 58);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(133, 20);
-            this.toolStripMenuItem2.Text = "Abrir Radar";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(130, 6);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(133, 20);
-            this.toolStripMenuItem1.Text = "Sair";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2244,7 +2199,6 @@
             this.pFilterMobResource.PerformLayout();
             this.pTierList.ResumeLayout(false);
             this.pTierList.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2384,11 +2338,6 @@
         private System.Windows.Forms.Label label40;
         public MaterialSkin.Controls.MaterialCheckBox cbUserInfoWindow;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private System.Windows.Forms.NotifyIcon notifyIcon;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Label label41;
         public System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel33;
