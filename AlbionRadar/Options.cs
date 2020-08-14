@@ -389,8 +389,7 @@ namespace AlbionNetwork2D
         #endregion
 
         #region OptionEvents
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             Settings.saveSettings(this);
             Environment.Exit(0);
