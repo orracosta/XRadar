@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 #endregion
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     public partial class PerPixelAlphaForm : Form
     {

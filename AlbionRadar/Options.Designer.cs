@@ -1,4 +1,4 @@
-﻿namespace AlbionRadar
+﻿namespace AlbionNetwork2D
 {
     partial class Options
     {
@@ -1015,7 +1015,7 @@
             // 
             // addAlliance
             // 
-            this.addAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addAlliance.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.addIcon;
             this.addAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.addAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addAlliance.FlatAppearance.BorderSize = 0;
@@ -1033,7 +1033,7 @@
             // 
             // removeAlliance
             // 
-            this.removeAlliance.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
+            this.removeAlliance.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.removeIcon;
             this.removeAlliance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.removeAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeAlliance.FlatAppearance.BorderSize = 0;
@@ -1203,7 +1203,7 @@
             // 
             // addGuild
             // 
-            this.addGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.addIcon;
+            this.addGuild.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.addIcon;
             this.addGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.addGuild.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addGuild.FlatAppearance.BorderSize = 0;
@@ -1221,7 +1221,7 @@
             // 
             // removeGuild
             // 
-            this.removeGuild.BackgroundImage = global::AlbionRadar.Properties.Resources.removeIcon;
+            this.removeGuild.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.removeIcon;
             this.removeGuild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.removeGuild.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeGuild.FlatAppearance.BorderSize = 0;

@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     public static class Settings
     {

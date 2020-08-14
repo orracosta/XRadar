@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     /*
      * {"Key":0,"Value":784173} = id

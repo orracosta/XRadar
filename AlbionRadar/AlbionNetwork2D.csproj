@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E6CC02A0-88A3-44A2-B24B-133870D59CA0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AlbionRadar</RootNamespace>
+    <RootNamespace>AlbionNetwork2D</RootNamespace>
     <AssemblyName>Albion Network 2D</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

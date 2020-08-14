@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlbionRadar.UHWID
+namespace AlbionNetwork2D.UHWID
 {
     internal static class CpuId
     {

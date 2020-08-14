@@ -1,5 +1,5 @@
 ﻿using AlbionRada.Player;
-using AlbionRadar.Properties;
+using AlbionNetwork2D.Properties;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Newtonsoft.Json;
@@ -26,7 +26,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     public partial class Options : MaterialForm
     {

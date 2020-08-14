@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Management;
 
-namespace AlbionRadar.UHWID
+namespace AlbionNetwork2D.UHWID
 {
     internal class DiskId
     {

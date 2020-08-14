@@ -1,4 +1,4 @@
-﻿namespace AlbionRadar
+﻿namespace AlbionNetwork2D
 {
     partial class UserInfo
     {
@@ -101,7 +101,7 @@
             // 
             this.pBootSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBootSpell.ImageLocation = "";
-            this.pBootSpell.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pBootSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBootSpell.Location = new System.Drawing.Point(160, 268);
             this.pBootSpell.Name = "pBootSpell";
             this.pBootSpell.Size = new System.Drawing.Size(30, 30);
@@ -113,7 +113,7 @@
             // 
             this.pChestSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pChestSpell.ImageLocation = "";
-            this.pChestSpell.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pChestSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pChestSpell.Location = new System.Drawing.Point(159, 210);
             this.pChestSpell.Name = "pChestSpell";
             this.pChestSpell.Size = new System.Drawing.Size(30, 30);
@@ -125,7 +125,7 @@
             // 
             this.pHeadSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pHeadSpell.ImageLocation = "";
-            this.pHeadSpell.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pHeadSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pHeadSpell.Location = new System.Drawing.Point(160, 152);
             this.pHeadSpell.Name = "pHeadSpell";
             this.pHeadSpell.Size = new System.Drawing.Size(30, 30);
@@ -137,7 +137,7 @@
             // 
             this.pWeaponSpell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell3.ImageLocation = "";
-            this.pWeaponSpell3.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pWeaponSpell3.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell3.Location = new System.Drawing.Point(65, 282);
             this.pWeaponSpell3.Name = "pWeaponSpell3";
             this.pWeaponSpell3.Size = new System.Drawing.Size(30, 30);
@@ -149,7 +149,7 @@
             // 
             this.pWeaponSpell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell2.ImageLocation = "";
-            this.pWeaponSpell2.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pWeaponSpell2.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell2.Location = new System.Drawing.Point(65, 246);
             this.pWeaponSpell2.Name = "pWeaponSpell2";
             this.pWeaponSpell2.Size = new System.Drawing.Size(30, 30);
@@ -161,7 +161,7 @@
             // 
             this.pWeaponSpell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell1.ImageLocation = "";
-            this.pWeaponSpell1.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pWeaponSpell1.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell1.Location = new System.Drawing.Point(65, 210);
             this.pWeaponSpell1.Name = "pWeaponSpell1";
             this.pWeaponSpell1.Size = new System.Drawing.Size(30, 30);
@@ -173,7 +173,7 @@
             // 
             this.pBag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBag.ImageLocation = "";
-            this.pBag.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pBag.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBag.Location = new System.Drawing.Point(7, 152);
             this.pBag.Name = "pBag";
             this.pBag.Size = new System.Drawing.Size(52, 52);
@@ -185,7 +185,7 @@
             // 
             this.pCape.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pCape.ImageLocation = "";
-            this.pCape.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pCape.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pCape.Location = new System.Drawing.Point(196, 152);
             this.pCape.Name = "pCape";
             this.pCape.Size = new System.Drawing.Size(52, 52);
@@ -197,7 +197,7 @@
             // 
             this.pBoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBoot.ImageLocation = "";
-            this.pBoot.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pBoot.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBoot.Location = new System.Drawing.Point(101, 268);
             this.pBoot.Name = "pBoot";
             this.pBoot.Size = new System.Drawing.Size(52, 52);
@@ -209,7 +209,7 @@
             // 
             this.pChest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pChest.ImageLocation = "";
-            this.pChest.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pChest.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pChest.Location = new System.Drawing.Point(101, 210);
             this.pChest.Name = "pChest";
             this.pChest.Size = new System.Drawing.Size(52, 52);
@@ -221,7 +221,7 @@
             // 
             this.pHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pHead.ImageLocation = "";
-            this.pHead.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pHead.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pHead.Location = new System.Drawing.Point(101, 152);
             this.pHead.Name = "pHead";
             this.pHead.Size = new System.Drawing.Size(52, 52);
@@ -245,7 +245,7 @@
             // 
             this.pFWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pFWeapon.ImageLocation = "";
-            this.pFWeapon.InitialImage = global::AlbionRadar.Properties.Resources.loading;
+            this.pFWeapon.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pFWeapon.Location = new System.Drawing.Point(7, 210);
             this.pFWeapon.Name = "pFWeapon";
             this.pFWeapon.Size = new System.Drawing.Size(52, 52);

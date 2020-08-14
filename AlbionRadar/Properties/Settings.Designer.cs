@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AlbionRadar.Properties {
+namespace AlbionNetwork2D.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

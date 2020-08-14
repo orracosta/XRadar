@@ -1,4 +1,4 @@
-﻿namespace AlbionRadar
+﻿namespace AlbionNetwork2D
 {
     partial class LootLog
     {

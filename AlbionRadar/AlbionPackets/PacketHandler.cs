@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     class PacketHandler : PhotonParser
     {

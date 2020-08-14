@@ -14,11 +14,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AlbionRadar
+namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1102";
+        private string version = "1120";
         public Login()
         {
             InitializeComponent();
