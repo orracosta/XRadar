@@ -1,5 +1,4 @@
-﻿using AlbionRada.Player;
-using MaterialSkin;
+﻿using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;

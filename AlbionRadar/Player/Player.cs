@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlbionRada.Player
+namespace AlbionNetwork2D
 {
     public class Player
     {

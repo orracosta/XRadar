@@ -1,5 +1,4 @@
-﻿using AlbionRada.Player;
-using AlbionNetwork2D.Properties;
+﻿using AlbionNetwork2D.Properties;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Newtonsoft.Json;

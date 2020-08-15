@@ -43,7 +43,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RadarMap";
-            this.Text = "Albion Radar - Radar";
+            this.Text = "Mapa";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.RadarMap_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.RadarMap_Paint);
