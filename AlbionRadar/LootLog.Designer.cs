@@ -117,6 +117,7 @@
             this.tbfilterNames.Location = new System.Drawing.Point(12, 94);
             this.tbfilterNames.Multiline = true;
             this.tbfilterNames.Name = "tbfilterNames";
+            this.tbfilterNames.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbfilterNames.Size = new System.Drawing.Size(171, 306);
             this.tbfilterNames.TabIndex = 11;
             // 
