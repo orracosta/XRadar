@@ -18,7 +18,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1120";
+        private string version = "1130";
         public Login()
         {
             InitializeComponent();
