@@ -10,6 +10,7 @@ namespace AlbionNetwork2D
     class PlayerLoot
     {
         public static ConcurrentDictionary<int, PlayerLoot> listLoot = new ConcurrentDictionary<int, PlayerLoot>();
+        public static int id = 0;
         public static bool canAdd = false;
 
         string user;
@@ -29,7 +30,7 @@ namespace AlbionNetwork2D
 
         public static void addLog(string user, string item, int amount)
         {
-            listLoot.TryAdd(listLoot.Count + 1, new PlayerLoot(user, item, amount));
+            listLoot.TryAdd(id++, new PlayerLoot(user, item, amount));
         }
     }
 }

@@ -31,12 +31,17 @@ namespace AlbionNetwork2D
         }
         public void addLog(int id, string user, string item, int amount)
         {
-            ListViewItem itemLog = new ListViewItem(user);
-            itemLog.Name = id.ToString();
-            itemLog.SubItems.Add(item);
-            itemLog.SubItems.Add(amount.ToString());
+            if(tbfilterNames.Lines.Contains(user) || tbfilterNames.Lines.Count() == 0)
+            {
+                ListViewItem itemLog = new ListViewItem(user);
+                itemLog.Name = id.ToString();
+                itemLog.SubItems.Add(item);
+                itemLog.SubItems.Add(amount.ToString());
 
-            lvLootLog.Items.Add(itemLog);
+                lvLootLog.Items.Add(itemLog);
+            }
+
+            PlayerLoot.listLoot.TryRemove(id, out _);
         }
 
         private void updateLootLog_Tick(object sender, EventArgs e)
