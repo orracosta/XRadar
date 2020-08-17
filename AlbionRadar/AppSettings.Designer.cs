@@ -406,5 +406,17 @@ namespace AlbionNetwork2D {
                 this["rangedMelee"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int mapScale {
+            get {
+                return ((int)(this["mapScale"]));
+            }
+            set {
+                this["mapScale"] = value;
+            }
+        }
     }
 }

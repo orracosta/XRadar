@@ -63,6 +63,8 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nMapScale = new System.Windows.Forms.NumericUpDown();
+            this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
             this.label40 = new System.Windows.Forms.Label();
             this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -174,6 +176,7 @@
             this.panel16.SuspendLayout();
             this.pCbDisplayOptions.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nMapScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosY)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -631,6 +634,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.nMapScale);
+            this.panel1.Controls.Add(this.materialDivider7);
             this.panel1.Controls.Add(this.label40);
             this.panel1.Controls.Add(this.cbUserInfoWindow);
             this.panel1.Controls.Add(this.label36);
@@ -656,6 +661,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 247);
             this.panel1.TabIndex = 0;
+            // 
+            // nMapScale
+            // 
+            this.nMapScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.nMapScale.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nMapScale.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nMapScale.ForeColor = System.Drawing.Color.White;
+            this.nMapScale.Location = new System.Drawing.Point(153, 26);
+            this.nMapScale.Margin = new System.Windows.Forms.Padding(5);
+            this.nMapScale.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.nMapScale.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nMapScale.Name = "nMapScale";
+            this.nMapScale.Size = new System.Drawing.Size(30, 20);
+            this.nMapScale.TabIndex = 19;
+            this.nMapScale.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // materialDivider7
+            // 
+            this.materialDivider7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider7.Depth = 0;
+            this.materialDivider7.Location = new System.Drawing.Point(148, 20);
+            this.materialDivider7.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            this.materialDivider7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider7.Name = "materialDivider7";
+            this.materialDivider7.Padding = new System.Windows.Forms.Padding(5);
+            this.materialDivider7.Size = new System.Drawing.Size(40, 30);
+            this.materialDivider7.TabIndex = 18;
+            this.materialDivider7.Text = "materialDivider7";
             // 
             // label40
             // 
@@ -852,7 +897,7 @@
             0,
             0,
             0});
-            this.nRadarPosX.Location = new System.Drawing.Point(15, 26);
+            this.nRadarPosX.Location = new System.Drawing.Point(13, 26);
             this.nRadarPosX.Margin = new System.Windows.Forms.Padding(5);
             this.nRadarPosX.Maximum = new decimal(new int[] {
             5000,
@@ -865,7 +910,7 @@
             0,
             -2147483648});
             this.nRadarPosX.Name = "nRadarPosX";
-            this.nRadarPosX.Size = new System.Drawing.Size(60, 20);
+            this.nRadarPosX.Size = new System.Drawing.Size(55, 20);
             this.nRadarPosX.TabIndex = 4;
             this.nRadarPosX.ValueChanged += new System.EventHandler(this.MoveRadarValueChanged);
             // 
@@ -880,7 +925,7 @@
             0,
             0,
             0});
-            this.nRadarPosY.Location = new System.Drawing.Point(95, 26);
+            this.nRadarPosY.Location = new System.Drawing.Point(83, 26);
             this.nRadarPosY.Margin = new System.Windows.Forms.Padding(5);
             this.nRadarPosY.Maximum = new decimal(new int[] {
             5000,
@@ -893,7 +938,7 @@
             0,
             -2147483648});
             this.nRadarPosY.Name = "nRadarPosY";
-            this.nRadarPosY.Size = new System.Drawing.Size(60, 20);
+            this.nRadarPosY.Size = new System.Drawing.Size(55, 20);
             this.nRadarPosY.TabIndex = 6;
             this.nRadarPosY.ValueChanged += new System.EventHandler(this.MoveRadarValueChanged);
             // 
@@ -901,12 +946,12 @@
             // 
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(90, 20);
+            this.materialDivider2.Location = new System.Drawing.Point(78, 20);
             this.materialDivider2.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
             this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider2.Name = "materialDivider2";
             this.materialDivider2.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider2.Size = new System.Drawing.Size(70, 30);
+            this.materialDivider2.Size = new System.Drawing.Size(65, 30);
             this.materialDivider2.TabIndex = 7;
             this.materialDivider2.Text = "materialDivider2";
             // 
@@ -914,12 +959,12 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(10, 20);
+            this.materialDivider1.Location = new System.Drawing.Point(8, 20);
             this.materialDivider1.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
             this.materialDivider1.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider1.Size = new System.Drawing.Size(70, 30);
+            this.materialDivider1.Size = new System.Drawing.Size(65, 30);
             this.materialDivider1.TabIndex = 5;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -2185,6 +2230,7 @@
             this.pCbDisplayOptions.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nMapScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nRadarPosY)).EndInit();
             this.tabPage3.ResumeLayout(false);
@@ -2344,6 +2390,8 @@
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.Panel panel36;
+        private MaterialSkin.Controls.MaterialDivider materialDivider7;
+        public System.Windows.Forms.NumericUpDown nMapScale;
     }
 }
 

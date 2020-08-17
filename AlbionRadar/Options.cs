@@ -46,6 +46,9 @@ namespace AlbionNetwork2D
         DungeonHandler dungeonHandler = new DungeonHandler();
         PhotonParser photonParser;
 
+        Thread photonThread;
+        Thread radarThread;
+
         public Options()
         {
 
@@ -77,11 +80,11 @@ namespace AlbionNetwork2D
 
             try
             {
-                Thread photonThread = new Thread(() => createListener());
+                photonThread = new Thread(() => createListener());
                 photonThread.Priority = ThreadPriority.Highest;
                 photonThread.Start();
 
-                Thread radarThread = new Thread(() => drawerThread());
+                radarThread = new Thread(() => drawerThread());
                 radarThread.Priority = ThreadPriority.Highest;
                 radarThread.Start();
             }
@@ -113,16 +116,27 @@ namespace AlbionNetwork2D
 
             Pen linePen = new Pen(Color.FromArgb(155, 255, 255, 0), 2);
             Font font = new Font("Calibri", 3f, FontStyle.Regular);
-            
+
+            int localScale = (int)nMapScale.Value;
             float scale = 2.6f;
             int HEIGHT = 350,
                 WIDTH = 350;
+
+            if (nMapScale.Value == 1)
+            {
+                HEIGHT = 200;
+                WIDTH = 200;
+                scale = 1.6f;
+            }
 
             Bitmap bitmap = new Bitmap(WIDTH, HEIGHT);
             bitmap.SetResolution(100, 100);
 
             while (true)
             {
+                if (localScale != (int)nMapScale.Value)
+                    break;
+
                 bitmap = new Bitmap(WIDTH, HEIGHT);
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
@@ -134,9 +148,19 @@ namespace AlbionNetwork2D
                     g.TranslateTransform(WIDTH / 2, HEIGHT / 2);
                     g.FillEllipse(new SolidBrush(Color.FromArgb(128, 0, 0, 0)), -(WIDTH - 5) / 2, -(HEIGHT - 5) / 2, WIDTH - 5, HEIGHT - 5);
                     g.FillEllipse(Brushes.Yellow, -2, -2, 4, 4);
-                    g.DrawEllipse(linePen, -(WIDTH - 250) / 2, -(HEIGHT - 250) / 2, (WIDTH - 250), (HEIGHT - 250));
-                    g.DrawEllipse(linePen, -(WIDTH - 125) / 2, -(HEIGHT - 125) / 2, (WIDTH - 125), (HEIGHT - 125));
-                    g.DrawEllipse(linePen, -(WIDTH - 4) / 2, -(HEIGHT - 4) / 2, WIDTH - 4, HEIGHT - 4);
+
+                    if (nMapScale.Value == 1)
+                    {
+                        g.DrawEllipse(linePen, -(WIDTH - 135) / 2, -(HEIGHT - 135) / 2, (WIDTH - 135), (HEIGHT - 135));
+                        g.DrawEllipse(linePen, -(WIDTH - 65) / 2, -(HEIGHT - 65) / 2, (WIDTH - 65), (HEIGHT - 65));
+                        g.DrawEllipse(linePen, -(WIDTH - 4) / 2, -(HEIGHT - 4) / 2, WIDTH - 4, HEIGHT - 4);
+                    }
+                    else
+                    {
+                        g.DrawEllipse(linePen, -(WIDTH - 250) / 2, -(HEIGHT - 250) / 2, (WIDTH - 250), (HEIGHT - 250));
+                        g.DrawEllipse(linePen, -(WIDTH - 125) / 2, -(HEIGHT - 125) / 2, (WIDTH - 125), (HEIGHT - 125));
+                        g.DrawEllipse(linePen, -(WIDTH - 4) / 2, -(HEIGHT - 4) / 2, WIDTH - 4, HEIGHT - 4);
+                    }
 
                     g.ScaleTransform(scale, scale);
 
@@ -384,6 +408,8 @@ namespace AlbionNetwork2D
                 
                 Thread.Sleep(50);
             }
+
+            drawerThread();
         }
         #endregion
 

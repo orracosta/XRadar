@@ -32,6 +32,7 @@ namespace AlbionNetwork2D
             // Geral
             s.radarPosX = (int)form.nRadarPosX.Value;
             s.radarPosY = (int)form.nRadarPosY.Value;
+            s.mapScale = (int)form.nMapScale.Value;
             s.showPlayers = form.cbShowPlayers.Checked;
             s.showMobs = form.cbShowMobs.Checked;
             s.alertSound = form.cbAlertSound.Checked;
@@ -84,6 +85,7 @@ namespace AlbionNetwork2D
             // Geral
             form.nRadarPosX.Value = s.radarPosX;
             form.nRadarPosY.Value = s.radarPosY;
+            form.nMapScale.Value = s.mapScale;
             form.cbShowPlayers.Checked = s.showPlayers;
             form.cbShowMobs.Checked = s.showMobs;
             form.cbAlertSound.Checked = s.alertSound;
