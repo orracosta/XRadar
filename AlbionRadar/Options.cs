@@ -63,6 +63,7 @@ namespace AlbionNetwork2D
         public Options()
         {
             InitializeComponent();
+
             Settings.loadSettings(this);
             MobInfo.loadMobList();
             PlayerItem.loadItemList();
@@ -138,6 +139,19 @@ namespace AlbionNetwork2D
                 HEIGHT = 200;
                 WIDTH = 200;
                 scale = 1.6f;
+            }
+
+            if (Settings.languageSelected != "EN")
+            {
+                dungeons = new Dictionary<string, string>
+                {
+                    ["portal"] = "Portal",
+                    ["morgana"] = "Morgana",
+                    ["heretic"] = "Minas",
+                    ["keeper"] = "Gigantes",
+                    ["undead"] = "Mortos Vivos",
+                    ["legacy"] = "Legado"
+                };
             }
 
             Bitmap bitmap = new Bitmap(WIDTH, HEIGHT);
@@ -446,7 +460,10 @@ namespace AlbionNetwork2D
 
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "JSON|*.json";
-            saveFileDialog1.Title = "Export friendly guilds/alliances";
+            if(Settings.languageSelected != "EN")
+                saveFileDialog1.Title = "Exportar guildas / alianças amigáveis";
+            else
+                saveFileDialog1.Title = "Export friendly guilds/alliances";
             saveFileDialog1.FileName = "allys.json";
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK && saveFileDialog1.FileName != "")
@@ -677,24 +694,25 @@ namespace AlbionNetwork2D
         {
             Settings.saveSettings(this);
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void selectLanguage_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            Settings.languageSelected = selectLanguage.SelectedItem.ToString();
+            ComboBox comboBox = sender as ComboBox;
+
+            Settings.languageSelected = comboBox.SelectedItem.ToString();
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Settings.languageSelected);
 
-            this.Refresh();
+            Settings.saveSettings(this);
 
             if (userInfo != null && !userInfo.IsDisposed)
-            {
-                userInfo.Refresh();
-            }
+                userInfo.Close();
 
             if (lootLog != null && !lootLog.IsDisposed)
-            {
-                lootLog.Refresh();
-            }
+                lootLog.Close();
 
-            Settings.saveSettings(this);
+#if (!DEBUG)
+            Application.Restart();
+            Environment.Exit(0);
+#endif
         }
         #endregion
 
@@ -757,8 +775,6 @@ namespace AlbionNetwork2D
                 return;
             }
         }
-
         #endregion
-
     }
 }

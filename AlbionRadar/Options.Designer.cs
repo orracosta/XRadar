@@ -191,18 +191,17 @@
             // 
             // materialTabControl1
             // 
-            resources.ApplyResources(this.materialTabControl1, "materialTabControl1");
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Depth = 0;
+            resources.ApplyResources(this.materialTabControl1, "materialTabControl1");
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Controls.Add(this.lb_players);
             this.tabPage1.Controls.Add(this.panel16);
             this.tabPage1.Controls.Add(this.btn_open_lootlog);
@@ -210,6 +209,7 @@
             this.tabPage1.Controls.Add(this.pCbDisplayOptions);
             this.tabPage1.Controls.Add(this.lb_general);
             this.tabPage1.Controls.Add(this.panel1);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
@@ -221,7 +221,6 @@
             // 
             // panel16
             // 
-            resources.ApplyResources(this.panel16, "panel16");
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel16.Controls.Add(this.lb_color_ranged_melee);
             this.panel16.Controls.Add(this.panel33);
@@ -235,6 +234,7 @@
             this.panel16.Controls.Add(this.cbTagEnemies);
             this.panel16.Controls.Add(this.cbTagAllys);
             this.panel16.Controls.Add(this.lb_ally_tag);
+            resources.ApplyResources(this.panel16, "panel16");
             this.panel16.Name = "panel16";
             // 
             // lb_color_ranged_melee
@@ -245,14 +245,14 @@
             // 
             // panel33
             // 
-            resources.ApplyResources(this.panel33, "panel33");
             this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel33, "panel33");
             this.panel33.Name = "panel33";
             // 
             // panel34
             // 
-            resources.ApplyResources(this.panel34, "panel34");
             this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel34, "panel34");
             this.panel34.Name = "panel34";
             // 
             // cbRangedMelee
@@ -270,14 +270,14 @@
             // 
             // panel35
             // 
-            resources.ApplyResources(this.panel35, "panel35");
             this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel35, "panel35");
             this.panel35.Name = "panel35";
             // 
             // panel36
             // 
-            resources.ApplyResources(this.panel36, "panel36");
             this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel36, "panel36");
             this.panel36.Name = "panel36";
             // 
             // lb_enemy_tag
@@ -356,7 +356,6 @@
             // 
             // pCbDisplayOptions
             // 
-            resources.ApplyResources(this.pCbDisplayOptions, "pCbDisplayOptions");
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pCbDisplayOptions.Controls.Add(this.lb_none);
             this.pCbDisplayOptions.Controls.Add(this.cbNone);
@@ -370,6 +369,7 @@
             this.pCbDisplayOptions.Controls.Add(this.panel18);
             this.pCbDisplayOptions.Controls.Add(this.panel19);
             this.pCbDisplayOptions.Controls.Add(this.panel20);
+            resources.ApplyResources(this.pCbDisplayOptions, "pCbDisplayOptions");
             this.pCbDisplayOptions.Name = "pCbDisplayOptions";
             // 
             // lb_none
@@ -444,26 +444,26 @@
             // 
             // panel17
             // 
-            resources.ApplyResources(this.panel17, "panel17");
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel17, "panel17");
             this.panel17.Name = "panel17";
             // 
             // panel18
             // 
-            resources.ApplyResources(this.panel18, "panel18");
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel18, "panel18");
             this.panel18.Name = "panel18";
             // 
             // panel19
             // 
-            resources.ApplyResources(this.panel19, "panel19");
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel19, "panel19");
             this.panel19.Name = "panel19";
             // 
             // panel20
             // 
-            resources.ApplyResources(this.panel20, "panel20");
             this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel20, "panel20");
             this.panel20.Name = "panel20";
             // 
             // lb_general
@@ -474,7 +474,6 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel1.Controls.Add(this.nMapScale);
             this.panel1.Controls.Add(this.materialDivider7);
@@ -498,13 +497,14 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // nMapScale
             // 
-            resources.ApplyResources(this.nMapScale, "nMapScale");
             this.nMapScale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.nMapScale.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.nMapScale, "nMapScale");
             this.nMapScale.ForeColor = System.Drawing.Color.White;
             this.nMapScale.Maximum = new decimal(new int[] {
             2,
@@ -525,9 +525,9 @@
             // 
             // materialDivider7
             // 
-            resources.ApplyResources(this.materialDivider7, "materialDivider7");
             this.materialDivider7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider7.Depth = 0;
+            resources.ApplyResources(this.materialDivider7, "materialDivider7");
             this.materialDivider7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider7.Name = "materialDivider7";
             // 
@@ -645,9 +645,9 @@
             // 
             // nRadarPosX
             // 
-            resources.ApplyResources(this.nRadarPosX, "nRadarPosX");
             this.nRadarPosX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.nRadarPosX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.nRadarPosX, "nRadarPosX");
             this.nRadarPosX.ForeColor = System.Drawing.Color.White;
             this.nRadarPosX.Increment = new decimal(new int[] {
             10,
@@ -669,9 +669,9 @@
             // 
             // nRadarPosY
             // 
-            resources.ApplyResources(this.nRadarPosY, "nRadarPosY");
             this.nRadarPosY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.nRadarPosY.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.nRadarPosY, "nRadarPosY");
             this.nRadarPosY.ForeColor = System.Drawing.Color.White;
             this.nRadarPosY.Increment = new decimal(new int[] {
             10,
@@ -693,53 +693,53 @@
             // 
             // materialDivider2
             // 
-            resources.ApplyResources(this.materialDivider2, "materialDivider2");
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider2.Depth = 0;
+            resources.ApplyResources(this.materialDivider2, "materialDivider2");
             this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider2.Name = "materialDivider2";
             // 
             // materialDivider1
             // 
-            resources.ApplyResources(this.materialDivider1, "materialDivider1");
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
+            resources.ApplyResources(this.materialDivider1, "materialDivider1");
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // tabPage3
             // 
-            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Controls.Add(this.lb_alliances);
             this.tabPage3.Controls.Add(this.panel11);
             this.tabPage3.Controls.Add(this.exportAllysButton);
             this.tabPage3.Controls.Add(this.importAllysButton);
             this.tabPage3.Controls.Add(this.lb_guilds);
             this.tabPage3.Controls.Add(this.panel6);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
@@ -751,7 +751,6 @@
             // 
             // panel11
             // 
-            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel11.Controls.Add(this.addAlliance);
             this.panel11.Controls.Add(this.removeAlliance);
@@ -763,12 +762,13 @@
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Controls.Add(this.panel14);
             this.panel11.Controls.Add(this.panel15);
+            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
             // 
             // addAlliance
             // 
-            resources.ApplyResources(this.addAlliance, "addAlliance");
             this.addAlliance.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.addIcon;
+            resources.ApplyResources(this.addAlliance, "addAlliance");
             this.addAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addAlliance.FlatAppearance.BorderSize = 0;
             this.addAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -779,8 +779,8 @@
             // 
             // removeAlliance
             // 
-            resources.ApplyResources(this.removeAlliance, "removeAlliance");
             this.removeAlliance.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.removeIcon;
+            resources.ApplyResources(this.removeAlliance, "removeAlliance");
             this.removeAlliance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeAlliance.FlatAppearance.BorderSize = 0;
             this.removeAlliance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -791,60 +791,60 @@
             // 
             // lbTrustAlliances
             // 
-            resources.ApplyResources(this.lbTrustAlliances, "lbTrustAlliances");
             this.lbTrustAlliances.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbTrustAlliances.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.lbTrustAlliances, "lbTrustAlliances");
             this.lbTrustAlliances.ForeColor = System.Drawing.Color.White;
             this.lbTrustAlliances.FormattingEnabled = true;
             this.lbTrustAlliances.Name = "lbTrustAlliances";
             // 
             // materialDivider5
             // 
-            resources.ApplyResources(this.materialDivider5, "materialDivider5");
             this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider5.Depth = 0;
+            resources.ApplyResources(this.materialDivider5, "materialDivider5");
             this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider5.Name = "materialDivider5";
             // 
             // lbAlliancesInRange
             // 
-            resources.ApplyResources(this.lbAlliancesInRange, "lbAlliancesInRange");
             this.lbAlliancesInRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbAlliancesInRange.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.lbAlliancesInRange, "lbAlliancesInRange");
             this.lbAlliancesInRange.ForeColor = System.Drawing.Color.White;
             this.lbAlliancesInRange.FormattingEnabled = true;
             this.lbAlliancesInRange.Name = "lbAlliancesInRange";
             // 
             // materialDivider6
             // 
-            resources.ApplyResources(this.materialDivider6, "materialDivider6");
             this.materialDivider6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider6.Depth = 0;
+            resources.ApplyResources(this.materialDivider6, "materialDivider6");
             this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider6.Name = "materialDivider6";
             // 
             // panel12
             // 
-            resources.ApplyResources(this.panel12, "panel12");
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel12, "panel12");
             this.panel12.Name = "panel12";
             // 
             // panel13
             // 
-            resources.ApplyResources(this.panel13, "panel13");
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
             // 
             // panel14
             // 
-            resources.ApplyResources(this.panel14, "panel14");
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel14, "panel14");
             this.panel14.Name = "panel14";
             // 
             // panel15
             // 
-            resources.ApplyResources(this.panel15, "panel15");
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel15, "panel15");
             this.panel15.Name = "panel15";
             // 
             // exportAllysButton
@@ -877,7 +877,6 @@
             // 
             // panel6
             // 
-            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel6.Controls.Add(this.addGuild);
             this.panel6.Controls.Add(this.removeGuild);
@@ -889,12 +888,13 @@
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel10);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
             // 
             // addGuild
             // 
-            resources.ApplyResources(this.addGuild, "addGuild");
             this.addGuild.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.addIcon;
+            resources.ApplyResources(this.addGuild, "addGuild");
             this.addGuild.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addGuild.FlatAppearance.BorderSize = 0;
             this.addGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -905,8 +905,8 @@
             // 
             // removeGuild
             // 
-            resources.ApplyResources(this.removeGuild, "removeGuild");
             this.removeGuild.BackgroundImage = global::AlbionNetwork2D.Properties.Resources.removeIcon;
+            resources.ApplyResources(this.removeGuild, "removeGuild");
             this.removeGuild.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeGuild.FlatAppearance.BorderSize = 0;
             this.removeGuild.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -917,71 +917,71 @@
             // 
             // lbTrustGuilds
             // 
-            resources.ApplyResources(this.lbTrustGuilds, "lbTrustGuilds");
             this.lbTrustGuilds.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbTrustGuilds.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.lbTrustGuilds, "lbTrustGuilds");
             this.lbTrustGuilds.ForeColor = System.Drawing.Color.White;
             this.lbTrustGuilds.FormattingEnabled = true;
             this.lbTrustGuilds.Name = "lbTrustGuilds";
             // 
             // materialDivider4
             // 
-            resources.ApplyResources(this.materialDivider4, "materialDivider4");
             this.materialDivider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider4.Depth = 0;
+            resources.ApplyResources(this.materialDivider4, "materialDivider4");
             this.materialDivider4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider4.Name = "materialDivider4";
             // 
             // lbGuildsInRange
             // 
-            resources.ApplyResources(this.lbGuildsInRange, "lbGuildsInRange");
             this.lbGuildsInRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbGuildsInRange.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.lbGuildsInRange, "lbGuildsInRange");
             this.lbGuildsInRange.ForeColor = System.Drawing.Color.White;
             this.lbGuildsInRange.FormattingEnabled = true;
             this.lbGuildsInRange.Name = "lbGuildsInRange";
             // 
             // materialDivider3
             // 
-            resources.ApplyResources(this.materialDivider3, "materialDivider3");
             this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider3.Depth = 0;
+            resources.ApplyResources(this.materialDivider3, "materialDivider3");
             this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider3.Name = "materialDivider3";
             // 
             // panel7
             // 
-            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
             // 
             // panel8
             // 
-            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
             // panel9
             // 
-            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
             // 
             // panel10
             // 
-            resources.ApplyResources(this.panel10, "panel10");
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
             // 
             // tabPage2
             // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Controls.Add(this.lb_resources);
             this.tabPage2.Controls.Add(this.pFilterResource);
             this.tabPage2.Controls.Add(this.lb_monsters);
             this.tabPage2.Controls.Add(this.lb_item_tiers);
             this.tabPage2.Controls.Add(this.pFilterMobResource);
             this.tabPage2.Controls.Add(this.pTierList);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
@@ -993,7 +993,6 @@
             // 
             // pFilterResource
             // 
-            resources.ApplyResources(this.pFilterResource, "pFilterResource");
             this.pFilterResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pFilterResource.Controls.Add(this.lb_amount);
             this.pFilterResource.Controls.Add(this.cbResourceFilterAmount);
@@ -1011,6 +1010,7 @@
             this.pFilterResource.Controls.Add(this.panel30);
             this.pFilterResource.Controls.Add(this.panel31);
             this.pFilterResource.Controls.Add(this.panel32);
+            resources.ApplyResources(this.pFilterResource, "pFilterResource");
             this.pFilterResource.Name = "pFilterResource";
             // 
             // lb_amount
@@ -1129,26 +1129,26 @@
             // 
             // panel25
             // 
-            resources.ApplyResources(this.panel25, "panel25");
             this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel25, "panel25");
             this.panel25.Name = "panel25";
             // 
             // panel30
             // 
-            resources.ApplyResources(this.panel30, "panel30");
             this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel30, "panel30");
             this.panel30.Name = "panel30";
             // 
             // panel31
             // 
-            resources.ApplyResources(this.panel31, "panel31");
             this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel31, "panel31");
             this.panel31.Name = "panel31";
             // 
             // panel32
             // 
-            resources.ApplyResources(this.panel32, "panel32");
             this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel32, "panel32");
             this.panel32.Name = "panel32";
             // 
             // lb_monsters
@@ -1165,7 +1165,6 @@
             // 
             // pFilterMobResource
             // 
-            resources.ApplyResources(this.pFilterMobResource, "pFilterMobResource");
             this.pFilterMobResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pFilterMobResource.Controls.Add(this.lb_wood1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterMadeira);
@@ -1181,6 +1180,7 @@
             this.pFilterMobResource.Controls.Add(this.panel27);
             this.pFilterMobResource.Controls.Add(this.panel28);
             this.pFilterMobResource.Controls.Add(this.panel29);
+            resources.ApplyResources(this.pFilterMobResource, "pFilterMobResource");
             this.pFilterMobResource.Name = "pFilterMobResource";
             // 
             // lb_wood1
@@ -1280,31 +1280,30 @@
             // 
             // panel26
             // 
-            resources.ApplyResources(this.panel26, "panel26");
             this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel26, "panel26");
             this.panel26.Name = "panel26";
             // 
             // panel27
             // 
-            resources.ApplyResources(this.panel27, "panel27");
             this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel27, "panel27");
             this.panel27.Name = "panel27";
             // 
             // panel28
             // 
-            resources.ApplyResources(this.panel28, "panel28");
             this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel28, "panel28");
             this.panel28.Name = "panel28";
             // 
             // panel29
             // 
-            resources.ApplyResources(this.panel29, "panel29");
             this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel29, "panel29");
             this.panel29.Name = "panel29";
             // 
             // pTierList
             // 
-            resources.ApplyResources(this.pTierList, "pTierList");
             this.pTierList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pTierList.Controls.Add(this.label25);
             this.pTierList.Controls.Add(this.cbShowTier8);
@@ -1326,6 +1325,7 @@
             this.pTierList.Controls.Add(this.panel22);
             this.pTierList.Controls.Add(this.panel23);
             this.pTierList.Controls.Add(this.panel24);
+            resources.ApplyResources(this.pTierList, "pTierList");
             this.pTierList.Name = "pTierList";
             // 
             // label25
@@ -1482,33 +1482,33 @@
             // 
             // panel21
             // 
-            resources.ApplyResources(this.panel21, "panel21");
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel21, "panel21");
             this.panel21.Name = "panel21";
             // 
             // panel22
             // 
-            resources.ApplyResources(this.panel22, "panel22");
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel22, "panel22");
             this.panel22.Name = "panel22";
             // 
             // panel23
             // 
-            resources.ApplyResources(this.panel23, "panel23");
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel23, "panel23");
             this.panel23.Name = "panel23";
             // 
             // panel24
             // 
-            resources.ApplyResources(this.panel24, "panel24");
             this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel24, "panel24");
             this.panel24.Name = "panel24";
             // 
             // materialTabSelector1
             // 
-            resources.ApplyResources(this.materialTabSelector1, "materialTabSelector1");
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
+            resources.ApplyResources(this.materialTabSelector1, "materialTabSelector1");
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
             // 
@@ -1519,21 +1519,21 @@
             // 
             // selectLanguage
             // 
-            resources.ApplyResources(this.selectLanguage, "selectLanguage");
             this.selectLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.selectLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.selectLanguage, "selectLanguage");
             this.selectLanguage.ForeColor = System.Drawing.Color.White;
             this.selectLanguage.Items.AddRange(new object[] {
             resources.GetString("selectLanguage.Items"),
             resources.GetString("selectLanguage.Items1")});
             this.selectLanguage.Name = "selectLanguage";
-            this.selectLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.selectLanguage.SelectionChangeCommitted += new System.EventHandler(this.selectLanguage_SelectionChangeCommitted);
             // 
             // Options
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.selectLanguage);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);

@@ -46,9 +46,9 @@
             // 
             // userLogin
             // 
-            resources.ApplyResources(this.userLogin, "userLogin");
             this.userLogin.Depth = 0;
             this.userLogin.Hint = "";
+            resources.ApplyResources(this.userLogin, "userLogin");
             this.userLogin.MaxLength = 32767;
             this.userLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.userLogin.Name = "userLogin";
@@ -61,9 +61,9 @@
             // 
             // passwordLogin
             // 
-            resources.ApplyResources(this.passwordLogin, "passwordLogin");
             this.passwordLogin.Depth = 0;
             this.passwordLogin.Hint = "";
+            resources.ApplyResources(this.passwordLogin, "passwordLogin");
             this.passwordLogin.MaxLength = 32767;
             this.passwordLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.passwordLogin.Name = "passwordLogin";

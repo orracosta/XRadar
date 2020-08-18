@@ -64,9 +64,9 @@
             // 
             // lbPlayersInRange
             // 
+            resources.ApplyResources(this.lbPlayersInRange, "lbPlayersInRange");
             this.lbPlayersInRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbPlayersInRange.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.lbPlayersInRange, "lbPlayersInRange");
             this.lbPlayersInRange.ForeColor = System.Drawing.Color.White;
             this.lbPlayersInRange.FormattingEnabled = true;
             this.lbPlayersInRange.Name = "lbPlayersInRange";
@@ -74,9 +74,9 @@
             // 
             // materialDivider3
             // 
+            resources.ApplyResources(this.materialDivider3, "materialDivider3");
             this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider3.Depth = 0;
-            resources.ApplyResources(this.materialDivider3, "materialDivider3");
             this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider3.Name = "materialDivider3";
             // 
@@ -91,103 +91,103 @@
             // 
             // pBootSpell
             // 
-            this.pBootSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pBootSpell, "pBootSpell");
+            this.pBootSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBootSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBootSpell.Name = "pBootSpell";
             this.pBootSpell.TabStop = false;
             // 
             // pChestSpell
             // 
-            this.pChestSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pChestSpell, "pChestSpell");
+            this.pChestSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pChestSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pChestSpell.Name = "pChestSpell";
             this.pChestSpell.TabStop = false;
             // 
             // pHeadSpell
             // 
-            this.pHeadSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pHeadSpell, "pHeadSpell");
+            this.pHeadSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pHeadSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pHeadSpell.Name = "pHeadSpell";
             this.pHeadSpell.TabStop = false;
             // 
             // pWeaponSpell3
             // 
-            this.pWeaponSpell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pWeaponSpell3, "pWeaponSpell3");
+            this.pWeaponSpell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell3.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell3.Name = "pWeaponSpell3";
             this.pWeaponSpell3.TabStop = false;
             // 
             // pWeaponSpell2
             // 
-            this.pWeaponSpell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pWeaponSpell2, "pWeaponSpell2");
+            this.pWeaponSpell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell2.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell2.Name = "pWeaponSpell2";
             this.pWeaponSpell2.TabStop = false;
             // 
             // pWeaponSpell1
             // 
-            this.pWeaponSpell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pWeaponSpell1, "pWeaponSpell1");
+            this.pWeaponSpell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pWeaponSpell1.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pWeaponSpell1.Name = "pWeaponSpell1";
             this.pWeaponSpell1.TabStop = false;
             // 
             // pBag
             // 
-            this.pBag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pBag, "pBag");
+            this.pBag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBag.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBag.Name = "pBag";
             this.pBag.TabStop = false;
             // 
             // pCape
             // 
-            this.pCape.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pCape, "pCape");
+            this.pCape.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pCape.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pCape.Name = "pCape";
             this.pCape.TabStop = false;
             // 
             // pBoot
             // 
-            this.pBoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pBoot, "pBoot");
+            this.pBoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pBoot.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pBoot.Name = "pBoot";
             this.pBoot.TabStop = false;
             // 
             // pChest
             // 
-            this.pChest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pChest, "pChest");
+            this.pChest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pChest.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pChest.Name = "pChest";
             this.pChest.TabStop = false;
             // 
             // pHead
             // 
-            this.pHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pHead, "pHead");
+            this.pHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pHead.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pHead.Name = "pHead";
             this.pHead.TabStop = false;
             // 
             // pSWeapon
             // 
-            this.pSWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pSWeapon, "pSWeapon");
+            this.pSWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pSWeapon.Name = "pSWeapon";
             this.pSWeapon.TabStop = false;
             // 
             // pFWeapon
             // 
-            this.pFWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             resources.ApplyResources(this.pFWeapon, "pFWeapon");
+            this.pFWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pFWeapon.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
             this.pFWeapon.Name = "pFWeapon";
             this.pFWeapon.TabStop = false;

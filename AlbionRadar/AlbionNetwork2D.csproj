@@ -182,25 +182,16 @@
     <EmbeddedResource Include="Login.en.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.pt.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LootLog.en.resx">
       <DependentUpon>LootLog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LootLog.pt.resx">
-      <DependentUpon>LootLog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LootLog.resx">
       <DependentUpon>LootLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Options.en.resx">
-      <DependentUpon>Options.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Options.pt.resx">
       <DependentUpon>Options.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">

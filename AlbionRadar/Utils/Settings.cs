@@ -123,7 +123,7 @@ namespace AlbionNetwork2D
             form.cbResourceFilterMadeira.Checked = s.resourceFilterMadeira;
             form.cbResourceFilterAmount.Checked = s.resourceFilterAmount;
         }
-        public static void loadLanguage ()
+        public static void loadLanguage()
         {
             AppSettings s = new AppSettings();
 

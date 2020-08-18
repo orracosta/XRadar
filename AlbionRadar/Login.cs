@@ -22,10 +22,11 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1131";
+        private string version = "1140";
         public Login()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            Settings.loadLanguage();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Settings.languageSelected);
 
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;

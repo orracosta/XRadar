@@ -102,7 +102,7 @@
       <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">en</Value>
+      <Value Profile="(Default)">EN</Value>
     </Setting>
   </Settings>
 </SettingsFile>
