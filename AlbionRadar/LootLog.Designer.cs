@@ -35,10 +35,10 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.copyList = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btn_copyList = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btn_clearList = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tbfilterNames = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_players_filter = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // updateLootLog
@@ -78,39 +78,39 @@
             this.columnHeader3.Text = "Quantia";
             this.columnHeader3.Width = 92;
             // 
-            // copyList
+            // btn_copyList
             // 
-            this.copyList.AutoSize = true;
-            this.copyList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.copyList.Depth = 0;
-            this.copyList.Icon = null;
-            this.copyList.Location = new System.Drawing.Point(545, 406);
-            this.copyList.MinimumSize = new System.Drawing.Size(120, 0);
-            this.copyList.MouseState = MaterialSkin.MouseState.HOVER;
-            this.copyList.Name = "copyList";
-            this.copyList.Primary = true;
-            this.copyList.Size = new System.Drawing.Size(120, 36);
-            this.copyList.TabIndex = 9;
-            this.copyList.Text = "Copiar Lista";
-            this.copyList.UseVisualStyleBackColor = true;
-            this.copyList.Click += new System.EventHandler(this.copyList_Click);
+            this.btn_copyList.AutoSize = true;
+            this.btn_copyList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_copyList.Depth = 0;
+            this.btn_copyList.Icon = null;
+            this.btn_copyList.Location = new System.Drawing.Point(545, 406);
+            this.btn_copyList.MinimumSize = new System.Drawing.Size(120, 0);
+            this.btn_copyList.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_copyList.Name = "btn_copyList";
+            this.btn_copyList.Primary = true;
+            this.btn_copyList.Size = new System.Drawing.Size(120, 36);
+            this.btn_copyList.TabIndex = 9;
+            this.btn_copyList.Text = "Copiar Lista";
+            this.btn_copyList.UseVisualStyleBackColor = true;
+            this.btn_copyList.Click += new System.EventHandler(this.copyList_Click);
             // 
-            // materialRaisedButton1
+            // btn_clearList
             // 
-            this.materialRaisedButton1.AutoSize = true;
-            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(419, 406);
-            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(120, 0);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(120, 36);
-            this.materialRaisedButton1.TabIndex = 10;
-            this.materialRaisedButton1.Text = "Limpar Lista";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.btn_clearList.AutoSize = true;
+            this.btn_clearList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_clearList.Depth = 0;
+            this.btn_clearList.Icon = null;
+            this.btn_clearList.Location = new System.Drawing.Point(419, 406);
+            this.btn_clearList.MinimumSize = new System.Drawing.Size(120, 0);
+            this.btn_clearList.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_clearList.Name = "btn_clearList";
+            this.btn_clearList.Primary = true;
+            this.btn_clearList.Size = new System.Drawing.Size(120, 36);
+            this.btn_clearList.TabIndex = 10;
+            this.btn_clearList.Text = "Limpar Lista";
+            this.btn_clearList.UseVisualStyleBackColor = true;
+            this.btn_clearList.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // tbfilterNames
             // 
@@ -121,27 +121,27 @@
             this.tbfilterNames.Size = new System.Drawing.Size(171, 306);
             this.tbfilterNames.TabIndex = 11;
             // 
-            // label1
+            // lb_players_filter
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Filtro de Jogadores:";
+            this.lb_players_filter.AutoSize = true;
+            this.lb_players_filter.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_players_filter.ForeColor = System.Drawing.Color.White;
+            this.lb_players_filter.Location = new System.Drawing.Point(9, 74);
+            this.lb_players_filter.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_players_filter.Name = "lb_players_filter";
+            this.lb_players_filter.Size = new System.Drawing.Size(117, 17);
+            this.lb_players_filter.TabIndex = 12;
+            this.lb_players_filter.Text = "Filtro de Jogadores:";
             // 
             // LootLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_players_filter);
             this.Controls.Add(this.tbfilterNames);
-            this.Controls.Add(this.materialRaisedButton1);
-            this.Controls.Add(this.copyList);
+            this.Controls.Add(this.btn_clearList);
+            this.Controls.Add(this.btn_copyList);
             this.Controls.Add(this.lvLootLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -159,9 +159,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private MaterialSkin.Controls.MaterialRaisedButton copyList;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_copyList;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_clearList;
         private System.Windows.Forms.TextBox tbfilterNames;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_players_filter;
     }
 }

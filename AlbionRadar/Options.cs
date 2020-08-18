@@ -18,6 +18,7 @@ using System.Drawing.Text;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -31,6 +32,16 @@ namespace AlbionNetwork2D
     {
         const int MYACTION_HOTKEY_ID = 1;
         const int MYACTION_HOTKEY_ID2 = 2;
+
+        public Dictionary<string, string> dungeons = new Dictionary<string, string>
+        {
+            ["portal"] = "Portal",
+            ["morgana"] = "Morgana",
+            ["heretic"] = "Heretic",
+            ["keeper"] = "Keeper",
+            ["undead"] = "Undead",
+            ["legacy"] = "Legacy"
+        };
 
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);
@@ -51,8 +62,8 @@ namespace AlbionNetwork2D
 
         public Options()
         {
-
             InitializeComponent();
+            loadLanguage();
             Settings.loadSettings(this);
             MobInfo.loadMobList();
             PlayerItem.loadItemList();
@@ -67,6 +78,70 @@ namespace AlbionNetwork2D
 
             radarMap.Left = (int)nRadarPosX.Value;
             radarMap.Top = (int)nRadarPosY.Value;
+        }
+        public void loadLanguage()
+        {
+            CultureInfo ci = new CultureInfo(Settings.languageSelected);
+            Assembly a = Assembly.Load("Discord");
+            ResourceManager rm = new ResourceManager("AlbionNetwork2D.Lang.langres", a);
+
+            this.Text = rm.GetString("options.title", ci);
+
+            //General
+            tabPage1.Text = rm.GetString("options.menu.general", ci);
+            lb_general.Text = rm.GetString("options.general.general", ci);
+            lb_show_equipament.Text = rm.GetString("options.general.show_equipament", ci);
+            lb_show_radar.Text = rm.GetString("options.general.show_radar", ci);
+            lb_show_players.Text = rm.GetString("options.general.show_players", ci);
+            lb_show_monsters.Text = rm.GetString("options.general.show_monsters", ci);
+            lb_show_harvestable.Text = rm.GetString("options.general.show_harvestable", ci);
+            lb_show_dungeons.Text = rm.GetString("options.general.show_dungeons", ci);
+            btn_open_lootlog.Text = rm.GetString("options.general.open_lootlog", ci);
+            lb_tags.Text = rm.GetString("options.general.tags", ci);
+            lb_name.Text = rm.GetString("options.general.name", ci);
+            lb_guild.Text = rm.GetString("options.general.guild", ci);
+            lb_alliance.Text = rm.GetString("options.general.alliance", ci);
+            lb_none.Text = rm.GetString("options.general.none", ci);
+            lb_players.Text = rm.GetString("options.general.players", ci);
+            lb_alert_sound.Text = rm.GetString("options.general.alert_sound", ci);
+            lb_ally_tag.Text = rm.GetString("options.general.ally_tag", ci);
+            lb_enemy_tag.Text = rm.GetString("options.general.enemy_tag", ci);
+            lb_color_ranged_melee.Text = rm.GetString("options.general.color_ranged_melee", ci);
+
+            //Guilds and Alliances
+            tabPage3.Text = rm.GetString("options.menu.guilds_and_alliances", ci);
+            lb_guilds.Text = rm.GetString("options.guilds_and_alliances.guilds", ci);
+            lb_alliances.Text = rm.GetString("options.guilds_and_alliances.alliances", ci);
+            importAllysButton.Text = rm.GetString("options.guilds_and_alliances.import", ci);
+            exportAllysButton.Text = rm.GetString("options.guilds_and_alliances.export", ci);
+
+            //Harvestable
+            tabPage2.Text = rm.GetString("options.menu.harvestable", ci);
+            lb_item_tiers.Text = rm.GetString("options.harvestable.item_tiers", ci);
+            lb_monsters.Text = rm.GetString("options.harvestable.monsters", ci);
+            lb_fiber1.Text = rm.GetString("options.harvestable.fiber", ci);
+            lb_rock1.Text = rm.GetString("options.harvestable.rock", ci);
+            lb_wood1.Text = rm.GetString("options.harvestable.wood", ci);
+            lb_ore1.Text = rm.GetString("options.harvestable.ore", ci);
+            lb_hide1.Text = rm.GetString("options.harvestable.hide", ci);
+            lb_resources.Text = rm.GetString("options.harvestable.resources", ci);
+            lb_fiber2.Text = rm.GetString("options.harvestable.fiber", ci);
+            lb_rock2.Text = rm.GetString("options.harvestable.rock", ci);
+            lb_wood2.Text = rm.GetString("options.harvestable.wood", ci);
+            lb_ore2.Text = rm.GetString("options.harvestable.ore", ci);
+            lb_hide2.Text = rm.GetString("options.harvestable.hide", ci);
+            lb_amount.Text = rm.GetString("options.harvestable.amount", ci);
+
+            dungeons = new Dictionary<string, string>
+            {
+                ["portal"] = rm.GetString("dungeons.portal", ci),
+                ["morgana"] = rm.GetString("dungeons.morgana", ci),
+                ["heretic"] = rm.GetString("dungeons.heretic", ci),
+                ["keeper"] = rm.GetString("dungeons.keeper", ci),
+                ["undead"] = rm.GetString("dungeons.undead", ci),
+                ["legacy"] = rm.GetString("dungeons.legacy", ci)
+            };
+
         }
         private void Options_Load(object sender, EventArgs e)
         {
@@ -276,7 +351,7 @@ namespace AlbionNetwork2D
                                     g.TranslateTransform(hX, hY);
                                     g.RotateTransform(135f);
 
-                                    g.DrawString("Boss", font, Brushes.White, 5, -3);
+                                    g.DrawString("BOSS", font, Brushes.White, 5, -3);
 
                                     g.RotateTransform(-135f);
                                     g.TranslateTransform(-hX, -hY);
@@ -318,17 +393,17 @@ namespace AlbionNetwork2D
                                 string dungeonName;
 
                                 if (item.Value.Type.Contains("_MOR"))
-                                    dungeonName = "Morgana";
+                                    dungeonName = dungeons["morgana"];
                                 else if (item.Value.Type.Contains("_UND"))
-                                    dungeonName = "Mortos Vivos";
+                                    dungeonName = dungeons["undead"];
                                 else if (item.Value.Type.Contains("_KPR"))
-                                    dungeonName = "Gigantes";
+                                    dungeonName = dungeons["keeper"];
                                 else if (item.Value.Type.Contains("_HER"))
-                                    dungeonName = "Minas";
+                                    dungeonName = dungeons["heretic"];
                                 else if (item.Value.Type.Contains("_LEGACY"))
-                                    dungeonName = "Evento";
+                                    dungeonName = dungeons["legacy"];
                                 else
-                                    dungeonName = "Portal";
+                                    dungeonName = dungeons["portal"];
 
                                 g.TranslateTransform(hX, hY);
                                 g.RotateTransform(135f);
@@ -435,7 +510,7 @@ namespace AlbionNetwork2D
 
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "JSON|*.json";
-            saveFileDialog1.Title = "Exportar lista de alianças e guildas";
+            saveFileDialog1.Title = "Export friendly guilds/alliances";
             saveFileDialog1.FileName = "allys.json";
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK && saveFileDialog1.FileName != "")
@@ -666,6 +741,27 @@ namespace AlbionNetwork2D
         {
             Settings.saveSettings(this);
         }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Settings.languageSelected = selectLanguage.SelectedItem.ToString();
+
+            loadLanguage();
+            this.Refresh();
+
+            if (userInfo != null && !userInfo.IsDisposed)
+            {
+                userInfo.loadLanguage();
+                userInfo.Refresh();
+            }
+
+            if (lootLog != null && !lootLog.IsDisposed)
+            {
+                lootLog.loadLanguage();
+                lootLog.Refresh();
+            }
+
+            Settings.saveSettings(this);
+        }
         #endregion
 
         #region photonPackageParser
@@ -729,5 +825,6 @@ namespace AlbionNetwork2D
         }
 
         #endregion
+
     }
 }

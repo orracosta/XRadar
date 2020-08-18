@@ -32,50 +32,50 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label41 = new System.Windows.Forms.Label();
+            this.lb_players = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
+            this.lb_color_ranged_melee = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
             this.cbRangedMelee = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel35 = new System.Windows.Forms.Panel();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.lb_enemy_tag = new System.Windows.Forms.Label();
             this.cbAlertSound = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb_alert_sound = new System.Windows.Forms.Label();
             this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
             this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lb_ally_tag = new System.Windows.Forms.Label();
+            this.btn_open_lootlog = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.lb_tags = new System.Windows.Forms.Label();
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lb_none = new System.Windows.Forms.Label();
             this.cbNone = new MaterialSkin.Controls.MaterialRadioButton();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lb_alliance = new System.Windows.Forms.Label();
             this.cbAlliance = new MaterialSkin.Controls.MaterialRadioButton();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lb_guild = new System.Windows.Forms.Label();
             this.cbGuild = new MaterialSkin.Controls.MaterialRadioButton();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lb_name = new System.Windows.Forms.Label();
             this.cbName = new MaterialSkin.Controls.MaterialRadioButton();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_general = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nMapScale = new System.Windows.Forms.NumericUpDown();
             this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
-            this.label40 = new System.Windows.Forms.Label();
+            this.lb_show_equipament = new System.Windows.Forms.Label();
             this.cbUserInfoWindow = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lb_show_dungeons = new System.Windows.Forms.Label();
             this.cbShowDungeon = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lb_show_harvestable = new System.Windows.Forms.Label();
             this.cbShowHarvestable = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lb_show_monsters = new System.Windows.Forms.Label();
             this.cbShowMobs = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_show_players = new System.Windows.Forms.Label();
             this.cbShowPlayers = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_show_radar = new System.Windows.Forms.Label();
             this.cbShowRadar = new MaterialSkin.Controls.MaterialCheckBox();
             this.nRadarPosX = new System.Windows.Forms.NumericUpDown();
             this.nRadarPosY = new System.Windows.Forms.NumericUpDown();
@@ -86,7 +86,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lb_alliances = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.addAlliance = new System.Windows.Forms.Button();
             this.removeAlliance = new System.Windows.Forms.Button();
@@ -100,7 +100,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.exportAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
             this.importAllysButton = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb_guilds = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.addGuild = new System.Windows.Forms.Button();
             this.removeGuild = new System.Windows.Forms.Button();
@@ -113,36 +113,36 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lb_resources = new System.Windows.Forms.Label();
             this.pFilterResource = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
+            this.lb_amount = new System.Windows.Forms.Label();
             this.cbResourceFilterAmount = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.lb_wood2 = new System.Windows.Forms.Label();
+            this.lb_hide2 = new System.Windows.Forms.Label();
             this.cbResourceFilterMadeira = new MaterialSkin.Controls.MaterialCheckBox();
             this.cbResourceFilterPelego = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lb_ore2 = new System.Windows.Forms.Label();
             this.cbResourceFilterMinerio = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label31 = new System.Windows.Forms.Label();
+            this.lb_rock2 = new System.Windows.Forms.Label();
             this.cbResourceFilterPedra = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lb_fiber2 = new System.Windows.Forms.Label();
             this.cbResourceFilterFibra = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lb_monsters = new System.Windows.Forms.Label();
+            this.lb_item_tiers = new System.Windows.Forms.Label();
             this.pFilterMobResource = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lb_wood1 = new System.Windows.Forms.Label();
             this.cbMobFilterMadeira = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lb_hide1 = new System.Windows.Forms.Label();
             this.cbMobFilterPelego = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lb_ore1 = new System.Windows.Forms.Label();
             this.cbMobFilterMinerio = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lb_rock1 = new System.Windows.Forms.Label();
             this.cbMobFilterPedra = new MaterialSkin.Controls.MaterialCheckBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lb_fiber1 = new System.Windows.Forms.Label();
             this.cbMobFilterFibra = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -171,6 +171,7 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.AllyListTimer = new System.Windows.Forms.Timer(this.components);
+            this.selectLanguage = new System.Windows.Forms.ComboBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -204,12 +205,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label41);
+            this.tabPage1.Controls.Add(this.lb_players);
             this.tabPage1.Controls.Add(this.panel16);
-            this.tabPage1.Controls.Add(this.materialRaisedButton1);
-            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.btn_open_lootlog);
+            this.tabPage1.Controls.Add(this.lb_tags);
             this.tabPage1.Controls.Add(this.pCbDisplayOptions);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.lb_general);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -219,51 +220,51 @@
             this.tabPage1.Text = "Geral";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label41
+            // lb_players
             // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(233, 149);
-            this.label41.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label41.Size = new System.Drawing.Size(74, 17);
-            this.label41.TabIndex = 22;
-            this.label41.Text = "Jogadores";
+            this.lb_players.AutoSize = true;
+            this.lb_players.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_players.ForeColor = System.Drawing.Color.White;
+            this.lb_players.Location = new System.Drawing.Point(233, 149);
+            this.lb_players.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_players.Name = "lb_players";
+            this.lb_players.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_players.Size = new System.Drawing.Size(74, 17);
+            this.lb_players.TabIndex = 22;
+            this.lb_players.Text = "Jogadores";
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel16.Controls.Add(this.label39);
+            this.panel16.Controls.Add(this.lb_color_ranged_melee);
             this.panel16.Controls.Add(this.panel33);
             this.panel16.Controls.Add(this.panel34);
             this.panel16.Controls.Add(this.cbRangedMelee);
             this.panel16.Controls.Add(this.panel35);
             this.panel16.Controls.Add(this.panel36);
-            this.panel16.Controls.Add(this.label38);
+            this.panel16.Controls.Add(this.lb_enemy_tag);
             this.panel16.Controls.Add(this.cbAlertSound);
-            this.panel16.Controls.Add(this.label7);
+            this.panel16.Controls.Add(this.lb_alert_sound);
             this.panel16.Controls.Add(this.cbTagEnemies);
             this.panel16.Controls.Add(this.cbTagAllys);
-            this.panel16.Controls.Add(this.label37);
+            this.panel16.Controls.Add(this.lb_ally_tag);
             this.panel16.Location = new System.Drawing.Point(221, 158);
             this.panel16.Margin = new System.Windows.Forms.Padding(10);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(200, 140);
             this.panel16.TabIndex = 21;
             // 
-            // label39
+            // lb_color_ranged_melee
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(34, 107);
-            this.label39.Margin = new System.Windows.Forms.Padding(5);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(111, 17);
-            this.label39.TabIndex = 26;
-            this.label39.Text = "Cor ranged/melee";
+            this.lb_color_ranged_melee.AutoSize = true;
+            this.lb_color_ranged_melee.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_color_ranged_melee.ForeColor = System.Drawing.Color.White;
+            this.lb_color_ranged_melee.Location = new System.Drawing.Point(34, 107);
+            this.lb_color_ranged_melee.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_color_ranged_melee.Name = "lb_color_ranged_melee";
+            this.lb_color_ranged_melee.Size = new System.Drawing.Size(111, 17);
+            this.lb_color_ranged_melee.TabIndex = 26;
+            this.lb_color_ranged_melee.Text = "Cor ranged/melee";
             // 
             // panel33
             // 
@@ -320,17 +321,17 @@
             this.panel36.Size = new System.Drawing.Size(200, 2);
             this.panel36.TabIndex = 0;
             // 
-            // label38
+            // lb_enemy_tag
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(34, 78);
-            this.label38.Margin = new System.Windows.Forms.Padding(5);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 17);
-            this.label38.TabIndex = 24;
-            this.label38.Text = "TAG inimigos";
+            this.lb_enemy_tag.AutoSize = true;
+            this.lb_enemy_tag.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_enemy_tag.ForeColor = System.Drawing.Color.White;
+            this.lb_enemy_tag.Location = new System.Drawing.Point(34, 78);
+            this.lb_enemy_tag.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_enemy_tag.Name = "lb_enemy_tag";
+            this.lb_enemy_tag.Size = new System.Drawing.Size(80, 17);
+            this.lb_enemy_tag.TabIndex = 24;
+            this.lb_enemy_tag.Text = "TAG inimigos";
             // 
             // cbAlertSound
             // 
@@ -351,17 +352,17 @@
             this.cbAlertSound.UseVisualStyleBackColor = true;
             this.cbAlertSound.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label7
+            // lb_alert_sound
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 17);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Alerta sonoro";
+            this.lb_alert_sound.AutoSize = true;
+            this.lb_alert_sound.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_alert_sound.ForeColor = System.Drawing.Color.White;
+            this.lb_alert_sound.Location = new System.Drawing.Point(34, 20);
+            this.lb_alert_sound.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_alert_sound.Name = "lb_alert_sound";
+            this.lb_alert_sound.Size = new System.Drawing.Size(84, 17);
+            this.lb_alert_sound.TabIndex = 13;
+            this.lb_alert_sound.Text = "Alerta sonoro";
             // 
             // cbTagEnemies
             // 
@@ -401,58 +402,58 @@
             this.cbTagAllys.UseVisualStyleBackColor = true;
             this.cbTagAllys.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label37
+            // lb_ally_tag
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(34, 49);
-            this.label37.Margin = new System.Windows.Forms.Padding(5);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(73, 17);
-            this.label37.TabIndex = 22;
-            this.label37.Text = "TAG aliados";
+            this.lb_ally_tag.AutoSize = true;
+            this.lb_ally_tag.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ally_tag.ForeColor = System.Drawing.Color.White;
+            this.lb_ally_tag.Location = new System.Drawing.Point(34, 49);
+            this.lb_ally_tag.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_ally_tag.Name = "lb_ally_tag";
+            this.lb_ally_tag.Size = new System.Drawing.Size(73, 17);
+            this.lb_ally_tag.TabIndex = 22;
+            this.lb_ally_tag.Text = "TAG aliados";
             // 
-            // materialRaisedButton1
+            // btn_open_lootlog
             // 
-            this.materialRaisedButton1.AutoSize = true;
-            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(13, 262);
-            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(200, 0);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(200, 36);
-            this.materialRaisedButton1.TabIndex = 9;
-            this.materialRaisedButton1.Text = "Abrir LootLog";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.btn_open_lootlog.AutoSize = true;
+            this.btn_open_lootlog.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_open_lootlog.Depth = 0;
+            this.btn_open_lootlog.Icon = null;
+            this.btn_open_lootlog.Location = new System.Drawing.Point(13, 262);
+            this.btn_open_lootlog.MinimumSize = new System.Drawing.Size(200, 0);
+            this.btn_open_lootlog.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_open_lootlog.Name = "btn_open_lootlog";
+            this.btn_open_lootlog.Primary = true;
+            this.btn_open_lootlog.Size = new System.Drawing.Size(200, 36);
+            this.btn_open_lootlog.TabIndex = 9;
+            this.btn_open_lootlog.Text = "Abrir LootLog";
+            this.btn_open_lootlog.UseVisualStyleBackColor = true;
+            this.btn_open_lootlog.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
-            // label8
+            // lb_tags
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(233, 1);
-            this.label8.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Size = new System.Drawing.Size(43, 17);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Tags";
+            this.lb_tags.AutoSize = true;
+            this.lb_tags.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tags.ForeColor = System.Drawing.Color.White;
+            this.lb_tags.Location = new System.Drawing.Point(233, 1);
+            this.lb_tags.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_tags.Name = "lb_tags";
+            this.lb_tags.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_tags.Size = new System.Drawing.Size(43, 17);
+            this.lb_tags.TabIndex = 4;
+            this.lb_tags.Text = "Tags";
             // 
             // pCbDisplayOptions
             // 
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pCbDisplayOptions.Controls.Add(this.label12);
+            this.pCbDisplayOptions.Controls.Add(this.lb_none);
             this.pCbDisplayOptions.Controls.Add(this.cbNone);
-            this.pCbDisplayOptions.Controls.Add(this.label11);
+            this.pCbDisplayOptions.Controls.Add(this.lb_alliance);
             this.pCbDisplayOptions.Controls.Add(this.cbAlliance);
-            this.pCbDisplayOptions.Controls.Add(this.label10);
+            this.pCbDisplayOptions.Controls.Add(this.lb_guild);
             this.pCbDisplayOptions.Controls.Add(this.cbGuild);
-            this.pCbDisplayOptions.Controls.Add(this.label9);
+            this.pCbDisplayOptions.Controls.Add(this.lb_name);
             this.pCbDisplayOptions.Controls.Add(this.cbName);
             this.pCbDisplayOptions.Controls.Add(this.panel17);
             this.pCbDisplayOptions.Controls.Add(this.panel18);
@@ -464,17 +465,17 @@
             this.pCbDisplayOptions.Size = new System.Drawing.Size(200, 135);
             this.pCbDisplayOptions.TabIndex = 3;
             // 
-            // label12
+            // lb_none
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(33, 106);
-            this.label12.Margin = new System.Windows.Forms.Padding(5);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 17);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Nenhuma";
+            this.lb_none.AutoSize = true;
+            this.lb_none.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_none.ForeColor = System.Drawing.Color.White;
+            this.lb_none.Location = new System.Drawing.Point(33, 106);
+            this.lb_none.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_none.Name = "lb_none";
+            this.lb_none.Size = new System.Drawing.Size(63, 17);
+            this.lb_none.TabIndex = 20;
+            this.lb_none.Text = "Nenhuma";
             // 
             // cbNone
             // 
@@ -493,17 +494,17 @@
             this.cbNone.UseVisualStyleBackColor = true;
             this.cbNone.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label11
+            // lb_alliance
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(33, 77);
-            this.label11.Margin = new System.Windows.Forms.Padding(5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 17);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Exibir aliança";
+            this.lb_alliance.AutoSize = true;
+            this.lb_alliance.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_alliance.ForeColor = System.Drawing.Color.White;
+            this.lb_alliance.Location = new System.Drawing.Point(33, 77);
+            this.lb_alliance.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_alliance.Name = "lb_alliance";
+            this.lb_alliance.Size = new System.Drawing.Size(82, 17);
+            this.lb_alliance.TabIndex = 18;
+            this.lb_alliance.Text = "Exibir aliança";
             // 
             // cbAlliance
             // 
@@ -522,17 +523,17 @@
             this.cbAlliance.UseVisualStyleBackColor = true;
             this.cbAlliance.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label10
+            // lb_guild
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(33, 49);
-            this.label10.Margin = new System.Windows.Forms.Padding(5);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 17);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Exibir guilda";
+            this.lb_guild.AutoSize = true;
+            this.lb_guild.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_guild.ForeColor = System.Drawing.Color.White;
+            this.lb_guild.Location = new System.Drawing.Point(33, 49);
+            this.lb_guild.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_guild.Name = "lb_guild";
+            this.lb_guild.Size = new System.Drawing.Size(76, 17);
+            this.lb_guild.TabIndex = 16;
+            this.lb_guild.Text = "Exibir guilda";
             // 
             // cbGuild
             // 
@@ -551,17 +552,17 @@
             this.cbGuild.UseVisualStyleBackColor = true;
             this.cbGuild.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label9
+            // lb_name
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(33, 20);
-            this.label9.Margin = new System.Windows.Forms.Padding(5);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 17);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Exibir nome";
+            this.lb_name.AutoSize = true;
+            this.lb_name.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_name.ForeColor = System.Drawing.Color.White;
+            this.lb_name.Location = new System.Drawing.Point(33, 20);
+            this.lb_name.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_name.Name = "lb_name";
+            this.lb_name.Size = new System.Drawing.Size(74, 17);
+            this.lb_name.TabIndex = 14;
+            this.lb_name.Text = "Exibir nome";
             // 
             // cbName
             // 
@@ -618,35 +619,35 @@
             this.panel20.Size = new System.Drawing.Size(200, 2);
             this.panel20.TabIndex = 0;
             // 
-            // label1
+            // lb_general
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 1);
-            this.label1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Geral";
+            this.lb_general.AutoSize = true;
+            this.lb_general.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_general.ForeColor = System.Drawing.Color.White;
+            this.lb_general.Location = new System.Drawing.Point(25, 1);
+            this.lb_general.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_general.Name = "lb_general";
+            this.lb_general.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_general.Size = new System.Drawing.Size(49, 17);
+            this.lb_general.TabIndex = 2;
+            this.lb_general.Text = "Geral";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.panel1.Controls.Add(this.nMapScale);
             this.panel1.Controls.Add(this.materialDivider7);
-            this.panel1.Controls.Add(this.label40);
+            this.panel1.Controls.Add(this.lb_show_equipament);
             this.panel1.Controls.Add(this.cbUserInfoWindow);
-            this.panel1.Controls.Add(this.label36);
+            this.panel1.Controls.Add(this.lb_show_dungeons);
             this.panel1.Controls.Add(this.cbShowDungeon);
-            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.lb_show_harvestable);
             this.panel1.Controls.Add(this.cbShowHarvestable);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lb_show_monsters);
             this.panel1.Controls.Add(this.cbShowMobs);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lb_show_players);
             this.panel1.Controls.Add(this.cbShowPlayers);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lb_show_radar);
             this.panel1.Controls.Add(this.cbShowRadar);
             this.panel1.Controls.Add(this.nRadarPosX);
             this.panel1.Controls.Add(this.nRadarPosY);
@@ -702,17 +703,17 @@
             this.materialDivider7.TabIndex = 18;
             this.materialDivider7.Text = "materialDivider7";
             // 
-            // label40
+            // lb_show_equipament
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(34, 67);
-            this.label40.Margin = new System.Windows.Forms.Padding(5);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(135, 17);
-            this.label40.TabIndex = 17;
-            this.label40.Text = "Exibir Equip. (CTRL + 1)";
+            this.lb_show_equipament.AutoSize = true;
+            this.lb_show_equipament.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_equipament.ForeColor = System.Drawing.Color.White;
+            this.lb_show_equipament.Location = new System.Drawing.Point(34, 67);
+            this.lb_show_equipament.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_equipament.Name = "lb_show_equipament";
+            this.lb_show_equipament.Size = new System.Drawing.Size(135, 17);
+            this.lb_show_equipament.TabIndex = 17;
+            this.lb_show_equipament.Text = "Exibir Equip. (CTRL + 1)";
             // 
             // cbUserInfoWindow
             // 
@@ -731,17 +732,17 @@
             this.cbUserInfoWindow.UseVisualStyleBackColor = true;
             this.cbUserInfoWindow.CheckedChanged += new System.EventHandler(this.userInfoWindow_CheckedChanged);
             // 
-            // label36
+            // lb_show_dungeons
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(34, 208);
-            this.label36.Margin = new System.Windows.Forms.Padding(5);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(96, 17);
-            this.label36.TabIndex = 15;
-            this.label36.Text = "Exibir dungeons";
+            this.lb_show_dungeons.AutoSize = true;
+            this.lb_show_dungeons.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_dungeons.ForeColor = System.Drawing.Color.White;
+            this.lb_show_dungeons.Location = new System.Drawing.Point(34, 208);
+            this.lb_show_dungeons.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_dungeons.Name = "lb_show_dungeons";
+            this.lb_show_dungeons.Size = new System.Drawing.Size(96, 17);
+            this.lb_show_dungeons.TabIndex = 15;
+            this.lb_show_dungeons.Text = "Exibir dungeons";
             // 
             // cbShowDungeon
             // 
@@ -762,17 +763,17 @@
             this.cbShowDungeon.UseVisualStyleBackColor = true;
             this.cbShowDungeon.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label18
+            // lb_show_harvestable
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(34, 181);
-            this.label18.Margin = new System.Windows.Forms.Padding(5);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 17);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Exibir coletaveis";
+            this.lb_show_harvestable.AutoSize = true;
+            this.lb_show_harvestable.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_harvestable.ForeColor = System.Drawing.Color.White;
+            this.lb_show_harvestable.Location = new System.Drawing.Point(34, 181);
+            this.lb_show_harvestable.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_harvestable.Name = "lb_show_harvestable";
+            this.lb_show_harvestable.Size = new System.Drawing.Size(98, 17);
+            this.lb_show_harvestable.TabIndex = 13;
+            this.lb_show_harvestable.Text = "Exibir coletaveis";
             // 
             // cbShowHarvestable
             // 
@@ -793,17 +794,17 @@
             this.cbShowHarvestable.UseVisualStyleBackColor = true;
             this.cbShowHarvestable.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label4
+            // lb_show_monsters
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 153);
-            this.label4.Margin = new System.Windows.Forms.Padding(5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Exibir monstros";
+            this.lb_show_monsters.AutoSize = true;
+            this.lb_show_monsters.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_monsters.ForeColor = System.Drawing.Color.White;
+            this.lb_show_monsters.Location = new System.Drawing.Point(34, 153);
+            this.lb_show_monsters.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_monsters.Name = "lb_show_monsters";
+            this.lb_show_monsters.Size = new System.Drawing.Size(94, 17);
+            this.lb_show_monsters.TabIndex = 11;
+            this.lb_show_monsters.Text = "Exibir monstros";
             // 
             // cbShowMobs
             // 
@@ -824,17 +825,17 @@
             this.cbShowMobs.UseVisualStyleBackColor = true;
             this.cbShowMobs.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label3
+            // lb_show_players
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(34, 125);
-            this.label3.Margin = new System.Windows.Forms.Padding(5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Exibir jogadores";
+            this.lb_show_players.AutoSize = true;
+            this.lb_show_players.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_players.ForeColor = System.Drawing.Color.White;
+            this.lb_show_players.Location = new System.Drawing.Point(34, 125);
+            this.lb_show_players.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_players.Name = "lb_show_players";
+            this.lb_show_players.Size = new System.Drawing.Size(97, 17);
+            this.lb_show_players.TabIndex = 9;
+            this.lb_show_players.Text = "Exibir jogadores";
             // 
             // cbShowPlayers
             // 
@@ -855,17 +856,17 @@
             this.cbShowPlayers.UseVisualStyleBackColor = true;
             this.cbShowPlayers.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label2
+            // lb_show_radar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 96);
-            this.label2.Margin = new System.Windows.Forms.Padding(5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Exibir radar (CTRL + 2)";
+            this.lb_show_radar.AutoSize = true;
+            this.lb_show_radar.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_show_radar.ForeColor = System.Drawing.Color.White;
+            this.lb_show_radar.Location = new System.Drawing.Point(34, 96);
+            this.lb_show_radar.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_show_radar.Name = "lb_show_radar";
+            this.lb_show_radar.Size = new System.Drawing.Size(132, 17);
+            this.lb_show_radar.TabIndex = 3;
+            this.lb_show_radar.Text = "Exibir radar (CTRL + 2)";
             // 
             // cbShowRadar
             // 
@@ -1006,11 +1007,11 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.lb_alliances);
             this.tabPage3.Controls.Add(this.panel11);
             this.tabPage3.Controls.Add(this.exportAllysButton);
             this.tabPage3.Controls.Add(this.importAllysButton);
-            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.lb_guilds);
             this.tabPage3.Controls.Add(this.panel6);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -1020,18 +1021,18 @@
             this.tabPage3.Text = "Guildas e Alianças";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lb_alliances
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(25, 141);
-            this.label6.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label6.Size = new System.Drawing.Size(64, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Alianças";
+            this.lb_alliances.AutoSize = true;
+            this.lb_alliances.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_alliances.ForeColor = System.Drawing.Color.White;
+            this.lb_alliances.Location = new System.Drawing.Point(25, 141);
+            this.lb_alliances.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_alliances.Name = "lb_alliances";
+            this.lb_alliances.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_alliances.Size = new System.Drawing.Size(64, 17);
+            this.lb_alliances.TabIndex = 10;
+            this.lb_alliances.Text = "Alianças";
             // 
             // panel11
             // 
@@ -1208,18 +1209,18 @@
             this.importAllysButton.UseVisualStyleBackColor = true;
             this.importAllysButton.Click += new System.EventHandler(this.importAllysButton_Click);
             // 
-            // label5
+            // lb_guilds
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(25, 1);
-            this.label5.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label5.Size = new System.Drawing.Size(59, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Guildas";
+            this.lb_guilds.AutoSize = true;
+            this.lb_guilds.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_guilds.ForeColor = System.Drawing.Color.White;
+            this.lb_guilds.Location = new System.Drawing.Point(25, 1);
+            this.lb_guilds.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_guilds.Name = "lb_guilds";
+            this.lb_guilds.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_guilds.Size = new System.Drawing.Size(59, 17);
+            this.lb_guilds.TabIndex = 4;
+            this.lb_guilds.Text = "Guildas";
             // 
             // panel6
             // 
@@ -1364,10 +1365,10 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.lb_resources);
             this.tabPage2.Controls.Add(this.pFilterResource);
-            this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.lb_monsters);
+            this.tabPage2.Controls.Add(this.lb_item_tiers);
             this.tabPage2.Controls.Add(this.pFilterMobResource);
             this.tabPage2.Controls.Add(this.pTierList);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1378,33 +1379,33 @@
             this.tabPage2.Text = "Coleta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // lb_resources
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(231, 136);
-            this.label19.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label19.Name = "label19";
-            this.label19.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label19.Size = new System.Drawing.Size(68, 17);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "Recursos";
+            this.lb_resources.AutoSize = true;
+            this.lb_resources.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_resources.ForeColor = System.Drawing.Color.White;
+            this.lb_resources.Location = new System.Drawing.Point(231, 136);
+            this.lb_resources.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_resources.Name = "lb_resources";
+            this.lb_resources.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_resources.Size = new System.Drawing.Size(68, 17);
+            this.lb_resources.TabIndex = 15;
+            this.lb_resources.Text = "Recursos";
             // 
             // pFilterResource
             // 
             this.pFilterResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pFilterResource.Controls.Add(this.label35);
+            this.pFilterResource.Controls.Add(this.lb_amount);
             this.pFilterResource.Controls.Add(this.cbResourceFilterAmount);
-            this.pFilterResource.Controls.Add(this.label34);
-            this.pFilterResource.Controls.Add(this.label29);
+            this.pFilterResource.Controls.Add(this.lb_wood2);
+            this.pFilterResource.Controls.Add(this.lb_hide2);
             this.pFilterResource.Controls.Add(this.cbResourceFilterMadeira);
             this.pFilterResource.Controls.Add(this.cbResourceFilterPelego);
-            this.pFilterResource.Controls.Add(this.label30);
+            this.pFilterResource.Controls.Add(this.lb_ore2);
             this.pFilterResource.Controls.Add(this.cbResourceFilterMinerio);
-            this.pFilterResource.Controls.Add(this.label31);
+            this.pFilterResource.Controls.Add(this.lb_rock2);
             this.pFilterResource.Controls.Add(this.cbResourceFilterPedra);
-            this.pFilterResource.Controls.Add(this.label32);
+            this.pFilterResource.Controls.Add(this.lb_fiber2);
             this.pFilterResource.Controls.Add(this.cbResourceFilterFibra);
             this.pFilterResource.Controls.Add(this.panel25);
             this.pFilterResource.Controls.Add(this.panel30);
@@ -1416,17 +1417,17 @@
             this.pFilterResource.Size = new System.Drawing.Size(200, 122);
             this.pFilterResource.TabIndex = 14;
             // 
-            // label35
+            // lb_amount
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(131, 81);
-            this.label35.Margin = new System.Windows.Forms.Padding(5);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 17);
-            this.label35.TabIndex = 35;
-            this.label35.Text = "Quantia";
+            this.lb_amount.AutoSize = true;
+            this.lb_amount.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_amount.ForeColor = System.Drawing.Color.White;
+            this.lb_amount.Location = new System.Drawing.Point(131, 81);
+            this.lb_amount.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_amount.Name = "lb_amount";
+            this.lb_amount.Size = new System.Drawing.Size(53, 17);
+            this.lb_amount.TabIndex = 35;
+            this.lb_amount.Text = "Quantia";
             // 
             // cbResourceFilterAmount
             // 
@@ -1447,29 +1448,29 @@
             this.cbResourceFilterAmount.UseVisualStyleBackColor = true;
             this.cbResourceFilterAmount.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label34
+            // lb_wood2
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(34, 80);
-            this.label34.Margin = new System.Windows.Forms.Padding(5);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(56, 17);
-            this.label34.TabIndex = 33;
-            this.label34.Text = "Madeira";
+            this.lb_wood2.AutoSize = true;
+            this.lb_wood2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_wood2.ForeColor = System.Drawing.Color.White;
+            this.lb_wood2.Location = new System.Drawing.Point(34, 80);
+            this.lb_wood2.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_wood2.Name = "lb_wood2";
+            this.lb_wood2.Size = new System.Drawing.Size(56, 17);
+            this.lb_wood2.TabIndex = 33;
+            this.lb_wood2.Text = "Madeira";
             // 
-            // label29
+            // lb_hide2
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(131, 51);
-            this.label29.Margin = new System.Windows.Forms.Padding(5);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(46, 17);
-            this.label29.TabIndex = 29;
-            this.label29.Text = "Pelego";
+            this.lb_hide2.AutoSize = true;
+            this.lb_hide2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_hide2.ForeColor = System.Drawing.Color.White;
+            this.lb_hide2.Location = new System.Drawing.Point(131, 51);
+            this.lb_hide2.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_hide2.Name = "lb_hide2";
+            this.lb_hide2.Size = new System.Drawing.Size(46, 17);
+            this.lb_hide2.TabIndex = 29;
+            this.lb_hide2.Text = "Pelego";
             // 
             // cbResourceFilterMadeira
             // 
@@ -1509,17 +1510,17 @@
             this.cbResourceFilterPelego.UseVisualStyleBackColor = true;
             this.cbResourceFilterPelego.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label30
+            // lb_ore2
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(131, 23);
-            this.label30.Margin = new System.Windows.Forms.Padding(5);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(52, 17);
-            this.label30.TabIndex = 27;
-            this.label30.Text = "Minério";
+            this.lb_ore2.AutoSize = true;
+            this.lb_ore2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ore2.ForeColor = System.Drawing.Color.White;
+            this.lb_ore2.Location = new System.Drawing.Point(131, 23);
+            this.lb_ore2.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_ore2.Name = "lb_ore2";
+            this.lb_ore2.Size = new System.Drawing.Size(52, 17);
+            this.lb_ore2.TabIndex = 27;
+            this.lb_ore2.Text = "Minério";
             // 
             // cbResourceFilterMinerio
             // 
@@ -1540,17 +1541,17 @@
             this.cbResourceFilterMinerio.UseVisualStyleBackColor = true;
             this.cbResourceFilterMinerio.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label31
+            // lb_rock2
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(34, 51);
-            this.label31.Margin = new System.Windows.Forms.Padding(5);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 17);
-            this.label31.TabIndex = 25;
-            this.label31.Text = "Pedra";
+            this.lb_rock2.AutoSize = true;
+            this.lb_rock2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rock2.ForeColor = System.Drawing.Color.White;
+            this.lb_rock2.Location = new System.Drawing.Point(34, 51);
+            this.lb_rock2.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_rock2.Name = "lb_rock2";
+            this.lb_rock2.Size = new System.Drawing.Size(41, 17);
+            this.lb_rock2.TabIndex = 25;
+            this.lb_rock2.Text = "Pedra";
             // 
             // cbResourceFilterPedra
             // 
@@ -1571,17 +1572,17 @@
             this.cbResourceFilterPedra.UseVisualStyleBackColor = true;
             this.cbResourceFilterPedra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label32
+            // lb_fiber2
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(34, 23);
-            this.label32.Margin = new System.Windows.Forms.Padding(5);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(36, 17);
-            this.label32.TabIndex = 23;
-            this.label32.Text = "Fibra";
+            this.lb_fiber2.AutoSize = true;
+            this.lb_fiber2.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fiber2.ForeColor = System.Drawing.Color.White;
+            this.lb_fiber2.Location = new System.Drawing.Point(34, 23);
+            this.lb_fiber2.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_fiber2.Name = "lb_fiber2";
+            this.lb_fiber2.Size = new System.Drawing.Size(36, 17);
+            this.lb_fiber2.TabIndex = 23;
+            this.lb_fiber2.Text = "Fibra";
             // 
             // cbResourceFilterFibra
             // 
@@ -1638,44 +1639,44 @@
             this.panel32.Size = new System.Drawing.Size(200, 2);
             this.panel32.TabIndex = 0;
             // 
-            // label17
+            // lb_monsters
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(231, 1);
-            this.label17.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label17.Name = "label17";
-            this.label17.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label17.Size = new System.Drawing.Size(71, 17);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Monstros";
+            this.lb_monsters.AutoSize = true;
+            this.lb_monsters.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_monsters.ForeColor = System.Drawing.Color.White;
+            this.lb_monsters.Location = new System.Drawing.Point(231, 1);
+            this.lb_monsters.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_monsters.Name = "lb_monsters";
+            this.lb_monsters.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_monsters.Size = new System.Drawing.Size(71, 17);
+            this.lb_monsters.TabIndex = 13;
+            this.lb_monsters.Text = "Monstros";
             // 
-            // label13
+            // lb_item_tiers
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(25, 1);
-            this.label13.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label13.Size = new System.Drawing.Size(92, 17);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Tier de Items";
+            this.lb_item_tiers.AutoSize = true;
+            this.lb_item_tiers.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_item_tiers.ForeColor = System.Drawing.Color.White;
+            this.lb_item_tiers.Location = new System.Drawing.Point(25, 1);
+            this.lb_item_tiers.Margin = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.lb_item_tiers.Name = "lb_item_tiers";
+            this.lb_item_tiers.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lb_item_tiers.Size = new System.Drawing.Size(92, 17);
+            this.lb_item_tiers.TabIndex = 4;
+            this.lb_item_tiers.Text = "Tier de Items";
             // 
             // pFilterMobResource
             // 
             this.pFilterMobResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pFilterMobResource.Controls.Add(this.label33);
+            this.pFilterMobResource.Controls.Add(this.lb_wood1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterMadeira);
-            this.pFilterMobResource.Controls.Add(this.label20);
+            this.pFilterMobResource.Controls.Add(this.lb_hide1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterPelego);
-            this.pFilterMobResource.Controls.Add(this.label26);
+            this.pFilterMobResource.Controls.Add(this.lb_ore1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterMinerio);
-            this.pFilterMobResource.Controls.Add(this.label27);
+            this.pFilterMobResource.Controls.Add(this.lb_rock1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterPedra);
-            this.pFilterMobResource.Controls.Add(this.label28);
+            this.pFilterMobResource.Controls.Add(this.lb_fiber1);
             this.pFilterMobResource.Controls.Add(this.cbMobFilterFibra);
             this.pFilterMobResource.Controls.Add(this.panel26);
             this.pFilterMobResource.Controls.Add(this.panel27);
@@ -1687,17 +1688,17 @@
             this.pFilterMobResource.Size = new System.Drawing.Size(200, 122);
             this.pFilterMobResource.TabIndex = 12;
             // 
-            // label33
+            // lb_wood1
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(34, 81);
-            this.label33.Margin = new System.Windows.Forms.Padding(5);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(56, 17);
-            this.label33.TabIndex = 31;
-            this.label33.Text = "Madeira";
+            this.lb_wood1.AutoSize = true;
+            this.lb_wood1.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_wood1.ForeColor = System.Drawing.Color.White;
+            this.lb_wood1.Location = new System.Drawing.Point(34, 81);
+            this.lb_wood1.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_wood1.Name = "lb_wood1";
+            this.lb_wood1.Size = new System.Drawing.Size(56, 17);
+            this.lb_wood1.TabIndex = 31;
+            this.lb_wood1.Text = "Madeira";
             // 
             // cbMobFilterMadeira
             // 
@@ -1718,17 +1719,17 @@
             this.cbMobFilterMadeira.UseVisualStyleBackColor = true;
             this.cbMobFilterMadeira.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label20
+            // lb_hide1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(131, 51);
-            this.label20.Margin = new System.Windows.Forms.Padding(5);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(46, 17);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Pelego";
+            this.lb_hide1.AutoSize = true;
+            this.lb_hide1.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_hide1.ForeColor = System.Drawing.Color.White;
+            this.lb_hide1.Location = new System.Drawing.Point(131, 51);
+            this.lb_hide1.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_hide1.Name = "lb_hide1";
+            this.lb_hide1.Size = new System.Drawing.Size(46, 17);
+            this.lb_hide1.TabIndex = 29;
+            this.lb_hide1.Text = "Pelego";
             // 
             // cbMobFilterPelego
             // 
@@ -1749,17 +1750,17 @@
             this.cbMobFilterPelego.UseVisualStyleBackColor = true;
             this.cbMobFilterPelego.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label26
+            // lb_ore1
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(131, 23);
-            this.label26.Margin = new System.Windows.Forms.Padding(5);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 17);
-            this.label26.TabIndex = 27;
-            this.label26.Text = "Minério";
+            this.lb_ore1.AutoSize = true;
+            this.lb_ore1.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ore1.ForeColor = System.Drawing.Color.White;
+            this.lb_ore1.Location = new System.Drawing.Point(131, 23);
+            this.lb_ore1.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_ore1.Name = "lb_ore1";
+            this.lb_ore1.Size = new System.Drawing.Size(52, 17);
+            this.lb_ore1.TabIndex = 27;
+            this.lb_ore1.Text = "Minério";
             // 
             // cbMobFilterMinerio
             // 
@@ -1780,17 +1781,17 @@
             this.cbMobFilterMinerio.UseVisualStyleBackColor = true;
             this.cbMobFilterMinerio.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label27
+            // lb_rock1
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(34, 51);
-            this.label27.Margin = new System.Windows.Forms.Padding(5);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 17);
-            this.label27.TabIndex = 25;
-            this.label27.Text = "Pedra";
+            this.lb_rock1.AutoSize = true;
+            this.lb_rock1.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_rock1.ForeColor = System.Drawing.Color.White;
+            this.lb_rock1.Location = new System.Drawing.Point(34, 51);
+            this.lb_rock1.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_rock1.Name = "lb_rock1";
+            this.lb_rock1.Size = new System.Drawing.Size(41, 17);
+            this.lb_rock1.TabIndex = 25;
+            this.lb_rock1.Text = "Pedra";
             // 
             // cbMobFilterPedra
             // 
@@ -1811,17 +1812,17 @@
             this.cbMobFilterPedra.UseVisualStyleBackColor = true;
             this.cbMobFilterPedra.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
-            // label28
+            // lb_fiber1
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(34, 23);
-            this.label28.Margin = new System.Windows.Forms.Padding(5);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(36, 17);
-            this.label28.TabIndex = 23;
-            this.label28.Text = "Fibra";
+            this.lb_fiber1.AutoSize = true;
+            this.lb_fiber1.Font = new System.Drawing.Font("Calibri Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_fiber1.ForeColor = System.Drawing.Color.White;
+            this.lb_fiber1.Location = new System.Drawing.Point(34, 23);
+            this.lb_fiber1.Margin = new System.Windows.Forms.Padding(5);
+            this.lb_fiber1.Name = "lb_fiber1";
+            this.lb_fiber1.Size = new System.Drawing.Size(36, 17);
+            this.lb_fiber1.TabIndex = 23;
+            this.lb_fiber1.Text = "Fibra";
             // 
             // cbMobFilterFibra
             // 
@@ -1915,9 +1916,9 @@
             this.label25.Location = new System.Drawing.Point(34, 219);
             this.label25.Margin = new System.Windows.Forms.Padding(5);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(82, 17);
+            this.label25.Size = new System.Drawing.Size(50, 17);
             this.label25.TabIndex = 21;
-            this.label25.Text = "Exibir tier VIII";
+            this.label25.Text = "Tier VIII";
             // 
             // cbShowTier8
             // 
@@ -1946,9 +1947,9 @@
             this.label24.Location = new System.Drawing.Point(34, 191);
             this.label24.Margin = new System.Windows.Forms.Padding(5);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 17);
+            this.label24.Size = new System.Drawing.Size(47, 17);
             this.label24.TabIndex = 19;
-            this.label24.Text = "Exibir tier VII";
+            this.label24.Text = "Tier VII";
             // 
             // cbShowTier7
             // 
@@ -1977,9 +1978,9 @@
             this.label23.Location = new System.Drawing.Point(34, 163);
             this.label23.Margin = new System.Windows.Forms.Padding(5);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(76, 17);
+            this.label23.Size = new System.Drawing.Size(44, 17);
             this.label23.TabIndex = 17;
-            this.label23.Text = "Exibir tier VI";
+            this.label23.Text = "Tier VI";
             // 
             // cbShowTier6
             // 
@@ -2008,9 +2009,9 @@
             this.label22.Location = new System.Drawing.Point(34, 135);
             this.label22.Margin = new System.Windows.Forms.Padding(5);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 17);
+            this.label22.Size = new System.Drawing.Size(41, 17);
             this.label22.TabIndex = 15;
-            this.label22.Text = "Exibir tier V";
+            this.label22.Text = "Tier V";
             // 
             // cbShowTier5
             // 
@@ -2039,9 +2040,9 @@
             this.label21.Location = new System.Drawing.Point(34, 107);
             this.label21.Margin = new System.Windows.Forms.Padding(5);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 17);
+            this.label21.Size = new System.Drawing.Size(44, 17);
             this.label21.TabIndex = 13;
-            this.label21.Text = "Exibir tier IV";
+            this.label21.Text = "Tier IV";
             // 
             // cbShowTier4
             // 
@@ -2070,9 +2071,9 @@
             this.label14.Location = new System.Drawing.Point(34, 79);
             this.label14.Margin = new System.Windows.Forms.Padding(5);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 17);
+            this.label14.Size = new System.Drawing.Size(42, 17);
             this.label14.TabIndex = 11;
-            this.label14.Text = "Exibir tier III";
+            this.label14.Text = "Tier III";
             // 
             // cbShowTier3
             // 
@@ -2101,9 +2102,9 @@
             this.label15.Location = new System.Drawing.Point(34, 51);
             this.label15.Margin = new System.Windows.Forms.Padding(5);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 17);
+            this.label15.Size = new System.Drawing.Size(39, 17);
             this.label15.TabIndex = 9;
-            this.label15.Text = "Exibir tier II";
+            this.label15.Text = "Tier II";
             // 
             // cbShowTier2
             // 
@@ -2132,9 +2133,9 @@
             this.label16.Location = new System.Drawing.Point(34, 23);
             this.label16.Margin = new System.Windows.Forms.Padding(5);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 17);
+            this.label16.Size = new System.Drawing.Size(36, 17);
             this.label16.TabIndex = 3;
-            this.label16.Text = "Exibir tier I";
+            this.label16.Text = "Tier I";
             // 
             // cbShowTier1
             // 
@@ -2207,11 +2208,29 @@
             this.AllyListTimer.Interval = 1000;
             this.AllyListTimer.Tick += new System.EventHandler(this.AllyListTimer_Tick);
             // 
+            // selectLanguage
+            // 
+            this.selectLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.selectLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.selectLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selectLanguage.Font = new System.Drawing.Font("Calibri Light", 8F);
+            this.selectLanguage.ForeColor = System.Drawing.Color.White;
+            this.selectLanguage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.selectLanguage.Items.AddRange(new object[] {
+            "en-US",
+            "pt-BR"});
+            this.selectLanguage.Location = new System.Drawing.Point(398, 37);
+            this.selectLanguage.Name = "selectLanguage";
+            this.selectLanguage.Size = new System.Drawing.Size(70, 21);
+            this.selectLanguage.TabIndex = 2;
+            this.selectLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Options
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(480, 460);
+            this.Controls.Add(this.selectLanguage);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2262,11 +2281,11 @@
         private System.Windows.Forms.Panel panel5;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lb_general;
+        private System.Windows.Forms.Label lb_show_radar;
+        private System.Windows.Forms.Label lb_show_monsters;
+        private System.Windows.Forms.Label lb_show_players;
+        private System.Windows.Forms.Label lb_guilds;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
@@ -2277,7 +2296,7 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider3;
         public System.Windows.Forms.ListBox lbTrustGuilds;
         private MaterialSkin.Controls.MaterialDivider materialDivider4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lb_alliances;
         private System.Windows.Forms.Panel panel11;
         public System.Windows.Forms.ListBox lbTrustAlliances;
         private MaterialSkin.Controls.MaterialDivider materialDivider5;
@@ -2294,25 +2313,25 @@
         public MaterialSkin.Controls.MaterialCheckBox cbShowPlayers;
         public MaterialSkin.Controls.MaterialCheckBox cbShowMobs;
         public System.Windows.Forms.ListBox lbGuildsInRange;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_alert_sound;
         public MaterialSkin.Controls.MaterialCheckBox cbAlertSound;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_tags;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lb_name;
+        private System.Windows.Forms.Label lb_none;
+        private System.Windows.Forms.Label lb_alliance;
+        private System.Windows.Forms.Label lb_guild;
         public System.Windows.Forms.Panel pCbDisplayOptions;
         public MaterialSkin.Controls.MaterialRadioButton cbName;
         public MaterialSkin.Controls.MaterialRadioButton cbNone;
         public MaterialSkin.Controls.MaterialRadioButton cbAlliance;
         public MaterialSkin.Controls.MaterialRadioButton cbGuild;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lb_monsters;
+        private System.Windows.Forms.Label lb_item_tiers;
         private System.Windows.Forms.Panel pFilterMobResource;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel27;
@@ -2339,52 +2358,52 @@
         public MaterialSkin.Controls.MaterialCheckBox cbShowTier7;
         private System.Windows.Forms.Label label25;
         public MaterialSkin.Controls.MaterialCheckBox cbShowTier8;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lb_show_harvestable;
         public MaterialSkin.Controls.MaterialCheckBox cbShowHarvestable;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lb_hide1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterPelego;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lb_ore1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterMinerio;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lb_rock1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterPedra;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lb_fiber1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterFibra;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lb_resources;
         private System.Windows.Forms.Panel pFilterResource;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lb_hide2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterPelego;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lb_ore2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMinerio;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lb_rock2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterPedra;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lb_fiber2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterFibra;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lb_wood1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterMadeira;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lb_wood2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterMadeira;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label lb_amount;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterAmount;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lb_show_dungeons;
         public MaterialSkin.Controls.MaterialCheckBox cbShowDungeon;
         private System.Windows.Forms.Button removeAlliance;
         private System.Windows.Forms.Button addAlliance;
         private System.Windows.Forms.Button addGuild;
         private System.Windows.Forms.Button removeGuild;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label lb_enemy_tag;
         public MaterialSkin.Controls.MaterialCheckBox cbTagEnemies;
-        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label lb_ally_tag;
         public MaterialSkin.Controls.MaterialCheckBox cbTagAllys;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label lb_color_ranged_melee;
         public MaterialSkin.Controls.MaterialCheckBox cbRangedMelee;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label lb_show_equipament;
         public MaterialSkin.Controls.MaterialCheckBox cbUserInfoWindow;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private System.Windows.Forms.Label label41;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_open_lootlog;
+        private System.Windows.Forms.Label lb_players;
         public System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel33;
         private System.Windows.Forms.Panel panel34;
@@ -2392,6 +2411,7 @@
         private System.Windows.Forms.Panel panel36;
         private MaterialSkin.Controls.MaterialDivider materialDivider7;
         public System.Windows.Forms.NumericUpDown nMapScale;
+        public System.Windows.Forms.ComboBox selectLanguage;
     }
 }
 

@@ -12,6 +12,7 @@ namespace AlbionNetwork2D
     public static class Settings
     {
         private static bool isBeeping = false;
+        public static string languageSelected;
 
         public static void saveSettings(Options form)
         {
@@ -28,6 +29,8 @@ namespace AlbionNetwork2D
 
             s.displayOption = form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
                 .FirstOrDefault(r => r.Checked).Name;
+
+            s.language = languageSelected;
 
             // Geral
             s.radarPosX = (int)form.nRadarPosX.Value;
@@ -82,6 +85,7 @@ namespace AlbionNetwork2D
             form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
                 .FirstOrDefault(r => r.Name == s.displayOption).Checked = true;
 
+            form.selectLanguage.SelectedItem = languageSelected;
             // Geral
             form.nRadarPosX.Value = s.radarPosX;
             form.nRadarPosY.Value = s.radarPosY;
@@ -119,7 +123,12 @@ namespace AlbionNetwork2D
             form.cbResourceFilterMadeira.Checked = s.resourceFilterMadeira;
             form.cbResourceFilterAmount.Checked = s.resourceFilterAmount;
         }
+        public static void loadLanguage ()
+        {
+            AppSettings s = new AppSettings();
 
+            languageSelected = s.language;
+        }
         public static void needBeepSound(String guild, String alliance)
         {
             AppSettings s = new AppSettings();
