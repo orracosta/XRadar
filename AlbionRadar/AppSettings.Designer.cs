@@ -421,7 +421,7 @@ namespace AlbionNetwork2D {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("en-US")]
+        [global::System.Configuration.DefaultSettingValueAttribute("en")]
         public string language {
             get {
                 return ((string)(this["language"]));

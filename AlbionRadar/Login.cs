@@ -14,6 +14,7 @@ using System.Net;
 using System.Reflection;
 using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,26 +25,13 @@ namespace AlbionNetwork2D
         private string version = "1131";
         public Login()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+
             InitializeComponent();
-            Settings.loadLanguage();
-            loadLanguage();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, (Accent)Primary.BlueGrey500, TextShade.WHITE);
-        }
-        public void loadLanguage()
-        {
-            CultureInfo ci = new CultureInfo(Settings.languageSelected);
-            Assembly a = Assembly.Load("Discord");
-            ResourceManager rm = new ResourceManager("AlbionNetwork2D.Lang.langres", a);
-
-            this.Text = rm.GetString("login.title", ci);
-
-            lb_username.Text = rm.GetString("login.username", ci);
-            lb_password.Text = rm.GetString("login.password", ci);
-            btn_login.Text = rm.GetString("login.login", ci);
-
         }
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {

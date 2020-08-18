@@ -20,27 +20,10 @@ namespace AlbionNetwork2D
         public LootLog()
         {
             InitializeComponent();
-            loadLanguage();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, (Accent)Primary.BlueGrey500, TextShade.WHITE);
-
-        }
-        public void loadLanguage()
-        {
-            CultureInfo ci = new CultureInfo(Settings.languageSelected);
-            Assembly a = Assembly.Load("Discord");
-            ResourceManager rm = new ResourceManager("AlbionNetwork2D.Lang.langres", a);
-
-            this.Text = rm.GetString("lootlog.title", ci);
-            lb_players_filter.Text = rm.GetString("lootlog.players_filter", ci);
-            columnHeader1.Text = rm.GetString("lootlog.user", ci);
-            columnHeader2.Text = rm.GetString("lootlog.item", ci);
-            columnHeader3.Text = rm.GetString("lootlog.amount", ci);
-            btn_clearList.Text = rm.GetString("lootlog.clear_list", ci);
-            btn_copyList.Text = rm.GetString("lootlog.copy_list", ci);
-
 
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)

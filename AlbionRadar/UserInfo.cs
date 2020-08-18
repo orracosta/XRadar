@@ -21,7 +21,6 @@ namespace AlbionNetwork2D
         public UserInfo(Options options)
         {
             InitializeComponent();
-            loadLanguage();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
@@ -30,15 +29,6 @@ namespace AlbionNetwork2D
             this.options = options;
             updatePlayerList.Start();
             updatePlayerSelected.Start();
-
-        }
-        public void loadLanguage()
-        {
-            CultureInfo ci = new CultureInfo(Settings.languageSelected);
-            Assembly a = Assembly.Load("Discord");
-            ResourceManager rm = new ResourceManager("AlbionNetwork2D.Lang.langres", a);
-
-            this.Text = rm.GetString("userinfo.title", ci);
 
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)

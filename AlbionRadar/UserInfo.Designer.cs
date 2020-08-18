@@ -66,27 +66,19 @@
             // 
             this.lbPlayersInRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.lbPlayersInRange.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbPlayersInRange.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbPlayersInRange, "lbPlayersInRange");
             this.lbPlayersInRange.ForeColor = System.Drawing.Color.White;
             this.lbPlayersInRange.FormattingEnabled = true;
-            this.lbPlayersInRange.Location = new System.Drawing.Point(12, 78);
             this.lbPlayersInRange.Name = "lbPlayersInRange";
-            this.lbPlayersInRange.Size = new System.Drawing.Size(236, 52);
-            this.lbPlayersInRange.TabIndex = 9;
             this.lbPlayersInRange.SelectedIndexChanged += new System.EventHandler(this.lbPlayersInRange_SelectedIndexChanged);
             // 
             // materialDivider3
             // 
             this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider3.Depth = 0;
-            this.materialDivider3.Location = new System.Drawing.Point(7, 70);
-            this.materialDivider3.Margin = new System.Windows.Forms.Padding(10, 20, 10, 10);
+            resources.ApplyResources(this.materialDivider3, "materialDivider3");
             this.materialDivider3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider3.Name = "materialDivider3";
-            this.materialDivider3.Padding = new System.Windows.Forms.Padding(5);
-            this.materialDivider3.Size = new System.Drawing.Size(246, 69);
-            this.materialDivider3.TabIndex = 10;
-            this.materialDivider3.Text = "materialDivider3";
             // 
             // updatePlayerList
             // 
@@ -100,165 +92,111 @@
             // pBootSpell
             // 
             this.pBootSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pBootSpell.ImageLocation = "";
+            resources.ApplyResources(this.pBootSpell, "pBootSpell");
             this.pBootSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pBootSpell.Location = new System.Drawing.Point(160, 268);
             this.pBootSpell.Name = "pBootSpell";
-            this.pBootSpell.Size = new System.Drawing.Size(30, 30);
-            this.pBootSpell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBootSpell.TabIndex = 32;
             this.pBootSpell.TabStop = false;
             // 
             // pChestSpell
             // 
             this.pChestSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pChestSpell.ImageLocation = "";
+            resources.ApplyResources(this.pChestSpell, "pChestSpell");
             this.pChestSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pChestSpell.Location = new System.Drawing.Point(159, 210);
             this.pChestSpell.Name = "pChestSpell";
-            this.pChestSpell.Size = new System.Drawing.Size(30, 30);
-            this.pChestSpell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pChestSpell.TabIndex = 31;
             this.pChestSpell.TabStop = false;
             // 
             // pHeadSpell
             // 
             this.pHeadSpell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pHeadSpell.ImageLocation = "";
+            resources.ApplyResources(this.pHeadSpell, "pHeadSpell");
             this.pHeadSpell.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pHeadSpell.Location = new System.Drawing.Point(160, 152);
             this.pHeadSpell.Name = "pHeadSpell";
-            this.pHeadSpell.Size = new System.Drawing.Size(30, 30);
-            this.pHeadSpell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pHeadSpell.TabIndex = 30;
             this.pHeadSpell.TabStop = false;
             // 
             // pWeaponSpell3
             // 
             this.pWeaponSpell3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pWeaponSpell3.ImageLocation = "";
+            resources.ApplyResources(this.pWeaponSpell3, "pWeaponSpell3");
             this.pWeaponSpell3.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pWeaponSpell3.Location = new System.Drawing.Point(65, 282);
             this.pWeaponSpell3.Name = "pWeaponSpell3";
-            this.pWeaponSpell3.Size = new System.Drawing.Size(30, 30);
-            this.pWeaponSpell3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pWeaponSpell3.TabIndex = 29;
             this.pWeaponSpell3.TabStop = false;
             // 
             // pWeaponSpell2
             // 
             this.pWeaponSpell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pWeaponSpell2.ImageLocation = "";
+            resources.ApplyResources(this.pWeaponSpell2, "pWeaponSpell2");
             this.pWeaponSpell2.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pWeaponSpell2.Location = new System.Drawing.Point(65, 246);
             this.pWeaponSpell2.Name = "pWeaponSpell2";
-            this.pWeaponSpell2.Size = new System.Drawing.Size(30, 30);
-            this.pWeaponSpell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pWeaponSpell2.TabIndex = 28;
             this.pWeaponSpell2.TabStop = false;
             // 
             // pWeaponSpell1
             // 
             this.pWeaponSpell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pWeaponSpell1.ImageLocation = "";
+            resources.ApplyResources(this.pWeaponSpell1, "pWeaponSpell1");
             this.pWeaponSpell1.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pWeaponSpell1.Location = new System.Drawing.Point(65, 210);
             this.pWeaponSpell1.Name = "pWeaponSpell1";
-            this.pWeaponSpell1.Size = new System.Drawing.Size(30, 30);
-            this.pWeaponSpell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pWeaponSpell1.TabIndex = 27;
             this.pWeaponSpell1.TabStop = false;
             // 
             // pBag
             // 
             this.pBag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pBag.ImageLocation = "";
+            resources.ApplyResources(this.pBag, "pBag");
             this.pBag.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pBag.Location = new System.Drawing.Point(7, 152);
             this.pBag.Name = "pBag";
-            this.pBag.Size = new System.Drawing.Size(52, 52);
-            this.pBag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBag.TabIndex = 26;
             this.pBag.TabStop = false;
             // 
             // pCape
             // 
             this.pCape.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pCape.ImageLocation = "";
+            resources.ApplyResources(this.pCape, "pCape");
             this.pCape.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pCape.Location = new System.Drawing.Point(196, 152);
             this.pCape.Name = "pCape";
-            this.pCape.Size = new System.Drawing.Size(52, 52);
-            this.pCape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pCape.TabIndex = 25;
             this.pCape.TabStop = false;
             // 
             // pBoot
             // 
             this.pBoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pBoot.ImageLocation = "";
+            resources.ApplyResources(this.pBoot, "pBoot");
             this.pBoot.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pBoot.Location = new System.Drawing.Point(101, 268);
             this.pBoot.Name = "pBoot";
-            this.pBoot.Size = new System.Drawing.Size(52, 52);
-            this.pBoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBoot.TabIndex = 24;
             this.pBoot.TabStop = false;
             // 
             // pChest
             // 
             this.pChest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pChest.ImageLocation = "";
+            resources.ApplyResources(this.pChest, "pChest");
             this.pChest.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pChest.Location = new System.Drawing.Point(101, 210);
             this.pChest.Name = "pChest";
-            this.pChest.Size = new System.Drawing.Size(52, 52);
-            this.pChest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pChest.TabIndex = 23;
             this.pChest.TabStop = false;
             // 
             // pHead
             // 
             this.pHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pHead.ImageLocation = "";
+            resources.ApplyResources(this.pHead, "pHead");
             this.pHead.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pHead.Location = new System.Drawing.Point(101, 152);
             this.pHead.Name = "pHead";
-            this.pHead.Size = new System.Drawing.Size(52, 52);
-            this.pHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pHead.TabIndex = 22;
             this.pHead.TabStop = false;
             // 
             // pSWeapon
             // 
             this.pSWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pSWeapon.ImageLocation = "";
-            this.pSWeapon.InitialImage = ((System.Drawing.Image)(resources.GetObject("pSWeapon.InitialImage")));
-            this.pSWeapon.Location = new System.Drawing.Point(196, 210);
+            resources.ApplyResources(this.pSWeapon, "pSWeapon");
             this.pSWeapon.Name = "pSWeapon";
-            this.pSWeapon.Size = new System.Drawing.Size(52, 52);
-            this.pSWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pSWeapon.TabIndex = 21;
             this.pSWeapon.TabStop = false;
             // 
             // pFWeapon
             // 
             this.pFWeapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pFWeapon.ImageLocation = "";
+            resources.ApplyResources(this.pFWeapon, "pFWeapon");
             this.pFWeapon.InitialImage = global::AlbionNetwork2D.Properties.Resources.loading;
-            this.pFWeapon.Location = new System.Drawing.Point(7, 210);
             this.pFWeapon.Name = "pFWeapon";
-            this.pFWeapon.Size = new System.Drawing.Size(52, 52);
-            this.pFWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pFWeapon.TabIndex = 20;
             this.pFWeapon.TabStop = false;
             // 
             // UserInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(260, 331);
             this.Controls.Add(this.pBootSpell);
             this.Controls.Add(this.pChestSpell);
             this.Controls.Add(this.pHeadSpell);
@@ -274,16 +212,12 @@
             this.Controls.Add(this.pFWeapon);
             this.Controls.Add(this.lbPlayersInRange);
             this.Controls.Add(this.materialDivider3);
-            this.Font = new System.Drawing.Font("Calibri Light", 10F);
             this.ForeColor = System.Drawing.Color.White;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UserInfo";
             this.Opacity = 0.9D;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inspecionar Itens";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pBootSpell)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pChestSpell)).EndInit();
