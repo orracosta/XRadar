@@ -19,13 +19,22 @@ namespace AlbionNetwork2D
             mountsInRange = new ConcurrentDictionary<int, int>();
             localPlayer = new Player();
         }
-        public void AddPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int id, short[] items, short[] skills)
+        public void AddPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int id, short[] items, short[] skills, int faction)
         {
             if (!playersInRange.Any(x => x.Key == id))
             {
-                Player p = new Player(posX, posY, nickname, guild, alliance, id, items, skills);
+                Player p = new Player(posX, posY, nickname, guild, alliance, id, items, skills, faction);
                 playersInRange.TryAdd(id, p);
             }
+        }
+        public void updateLocalPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int faction)
+        {
+            localPlayer.PosX = posX;
+            localPlayer.PosY = posY;
+            localPlayer.Nickname = nickname;
+            localPlayer.Guild = guild;
+            localPlayer.Alliance = alliance;
+            localPlayer.Faction = faction;
         }
         internal void UpdatePlayerEquipment(int id, short[] items, short[] skills)
         {

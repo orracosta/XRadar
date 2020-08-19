@@ -107,13 +107,22 @@ namespace AlbionNetwork2D
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
         {
-            return;
-            /*parameters.TryGetValue((byte)253, out object val);
+            parameters.TryGetValue((byte)253, out object val);
             if (val == null) return;
 
             if (!int.TryParse(val.ToString(), out int iCode)) return;
 
-            OperationCodes opCode = (OperationCodes)iCode;*/
+            OperationCodes opCode = (OperationCodes)iCode;
+
+            switch (opCode)
+            {
+                case OperationCodes.Join:
+                    opJoin(parameters);
+                    break;
+                default:
+                    //debugOperationInfo(parameters, opCode, "OnRequest");
+                    break;
+            }
         }
         private void debugEventInfo(Dictionary<byte, object> parameters, EventCodes evCode, String typeInfo)
         {
@@ -154,6 +163,7 @@ namespace AlbionNetwork2D
             Single[] pos = (Single[])parameters[13];
             short[] items = new short[10];
             short[] skills = new short[6];
+            int faction = int.Parse(parameters[45].ToString());
 
             if (parameters[33].GetType() == typeof(Byte[]))
             {
@@ -210,7 +220,7 @@ namespace AlbionNetwork2D
             }
 
             Settings.needBeepSound(guild, alliance);
-            playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items, skills);
+            playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items, skills, faction);
 
         }
         private void onCharacterEquipmentChanged(Dictionary<byte, object> parameters)
@@ -458,6 +468,23 @@ namespace AlbionNetwork2D
                 mounted = true;
 
             playerHandler.UpdatePlayerMount(id, mounted);
+        }
+        #endregion
+
+        #region OnResponse
+        private void opJoin(Dictionary<byte, object> parameters)
+        {
+            string nick = parameters[2].ToString();
+            object oGuild = "";
+            object oAlliance = "";
+            parameters.TryGetValue((byte)51, out oGuild);
+            parameters.TryGetValue((byte)69, out oAlliance);
+            string guild = oGuild == null ? "" : oGuild.ToString();
+            string alliance = oGuild == null ? "" : oAlliance.ToString();
+            Single[] pos = (Single[])parameters[9];
+            int faction = int.Parse(parameters[42].ToString());
+
+            playerHandler.updateLocalPlayer(pos[0], pos[1], nick, guild, alliance, faction);
         }
         #endregion
     }

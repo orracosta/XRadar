@@ -14,6 +14,7 @@ namespace AlbionNetwork2D
         private string guild;
         private string alliance;
         private int id;
+        private int faction;
 
         /* ITEMS
          * 0 = item principal
@@ -49,8 +50,9 @@ namespace AlbionNetwork2D
             id = 0;
             items = new short[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             skills = new short[] { -1, -1, -1, -1, -1, -1 };
+            faction = 0;
         }
-        public Player(Single posX, Single posY, String nickname, String guild, String alliance, int id, short[] items, short[] skills)
+        public Player(Single posX, Single posY, String nickname, String guild, String alliance, int id, short[] items, short[] skills, int faction)
         {
             this.posX = posX;
             this.posY = posY;
@@ -60,6 +62,7 @@ namespace AlbionNetwork2D
             this.id = id;
             this.items = items;
             this.skills = skills;
+            this.faction = faction;
         }
         public override string ToString()
         {
@@ -104,6 +107,11 @@ namespace AlbionNetwork2D
         {
             get { return skills; }
             set { skills = value; }
+        }
+        public int Faction
+        {
+            get { return faction; }
+            set { faction = value; }
         }
     }
 }
