@@ -219,7 +219,6 @@ namespace AlbionNetwork2D
                 }
             }
 
-            Settings.needBeepSound(guild, alliance);
             playerHandler.AddPlayer(pos[0], pos[1], nick, guild, alliance, id, items, skills, faction);
 
         }

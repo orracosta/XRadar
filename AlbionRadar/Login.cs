@@ -22,7 +22,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1140";
+        private string version = "1141";
         public Login()
         {
             Settings.loadLanguage();

@@ -397,10 +397,10 @@ namespace AlbionNetwork2D
                             }
                             else
                             {
-                                if (cbRoyalContinent.Checked &&
-                                    (p.Faction == 0 || (p.Faction == localFaction && p.Faction != 255) || (localFaction == 0 && p.Faction != 255)))
+                                if (cbRoyalContinent.Checked && playerHandler.isAllyRoyal(p.Faction))
                                 {
                                     playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
+                                    isAlly = true;
                                 }
                                 else
                                 {

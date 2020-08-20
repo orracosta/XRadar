@@ -26,6 +26,9 @@ namespace AlbionNetwork2D
                 Player p = new Player(posX, posY, nickname, guild, alliance, id, items, skills, faction);
                 playersInRange.TryAdd(id, p);
             }
+
+            if(!isAllyRoyal(faction))
+                Settings.needBeepSound(guild, alliance);
         }
         public void updateLocalPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int faction)
         {
@@ -108,6 +111,15 @@ namespace AlbionNetwork2D
         public bool PlayerIsMounted(int id)
         {
             return mountsInRange.Any(x => x.Key == id);
+        }
+        public bool isAllyRoyal(int faction)
+        {
+            var localFaction = localPlayer.Faction;
+
+            if (faction == 0 || (faction == localFaction && faction != 255) || (localFaction == 0 && faction != 255))
+                return true;
+            else
+                return false;
         }
     }
 }
