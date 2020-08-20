@@ -44,6 +44,7 @@ namespace AlbionNetwork2D
             s.tagAllys = form.cbTagAllys.Checked;
             s.tagEnemies = form.cbTagEnemies.Checked;
             s.rangedMelee = form.cbRangedMelee.Checked;
+            s.royalContinent = form.cbRoyalContinent.Checked;
 
             // Coleta - Tier
             s.showTier1 = form.cbShowTier1.Checked;
@@ -98,6 +99,7 @@ namespace AlbionNetwork2D
             form.cbTagAllys.Checked = s.tagAllys;
             form.cbTagEnemies.Checked = s.tagEnemies;
             form.cbRangedMelee.Checked = s.rangedMelee;
+            form.cbRoyalContinent.Checked = s.royalContinent;
 
             // Coleta - Tier
             form.cbShowTier1.Checked = s.showTier1;

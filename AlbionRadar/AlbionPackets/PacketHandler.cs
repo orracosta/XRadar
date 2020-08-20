@@ -120,7 +120,7 @@ namespace AlbionNetwork2D
                     opJoin(parameters);
                     break;
                 default:
-                    //debugOperationInfo(parameters, opCode, "OnRequest");
+                    //debugOperationInfo(parameters, opCode, "OnResponse");
                     break;
             }
         }

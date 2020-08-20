@@ -34,6 +34,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lb_players = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbRoyalContinent = new MaterialSkin.Controls.MaterialCheckBox();
             this.lb_color_ranged_melee = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -51,8 +53,6 @@
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
             this.lb_none = new System.Windows.Forms.Label();
             this.cbNone = new MaterialSkin.Controls.MaterialRadioButton();
-            this.lb_alliance = new System.Windows.Forms.Label();
-            this.cbAlliance = new MaterialSkin.Controls.MaterialRadioButton();
             this.lb_guild = new System.Windows.Forms.Label();
             this.cbGuild = new MaterialSkin.Controls.MaterialRadioButton();
             this.lb_name = new System.Windows.Forms.Label();
@@ -222,6 +222,8 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel16.Controls.Add(this.label1);
+            this.panel16.Controls.Add(this.cbRoyalContinent);
             this.panel16.Controls.Add(this.lb_color_ranged_melee);
             this.panel16.Controls.Add(this.panel33);
             this.panel16.Controls.Add(this.panel34);
@@ -236,6 +238,23 @@
             this.panel16.Controls.Add(this.lb_ally_tag);
             resources.ApplyResources(this.panel16, "panel16");
             this.panel16.Name = "panel16";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // cbRoyalContinent
+            // 
+            resources.ApplyResources(this.cbRoyalContinent, "cbRoyalContinent");
+            this.cbRoyalContinent.Depth = 0;
+            this.cbRoyalContinent.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbRoyalContinent.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbRoyalContinent.Name = "cbRoyalContinent";
+            this.cbRoyalContinent.Ripple = true;
+            this.cbRoyalContinent.UseVisualStyleBackColor = true;
+            this.cbRoyalContinent.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // lb_color_ranged_melee
             // 
@@ -359,8 +378,6 @@
             this.pCbDisplayOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pCbDisplayOptions.Controls.Add(this.lb_none);
             this.pCbDisplayOptions.Controls.Add(this.cbNone);
-            this.pCbDisplayOptions.Controls.Add(this.lb_alliance);
-            this.pCbDisplayOptions.Controls.Add(this.cbAlliance);
             this.pCbDisplayOptions.Controls.Add(this.lb_guild);
             this.pCbDisplayOptions.Controls.Add(this.cbGuild);
             this.pCbDisplayOptions.Controls.Add(this.lb_name);
@@ -388,23 +405,6 @@
             this.cbNone.Ripple = true;
             this.cbNone.UseVisualStyleBackColor = true;
             this.cbNone.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
-            // 
-            // lb_alliance
-            // 
-            resources.ApplyResources(this.lb_alliance, "lb_alliance");
-            this.lb_alliance.ForeColor = System.Drawing.Color.White;
-            this.lb_alliance.Name = "lb_alliance";
-            // 
-            // cbAlliance
-            // 
-            resources.ApplyResources(this.cbAlliance, "cbAlliance");
-            this.cbAlliance.Depth = 0;
-            this.cbAlliance.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbAlliance.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbAlliance.Name = "cbAlliance";
-            this.cbAlliance.Ripple = true;
-            this.cbAlliance.UseVisualStyleBackColor = true;
-            this.cbAlliance.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // lb_guild
             // 
@@ -1623,12 +1623,10 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label lb_name;
         private System.Windows.Forms.Label lb_none;
-        private System.Windows.Forms.Label lb_alliance;
         private System.Windows.Forms.Label lb_guild;
         public System.Windows.Forms.Panel pCbDisplayOptions;
         public MaterialSkin.Controls.MaterialRadioButton cbName;
         public MaterialSkin.Controls.MaterialRadioButton cbNone;
-        public MaterialSkin.Controls.MaterialRadioButton cbAlliance;
         public MaterialSkin.Controls.MaterialRadioButton cbGuild;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label lb_monsters;
@@ -1713,6 +1711,8 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider7;
         public System.Windows.Forms.NumericUpDown nMapScale;
         public System.Windows.Forms.ComboBox selectLanguage;
+        private System.Windows.Forms.Label label1;
+        public MaterialSkin.Controls.MaterialCheckBox cbRoyalContinent;
     }
 }
 

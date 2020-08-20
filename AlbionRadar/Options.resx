@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_players.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 149</value>
+    <value>233, 125</value>
   </data>
   <data name="lb_players.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 0</value>
@@ -158,6 +158,78 @@
   </data>
   <data name="&gt;&gt;lb_players.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 135</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Continente Real</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbRoyalContinent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbRoyalContinent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbRoyalContinent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbRoyalContinent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 128</value>
+  </data>
+  <data name="cbRoyalContinent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbRoyalContinent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbRoyalContinent.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="cbRoyalContinent.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Name" xml:space="preserve">
+    <value>cbRoyalContinent</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lb_color_ranged_melee.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -193,7 +265,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;lb_color_ranged_melee.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="panel33.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -202,7 +274,7 @@
     <value>198, 2</value>
   </data>
   <data name="panel33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 136</value>
+    <value>2, 160</value>
   </data>
   <data name="panel33.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -217,7 +289,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;panel33.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="panel34.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -226,7 +298,7 @@
     <value>0, 2</value>
   </data>
   <data name="panel34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 136</value>
+    <value>2, 160</value>
   </data>
   <data name="panel34.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -241,7 +313,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;panel34.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="cbRangedMelee.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -277,13 +349,13 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;cbRangedMelee.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="panel35.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="panel35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 138</value>
+    <value>0, 162</value>
   </data>
   <data name="panel35.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 2</value>
@@ -301,7 +373,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;panel35.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="panel36.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -325,7 +397,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;panel36.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="lb_enemy_tag.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -361,7 +433,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;lb_enemy_tag.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="cbAlertSound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -397,7 +469,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;cbAlertSound.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="lb_alert_sound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -433,7 +505,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;lb_alert_sound.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="cbTagEnemies.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -469,7 +541,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;cbTagEnemies.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="cbTagAllys.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -505,7 +577,7 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;cbTagAllys.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="lb_ally_tag.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -541,16 +613,16 @@
     <value>panel16</value>
   </data>
   <data name="&gt;&gt;lb_ally_tag.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 158</value>
+    <value>221, 134</value>
   </data>
   <data name="panel16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 140</value>
+    <value>200, 164</value>
   </data>
   <data name="panel16.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -652,7 +724,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_none.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 106</value>
+    <value>33, 77</value>
   </data>
   <data name="lb_none.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -688,7 +760,7 @@
     <value>NoControl</value>
   </data>
   <data name="cbNone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 99</value>
+    <value>5, 70</value>
   </data>
   <data name="cbNone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -714,78 +786,6 @@
   <data name="&gt;&gt;cbNone.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lb_alliance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_alliance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_alliance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_alliance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 77</value>
-  </data>
-  <data name="lb_alliance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_alliance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 17</value>
-  </data>
-  <data name="lb_alliance.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="lb_alliance.Text" xml:space="preserve">
-    <value>Aliança</value>
-  </data>
-  <data name="&gt;&gt;lb_alliance.Name" xml:space="preserve">
-    <value>lb_alliance</value>
-  </data>
-  <data name="&gt;&gt;lb_alliance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_alliance.Parent" xml:space="preserve">
-    <value>pCbDisplayOptions</value>
-  </data>
-  <data name="&gt;&gt;lb_alliance.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cbAlliance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbAlliance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbAlliance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbAlliance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 70</value>
-  </data>
-  <data name="cbAlliance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbAlliance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
-  </data>
-  <data name="cbAlliance.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="cbAlliance.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbAlliance.Name" xml:space="preserve">
-    <value>cbAlliance</value>
-  </data>
-  <data name="&gt;&gt;cbAlliance.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbAlliance.Parent" xml:space="preserve">
-    <value>pCbDisplayOptions</value>
-  </data>
-  <data name="&gt;&gt;cbAlliance.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="lb_guild.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -802,13 +802,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="lb_guild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>90, 17</value>
   </data>
   <data name="lb_guild.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="lb_guild.Text" xml:space="preserve">
-    <value>Guilda</value>
+    <value>Aliança/Guilda</value>
   </data>
   <data name="&gt;&gt;lb_guild.Name" xml:space="preserve">
     <value>lb_guild</value>
@@ -820,7 +820,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;lb_guild.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="cbGuild.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -856,7 +856,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;cbGuild.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="lb_name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -892,7 +892,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;lb_name.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="cbName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -928,7 +928,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;cbName.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="panel17.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -937,7 +937,7 @@
     <value>198, 2</value>
   </data>
   <data name="panel17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 131</value>
+    <value>2, 103</value>
   </data>
   <data name="panel17.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -952,7 +952,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;panel17.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="panel18.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -961,7 +961,7 @@
     <value>0, 2</value>
   </data>
   <data name="panel18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 131</value>
+    <value>2, 103</value>
   </data>
   <data name="panel18.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -976,13 +976,13 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;panel18.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="panel19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="panel19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 133</value>
+    <value>0, 105</value>
   </data>
   <data name="panel19.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 2</value>
@@ -1000,7 +1000,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;panel19.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="panel20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -1024,7 +1024,7 @@
     <value>pCbDisplayOptions</value>
   </data>
   <data name="&gt;&gt;panel20.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="pCbDisplayOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 10</value>
@@ -1033,7 +1033,7 @@
     <value>10, 10, 10, 10</value>
   </data>
   <data name="pCbDisplayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 135</value>
+    <value>200, 107</value>
   </data>
   <data name="pCbDisplayOptions.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

@@ -24,7 +24,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="displayOption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">cbName</Value>
+      <Value Profile="(Default)">cbGuild</Value>
     </Setting>
     <Setting Name="showTier1" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -103,6 +103,9 @@
     </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
       <Value Profile="(Default)">EN</Value>
+    </Setting>
+    <Setting Name="royalContinent" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

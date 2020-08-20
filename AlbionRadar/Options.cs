@@ -125,6 +125,7 @@ namespace AlbionNetwork2D
         {
             Single localX;
             Single localY;
+            int localFaction;
 
             Pen linePen = new Pen(Color.FromArgb(155, 255, 255, 0), 2);
             Font font = new Font("Calibri", 3f, FontStyle.Regular);
@@ -191,6 +192,8 @@ namespace AlbionNetwork2D
 
                     localX = playerHandler.localPlayerPosX();
                     localY = playerHandler.localPlayerPosY();
+                    localFaction = playerHandler.getLocalPlayer().Faction;
+
 
                     if (cbShowHarvestable.Checked)
                     {
@@ -393,11 +396,19 @@ namespace AlbionNetwork2D
                                 playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
                             }
                             else
-                            { 
-                                if (cbRangedMelee.Checked)
+                            {
+                                if (cbRoyalContinent.Checked &&
+                                    (p.Faction == 0 || (p.Faction == localFaction && p.Faction != 255) || (localFaction == 0 && p.Faction != 255)))
                                 {
-                                    if (PlayerItem.isRanged(p.Items[0]))
-                                        playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
+                                    playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
+                                }
+                                else
+                                {
+                                    if (cbRangedMelee.Checked)
+                                    {
+                                        if (PlayerItem.isRanged(p.Items[0]))
+                                            playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
+                                    }
                                 }
                             }
 
@@ -409,12 +420,16 @@ namespace AlbionNetwork2D
                                 g.RotateTransform(135f);
 
                                 if (cbName.Checked)
+                                {
                                     g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
-                                else if (cbGuild.Checked)
-                                    g.DrawString(p.Guild, font, Brushes.White, 2, -5);
+                                }
                                 else
-                                    g.DrawString(p.Alliance, font, Brushes.White, 2, -5);
-
+                                {
+                                    if (p.Alliance != "")
+                                        g.DrawString("[" + p.Alliance + "]" + p.Guild, font, Brushes.White, 2, -5);
+                                    else
+                                        g.DrawString(p.Guild, font, Brushes.White, 2, -5);
+                                }
 
                                 g.RotateTransform(-135f);
                                 g.TranslateTransform(-hX, -hY);

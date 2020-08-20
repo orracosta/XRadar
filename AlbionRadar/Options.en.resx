@@ -133,6 +133,15 @@
   <data name="lb_players.Text" xml:space="preserve">
     <value>Players</value>
   </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Royal Continent</value>
+  </data>
+  <data name="cbRoyalContinent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
   <data name="lb_color_ranged_melee.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
   </data>
@@ -181,20 +190,11 @@
   <data name="cbNone.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
-  <data name="lb_alliance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="lb_alliance.Text" xml:space="preserve">
-    <value>Alliance</value>
-  </data>
-  <data name="cbAlliance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
   <data name="lb_guild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 17</value>
+    <value>86, 17</value>
   </data>
   <data name="lb_guild.Text" xml:space="preserve">
-    <value>Guild</value>
+    <value>Alliance/Guild</value>
   </data>
   <data name="cbGuild.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>

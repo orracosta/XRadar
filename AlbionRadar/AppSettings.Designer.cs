@@ -109,7 +109,7 @@ namespace AlbionNetwork2D {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("cbName")]
+        [global::System.Configuration.DefaultSettingValueAttribute("cbGuild")]
         public string displayOption {
             get {
                 return ((string)(this["displayOption"]));
@@ -428,6 +428,18 @@ namespace AlbionNetwork2D {
             }
             set {
                 this["language"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool royalContinent {
+            get {
+                return ((bool)(this["royalContinent"]));
+            }
+            set {
+                this["royalContinent"] = value;
             }
         }
     }
