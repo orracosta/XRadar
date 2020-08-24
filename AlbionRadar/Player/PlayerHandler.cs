@@ -27,8 +27,8 @@ namespace AlbionNetwork2D
                 playersInRange.TryAdd(id, p);
             }
 
-            if(!isAllyRoyal(faction))
-                Settings.needBeepSound(guild, alliance);
+            if ((Settings.isRoyalChecked() && !isAlly(guild, alliance) && !isAllyRoyal(faction)) || !Settings.isRoyalChecked() && !isAlly(guild, alliance))
+                Settings.beepSound();
         }
         public void updateLocalPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int faction)
         {
@@ -120,6 +120,16 @@ namespace AlbionNetwork2D
                 return true;
             else
                 return false;
+        }
+        public bool isAlly(string guild, string alliance)
+        {
+            List<String> guildList = Settings.trustedGuilds();
+            List<String> AllianceList = Settings.trustedAllys();
+
+            if (!guildList.Contains(guild) && !AllianceList.Contains(alliance))
+                return false;
+            
+            return true;
         }
     }
 }

@@ -131,27 +131,36 @@ namespace AlbionNetwork2D
 
             languageSelected = s.language;
         }
-        public static void needBeepSound(String guild, String alliance)
+        public static List<String> trustedGuilds()
+        {
+            AppSettings s = new AppSettings();
+            return JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
+        }
+        public static List<String> trustedAllys()
+        {
+            AppSettings s = new AppSettings();
+            return JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
+        }
+        public static bool isRoyalChecked()
+        {
+            AppSettings s = new AppSettings();
+            return s.royalContinent;
+        }
+        public static void beepSound()
         {
             AppSettings s = new AppSettings();
 
-            List<String> guildList = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
-            List<String> AllianceList = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
-
             if(s.alertSound && !isBeeping)
             {
-                if (!guildList.Contains(guild) && !AllianceList.Contains(alliance))
+                isBeeping = true;
+
+                new Thread(() =>
                 {
-                    isBeeping = true;
+                    Console.Beep(500, 500);
+                    Thread.Sleep(2000);
 
-                    new Thread(() =>
-                    {
-                        Console.Beep(500, 500);
-                        Thread.Sleep(2000);
-
-                        isBeeping = false;
-                    }).Start();
-                }
+                    isBeeping = false;
+                }).Start();
             }
         }
     }
