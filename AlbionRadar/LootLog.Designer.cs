@@ -39,6 +39,7 @@
             this.btn_clearList = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tbfilterNames = new System.Windows.Forms.TextBox();
             this.lb_players_filter = new System.Windows.Forms.Label();
+            this.btnFilterList = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // updateLootLog
@@ -106,10 +107,22 @@
             this.lb_players_filter.ForeColor = System.Drawing.Color.White;
             this.lb_players_filter.Name = "lb_players_filter";
             // 
+            // btnFilterList
+            // 
+            resources.ApplyResources(this.btnFilterList, "btnFilterList");
+            this.btnFilterList.Depth = 0;
+            this.btnFilterList.Icon = null;
+            this.btnFilterList.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnFilterList.Name = "btnFilterList";
+            this.btnFilterList.Primary = true;
+            this.btnFilterList.UseVisualStyleBackColor = true;
+            this.btnFilterList.Click += new System.EventHandler(this.btnFilterList_Click);
+            // 
             // LootLog
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnFilterList);
             this.Controls.Add(this.lb_players_filter);
             this.Controls.Add(this.tbfilterNames);
             this.Controls.Add(this.btn_clearList);
@@ -133,5 +146,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btn_clearList;
         private System.Windows.Forms.TextBox tbfilterNames;
         private System.Windows.Forms.Label lb_players_filter;
+        private MaterialSkin.Controls.MaterialRaisedButton btnFilterList;
     }
 }

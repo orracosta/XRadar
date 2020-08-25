@@ -136,6 +136,9 @@
   <data name="lb_players_filter.Text" xml:space="preserve">
     <value>Players filter:</value>
   </data>
+  <data name="btnFilterList.Text" xml:space="preserve">
+    <value>Filter List</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABADjsAAA47AAAAAAAAAAA

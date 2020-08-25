@@ -42,7 +42,8 @@ namespace AlbionNetwork2D
                 lvLootLog.Items.Add(itemLog);
             }
 
-            PlayerLoot.listLoot.TryRemove(id, out _);
+            // Remove o item da lista do LootHandler
+            //PlayerLoot.listLoot.TryRemove(id, out _);
         }
 
         private void updateLootLog_Tick(object sender, EventArgs e)
@@ -80,6 +81,11 @@ namespace AlbionNetwork2D
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             PlayerLoot.listLoot.Clear();
+            lvLootLog.Items.Clear();
+        }
+
+        private void btnFilterList_Click(object sender, EventArgs e)
+        {
             lvLootLog.Items.Clear();
         }
     }
