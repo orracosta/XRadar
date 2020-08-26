@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AlbionNetwork2D
 {
-    class HarvestableHandler
+    public class HarvestableHandler
     {
         private ConcurrentDictionary<int, Harvestable> harvestableList;
 

@@ -49,7 +49,7 @@ namespace AlbionNetwork2D
         [DllImport("user32.dll")]
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
-        RadarMap radarMap = new RadarMap();
+        RadarMap radarMap;
         LootLog lootLog;
         UserInfo userInfo;
         PlayerHandler playerHandler = new PlayerHandler();
@@ -59,7 +59,6 @@ namespace AlbionNetwork2D
         PhotonParser photonParser;
 
         Thread photonThread;
-        Thread radarThread;
 
         public Options()
         {
@@ -74,11 +73,6 @@ namespace AlbionNetwork2D
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, (Accent)Primary.BlueGrey500, TextShade.WHITE);
-
-            radarMap.Show();
-
-            radarMap.Left = (int)nRadarPosX.Value;
-            radarMap.Top = (int)nRadarPosY.Value;
         }
 
         private void Options_Load(object sender, EventArgs e)
@@ -91,58 +85,6 @@ namespace AlbionNetwork2D
             RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID3, 2, (int)Keys.D3);
 
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
-
-            try
-            {
-                photonThread = new Thread(() => createListener());
-                photonThread.Priority = ThreadPriority.Highest;
-                photonThread.Start();
-
-                radarThread = new Thread(() => drawerThread());
-                radarThread.Priority = ThreadPriority.Highest;
-                radarThread.Start();
-            }
-            catch (Exception ea)
-            {
-                Console.WriteLine(ea.ToString());
-            }
-
-            AllyListTimer.Start();            
-        }
-        public PlayerHandler PlayerHandler { get => playerHandler; }
-
-        #region RadarMap
-        SolidBrush[] harvestBrushes = {
-                new SolidBrush(Color.FromArgb(200, 52, 52, 52)),
-                new SolidBrush(Color.FromArgb(200, 99, 83, 73)),
-                new SolidBrush(Color.FromArgb(200, 63, 81, 49)),
-                new SolidBrush(Color.FromArgb(200, 48, 54, 98)),
-                new SolidBrush(Color.FromArgb(200, 119, 34, 26)),
-                new SolidBrush(Color.FromArgb(200, 192, 107, 42)),
-                new SolidBrush(Color.FromArgb(200, 209, 176, 68)),
-                new SolidBrush(Color.FromArgb(200, 208, 208, 208))
-            };
-
-        private void drawerThread()
-        {
-            Single localX;
-            Single localY;
-            int localFaction;
-
-            Pen linePen = new Pen(Color.FromArgb(155, 255, 255, 0), 2);
-            Font font = new Font("Calibri", 3f, FontStyle.Regular);
-
-            int localScale = (int)nMapScale.Value;
-            float scale = 2.6f;
-            int HEIGHT = 350,
-                WIDTH = 350;
-
-            if (nMapScale.Value == 1)
-            {
-                HEIGHT = 200;
-                WIDTH = 200;
-                scale = 1.6f;
-            }
 
             if (Settings.languageSelected != "EN")
             {
@@ -157,303 +99,25 @@ namespace AlbionNetwork2D
                 };
             }
 
-            Bitmap bitmap = new Bitmap(WIDTH, HEIGHT);
-            bitmap.SetResolution(100, 100);
+            radarMap = new RadarMap(this, playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
+            radarMap.Show();
+            radarMap.Left = (int)nRadarPosX.Value;
+            radarMap.Top = (int)nRadarPosY.Value;
 
-            while (true)
+            try
             {
-                if (localScale != (int)nMapScale.Value)
-                    break;
-
-                bitmap = new Bitmap(WIDTH, HEIGHT);
-                using (Graphics g = Graphics.FromImage(bitmap))
-                {
-                    g.Clear(Color.Transparent);
-                    g.SmoothingMode = SmoothingMode.AntiAlias;
-                    g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
-                    g.InterpolationMode = InterpolationMode.High;
-
-                    g.TranslateTransform(WIDTH / 2, HEIGHT / 2);
-                    g.FillEllipse(new SolidBrush(Color.FromArgb(128, 0, 0, 0)), -(WIDTH - 5) / 2, -(HEIGHT - 5) / 2, WIDTH - 5, HEIGHT - 5);
-                    g.FillEllipse(Brushes.Yellow, -2, -2, 4, 4);
-
-                    if (nMapScale.Value == 1)
-                    {
-                        g.DrawEllipse(linePen, -(WIDTH - 135) / 2, -(HEIGHT - 135) / 2, (WIDTH - 135), (HEIGHT - 135));
-                        g.DrawEllipse(linePen, -(WIDTH - 65) / 2, -(HEIGHT - 65) / 2, (WIDTH - 65), (HEIGHT - 65));
-                        g.DrawEllipse(linePen, -(WIDTH - 4) / 2, -(HEIGHT - 4) / 2, WIDTH - 4, HEIGHT - 4);
-                    }
-                    else
-                    {
-                        g.DrawEllipse(linePen, -(WIDTH - 250) / 2, -(HEIGHT - 250) / 2, (WIDTH - 250), (HEIGHT - 250));
-                        g.DrawEllipse(linePen, -(WIDTH - 125) / 2, -(HEIGHT - 125) / 2, (WIDTH - 125), (HEIGHT - 125));
-                        g.DrawEllipse(linePen, -(WIDTH - 4) / 2, -(HEIGHT - 4) / 2, WIDTH - 4, HEIGHT - 4);
-                    }
-
-                    g.ScaleTransform(scale, scale);
-
-                    localX = playerHandler.localPlayerPosX();
-                    localY = playerHandler.localPlayerPosY();
-                    localFaction = playerHandler.getLocalPlayer().Faction;
-
-
-                    if (cbShowHarvestable.Checked)
-                    {
-                        foreach (var item in harvestableHandler.HarvestableList)
-                        {
-                            var h = item.Value;
-
-                            if (h == null)
-                                continue;
-
-                            if (h.Size == 0) 
-                                continue;
-
-                            TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
-
-                            String cbName = "cbShowTier" + h.Tier;
-                            String cbNameFilter = "cbResourceFilter" + myTI.ToTitleCase(h.getMapInfo());
-
-                            var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                .FirstOrDefault(r => r.Name == cbName);
-
-                            var canShowResource = this.pFilterResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                .FirstOrDefault(r => r.Name == cbNameFilter);
-
-                            if (canShowTier != null && !canShowTier.Checked)
-                                continue;
-
-                            if (canShowResource != null && !canShowResource.Checked)
-                                continue;
-
-                            String iconName = h.getMapInfo() + "_" + h.Charges;
-                            Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
-
-                            if (iconImage == null)
-                                continue;
-
-                            float iconWidth = iconImage.Width / 20;
-                            float iconHeight = iconImage.Height / 20;
-
-                            Single hX = -1 * h.PosX + localX;
-                            Single hY = h.PosY - localY;
-
-                            if(cbResourceFilterAmount.Checked && h.Tier != 1)
-                            {
-                                g.TranslateTransform(hX, hY);
-                                g.RotateTransform(135f);
-
-                                g.DrawString((h.Size * HarvestableSizes.charges[h.Tier]) + "/" + HarvestableSizes.sizes[h.Tier], font, Brushes.White, 5, -3);
-
-                                g.RotateTransform(-135f);
-                                g.TranslateTransform(-hX, -hY);
-                            }
-
-                            g.FillEllipse(harvestBrushes[h.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
-                            g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
-                        }
-                    }
-
-                    if (cbShowMobs.Checked || cbShowHarvestable.Checked)
-                    {
-                        foreach (var item in mobsHandler.MobList)
-                        {
-                            var m = item.Value;
-
-                            if (m == null)
-                                continue;
-
-                            Single hX = -1 * m.PosX + localX;
-                            Single hY = m.PosY - localY;
-
-
-                            if (cbShowMobs.Checked)
-                            {
-                                Brush mobBrush = Brushes.LightGray;
-                                g.FillEllipse(mobBrush, hX, hY, 1.5f, 1.5f);
-                            }
-
-                            if(cbShowHarvestable.Checked && m.MobInfo != null)
-                            {
-                                TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
-
-                                String cbName = "cbShowTier" + m.MobInfo.Tier;
-                                String cbNameFilter = "cbMobFilter" + myTI.ToTitleCase(m.MobInfo.getMapInfo(m.TypeId));
-
-                                var canShowTier = this.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                    .FirstOrDefault(r => r.Name == cbName);
-
-                                var canShowResource = this.pFilterMobResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
-                                    .FirstOrDefault(r => r.Name == cbNameFilter);
-
-                                if (canShowTier != null && !canShowTier.Checked)
-                                    continue;
-
-                                if (canShowResource != null && !canShowResource.Checked)
-                                    continue;
-
-                                String iconName =  m.MobInfo.getMapInfo(m.TypeId) + "_" + m.EnchantmentLevel;
-                                Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
-
-                                if (iconImage == null)
-                                    continue;
-
-                                float iconWidth = iconImage.Width / 20;
-                                float iconHeight = iconImage.Height / 20;
-
-                                if (m.Health > 20000)
-                                {
-                                    g.TranslateTransform(hX, hY);
-                                    g.RotateTransform(135f);
-
-                                    g.DrawString("BOSS", font, Brushes.White, 5, -3);
-
-                                    g.RotateTransform(-135f);
-                                    g.TranslateTransform(-hX, -hY);
-                                }
-
-                                g.FillEllipse(harvestBrushes[m.MobInfo.Tier - 1], (float)(hX - iconHeight / 2.4), (float)(hY - iconHeight / 2.4), (float)(iconWidth / 1.2), (float)(iconHeight / 1.2));
-                                g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
-                            }
-                        }
-                    }
-
-                    if (cbShowDungeon.Checked)
-                    {
-                        foreach (var item in dungeonHandler.DungeonList)
-                        {
-                            var d = item.Value;
-
-                            Single hX = -1 * d.PosX + localX;
-                            Single hY = d.PosY - localY;
-
-                            var type = d.getType();
-                            string typeName = "group";
-
-                            if (type == "SOLO")
-                                typeName = "solo";
-                            else if (type == "CORRUPT")
-                                typeName = "corrupt";
-                            else if (type == "ELITE")
-                                typeName = "elite";
-
-                            String iconName = "dg_" + typeName;
-                            Bitmap iconImage = (Bitmap)Resources.ResourceManager.GetObject(iconName);
-
-                            if (iconImage == null)
-                                continue;
-
-                            if (type == "GROUP")
-                            {
-                                string dungeonName;
-
-                                if (item.Value.Type.Contains("_MOR"))
-                                    dungeonName = dungeons["morgana"];
-                                else if (item.Value.Type.Contains("_UND"))
-                                    dungeonName = dungeons["undead"];
-                                else if (item.Value.Type.Contains("_KPR"))
-                                    dungeonName = dungeons["keeper"];
-                                else if (item.Value.Type.Contains("_HER"))
-                                    dungeonName = dungeons["heretic"];
-                                else if (item.Value.Type.Contains("_LEGACY"))
-                                    dungeonName = dungeons["legacy"];
-                                else
-                                    dungeonName = dungeons["portal"];
-
-                                g.TranslateTransform(hX, hY);
-                                g.RotateTransform(135f);
-
-                                g.DrawString(dungeonName, font, Brushes.White, 4, -3);
-
-                                g.RotateTransform(-135f);
-                                g.TranslateTransform(-hX, -hY);
-                            }
-
-                            float iconWidth = iconImage.Width / 4;
-                            float iconHeight = iconImage.Height / 4;
-
-                            g.DrawImage(iconImage, hX - iconHeight / 2, hY - iconHeight / 2, iconWidth, iconHeight);
-
-                        }
-                    }
-
-                    if (cbShowPlayers.Checked)
-                    {
-                        foreach (var item in playerHandler.PlayersInRange)
-                        {
-                            var p = item.Value;
-
-                            Single hX = -1 * p.PosX + localX;
-                            Single hY = p.PosY - localY;
-
-                            Brush playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
-
-                            bool isAlly = false;
-
-                            if (lbTrustGuilds.Items.Contains(p.Guild) || lbTrustAlliances.Items.Contains(p.Alliance))
-                                isAlly = true;
-
-                            if (isAlly)
-                            {
-                                playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
-                            }
-                            else
-                            {
-                                if (cbRoyalContinent.Checked && playerHandler.isAllyRoyal(p.Faction))
-                                {
-                                    playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Green : Brushes.DarkOliveGreen;
-                                    isAlly = true;
-                                }
-                                else
-                                {
-                                    if (cbRangedMelee.Checked)
-                                    {
-                                        if (PlayerItem.isRanged(p.Items[0]))
-                                            playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
-                                    }
-                                }
-                            }
-
-                            g.FillEllipse(playerBrush, hX, hY, 3f, 3f);
-
-                            if (!cbNone.Checked && (isAlly && cbTagAllys.Checked || !isAlly && cbTagEnemies.Checked))
-                            {
-                                g.TranslateTransform(hX, hY);
-                                g.RotateTransform(135f);
-
-                                if (cbName.Checked)
-                                {
-                                    g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
-                                }
-                                else
-                                {
-                                    if (p.Alliance != "")
-                                        g.DrawString("[" + p.Alliance + "]" + p.Guild, font, Brushes.White, 2, -5);
-                                    else
-                                        g.DrawString(p.Guild, font, Brushes.White, 2, -5);
-                                }
-
-                                g.RotateTransform(-135f);
-                                g.TranslateTransform(-hX, -hY);
-                            }
-                        }
-                    }
-
-                    if (radarMap.InvokeRequired)
-                    {
-                        radarMap.Invoke((Action)(() =>
-                        {
-                            radarMap.SelectBitmap(RadarMap.RotateImage(bitmap, 225f));
-                        }));
-                    }
-                }
-                
-                Thread.Sleep(50);
+                photonThread = new Thread(() => createListener());
+                photonThread.Priority = ThreadPriority.Highest;
+                photonThread.Start();
+            }
+            catch (Exception ea)
+            {
+                Console.WriteLine(ea.ToString());
             }
 
-            drawerThread();
+            AllyListTimer.Start();            
         }
-        #endregion
+        public PlayerHandler PlayerHandler { get => playerHandler; }
 
         #region OptionEvents
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)

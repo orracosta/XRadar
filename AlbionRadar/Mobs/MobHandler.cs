@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AlbionNetwork2D
 {
-    class MobsHandler
+    public class MobsHandler
     {
         private ConcurrentDictionary<int, Mob> mobsList;
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AlbionNetwork2D
 {
-    class DungeonHandler
+    public class DungeonHandler
     {
         private ConcurrentDictionary<int, Dungeon> dungeonList;
         public DungeonHandler()

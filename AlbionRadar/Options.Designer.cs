@@ -1631,12 +1631,10 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label lb_monsters;
         private System.Windows.Forms.Label lb_item_tiers;
-        private System.Windows.Forms.Panel pFilterMobResource;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Panel pTierList;
         private System.Windows.Forms.Label label14;
         public MaterialSkin.Controls.MaterialCheckBox cbShowTier3;
         private System.Windows.Forms.Label label15;
@@ -1668,7 +1666,6 @@
         private System.Windows.Forms.Label lb_fiber1;
         public MaterialSkin.Controls.MaterialCheckBox cbMobFilterFibra;
         private System.Windows.Forms.Label lb_resources;
-        private System.Windows.Forms.Panel pFilterResource;
         private System.Windows.Forms.Label lb_hide2;
         public MaterialSkin.Controls.MaterialCheckBox cbResourceFilterPelego;
         private System.Windows.Forms.Label lb_ore2;
@@ -1713,6 +1710,9 @@
         public System.Windows.Forms.ComboBox selectLanguage;
         private System.Windows.Forms.Label label1;
         public MaterialSkin.Controls.MaterialCheckBox cbRoyalContinent;
+        public System.Windows.Forms.Panel pTierList;
+        public System.Windows.Forms.Panel pFilterMobResource;
+        public System.Windows.Forms.Panel pFilterResource;
     }
 }
 

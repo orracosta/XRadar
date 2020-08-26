@@ -46,7 +46,6 @@
             this.Text = "Mapa";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.RadarMap_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.RadarMap_Paint);
             this.ResumeLayout(false);
 
         }

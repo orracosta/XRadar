@@ -117,15 +117,1689 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;lb_players.Name" xml:space="preserve">
+    <value>lb_players</value>
+  </data>
+  <data name="&gt;&gt;lb_players.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_players.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lb_players.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel16.Name" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel16.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;panel16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_open_lootlog.Name" xml:space="preserve">
+    <value>btn_open_lootlog</value>
+  </data>
+  <data name="&gt;&gt;btn_open_lootlog.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btn_open_lootlog.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;btn_open_lootlog.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lb_tags.Name" xml:space="preserve">
+    <value>lb_tags</value>
+  </data>
+  <data name="&gt;&gt;lb_tags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_tags.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lb_tags.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Name" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lb_general.Name" xml:space="preserve">
+    <value>lb_general</value>
+  </data>
+  <data name="&gt;&gt;lb_general.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_general.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;lb_general.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 311</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lb_alliances.Name" xml:space="preserve">
+    <value>lb_alliances</value>
+  </data>
+  <data name="&gt;&gt;lb_alliances.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_alliances.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;lb_alliances.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel11.Name" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel11.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;exportAllysButton.Name" xml:space="preserve">
+    <value>exportAllysButton</value>
+  </data>
+  <data name="&gt;&gt;exportAllysButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exportAllysButton.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;exportAllysButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;importAllysButton.Name" xml:space="preserve">
+    <value>importAllysButton</value>
+  </data>
+  <data name="&gt;&gt;importAllysButton.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRaisedButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;importAllysButton.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;importAllysButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_guilds.Name" xml:space="preserve">
+    <value>lb_guilds</value>
+  </data>
+  <data name="&gt;&gt;lb_guilds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_guilds.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;lb_guilds.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 311</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Guildas e Alianças</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_resources.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_resources.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10pt</value>
+  </data>
+  <data name="lb_resources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_resources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 136</value>
+  </data>
+  <data name="lb_resources.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 0</value>
+  </data>
+  <data name="lb_resources.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lb_resources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="lb_resources.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lb_resources.Text" xml:space="preserve">
+    <value>Recursos</value>
+  </data>
+  <data name="&gt;&gt;lb_resources.Name" xml:space="preserve">
+    <value>lb_resources</value>
+  </data>
+  <data name="&gt;&gt;lb_resources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_resources.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;lb_resources.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_amount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_amount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_amount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 81</value>
+  </data>
+  <data name="lb_amount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_amount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="lb_amount.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lb_amount.Text" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="&gt;&gt;lb_amount.Name" xml:space="preserve">
+    <value>lb_amount</value>
+  </data>
+  <data name="&gt;&gt;lb_amount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_amount.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_amount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbResourceFilterAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterAmount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 74</value>
+  </data>
+  <data name="cbResourceFilterAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="cbResourceFilterAmount.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterAmount.Name" xml:space="preserve">
+    <value>cbResourceFilterAmount</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterAmount.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterAmount.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterAmount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_wood2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_wood2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_wood2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_wood2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 80</value>
+  </data>
+  <data name="lb_wood2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_wood2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="lb_wood2.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lb_wood2.Text" xml:space="preserve">
+    <value>Madeira</value>
+  </data>
+  <data name="&gt;&gt;lb_wood2.Name" xml:space="preserve">
+    <value>lb_wood2</value>
+  </data>
+  <data name="&gt;&gt;lb_wood2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_wood2.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_wood2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_hide2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_hide2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_hide2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_hide2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 51</value>
+  </data>
+  <data name="lb_hide2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_hide2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
+  </data>
+  <data name="lb_hide2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lb_hide2.Text" xml:space="preserve">
+    <value>Pelego</value>
+  </data>
+  <data name="&gt;&gt;lb_hide2.Name" xml:space="preserve">
+    <value>lb_hide2</value>
+  </data>
+  <data name="&gt;&gt;lb_hide2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hide2.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_hide2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbResourceFilterMadeira.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterMadeira.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterMadeira.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 73</value>
+  </data>
+  <data name="cbResourceFilterMadeira.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterMadeira.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="cbResourceFilterMadeira.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMadeira.Name" xml:space="preserve">
+    <value>cbResourceFilterMadeira</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMadeira.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMadeira.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMadeira.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbResourceFilterPelego.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterPelego.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterPelego.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 44</value>
+  </data>
+  <data name="cbResourceFilterPelego.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterPelego.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="cbResourceFilterPelego.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPelego.Name" xml:space="preserve">
+    <value>cbResourceFilterPelego</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPelego.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPelego.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPelego.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lb_ore2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ore2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_ore2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_ore2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="lb_ore2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_ore2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="lb_ore2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lb_ore2.Text" xml:space="preserve">
+    <value>Minério</value>
+  </data>
+  <data name="&gt;&gt;lb_ore2.Name" xml:space="preserve">
+    <value>lb_ore2</value>
+  </data>
+  <data name="&gt;&gt;lb_ore2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ore2.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_ore2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbResourceFilterMinerio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterMinerio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterMinerio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 16</value>
+  </data>
+  <data name="cbResourceFilterMinerio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterMinerio.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="cbResourceFilterMinerio.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMinerio.Name" xml:space="preserve">
+    <value>cbResourceFilterMinerio</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMinerio.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMinerio.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterMinerio.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_rock2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_rock2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_rock2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_rock2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 51</value>
+  </data>
+  <data name="lb_rock2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_rock2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="lb_rock2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lb_rock2.Text" xml:space="preserve">
+    <value>Pedra</value>
+  </data>
+  <data name="&gt;&gt;lb_rock2.Name" xml:space="preserve">
+    <value>lb_rock2</value>
+  </data>
+  <data name="&gt;&gt;lb_rock2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_rock2.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_rock2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbResourceFilterPedra.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterPedra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterPedra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 44</value>
+  </data>
+  <data name="cbResourceFilterPedra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterPedra.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="cbResourceFilterPedra.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPedra.Name" xml:space="preserve">
+    <value>cbResourceFilterPedra</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPedra.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPedra.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterPedra.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lb_fiber2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_fiber2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_fiber2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_fiber2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 23</value>
+  </data>
+  <data name="lb_fiber2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_fiber2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="lb_fiber2.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lb_fiber2.Text" xml:space="preserve">
+    <value>Fibra</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber2.Name" xml:space="preserve">
+    <value>lb_fiber2</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber2.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbResourceFilterFibra.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbResourceFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterFibra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbResourceFilterFibra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 16</value>
+  </data>
+  <data name="cbResourceFilterFibra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbResourceFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbResourceFilterFibra.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="cbResourceFilterFibra.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterFibra.Name" xml:space="preserve">
+    <value>cbResourceFilterFibra</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterFibra.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterFibra.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;cbResourceFilterFibra.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panel25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 2</value>
+  </data>
+  <data name="panel25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2, 118</value>
+  </data>
+  <data name="panel25.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel25.Name" xml:space="preserve">
+    <value>panel25</value>
+  </data>
+  <data name="&gt;&gt;panel25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel25.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;panel25.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="panel30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2</value>
+  </data>
+  <data name="panel30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2, 118</value>
+  </data>
+  <data name="panel30.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel30.Name" xml:space="preserve">
+    <value>panel30</value>
+  </data>
+  <data name="&gt;&gt;panel30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel30.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;panel30.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 120</value>
+  </data>
+  <data name="panel31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 2</value>
+  </data>
+  <data name="panel31.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel31.Name" xml:space="preserve">
+    <value>panel31</value>
+  </data>
+  <data name="&gt;&gt;panel31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel31.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;panel31.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="panel32.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 2</value>
+  </data>
+  <data name="panel32.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel32.Name" xml:space="preserve">
+    <value>panel32</value>
+  </data>
+  <data name="&gt;&gt;panel32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel32.Parent" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;panel32.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="pFilterResource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 145</value>
+  </data>
+  <data name="pFilterResource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="pFilterResource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 122</value>
+  </data>
+  <data name="pFilterResource.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pFilterResource.Name" xml:space="preserve">
+    <value>pFilterResource</value>
+  </data>
+  <data name="&gt;&gt;pFilterResource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pFilterResource.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;pFilterResource.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_monsters.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_monsters.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10pt</value>
+  </data>
+  <data name="lb_monsters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_monsters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 1</value>
+  </data>
+  <data name="lb_monsters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 0</value>
+  </data>
+  <data name="lb_monsters.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lb_monsters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
+  </data>
+  <data name="lb_monsters.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lb_monsters.Text" xml:space="preserve">
+    <value>Monstros</value>
+  </data>
+  <data name="&gt;&gt;lb_monsters.Name" xml:space="preserve">
+    <value>lb_monsters</value>
+  </data>
+  <data name="&gt;&gt;lb_monsters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_monsters.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;lb_monsters.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_item_tiers.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_item_tiers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10pt</value>
+  </data>
+  <data name="lb_item_tiers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_item_tiers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 1</value>
+  </data>
+  <data name="lb_item_tiers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 0</value>
+  </data>
+  <data name="lb_item_tiers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 0, 5, 0</value>
+  </data>
+  <data name="lb_item_tiers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="lb_item_tiers.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lb_item_tiers.Text" xml:space="preserve">
+    <value>Tier de Itens</value>
+  </data>
+  <data name="&gt;&gt;lb_item_tiers.Name" xml:space="preserve">
+    <value>lb_item_tiers</value>
+  </data>
+  <data name="&gt;&gt;lb_item_tiers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_item_tiers.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;lb_item_tiers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_wood1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_wood1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_wood1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_wood1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 81</value>
+  </data>
+  <data name="lb_wood1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_wood1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="lb_wood1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lb_wood1.Text" xml:space="preserve">
+    <value>Madeira</value>
+  </data>
+  <data name="&gt;&gt;lb_wood1.Name" xml:space="preserve">
+    <value>lb_wood1</value>
+  </data>
+  <data name="&gt;&gt;lb_wood1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_wood1.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;lb_wood1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbMobFilterMadeira.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMobFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterMadeira.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbMobFilterMadeira.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 74</value>
+  </data>
+  <data name="cbMobFilterMadeira.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbMobFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbMobFilterMadeira.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbMobFilterMadeira.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMadeira.Name" xml:space="preserve">
+    <value>cbMobFilterMadeira</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMadeira.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMadeira.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMadeira.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_hide1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_hide1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_hide1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_hide1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 51</value>
+  </data>
+  <data name="lb_hide1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_hide1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
+  </data>
+  <data name="lb_hide1.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lb_hide1.Text" xml:space="preserve">
+    <value>Pelego</value>
+  </data>
+  <data name="&gt;&gt;lb_hide1.Name" xml:space="preserve">
+    <value>lb_hide1</value>
+  </data>
+  <data name="&gt;&gt;lb_hide1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_hide1.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;lb_hide1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbMobFilterPelego.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMobFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterPelego.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbMobFilterPelego.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 44</value>
+  </data>
+  <data name="cbMobFilterPelego.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbMobFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbMobFilterPelego.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="cbMobFilterPelego.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPelego.Name" xml:space="preserve">
+    <value>cbMobFilterPelego</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPelego.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPelego.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPelego.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_ore1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ore1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_ore1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_ore1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="lb_ore1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_ore1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="lb_ore1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lb_ore1.Text" xml:space="preserve">
+    <value>Minério</value>
+  </data>
+  <data name="&gt;&gt;lb_ore1.Name" xml:space="preserve">
+    <value>lb_ore1</value>
+  </data>
+  <data name="&gt;&gt;lb_ore1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ore1.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;lb_ore1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbMobFilterMinerio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMobFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterMinerio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbMobFilterMinerio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 16</value>
+  </data>
+  <data name="cbMobFilterMinerio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbMobFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbMobFilterMinerio.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="cbMobFilterMinerio.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMinerio.Name" xml:space="preserve">
+    <value>cbMobFilterMinerio</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMinerio.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMinerio.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterMinerio.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lb_rock1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_rock1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_rock1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_rock1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 51</value>
+  </data>
+  <data name="lb_rock1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_rock1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="lb_rock1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lb_rock1.Text" xml:space="preserve">
+    <value>Pedra</value>
+  </data>
+  <data name="&gt;&gt;lb_rock1.Name" xml:space="preserve">
+    <value>lb_rock1</value>
+  </data>
+  <data name="&gt;&gt;lb_rock1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_rock1.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;lb_rock1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbMobFilterPedra.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMobFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterPedra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbMobFilterPedra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 44</value>
+  </data>
+  <data name="cbMobFilterPedra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbMobFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbMobFilterPedra.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="cbMobFilterPedra.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPedra.Name" xml:space="preserve">
+    <value>cbMobFilterPedra</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPedra.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPedra.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterPedra.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_fiber1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_fiber1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri Light, 10pt</value>
+  </data>
+  <data name="lb_fiber1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_fiber1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 23</value>
+  </data>
+  <data name="lb_fiber1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="lb_fiber1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="lb_fiber1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lb_fiber1.Text" xml:space="preserve">
+    <value>Fibra</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber1.Name" xml:space="preserve">
+    <value>lb_fiber1</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber1.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;lb_fiber1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbMobFilterFibra.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbMobFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterFibra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbMobFilterFibra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 16</value>
+  </data>
+  <data name="cbMobFilterFibra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbMobFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cbMobFilterFibra.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="cbMobFilterFibra.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterFibra.Name" xml:space="preserve">
+    <value>cbMobFilterFibra</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterFibra.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterFibra.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;cbMobFilterFibra.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panel26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 2</value>
+  </data>
+  <data name="panel26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2, 118</value>
+  </data>
+  <data name="panel26.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
+    <value>panel26</value>
+  </data>
+  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panel27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panel27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2</value>
+  </data>
+  <data name="panel27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>2, 118</value>
+  </data>
+  <data name="panel27.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel27.Name" xml:space="preserve">
+    <value>panel27</value>
+  </data>
+  <data name="&gt;&gt;panel27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel27.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;panel27.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel28.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 120</value>
+  </data>
+  <data name="panel28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 2</value>
+  </data>
+  <data name="panel28.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel28.Name" xml:space="preserve">
+    <value>panel28</value>
+  </data>
+  <data name="&gt;&gt;panel28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel28.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;panel28.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="panel29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 2</value>
+  </data>
+  <data name="panel29.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel29.Name" xml:space="preserve">
+    <value>panel29</value>
+  </data>
+  <data name="&gt;&gt;panel29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel29.Parent" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;panel29.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pFilterMobResource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 10</value>
+  </data>
+  <data name="pFilterMobResource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="pFilterMobResource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 122</value>
+  </data>
+  <data name="pFilterMobResource.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;pFilterMobResource.Name" xml:space="preserve">
+    <value>pFilterMobResource</value>
+  </data>
+  <data name="&gt;&gt;pFilterMobResource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pFilterMobResource.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;pFilterMobResource.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier8.Name" xml:space="preserve">
+    <value>cbShowTier8</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier8.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier7.Name" xml:space="preserve">
+    <value>cbShowTier7</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier7.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier6.Name" xml:space="preserve">
+    <value>cbShowTier6</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier6.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier5.Name" xml:space="preserve">
+    <value>cbShowTier5</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier5.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier4.Name" xml:space="preserve">
+    <value>cbShowTier4</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier4.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier3.Name" xml:space="preserve">
+    <value>cbShowTier3</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier3.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier2.Name" xml:space="preserve">
+    <value>cbShowTier2</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier2.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier1.Name" xml:space="preserve">
+    <value>cbShowTier1</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier1.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;cbShowTier1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel21.Name" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;panel21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel21.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;panel21.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;panel22.Name" xml:space="preserve">
+    <value>panel22</value>
+  </data>
+  <data name="&gt;&gt;panel22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel22.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;panel22.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel23.Name" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;panel23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel23.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;panel23.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel24.Name" xml:space="preserve">
+    <value>panel24</value>
+  </data>
+  <data name="&gt;&gt;panel24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel24.Parent" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;panel24.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="pTierList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 10</value>
+  </data>
+  <data name="pTierList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="pTierList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 257</value>
+  </data>
+  <data name="pTierList.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pTierList.Name" xml:space="preserve">
+    <value>pTierList</value>
+  </data>
+  <data name="&gt;&gt;pTierList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pTierList.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;pTierList.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 311</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Coleta</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 119</value>
+  </data>
+  <data name="materialTabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 20, 10, 0</value>
+  </data>
+  <data name="materialTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 337</value>
+  </data>
+  <data name="materialTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Name" xml:space="preserve">
+    <value>materialTabControl1</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTabControl, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;materialTabControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="lb_players.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lb_players.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 10pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lb_players.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -158,6 +1832,198 @@
   </data>
   <data name="&gt;&gt;lb_players.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Name" xml:space="preserve">
+    <value>cbRoyalContinent</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbRoyalContinent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lb_color_ranged_melee.Name" xml:space="preserve">
+    <value>lb_color_ranged_melee</value>
+  </data>
+  <data name="&gt;&gt;lb_color_ranged_melee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_color_ranged_melee.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;lb_color_ranged_melee.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel33.Name" xml:space="preserve">
+    <value>panel33</value>
+  </data>
+  <data name="&gt;&gt;panel33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel33.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel33.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel34.Name" xml:space="preserve">
+    <value>panel34</value>
+  </data>
+  <data name="&gt;&gt;panel34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel34.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel34.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbRangedMelee.Name" xml:space="preserve">
+    <value>cbRangedMelee</value>
+  </data>
+  <data name="&gt;&gt;cbRangedMelee.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbRangedMelee.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbRangedMelee.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel35.Name" xml:space="preserve">
+    <value>panel35</value>
+  </data>
+  <data name="&gt;&gt;panel35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel35.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel35.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel36.Name" xml:space="preserve">
+    <value>panel36</value>
+  </data>
+  <data name="&gt;&gt;panel36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel36.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel36.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lb_enemy_tag.Name" xml:space="preserve">
+    <value>lb_enemy_tag</value>
+  </data>
+  <data name="&gt;&gt;lb_enemy_tag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_enemy_tag.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;lb_enemy_tag.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbAlertSound.Name" xml:space="preserve">
+    <value>cbAlertSound</value>
+  </data>
+  <data name="&gt;&gt;cbAlertSound.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbAlertSound.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbAlertSound.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lb_alert_sound.Name" xml:space="preserve">
+    <value>lb_alert_sound</value>
+  </data>
+  <data name="&gt;&gt;lb_alert_sound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_alert_sound.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;lb_alert_sound.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbTagEnemies.Name" xml:space="preserve">
+    <value>cbTagEnemies</value>
+  </data>
+  <data name="&gt;&gt;cbTagEnemies.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbTagEnemies.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbTagEnemies.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cbTagAllys.Name" xml:space="preserve">
+    <value>cbTagAllys</value>
+  </data>
+  <data name="&gt;&gt;cbTagAllys.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbTagAllys.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;cbTagAllys.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lb_ally_tag.Name" xml:space="preserve">
+    <value>lb_ally_tag</value>
+  </data>
+  <data name="&gt;&gt;lb_ally_tag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ally_tag.Parent" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;lb_ally_tag.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 134</value>
+  </data>
+  <data name="panel16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 164</value>
+  </data>
+  <data name="panel16.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;panel16.Name" xml:space="preserve">
+    <value>panel16</value>
+  </data>
+  <data name="&gt;&gt;panel16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel16.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;panel16.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -615,30 +2481,6 @@
   <data name="&gt;&gt;lb_ally_tag.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 134</value>
-  </data>
-  <data name="panel16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 164</value>
-  </data>
-  <data name="panel16.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;panel16.Name" xml:space="preserve">
-    <value>panel16</value>
-  </data>
-  <data name="&gt;&gt;panel16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel16.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;panel16.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btn_open_lootlog.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -713,6 +2555,150 @@
   </data>
   <data name="&gt;&gt;lb_tags.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_none.Name" xml:space="preserve">
+    <value>lb_none</value>
+  </data>
+  <data name="&gt;&gt;lb_none.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_none.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;lb_none.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbNone.Name" xml:space="preserve">
+    <value>cbNone</value>
+  </data>
+  <data name="&gt;&gt;cbNone.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbNone.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;cbNone.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lb_guild.Name" xml:space="preserve">
+    <value>lb_guild</value>
+  </data>
+  <data name="&gt;&gt;lb_guild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_guild.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;lb_guild.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbGuild.Name" xml:space="preserve">
+    <value>cbGuild</value>
+  </data>
+  <data name="&gt;&gt;cbGuild.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbGuild.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;cbGuild.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_name.Name" xml:space="preserve">
+    <value>lb_name</value>
+  </data>
+  <data name="&gt;&gt;lb_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_name.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;lb_name.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbName.Name" xml:space="preserve">
+    <value>cbName</value>
+  </data>
+  <data name="&gt;&gt;cbName.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialRadioButton, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbName.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;cbName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel17.Name" xml:space="preserve">
+    <value>panel17</value>
+  </data>
+  <data name="&gt;&gt;panel17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel17.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;panel17.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel18.Name" xml:space="preserve">
+    <value>panel18</value>
+  </data>
+  <data name="&gt;&gt;panel18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel18.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;panel18.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel19.Name" xml:space="preserve">
+    <value>panel19</value>
+  </data>
+  <data name="&gt;&gt;panel19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel19.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;panel19.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel20.Name" xml:space="preserve">
+    <value>panel20</value>
+  </data>
+  <data name="&gt;&gt;panel20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel20.Parent" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;panel20.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pCbDisplayOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 10</value>
+  </data>
+  <data name="pCbDisplayOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="pCbDisplayOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 107</value>
+  </data>
+  <data name="pCbDisplayOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Name" xml:space="preserve">
+    <value>pCbDisplayOptions</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;pCbDisplayOptions.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="lb_none.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1026,30 +3012,6 @@
   <data name="&gt;&gt;panel20.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="pCbDisplayOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 10</value>
-  </data>
-  <data name="pCbDisplayOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="pCbDisplayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 107</value>
-  </data>
-  <data name="pCbDisplayOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pCbDisplayOptions.Name" xml:space="preserve">
-    <value>pCbDisplayOptions</value>
-  </data>
-  <data name="&gt;&gt;pCbDisplayOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pCbDisplayOptions.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;pCbDisplayOptions.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="lb_general.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1088,6 +3050,294 @@
   </data>
   <data name="&gt;&gt;lb_general.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;nMapScale.Name" xml:space="preserve">
+    <value>nMapScale</value>
+  </data>
+  <data name="&gt;&gt;nMapScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nMapScale.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;nMapScale.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialDivider7.Name" xml:space="preserve">
+    <value>materialDivider7</value>
+  </data>
+  <data name="&gt;&gt;materialDivider7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;materialDivider7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_equipament.Name" xml:space="preserve">
+    <value>lb_show_equipament</value>
+  </data>
+  <data name="&gt;&gt;lb_show_equipament.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_equipament.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_equipament.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbUserInfoWindow.Name" xml:space="preserve">
+    <value>cbUserInfoWindow</value>
+  </data>
+  <data name="&gt;&gt;cbUserInfoWindow.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbUserInfoWindow.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbUserInfoWindow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_show_dungeons.Name" xml:space="preserve">
+    <value>lb_show_dungeons</value>
+  </data>
+  <data name="&gt;&gt;lb_show_dungeons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_dungeons.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_dungeons.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbShowDungeon.Name" xml:space="preserve">
+    <value>cbShowDungeon</value>
+  </data>
+  <data name="&gt;&gt;cbShowDungeon.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowDungeon.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowDungeon.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lb_show_harvestable.Name" xml:space="preserve">
+    <value>lb_show_harvestable</value>
+  </data>
+  <data name="&gt;&gt;lb_show_harvestable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_harvestable.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_harvestable.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbShowHarvestable.Name" xml:space="preserve">
+    <value>cbShowHarvestable</value>
+  </data>
+  <data name="&gt;&gt;cbShowHarvestable.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowHarvestable.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowHarvestable.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lb_show_monsters.Name" xml:space="preserve">
+    <value>lb_show_monsters</value>
+  </data>
+  <data name="&gt;&gt;lb_show_monsters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_monsters.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_monsters.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbShowMobs.Name" xml:space="preserve">
+    <value>cbShowMobs</value>
+  </data>
+  <data name="&gt;&gt;cbShowMobs.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowMobs.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowMobs.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lb_show_players.Name" xml:space="preserve">
+    <value>lb_show_players</value>
+  </data>
+  <data name="&gt;&gt;lb_show_players.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_players.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_players.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbShowPlayers.Name" xml:space="preserve">
+    <value>cbShowPlayers</value>
+  </data>
+  <data name="&gt;&gt;cbShowPlayers.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowPlayers.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowPlayers.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lb_show_radar.Name" xml:space="preserve">
+    <value>lb_show_radar</value>
+  </data>
+  <data name="&gt;&gt;lb_show_radar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_show_radar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_show_radar.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbShowRadar.Name" xml:space="preserve">
+    <value>cbShowRadar</value>
+  </data>
+  <data name="&gt;&gt;cbShowRadar.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbShowRadar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbShowRadar.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosX.Name" xml:space="preserve">
+    <value>nRadarPosX</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosX.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosX.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosY.Name" xml:space="preserve">
+    <value>nRadarPosY</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosY.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;nRadarPosY.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;materialDivider2.Name" xml:space="preserve">
+    <value>materialDivider2</value>
+  </data>
+  <data name="&gt;&gt;materialDivider2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;materialDivider2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;materialDivider1.Name" xml:space="preserve">
+    <value>materialDivider1</value>
+  </data>
+  <data name="&gt;&gt;materialDivider1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;materialDivider1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 10</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 247</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="nMapScale.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 10pt</value>
@@ -1788,57 +4038,6 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 10</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 247</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 311</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Geral</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>materialTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="lb_alliances.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1877,6 +4076,150 @@
   </data>
   <data name="&gt;&gt;lb_alliances.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;addAlliance.Name" xml:space="preserve">
+    <value>addAlliance</value>
+  </data>
+  <data name="&gt;&gt;addAlliance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addAlliance.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;addAlliance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;removeAlliance.Name" xml:space="preserve">
+    <value>removeAlliance</value>
+  </data>
+  <data name="&gt;&gt;removeAlliance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeAlliance.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;removeAlliance.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbTrustAlliances.Name" xml:space="preserve">
+    <value>lbTrustAlliances</value>
+  </data>
+  <data name="&gt;&gt;lbTrustAlliances.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTrustAlliances.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;lbTrustAlliances.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialDivider5.Name" xml:space="preserve">
+    <value>materialDivider5</value>
+  </data>
+  <data name="&gt;&gt;materialDivider5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider5.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;materialDivider5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbAlliancesInRange.Name" xml:space="preserve">
+    <value>lbAlliancesInRange</value>
+  </data>
+  <data name="&gt;&gt;lbAlliancesInRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbAlliancesInRange.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;lbAlliancesInRange.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;materialDivider6.Name" xml:space="preserve">
+    <value>materialDivider6</value>
+  </data>
+  <data name="&gt;&gt;materialDivider6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider6.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;materialDivider6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel12.Name" xml:space="preserve">
+    <value>panel12</value>
+  </data>
+  <data name="&gt;&gt;panel12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel12.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel13.Name" xml:space="preserve">
+    <value>panel13</value>
+  </data>
+  <data name="&gt;&gt;panel13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel13.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel13.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel14.Name" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;panel14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel14.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel15.Name" xml:space="preserve">
+    <value>panel15</value>
+  </data>
+  <data name="&gt;&gt;panel15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel15.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 150</value>
+  </data>
+  <data name="panel11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 120</value>
+  </data>
+  <data name="panel11.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panel11.Name" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel11.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel11.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="addAlliance.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2154,30 +4497,6 @@
   <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 150</value>
-  </data>
-  <data name="panel11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 120</value>
-  </data>
-  <data name="panel11.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panel11.Name" xml:space="preserve">
-    <value>panel11</value>
-  </data>
-  <data name="&gt;&gt;panel11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel11.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;panel11.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="exportAllysButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2288,6 +4607,150 @@
   </data>
   <data name="&gt;&gt;lb_guilds.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;addGuild.Name" xml:space="preserve">
+    <value>addGuild</value>
+  </data>
+  <data name="&gt;&gt;addGuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addGuild.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;addGuild.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;removeGuild.Name" xml:space="preserve">
+    <value>removeGuild</value>
+  </data>
+  <data name="&gt;&gt;removeGuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeGuild.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;removeGuild.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbTrustGuilds.Name" xml:space="preserve">
+    <value>lbTrustGuilds</value>
+  </data>
+  <data name="&gt;&gt;lbTrustGuilds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbTrustGuilds.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;lbTrustGuilds.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialDivider4.Name" xml:space="preserve">
+    <value>materialDivider4</value>
+  </data>
+  <data name="&gt;&gt;materialDivider4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider4.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;materialDivider4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbGuildsInRange.Name" xml:space="preserve">
+    <value>lbGuildsInRange</value>
+  </data>
+  <data name="&gt;&gt;lbGuildsInRange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbGuildsInRange.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;lbGuildsInRange.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;materialDivider3.Name" xml:space="preserve">
+    <value>materialDivider3</value>
+  </data>
+  <data name="&gt;&gt;materialDivider3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialDivider, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialDivider3.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;materialDivider3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 10</value>
+  </data>
+  <data name="panel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 120</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="addGuild.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2565,1206 +5028,6 @@
   <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 10</value>
-  </data>
-  <data name="panel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 120</value>
-  </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 311</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Guildas e Alianças</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>materialTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_resources.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_resources.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10pt</value>
-  </data>
-  <data name="lb_resources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_resources.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 136</value>
-  </data>
-  <data name="lb_resources.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 0</value>
-  </data>
-  <data name="lb_resources.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
-  </data>
-  <data name="lb_resources.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 17</value>
-  </data>
-  <data name="lb_resources.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="lb_resources.Text" xml:space="preserve">
-    <value>Recursos</value>
-  </data>
-  <data name="&gt;&gt;lb_resources.Name" xml:space="preserve">
-    <value>lb_resources</value>
-  </data>
-  <data name="&gt;&gt;lb_resources.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_resources.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;lb_resources.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lb_amount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_amount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_amount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 81</value>
-  </data>
-  <data name="lb_amount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_amount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
-  </data>
-  <data name="lb_amount.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="lb_amount.Text" xml:space="preserve">
-    <value>Quantia</value>
-  </data>
-  <data name="&gt;&gt;lb_amount.Name" xml:space="preserve">
-    <value>lb_amount</value>
-  </data>
-  <data name="&gt;&gt;lb_amount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_amount.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_amount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbResourceFilterAmount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterAmount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 74</value>
-  </data>
-  <data name="cbResourceFilterAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterAmount.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="cbResourceFilterAmount.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterAmount.Name" xml:space="preserve">
-    <value>cbResourceFilterAmount</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterAmount.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterAmount.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterAmount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_wood2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_wood2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_wood2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_wood2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 80</value>
-  </data>
-  <data name="lb_wood2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_wood2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="lb_wood2.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="lb_wood2.Text" xml:space="preserve">
-    <value>Madeira</value>
-  </data>
-  <data name="&gt;&gt;lb_wood2.Name" xml:space="preserve">
-    <value>lb_wood2</value>
-  </data>
-  <data name="&gt;&gt;lb_wood2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_wood2.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_wood2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lb_hide2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_hide2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_hide2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_hide2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 51</value>
-  </data>
-  <data name="lb_hide2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_hide2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
-  </data>
-  <data name="lb_hide2.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="lb_hide2.Text" xml:space="preserve">
-    <value>Pelego</value>
-  </data>
-  <data name="&gt;&gt;lb_hide2.Name" xml:space="preserve">
-    <value>lb_hide2</value>
-  </data>
-  <data name="&gt;&gt;lb_hide2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_hide2.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_hide2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cbResourceFilterMadeira.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterMadeira.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterMadeira.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 73</value>
-  </data>
-  <data name="cbResourceFilterMadeira.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterMadeira.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="cbResourceFilterMadeira.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMadeira.Name" xml:space="preserve">
-    <value>cbResourceFilterMadeira</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMadeira.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMadeira.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMadeira.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cbResourceFilterPelego.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterPelego.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterPelego.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 44</value>
-  </data>
-  <data name="cbResourceFilterPelego.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterPelego.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="cbResourceFilterPelego.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPelego.Name" xml:space="preserve">
-    <value>cbResourceFilterPelego</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPelego.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPelego.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPelego.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lb_ore2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_ore2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_ore2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_ore2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 23</value>
-  </data>
-  <data name="lb_ore2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_ore2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="lb_ore2.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="lb_ore2.Text" xml:space="preserve">
-    <value>Minério</value>
-  </data>
-  <data name="&gt;&gt;lb_ore2.Name" xml:space="preserve">
-    <value>lb_ore2</value>
-  </data>
-  <data name="&gt;&gt;lb_ore2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_ore2.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_ore2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cbResourceFilterMinerio.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterMinerio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterMinerio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 16</value>
-  </data>
-  <data name="cbResourceFilterMinerio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterMinerio.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="cbResourceFilterMinerio.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMinerio.Name" xml:space="preserve">
-    <value>cbResourceFilterMinerio</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMinerio.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMinerio.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterMinerio.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lb_rock2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_rock2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_rock2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_rock2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 51</value>
-  </data>
-  <data name="lb_rock2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_rock2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
-  </data>
-  <data name="lb_rock2.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lb_rock2.Text" xml:space="preserve">
-    <value>Pedra</value>
-  </data>
-  <data name="&gt;&gt;lb_rock2.Name" xml:space="preserve">
-    <value>lb_rock2</value>
-  </data>
-  <data name="&gt;&gt;lb_rock2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_rock2.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_rock2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cbResourceFilterPedra.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterPedra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterPedra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 44</value>
-  </data>
-  <data name="cbResourceFilterPedra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterPedra.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="cbResourceFilterPedra.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPedra.Name" xml:space="preserve">
-    <value>cbResourceFilterPedra</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPedra.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPedra.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterPedra.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lb_fiber2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_fiber2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_fiber2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_fiber2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 23</value>
-  </data>
-  <data name="lb_fiber2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_fiber2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
-  </data>
-  <data name="lb_fiber2.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="lb_fiber2.Text" xml:space="preserve">
-    <value>Fibra</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber2.Name" xml:space="preserve">
-    <value>lb_fiber2</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber2.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="cbResourceFilterFibra.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbResourceFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbResourceFilterFibra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbResourceFilterFibra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
-  </data>
-  <data name="cbResourceFilterFibra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbResourceFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbResourceFilterFibra.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="cbResourceFilterFibra.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterFibra.Name" xml:space="preserve">
-    <value>cbResourceFilterFibra</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterFibra.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterFibra.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;cbResourceFilterFibra.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="panel25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panel25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 2</value>
-  </data>
-  <data name="panel25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 118</value>
-  </data>
-  <data name="panel25.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel25.Name" xml:space="preserve">
-    <value>panel25</value>
-  </data>
-  <data name="&gt;&gt;panel25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel25.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;panel25.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="panel30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2</value>
-  </data>
-  <data name="panel30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 118</value>
-  </data>
-  <data name="panel30.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel30.Name" xml:space="preserve">
-    <value>panel30</value>
-  </data>
-  <data name="&gt;&gt;panel30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel30.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;panel30.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="panel31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 120</value>
-  </data>
-  <data name="panel31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 2</value>
-  </data>
-  <data name="panel31.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel31.Name" xml:space="preserve">
-    <value>panel31</value>
-  </data>
-  <data name="&gt;&gt;panel31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel31.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;panel31.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="panel32.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 2</value>
-  </data>
-  <data name="panel32.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel32.Name" xml:space="preserve">
-    <value>panel32</value>
-  </data>
-  <data name="&gt;&gt;panel32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel32.Parent" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;panel32.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="pFilterResource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 145</value>
-  </data>
-  <data name="pFilterResource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="pFilterResource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 122</value>
-  </data>
-  <data name="pFilterResource.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;pFilterResource.Name" xml:space="preserve">
-    <value>pFilterResource</value>
-  </data>
-  <data name="&gt;&gt;pFilterResource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pFilterResource.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;pFilterResource.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_monsters.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_monsters.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10pt</value>
-  </data>
-  <data name="lb_monsters.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_monsters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 1</value>
-  </data>
-  <data name="lb_monsters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 0</value>
-  </data>
-  <data name="lb_monsters.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
-  </data>
-  <data name="lb_monsters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 17</value>
-  </data>
-  <data name="lb_monsters.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lb_monsters.Text" xml:space="preserve">
-    <value>Monstros</value>
-  </data>
-  <data name="&gt;&gt;lb_monsters.Name" xml:space="preserve">
-    <value>lb_monsters</value>
-  </data>
-  <data name="&gt;&gt;lb_monsters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_monsters.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;lb_monsters.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lb_item_tiers.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_item_tiers.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10pt</value>
-  </data>
-  <data name="lb_item_tiers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_item_tiers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 1</value>
-  </data>
-  <data name="lb_item_tiers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 0</value>
-  </data>
-  <data name="lb_item_tiers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 0, 5, 0</value>
-  </data>
-  <data name="lb_item_tiers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 17</value>
-  </data>
-  <data name="lb_item_tiers.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lb_item_tiers.Text" xml:space="preserve">
-    <value>Tier de Itens</value>
-  </data>
-  <data name="&gt;&gt;lb_item_tiers.Name" xml:space="preserve">
-    <value>lb_item_tiers</value>
-  </data>
-  <data name="&gt;&gt;lb_item_tiers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_item_tiers.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;lb_item_tiers.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lb_wood1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_wood1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_wood1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_wood1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 81</value>
-  </data>
-  <data name="lb_wood1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_wood1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="lb_wood1.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="lb_wood1.Text" xml:space="preserve">
-    <value>Madeira</value>
-  </data>
-  <data name="&gt;&gt;lb_wood1.Name" xml:space="preserve">
-    <value>lb_wood1</value>
-  </data>
-  <data name="&gt;&gt;lb_wood1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_wood1.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;lb_wood1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbMobFilterMadeira.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbMobFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbMobFilterMadeira.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbMobFilterMadeira.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 74</value>
-  </data>
-  <data name="cbMobFilterMadeira.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbMobFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbMobFilterMadeira.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cbMobFilterMadeira.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMadeira.Name" xml:space="preserve">
-    <value>cbMobFilterMadeira</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMadeira.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMadeira.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMadeira.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_hide1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_hide1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_hide1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_hide1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 51</value>
-  </data>
-  <data name="lb_hide1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_hide1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
-  </data>
-  <data name="lb_hide1.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="lb_hide1.Text" xml:space="preserve">
-    <value>Pelego</value>
-  </data>
-  <data name="&gt;&gt;lb_hide1.Name" xml:space="preserve">
-    <value>lb_hide1</value>
-  </data>
-  <data name="&gt;&gt;lb_hide1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_hide1.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;lb_hide1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cbMobFilterPelego.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbMobFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbMobFilterPelego.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbMobFilterPelego.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 44</value>
-  </data>
-  <data name="cbMobFilterPelego.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbMobFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbMobFilterPelego.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="cbMobFilterPelego.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPelego.Name" xml:space="preserve">
-    <value>cbMobFilterPelego</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPelego.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPelego.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPelego.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lb_ore1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_ore1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_ore1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_ore1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 23</value>
-  </data>
-  <data name="lb_ore1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_ore1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="lb_ore1.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="lb_ore1.Text" xml:space="preserve">
-    <value>Minério</value>
-  </data>
-  <data name="&gt;&gt;lb_ore1.Name" xml:space="preserve">
-    <value>lb_ore1</value>
-  </data>
-  <data name="&gt;&gt;lb_ore1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_ore1.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;lb_ore1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cbMobFilterMinerio.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbMobFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbMobFilterMinerio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbMobFilterMinerio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 16</value>
-  </data>
-  <data name="cbMobFilterMinerio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbMobFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbMobFilterMinerio.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="cbMobFilterMinerio.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMinerio.Name" xml:space="preserve">
-    <value>cbMobFilterMinerio</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMinerio.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMinerio.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterMinerio.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lb_rock1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_rock1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_rock1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_rock1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 51</value>
-  </data>
-  <data name="lb_rock1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_rock1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
-  </data>
-  <data name="lb_rock1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lb_rock1.Text" xml:space="preserve">
-    <value>Pedra</value>
-  </data>
-  <data name="&gt;&gt;lb_rock1.Name" xml:space="preserve">
-    <value>lb_rock1</value>
-  </data>
-  <data name="&gt;&gt;lb_rock1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_rock1.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;lb_rock1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="cbMobFilterPedra.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbMobFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbMobFilterPedra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbMobFilterPedra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 44</value>
-  </data>
-  <data name="cbMobFilterPedra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbMobFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbMobFilterPedra.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="cbMobFilterPedra.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPedra.Name" xml:space="preserve">
-    <value>cbMobFilterPedra</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPedra.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPedra.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterPedra.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lb_fiber1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_fiber1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri Light, 10pt</value>
-  </data>
-  <data name="lb_fiber1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_fiber1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 23</value>
-  </data>
-  <data name="lb_fiber1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lb_fiber1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
-  </data>
-  <data name="lb_fiber1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="lb_fiber1.Text" xml:space="preserve">
-    <value>Fibra</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber1.Name" xml:space="preserve">
-    <value>lb_fiber1</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber1.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;lb_fiber1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cbMobFilterFibra.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbMobFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
-  </data>
-  <data name="cbMobFilterFibra.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cbMobFilterFibra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
-  </data>
-  <data name="cbMobFilterFibra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="cbMobFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
-  </data>
-  <data name="cbMobFilterFibra.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="cbMobFilterFibra.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterFibra.Name" xml:space="preserve">
-    <value>cbMobFilterFibra</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterFibra.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialCheckBox, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterFibra.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;cbMobFilterFibra.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="panel26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panel26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 2</value>
-  </data>
-  <data name="panel26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 118</value>
-  </data>
-  <data name="panel26.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
-    <value>panel26</value>
-  </data>
-  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="panel27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="panel27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 2</value>
-  </data>
-  <data name="panel27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2, 118</value>
-  </data>
-  <data name="panel27.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel27.Name" xml:space="preserve">
-    <value>panel27</value>
-  </data>
-  <data name="&gt;&gt;panel27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel27.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;panel27.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="panel28.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panel28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 120</value>
-  </data>
-  <data name="panel28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 2</value>
-  </data>
-  <data name="panel28.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel28.Name" xml:space="preserve">
-    <value>panel28</value>
-  </data>
-  <data name="&gt;&gt;panel28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel28.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;panel28.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="panel29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 2</value>
-  </data>
-  <data name="panel29.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel29.Name" xml:space="preserve">
-    <value>panel29</value>
-  </data>
-  <data name="&gt;&gt;panel29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel29.Parent" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;panel29.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="pFilterMobResource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 10</value>
-  </data>
-  <data name="pFilterMobResource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="pFilterMobResource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 122</value>
-  </data>
-  <data name="pFilterMobResource.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;pFilterMobResource.Name" xml:space="preserve">
-    <value>pFilterMobResource</value>
-  </data>
-  <data name="&gt;&gt;pFilterMobResource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pFilterMobResource.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;pFilterMobResource.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3817,7 +5080,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier8.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -3889,7 +5152,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier7.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3961,7 +5224,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier6.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -4033,7 +5296,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4105,7 +5368,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4177,7 +5440,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier3.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4249,7 +5512,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4321,7 +5584,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="cbShowTier1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 30</value>
+    <value>30, 30</value>
   </data>
   <data name="cbShowTier1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4436,81 +5699,6 @@
   </data>
   <data name="&gt;&gt;panel24.ZOrder" xml:space="preserve">
     <value>19</value>
-  </data>
-  <data name="pTierList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 10</value>
-  </data>
-  <data name="pTierList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="pTierList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 257</value>
-  </data>
-  <data name="pTierList.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pTierList.Name" xml:space="preserve">
-    <value>pTierList</value>
-  </data>
-  <data name="&gt;&gt;pTierList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pTierList.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;pTierList.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 311</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Coleta</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>materialTabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="materialTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 119</value>
-  </data>
-  <data name="materialTabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 20, 10, 0</value>
-  </data>
-  <data name="materialTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>442, 337</value>
-  </data>
-  <data name="materialTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;materialTabControl1.Name" xml:space="preserve">
-    <value>materialTabControl1</value>
-  </data>
-  <data name="&gt;&gt;materialTabControl1.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTabControl, MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;materialTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;materialTabControl1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="materialTabSelector1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 64</value>
