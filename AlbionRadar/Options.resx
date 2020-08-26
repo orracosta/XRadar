@@ -487,13 +487,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="lb_alert_sound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 17</value>
+    <value>143, 17</value>
   </data>
   <data name="lb_alert_sound.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="lb_alert_sound.Text" xml:space="preserve">
-    <value>Alerta sonoro</value>
+    <value>Alerta sonoro (CTRL + 3)</value>
   </data>
   <data name="&gt;&gt;lb_alert_sound.Name" xml:space="preserve">
     <value>lb_alert_sound</value>

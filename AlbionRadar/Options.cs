@@ -32,6 +32,7 @@ namespace AlbionNetwork2D
     {
         const int MYACTION_HOTKEY_ID = 1;
         const int MYACTION_HOTKEY_ID2 = 2;
+        const int MYACTION_HOTKEY_ID3 = 3;
 
         public Dictionary<string, string> dungeons = new Dictionary<string, string>
         {
@@ -87,6 +88,7 @@ namespace AlbionNetwork2D
             // ALT+CTRL = 1 + 2 = 3 , CTRL+SHIFT = 2 + 4 = 6...
             RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID, 2, (int)Keys.D1);
             RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID2, 2, (int)Keys.D2);
+            RegisterHotKey(this.Handle, MYACTION_HOTKEY_ID3, 2, (int)Keys.D3);
 
             photonParser = new PacketHandler(playerHandler, mobsHandler, harvestableHandler, dungeonHandler);
 
@@ -696,6 +698,11 @@ namespace AlbionNetwork2D
                     this.cbShowRadar.Checked = true;
                 }
 
+                Settings.saveSettings(this);
+            }
+            else if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID3)
+            {
+                this.cbAlertSound.Checked = !cbAlertSound.Checked;
                 Settings.saveSettings(this);
             }
 
