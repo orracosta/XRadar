@@ -78,6 +78,9 @@ namespace AlbionNetwork2D
                 case EventCodes.OtherGrabbedLoot:
                     onOtherGrabbedLoot(parameters);
                     break;
+                case EventCodes.GuildUpdate:
+                case EventCodes.GuildPlayerUpdated:
+                    break;
                 default:
                     //debugEventInfo(parameters, evCode, "OnEvent");
                     break;
@@ -97,9 +100,6 @@ namespace AlbionNetwork2D
                 case OperationCodes.Move:
                     onLocalPlayerMovementRequest(parameters);
                     break;
-                case OperationCodes.ChangeCluster:
-                    onChangeCluster(parameters);
-                    break;
                 default:
                     //debugOperationInfo(parameters, opCode, "OnRequest");
                     break;
@@ -118,6 +118,9 @@ namespace AlbionNetwork2D
             {
                 case OperationCodes.Join:
                     opJoin(parameters);
+                    break;
+                case OperationCodes.ChangeCluster:
+                    onChangeCluster(parameters);
                     break;
                 default:
                     //debugOperationInfo(parameters, opCode, "OnResponse");
@@ -307,10 +310,10 @@ namespace AlbionNetwork2D
         {
             int id = int.Parse(parameters[0].ToString());
 
-            if (playerHandler.RemovePlayer(id))
-                playerHandler.RemoveMount(id);
-            else
-                mobsHandler.RemoveMob(id);
+            playerHandler.RemovePlayer(id);
+            playerHandler.RemoveMount(id);
+            mobsHandler.RemoveMob(id);
+            dungeonHandler.RemoveDungeon(id);
         }
         private void onEntityMovementEvent(Dictionary<byte, object> parameters)
         {
