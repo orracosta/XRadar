@@ -361,13 +361,10 @@ namespace AlbionNetwork2D
                     radarMap.Show();
                     this.cbShowRadar.Checked = true;
                 }
-
-                Settings.saveSettings(this);
             }
             else if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID3)
             {
                 this.cbAlertSound.Checked = !cbAlertSound.Checked;
-                Settings.saveSettings(this);
             }
 
             base.WndProc(ref m);

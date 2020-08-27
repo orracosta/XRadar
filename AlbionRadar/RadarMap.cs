@@ -68,11 +68,11 @@ namespace AlbionNetwork2D
 
             try
             {
-                radarThread = new Thread(() =>
+                radarThread = new Thread(async () =>
                 {
                     while(true)
                     {
-                        drawerThread();
+                        await drawerThread();
                         Thread.Sleep(20);
                     }
                 });
@@ -103,7 +103,7 @@ namespace AlbionNetwork2D
             return returnBitmap;
         }
         #region RadarMap
-        private void drawerThread()
+        private async Task drawerThread()
         {
             if (options.nMapScale.Value == 1)
             {
@@ -399,9 +399,10 @@ namespace AlbionNetwork2D
                 {
                     this.Invoke((Action)(() =>
                     {
-                        this.SelectBitmap(RadarMap.RotateImage(bitmap, 225f));
+                        Task t = this.SelectBitmap(RadarMap.RotateImage(bitmap, 225f));
                     }));
                 }
+
             }
         }
         #endregion

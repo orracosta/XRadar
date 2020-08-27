@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 #endregion
 namespace AlbionNetwork2D
 {
@@ -57,9 +58,9 @@ namespace AlbionNetwork2D
         /// 
         /// </summary>
         /// <param name="bitmap"></param>
-        public void SelectBitmap(Bitmap bitmap)
+        public async Task SelectBitmap(Bitmap bitmap)
         {
-            SelectBitmap(bitmap, 255);
+            await SelectBitmap(bitmap, 255);
         }
         /// <summary>
         /// 
@@ -75,7 +76,7 @@ namespace AlbionNetwork2D
         /// transparent. When you only want to use per-pixel alpha values, set 
         /// the SourceConstantAlpha value to 255 (opaque).
         /// </param>
-        public void SelectBitmap(Bitmap bitmap, int opacity)
+        public async Task SelectBitmap(Bitmap bitmap, int opacity)
         {
             // Does this bitmap contain an alpha channel?
             if (bitmap.PixelFormat != PixelFormat.Format32bppArgb)

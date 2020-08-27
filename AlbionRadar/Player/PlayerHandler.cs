@@ -27,7 +27,7 @@ namespace AlbionNetwork2D
                 playersInRange.TryAdd(id, p);
             }
 
-            if ((Settings.isRoyalChecked() && !isAlly(guild, alliance) && !isAllyRoyal(faction)) || !Settings.isRoyalChecked() && !isAlly(guild, alliance))
+            if ((Settings.royalContinent && !isAlly(guild, alliance) && !isAllyRoyal(faction)) || !Settings.royalContinent && !isAlly(guild, alliance))
                 Settings.beepSound();
         }
         public void updateLocalPlayer(Single posX, Single posY, String nickname, String guild, String alliance, int faction)
@@ -123,8 +123,8 @@ namespace AlbionNetwork2D
         }
         public bool isAlly(string guild, string alliance)
         {
-            List<String> guildList = Settings.trustedGuilds();
-            List<String> AllianceList = Settings.trustedAllys();
+            List<String> guildList = Settings.trustGuilds;
+            List<String> AllianceList = Settings.trustAlliances;
 
             if (!guildList.Contains(guild) && !AllianceList.Contains(alliance))
                 return false;

@@ -13,6 +13,10 @@ namespace AlbionNetwork2D
     {
         private static bool isBeeping = false;
         public static string languageSelected;
+        public static List<String> trustGuilds;
+        public static List<String> trustAlliances;
+        public static bool royalContinent;
+        private static bool alertSound;
 
         public static void saveSettings(Options form)
         {
@@ -70,6 +74,12 @@ namespace AlbionNetwork2D
             s.resourceFilterMadeira = form.cbResourceFilterMadeira.Checked;
             s.resourceFilterAmount = form.cbResourceFilterAmount.Checked;
 
+            //load variables
+            trustGuilds = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
+            trustAlliances = JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
+            royalContinent = s.royalContinent;
+            alertSound = s.alertSound;
+
             s.Save();
 
         }
@@ -77,10 +87,15 @@ namespace AlbionNetwork2D
         {
             AppSettings s = new AppSettings();
 
-            foreach (String guild in JsonConvert.DeserializeObject<List<string>>(s.trustGuilds))
+            trustGuilds = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
+            trustAlliances = JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
+            royalContinent = s.royalContinent;
+            alertSound = s.alertSound;
+
+            foreach (String guild in trustGuilds)
                 form.lbTrustGuilds.Items.Add(guild);
 
-            foreach (String alliance in JsonConvert.DeserializeObject<List<string>>(s.trustAlliances))
+            foreach (String alliance in trustAlliances)
                 form.lbTrustAlliances.Items.Add(alliance);
 
             form.pCbDisplayOptions.Controls.OfType<MaterialSkin.Controls.MaterialRadioButton>()
@@ -93,13 +108,13 @@ namespace AlbionNetwork2D
             form.nMapScale.Value = s.mapScale;
             form.cbShowPlayers.Checked = s.showPlayers;
             form.cbShowMobs.Checked = s.showMobs;
-            form.cbAlertSound.Checked = s.alertSound;
+            form.cbAlertSound.Checked = alertSound;
             form.cbShowHarvestable.Checked = s.showHarvestable;
             form.cbShowDungeon.Checked = s.showDungeon;
             form.cbTagAllys.Checked = s.tagAllys;
             form.cbTagEnemies.Checked = s.tagEnemies;
             form.cbRangedMelee.Checked = s.rangedMelee;
-            form.cbRoyalContinent.Checked = s.royalContinent;
+            form.cbRoyalContinent.Checked = royalContinent;
 
             // Coleta - Tier
             form.cbShowTier1.Checked = s.showTier1;
@@ -131,26 +146,9 @@ namespace AlbionNetwork2D
 
             languageSelected = s.language;
         }
-        public static List<String> trustedGuilds()
-        {
-            AppSettings s = new AppSettings();
-            return JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
-        }
-        public static List<String> trustedAllys()
-        {
-            AppSettings s = new AppSettings();
-            return JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
-        }
-        public static bool isRoyalChecked()
-        {
-            AppSettings s = new AppSettings();
-            return s.royalContinent;
-        }
         public static void beepSound()
         {
-            AppSettings s = new AppSettings();
-
-            if(s.alertSound && !isBeeping)
+            if(alertSound && !isBeeping)
             {
                 isBeeping = true;
 
