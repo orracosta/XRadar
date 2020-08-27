@@ -297,6 +297,9 @@ namespace AlbionNetwork2D
         }
         private void MoveRadarValueChanged(object sender, EventArgs e)
         {
+            if (radarMap == null)
+                return;
+
             if (radarMap.InvokeRequired)
             {
                 radarMap.Invoke((Action)(() =>
