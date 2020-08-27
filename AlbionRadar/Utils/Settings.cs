@@ -77,8 +77,8 @@ namespace AlbionNetwork2D
             //load variables
             trustGuilds = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
             trustAlliances = JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
-            royalContinent = s.royalContinent;
-            alertSound = s.alertSound;
+            royalContinent = form.cbRoyalContinent.Checked;
+            alertSound = form.cbAlertSound.Checked;
 
             s.Save();
 
@@ -89,8 +89,6 @@ namespace AlbionNetwork2D
 
             trustGuilds = JsonConvert.DeserializeObject<List<string>>(s.trustGuilds);
             trustAlliances = JsonConvert.DeserializeObject<List<string>>(s.trustAlliances);
-            royalContinent = s.royalContinent;
-            alertSound = s.alertSound;
 
             foreach (String guild in trustGuilds)
                 form.lbTrustGuilds.Items.Add(guild);
@@ -108,13 +106,13 @@ namespace AlbionNetwork2D
             form.nMapScale.Value = s.mapScale;
             form.cbShowPlayers.Checked = s.showPlayers;
             form.cbShowMobs.Checked = s.showMobs;
-            form.cbAlertSound.Checked = alertSound;
+            form.cbAlertSound.Checked = s.alertSound;
             form.cbShowHarvestable.Checked = s.showHarvestable;
             form.cbShowDungeon.Checked = s.showDungeon;
             form.cbTagAllys.Checked = s.tagAllys;
             form.cbTagEnemies.Checked = s.tagEnemies;
             form.cbRangedMelee.Checked = s.rangedMelee;
-            form.cbRoyalContinent.Checked = royalContinent;
+            form.cbRoyalContinent.Checked = s.royalContinent;
 
             // Coleta - Tier
             form.cbShowTier1.Checked = s.showTier1;
@@ -139,6 +137,9 @@ namespace AlbionNetwork2D
             form.cbResourceFilterMinerio.Checked = s.resourceFilterMinerio;
             form.cbResourceFilterMadeira.Checked = s.resourceFilterMadeira;
             form.cbResourceFilterAmount.Checked = s.resourceFilterAmount;
+
+            royalContinent = form.cbRoyalContinent.Checked;
+            alertSound = form.cbAlertSound.Checked;
         }
         public static void loadLanguage()
         {

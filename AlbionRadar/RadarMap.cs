@@ -63,8 +63,8 @@ namespace AlbionNetwork2D
         }
         private void RadarMap_Load(object sender, EventArgs e)
         {
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.DoubleBuffered = true;
 
             try
             {

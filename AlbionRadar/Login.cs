@@ -22,7 +22,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1150";
+        private string version = "1151";
         public Login()
         {
             Settings.loadLanguage();
@@ -67,7 +67,6 @@ namespace AlbionNetwork2D
                         if(jsonArray.canLogin == true)
                         {
                             Options options = new Options();
-
                             this.Hide();
                             options.Show();
                         }
