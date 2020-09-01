@@ -415,6 +415,21 @@ namespace AlbionNetwork2D
         NewRandomResourceBlocker,
         NewHomeObject,
         HideoutObjectUpdate,
-        UpdateInfamy
+        UpdateInfamy,
+        Unknown408,
+        Unknown409,
+        Unknown410,
+        Unknown411,
+        Unknown412,
+        Unknown413,
+        Unknown414,
+        Unknown415,
+        Unknown416,
+        Unknown417,
+        Unknown418,
+        Unknown419,
+        Unknown420,
+        Unknown421,
+        Unknown422
     }
 }
