@@ -28,6 +28,7 @@ namespace AlbionNetwork2D
         private string appLogin;
         private string appPassword;
         private string appHwid;
+        private int appTimestamp;
         private int loginCount;
 
         public Login()
@@ -67,18 +68,18 @@ namespace AlbionNetwork2D
             #endif
         }
 
+        private string generateJson()
+        {
+            appTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+
+            return "{\"login\":\"" + appLogin + "\",\"password\":\"" + appPassword + "\",\"hwid\":\"" + appHwid + "\",\"version\":\"" + appVersion + "\",\"timestamp\":" + appTimestamp + "}";
+        }
+
         private void doLogin()
         {
-            var jsonRequest = new
-            {
-                login = appLogin,
-                password = appPassword,
-                hwid = appHwid,
-                version = appVersion,
-                timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds
-            };
+            string json = generateJson();
 
-            WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(JsonConvert.SerializeObject(jsonRequest))));
+            WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(json)));
             request.Credentials = CredentialCache.DefaultCredentials;
 
             try
@@ -92,7 +93,7 @@ namespace AlbionNetwork2D
 
                     if (jsonArray != null)
                     {
-                        if (jsonArray.canLogin == true && jsonArray.timestamp == jsonRequest.timestamp)
+                        if (jsonArray.canLogin == true && jsonArray.timestamp == appTimestamp)
                         {
                             loginCount = 0;
                             licenseTimer.Start();
@@ -103,7 +104,7 @@ namespace AlbionNetwork2D
                         }
                         else
                         {
-                            if(jsonArray.timestamp != jsonRequest.timestamp)
+                            if(jsonArray.timestamp != appTimestamp)
                                 throwError();
 
                             var result = MessageBox.Show((string)jsonArray.errorMessage, this.Text,
@@ -133,16 +134,9 @@ namespace AlbionNetwork2D
         {
             Thread t = new Thread(() =>
             {
-                var jsonRequest = new
-                {
-                    login = appLogin,
-                    password = appPassword,
-                    hwid = appHwid,
-                    version = appVersion,
-                    timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds
-                };
+                string json = generateJson();
 
-                WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(JsonConvert.SerializeObject(jsonRequest))));
+                WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(json)));
                 request.Credentials = CredentialCache.DefaultCredentials;
 
                 try
@@ -156,7 +150,7 @@ namespace AlbionNetwork2D
 
                         if (jsonArray != null)
                         {
-                            if (jsonArray.canLogin == true && jsonArray.timestamp == jsonRequest.timestamp)
+                            if (jsonArray.canLogin == true && jsonArray.timestamp == appTimestamp)
                             {
                                 loginCount = 0;
                             }
