@@ -13,6 +13,7 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Resources;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -22,7 +23,13 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string version = "1160";
+        private string appVersion = "1170";
+        private string baseURL = "http://localhost:8080/api/login/";
+        private string appLogin;
+        private string appPassword;
+        private string appHwid;
+        private int loginCount;
+
         public Login()
         {
             Settings.loadLanguage();
@@ -38,40 +45,67 @@ namespace AlbionNetwork2D
         {
             if (userLogin.Text.Length > 1 && passwordLogin.Text.Length > 1)
             {
-                var hwid = UHWID.UHWID.SimpleUid;
+                appLogin = userLogin.Text;
+                appPassword = passwordLogin.Text;
+                appHwid = UHWID.UHWID.SimpleUid;
 
-                WebRequest request = WebRequest.Create("https://teclandotec.com/api/login.php?login="
-                + userLogin.Text + "&password="
-                + passwordLogin.Text + "&hwid="
-                + hwid + "&version="
-                + version);
+                doLogin();
+            }
+        }
 
-                // If required by the server, set the credentials.
-                request.Credentials = CredentialCache.DefaultCredentials;
+        private void throwError()
+        {
+            MessageBox.Show("Unknown error!\nPlease try again later or contact us on our discord.", this.Text,
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
-                // Get the response.
+        private void restartApp()
+        {
+            #if (!DEBUG)
+            Application.Restart();
+            Environment.Exit(0);
+            #endif
+        }
+
+        private void doLogin()
+        {
+            var jsonRequest = new
+            {
+                login = appLogin,
+                password = appPassword,
+                hwid = appHwid,
+                version = appVersion,
+                timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds
+            };
+
+            WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(JsonConvert.SerializeObject(jsonRequest))));
+            request.Credentials = CredentialCache.DefaultCredentials;
+
+            try
+            {
                 WebResponse response = request.GetResponse();
-                // Get the stream containing content returned by the server.
-                // The using block ensures the stream is automatically closed.
                 using (Stream dataStream = response.GetResponseStream())
                 {
-                    // Open the stream using a StreamReader for easy access.
                     StreamReader reader = new StreamReader(dataStream);
-                    // Read the content.
                     string responseFromServer = reader.ReadToEnd();
-                    // Display the content.
-                    dynamic jsonArray = JsonConvert.DeserializeObject(responseFromServer);
-                    
-                    if(jsonArray != null)
+                    dynamic jsonArray = JsonConvert.DeserializeObject(Utils.Encryption.DecryptString(Utils.Encryption.HexToString(responseFromServer)));
+
+                    if (jsonArray != null)
                     {
-                        if(jsonArray.canLogin == true)
+                        if (jsonArray.canLogin == true && jsonArray.timestamp == jsonRequest.timestamp)
                         {
+                            loginCount = 0;
+                            licenseTimer.Start();
+
                             Options options = new Options();
                             this.Hide();
                             options.Show();
                         }
                         else
                         {
+                            if(jsonArray.timestamp != jsonRequest.timestamp)
+                                throwError();
+
                             var result = MessageBox.Show((string)jsonArray.errorMessage, this.Text,
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -81,11 +115,81 @@ namespace AlbionNetwork2D
                             }
                         }
                     }
-                }
+                    else
+                    {
+                        throwError();
+                    }
 
-                // Close the response.
-                response.Close();
+                    response.Close();
+                }
             }
+            catch (Exception)
+            {
+                throwError();
+            }
+        }
+
+        private void licenseTimer_Tick(object sender, EventArgs e)
+        {
+            Thread t = new Thread(() =>
+            {
+                var jsonRequest = new
+                {
+                    login = appLogin,
+                    password = appPassword,
+                    hwid = appHwid,
+                    version = appVersion,
+                    timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds
+                };
+
+                WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(JsonConvert.SerializeObject(jsonRequest))));
+                request.Credentials = CredentialCache.DefaultCredentials;
+
+                try
+                {
+                    WebResponse response = request.GetResponse();
+                    using (Stream dataStream = response.GetResponseStream())
+                    {
+                        StreamReader reader = new StreamReader(dataStream);
+                        string responseFromServer = reader.ReadToEnd();
+                        dynamic jsonArray = JsonConvert.DeserializeObject(Utils.Encryption.DecryptString(Utils.Encryption.HexToString(responseFromServer)));
+
+                        if (jsonArray != null)
+                        {
+                            if (jsonArray.canLogin == true && jsonArray.timestamp == jsonRequest.timestamp)
+                            {
+                                loginCount = 0;
+                            }
+                            else
+                            {
+                                restartApp();
+                            }
+                        }
+                        else
+                        {
+                            loginCount++;
+                        }
+
+                        if (loginCount >= 3)
+                        {
+                            restartApp();
+                        }
+
+                        response.Close();
+                    }
+                }
+                catch (Exception)
+                {
+                    loginCount++;
+
+                    if (loginCount >= 3)
+                    {
+                        restartApp();
+                    }
+                }
+            });
+
+            t.Start();
         }
     }
 }

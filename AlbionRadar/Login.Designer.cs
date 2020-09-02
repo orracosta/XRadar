@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lb_username = new MaterialSkin.Controls.MaterialLabel();
             this.userLogin = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.passwordLogin = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lb_password = new MaterialSkin.Controls.MaterialLabel();
             this.btn_login = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.licenseTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lb_username
@@ -93,6 +95,11 @@
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
+            // licenseTimer
+            // 
+            this.licenseTimer.Interval = 60000;
+            this.licenseTimer.Tick += new System.EventHandler(this.licenseTimer_Tick);
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
@@ -117,5 +124,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField passwordLogin;
         private MaterialSkin.Controls.MaterialLabel lb_password;
         private MaterialSkin.Controls.MaterialRaisedButton btn_login;
+        private System.Windows.Forms.Timer licenseTimer;
     }
 }

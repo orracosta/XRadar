@@ -395,10 +395,10 @@ namespace AlbionNetwork2D
             if (lootLog != null && !lootLog.IsDisposed)
                 lootLog.Close();
 
-#if (!DEBUG)
+            #if (!DEBUG)
             Application.Restart();
             Environment.Exit(0);
-#endif
+            #endif
         }
         #endregion
 

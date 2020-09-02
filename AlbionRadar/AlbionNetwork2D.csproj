@@ -171,6 +171,7 @@
     <Compile Include="RadarMap.Designer.cs">
       <DependentUpon>RadarMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Encryption.cs" />
     <Compile Include="Utils\PerPixelAlphaForm.cs">
       <SubType>Form</SubType>
     </Compile>
