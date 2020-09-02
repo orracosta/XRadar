@@ -48,7 +48,6 @@
             this.cbTagEnemies = new MaterialSkin.Controls.MaterialCheckBox();
             this.cbTagAllys = new MaterialSkin.Controls.MaterialCheckBox();
             this.lb_ally_tag = new System.Windows.Forms.Label();
-            this.btn_open_lootlog = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lb_tags = new System.Windows.Forms.Label();
             this.pCbDisplayOptions = new System.Windows.Forms.Panel();
             this.lb_none = new System.Windows.Forms.Label();
@@ -204,7 +203,6 @@
             // 
             this.tabPage1.Controls.Add(this.lb_players);
             this.tabPage1.Controls.Add(this.panel16);
-            this.tabPage1.Controls.Add(this.btn_open_lootlog);
             this.tabPage1.Controls.Add(this.lb_tags);
             this.tabPage1.Controls.Add(this.pCbDisplayOptions);
             this.tabPage1.Controls.Add(this.lb_general);
@@ -222,8 +220,6 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel16.Controls.Add(this.label1);
-            this.panel16.Controls.Add(this.cbRoyalContinent);
             this.panel16.Controls.Add(this.lb_color_ranged_melee);
             this.panel16.Controls.Add(this.panel33);
             this.panel16.Controls.Add(this.panel34);
@@ -356,17 +352,6 @@
             this.lb_ally_tag.ForeColor = System.Drawing.Color.White;
             this.lb_ally_tag.Name = "lb_ally_tag";
             // 
-            // btn_open_lootlog
-            // 
-            resources.ApplyResources(this.btn_open_lootlog, "btn_open_lootlog");
-            this.btn_open_lootlog.Depth = 0;
-            this.btn_open_lootlog.Icon = null;
-            this.btn_open_lootlog.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btn_open_lootlog.Name = "btn_open_lootlog";
-            this.btn_open_lootlog.Primary = true;
-            this.btn_open_lootlog.UseVisualStyleBackColor = true;
-            this.btn_open_lootlog.Click += new System.EventHandler(this.materialRaisedButton1_Click);
-            // 
             // lb_tags
             // 
             resources.ApplyResources(this.lb_tags, "lb_tags");
@@ -475,6 +460,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.cbRoyalContinent);
             this.panel1.Controls.Add(this.nMapScale);
             this.panel1.Controls.Add(this.materialDivider7);
             this.panel1.Controls.Add(this.lb_show_equipament);
@@ -1698,7 +1685,6 @@
         public MaterialSkin.Controls.MaterialCheckBox cbRangedMelee;
         private System.Windows.Forms.Label lb_show_equipament;
         public MaterialSkin.Controls.MaterialCheckBox cbUserInfoWindow;
-        private MaterialSkin.Controls.MaterialRaisedButton btn_open_lootlog;
         private System.Windows.Forms.Label lb_players;
         public System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel33;

@@ -50,7 +50,6 @@ namespace AlbionNetwork2D
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
         RadarMap radarMap;
-        LootLog lootLog;
         UserInfo userInfo;
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
@@ -125,15 +124,7 @@ namespace AlbionNetwork2D
             Settings.saveSettings(this);
             Environment.Exit(0);
         }
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-            if (lootLog == null || !lootLog.Visible)
-            {
-                lootLog = new LootLog();
-                PlayerLoot.canAdd = true;
-                lootLog.Show();
-            }
-        }
+
         private void exportAllysButton_Click(object sender, EventArgs e)
         {
             string alliances = JsonConvert.SerializeObject(lbTrustAlliances.Items);
@@ -391,9 +382,6 @@ namespace AlbionNetwork2D
 
             if (userInfo != null && !userInfo.IsDisposed)
                 userInfo.Close();
-
-            if (lootLog != null && !lootLog.IsDisposed)
-                lootLog.Close();
 
             #if (!DEBUG)
             Application.Restart();
