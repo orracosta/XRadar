@@ -182,6 +182,7 @@ namespace AlbionNetwork2D
         DuelStarted,
         DuelEnded,
         DuelDenied,
+        Unknown174,
         DuelLeftArea,
         DuelReEnteredArea,
         NewRealEstate,
@@ -195,7 +196,7 @@ namespace AlbionNetwork2D
         FurnitureObjectCheatProviderInfo,
         FarmableObjectInfo,
         NewUnreadMails,
-        Unknown187,
+        Unknown188,
         GuildLogoObjectUpdate,
         StartLogout,
         NewChatChannels,
@@ -416,7 +417,6 @@ namespace AlbionNetwork2D
         NewHomeObject,
         HideoutObjectUpdate,
         UpdateInfamy,
-        Unknown408,
         Unknown409,
         Unknown410,
         Unknown411,
@@ -430,6 +430,7 @@ namespace AlbionNetwork2D
         Unknown419,
         Unknown420,
         Unknown421,
-        Unknown422
+        Unknown422,
+        Unknown423
     }
 }

@@ -23,7 +23,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string appVersion = "1170";
+        private string appVersion = "1171";
         private string baseURL = "https://teclandotec.com/api/login/";
         private string appLogin;
         private string appPassword;
@@ -47,7 +47,7 @@ namespace AlbionNetwork2D
             if (userLogin.Text.Length > 1 && passwordLogin.Text.Length > 1)
             {
                 appLogin = userLogin.Text;
-                appPassword = passwordLogin.Text;
+                appPassword = Utils.Encryption.MD5Hash(passwordLogin.Text);
                 appHwid = UHWID.UHWID.SimpleUid;
 
                 doLogin();

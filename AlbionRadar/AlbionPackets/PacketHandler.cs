@@ -79,7 +79,7 @@ namespace AlbionNetwork2D
                 case EventCodes.GuildPlayerUpdated:
                     break;
                 default:
-                    //debugEventInfo(parameters, evCode, "OnEvent");
+                    debugEventInfo(parameters, evCode, "OnEvent");
                     break;
             }
         }
