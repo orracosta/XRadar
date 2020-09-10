@@ -102,6 +102,7 @@ namespace AlbionNetwork2D
             radarMap.Show();
             radarMap.Left = (int)nRadarPosX.Value;
             radarMap.Top = (int)nRadarPosY.Value;
+            expiresLabel.Text = Login.appExpires;
 
             try
             {
@@ -115,6 +116,10 @@ namespace AlbionNetwork2D
             }
 
             AllyListTimer.Start();            
+        }
+        private void updateExpires_Tick(object sender, EventArgs e)
+        {
+            expiresLabel.Text = Login.appExpires;
         }
         public PlayerHandler PlayerHandler { get => playerHandler; }
 
@@ -450,5 +455,6 @@ namespace AlbionNetwork2D
             }
         }
         #endregion
+                
     }
 }

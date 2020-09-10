@@ -403,6 +403,9 @@
   <data name="cbShowTier1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>License:</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABADjsAAA47AAAAAAAAAAA

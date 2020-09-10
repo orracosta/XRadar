@@ -23,13 +23,16 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string appVersion = "1171";
+        private string appVersion = "1180";
         private string baseURL = "https://teclandotec.com/api/login/";
+        //private string baseURL = "http://localhost:8080/api/login/";
         private string appLogin;
         private string appPassword;
         private string appHwid;
+        public static string appExpires;
         private int appTimestamp;
         private int loginCount;
+        Options options;
 
         public Login()
         {
@@ -96,9 +99,16 @@ namespace AlbionNetwork2D
                         if (jsonArray.canLogin == true && jsonArray.timestamp == appTimestamp)
                         {
                             loginCount = 0;
+                            appExpires = jsonArray.expires;
                             licenseTimer.Start();
 
-                            Options options = new Options();
+                            if(Settings.languageSelected != "EN")
+                            {
+                                appExpires = appExpires.Replace("days left", "dias restantes");
+                                appExpires = appExpires.Replace("hours left", "horas restantes");
+                            }
+
+                            options = new Options();
                             this.Hide();
                             options.Show();
                         }
@@ -153,6 +163,7 @@ namespace AlbionNetwork2D
                             if (jsonArray.canLogin == true && jsonArray.timestamp == appTimestamp)
                             {
                                 loginCount = 0;
+                                appExpires = jsonArray.expires;
                             }
                             else
                             {
