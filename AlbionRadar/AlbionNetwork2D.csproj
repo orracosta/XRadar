@@ -137,6 +137,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="LootLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LootLog.Designer.cs">
+      <DependentUpon>LootLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mobs\Mob.cs" />
     <Compile Include="Mobs\MobHandler.cs" />
     <Compile Include="Mobs\MobInfo.cs" />
@@ -178,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LootLog.en.resx">
+      <DependentUpon>LootLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LootLog.resx">
+      <DependentUpon>LootLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Options.en.resx">
       <DependentUpon>Options.cs</DependentUpon>
