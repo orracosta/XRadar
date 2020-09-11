@@ -126,12 +126,24 @@
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Harvestable</value>
   </data>
+  <data name="btn_open_lootlog.Text" xml:space="preserve">
+    <value>Open LootLog</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lb_players.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
   </data>
   <data name="lb_players.Text" xml:space="preserve">
     <value>Players</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Royal Continent</value>
+  </data>
+  <data name="cbRoyalContinent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
   </data>
   <data name="lb_color_ranged_melee.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
@@ -198,15 +210,6 @@
   </data>
   <data name="lb_general.Text" xml:space="preserve">
     <value>General</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Royal Continent</value>
-  </data>
-  <data name="cbRoyalContinent.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 10pt</value>
   </data>
   <data name="lb_show_equipament.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 17</value>

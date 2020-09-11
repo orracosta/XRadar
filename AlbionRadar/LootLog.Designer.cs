@@ -88,7 +88,6 @@
             // 
             // lvLootLog
             // 
-            resources.ApplyResources(this.lvLootLog, "lvLootLog");
             this.lvLootLog.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -96,6 +95,7 @@
             this.lvLootLog.FullRowSelect = true;
             this.lvLootLog.GridLines = true;
             this.lvLootLog.HideSelection = false;
+            resources.ApplyResources(this.lvLootLog, "lvLootLog");
             this.lvLootLog.Name = "lvLootLog";
             this.lvLootLog.UseCompatibleStateImageBehavior = false;
             this.lvLootLog.View = System.Windows.Forms.View.Details;

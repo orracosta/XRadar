@@ -32,8 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_open_lootlog = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lb_players = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbRoyalContinent = new MaterialSkin.Controls.MaterialCheckBox();
             this.lb_color_ranged_melee = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -60,8 +63,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.lb_general = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbRoyalContinent = new MaterialSkin.Controls.MaterialCheckBox();
             this.nMapScale = new System.Windows.Forms.NumericUpDown();
             this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
             this.lb_show_equipament = new System.Windows.Forms.Label();
@@ -204,6 +205,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btn_open_lootlog);
             this.tabPage1.Controls.Add(this.lb_players);
             this.tabPage1.Controls.Add(this.panel16);
             this.tabPage1.Controls.Add(this.lb_tags);
@@ -214,6 +216,17 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btn_open_lootlog
+            // 
+            resources.ApplyResources(this.btn_open_lootlog, "btn_open_lootlog");
+            this.btn_open_lootlog.Depth = 0;
+            this.btn_open_lootlog.Icon = null;
+            this.btn_open_lootlog.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_open_lootlog.Name = "btn_open_lootlog";
+            this.btn_open_lootlog.Primary = true;
+            this.btn_open_lootlog.UseVisualStyleBackColor = true;
+            this.btn_open_lootlog.Click += new System.EventHandler(this.btn_open_lootlog_Click);
+            // 
             // lb_players
             // 
             resources.ApplyResources(this.lb_players, "lb_players");
@@ -223,6 +236,8 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel16.Controls.Add(this.label1);
+            this.panel16.Controls.Add(this.cbRoyalContinent);
             this.panel16.Controls.Add(this.lb_color_ranged_melee);
             this.panel16.Controls.Add(this.panel33);
             this.panel16.Controls.Add(this.panel34);
@@ -237,6 +252,23 @@
             this.panel16.Controls.Add(this.lb_ally_tag);
             resources.ApplyResources(this.panel16, "panel16");
             this.panel16.Name = "panel16";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // cbRoyalContinent
+            // 
+            resources.ApplyResources(this.cbRoyalContinent, "cbRoyalContinent");
+            this.cbRoyalContinent.Depth = 0;
+            this.cbRoyalContinent.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbRoyalContinent.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbRoyalContinent.Name = "cbRoyalContinent";
+            this.cbRoyalContinent.Ripple = true;
+            this.cbRoyalContinent.UseVisualStyleBackColor = true;
+            this.cbRoyalContinent.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // lb_color_ranged_melee
             // 
@@ -446,8 +478,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.cbRoyalContinent);
             this.panel1.Controls.Add(this.nMapScale);
             this.panel1.Controls.Add(this.materialDivider7);
             this.panel1.Controls.Add(this.lb_show_equipament);
@@ -472,23 +502,6 @@
             this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            // 
-            // cbRoyalContinent
-            // 
-            resources.ApplyResources(this.cbRoyalContinent, "cbRoyalContinent");
-            this.cbRoyalContinent.Depth = 0;
-            this.cbRoyalContinent.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.cbRoyalContinent.MouseState = MaterialSkin.MouseState.HOVER;
-            this.cbRoyalContinent.Name = "cbRoyalContinent";
-            this.cbRoyalContinent.Ripple = true;
-            this.cbRoyalContinent.UseVisualStyleBackColor = true;
-            this.cbRoyalContinent.CheckedChanged += new System.EventHandler(this.others_CheckedChanged);
             // 
             // nMapScale
             // 
@@ -1728,6 +1741,7 @@
         public System.Windows.Forms.Label expiresLabel;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer updateExpires;
+        private MaterialSkin.Controls.MaterialRaisedButton btn_open_lootlog;
     }
 }
 

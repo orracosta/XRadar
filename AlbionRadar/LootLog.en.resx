@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnFilterList.Text" xml:space="preserve">
+    <value>Filter List</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lb_players_filter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="lb_players_filter.Text" xml:space="preserve">
+    <value>Players filter:</value>
+  </data>
+  <data name="btn_clearList.Text" xml:space="preserve">
+    <value>Clear List</value>
+  </data>
+  <data name="btn_copyList.Text" xml:space="preserve">
+    <value>Copy List</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABADjsAAA47AAAAAAAAAAA
@@ -1249,5 +1270,8 @@
         v///////////////////////////////////////////////////////////////////////////////
         //////////////////////////////////8=
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Loot Log</value>
   </data>
 </root>

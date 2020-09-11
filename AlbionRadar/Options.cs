@@ -50,6 +50,7 @@ namespace AlbionNetwork2D
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
         RadarMap radarMap;
+        LootLog lootLog;
         UserInfo userInfo;
         PlayerHandler playerHandler = new PlayerHandler();
         MobsHandler mobsHandler = new MobsHandler();
@@ -65,7 +66,7 @@ namespace AlbionNetwork2D
 
             Settings.loadSettings(this);
             MobInfo.loadMobList();
-            PlayerItem.loadItemList();
+            PlayerItem.loadItemList(Settings.languageSelected);
             //PlayerSpell.loadSpellsList();
 
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -388,6 +389,9 @@ namespace AlbionNetwork2D
             if (userInfo != null && !userInfo.IsDisposed)
                 userInfo.Close();
 
+            if (lootLog != null && !lootLog.IsDisposed)
+                lootLog.Close();
+
             #if (!DEBUG)
             Application.Restart();
             Environment.Exit(0);
@@ -455,6 +459,15 @@ namespace AlbionNetwork2D
             }
         }
         #endregion
-                
+
+        private void btn_open_lootlog_Click(object sender, EventArgs e)
+        {
+            if (lootLog == null || !lootLog.Visible)
+            {
+                lootLog = new LootLog();
+                PlayerLoot.canAdd = true;
+                lootLog.Show();
+            }
+        }
     }
 }

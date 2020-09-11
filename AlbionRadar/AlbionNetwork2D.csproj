@@ -154,6 +154,7 @@
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
     <Compile Include="Player\PlayerItem.cs" />
+    <Compile Include="Player\PlayerLoot.cs" />
     <Compile Include="Player\PlayerSpell.cs" />
     <Compile Include="UHWID\CpuId.cs" />
     <Compile Include="UHWID\DiskId.cs" />
