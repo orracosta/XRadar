@@ -73,7 +73,7 @@ namespace AlbionNetwork2D
                     while(true)
                     {
                         await drawerThread();
-                        Thread.Sleep(20);
+                        Thread.Sleep(30);
                     }
                 });
                 radarThread.Priority = ThreadPriority.Highest;
