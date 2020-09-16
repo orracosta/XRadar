@@ -36,6 +36,8 @@
             this.lb_password = new MaterialSkin.Controls.MaterialLabel();
             this.btn_login = new MaterialSkin.Controls.MaterialRaisedButton();
             this.licenseTimer = new System.Windows.Forms.Timer(this.components);
+            this.lb_show_dungeons = new System.Windows.Forms.Label();
+            this.cbRememberPassword = new MaterialSkin.Controls.MaterialCheckBox();
             this.SuspendLayout();
             // 
             // lb_username
@@ -100,10 +102,30 @@
             this.licenseTimer.Interval = 60000;
             this.licenseTimer.Tick += new System.EventHandler(this.licenseTimer_Tick);
             // 
+            // lb_show_dungeons
+            // 
+            resources.ApplyResources(this.lb_show_dungeons, "lb_show_dungeons");
+            this.lb_show_dungeons.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lb_show_dungeons.Name = "lb_show_dungeons";
+            // 
+            // cbRememberPassword
+            // 
+            resources.ApplyResources(this.cbRememberPassword, "cbRememberPassword");
+            this.cbRememberPassword.Checked = true;
+            this.cbRememberPassword.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRememberPassword.Depth = 0;
+            this.cbRememberPassword.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbRememberPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbRememberPassword.Name = "cbRememberPassword";
+            this.cbRememberPassword.Ripple = true;
+            this.cbRememberPassword.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lb_show_dungeons);
+            this.Controls.Add(this.cbRememberPassword);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.lb_password);
             this.Controls.Add(this.passwordLogin);
@@ -112,6 +134,7 @@
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Sizable = false;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,10 +143,12 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel lb_username;
-        private MaterialSkin.Controls.MaterialSingleLineTextField userLogin;
-        private MaterialSkin.Controls.MaterialSingleLineTextField passwordLogin;
         private MaterialSkin.Controls.MaterialLabel lb_password;
         private MaterialSkin.Controls.MaterialRaisedButton btn_login;
         private System.Windows.Forms.Timer licenseTimer;
+        public MaterialSkin.Controls.MaterialSingleLineTextField passwordLogin;
+        public MaterialSkin.Controls.MaterialSingleLineTextField userLogin;
+        private System.Windows.Forms.Label lb_show_dungeons;
+        public MaterialSkin.Controls.MaterialCheckBox cbRememberPassword;
     }
 }

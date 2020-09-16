@@ -44,6 +44,10 @@ namespace AlbionNetwork2D
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, (Accent)Primary.BlueGrey500, TextShade.WHITE);
         }
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Settings.loadLoginSettings(this);
+        }
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             if (userLogin.Text.Length > 1 && passwordLogin.Text.Length > 1)
@@ -107,6 +111,7 @@ namespace AlbionNetwork2D
                                 appExpires = appExpires.Replace("hours left", "horas restantes");
                             }
 
+                            Settings.saveLoginSettings(this);
                             options = new Options();
                             this.Hide();
                             options.Show();

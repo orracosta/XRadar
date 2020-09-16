@@ -442,5 +442,41 @@ namespace AlbionNetwork2D {
                 this["royalContinent"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string loginUsername {
+            get {
+                return ((string)(this["loginUsername"]));
+            }
+            set {
+                this["loginUsername"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string loginPassword {
+            get {
+                return ((string)(this["loginPassword"]));
+            }
+            set {
+                this["loginPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool rememberPassword {
+            get {
+                return ((bool)(this["rememberPassword"]));
+            }
+            set {
+                this["rememberPassword"] = value;
+            }
+        }
     }
 }

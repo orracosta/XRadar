@@ -141,11 +141,41 @@ namespace AlbionNetwork2D
             royalContinent = form.cbRoyalContinent.Checked;
             alertSound = form.cbAlertSound.Checked;
         }
+
         public static void loadLanguage()
         {
             AppSettings s = new AppSettings();
 
             languageSelected = s.language;
+        }
+        public static void loadLoginSettings(Login form)
+        {
+            AppSettings s = new AppSettings();
+
+            languageSelected = s.language;
+
+            form.userLogin.Text = s.loginUsername;
+            form.passwordLogin.Text = s.loginPassword;
+            form.cbRememberPassword.Checked = s.rememberPassword;
+        }
+        public static void saveLoginSettings(Login form)
+        {
+            AppSettings s = new AppSettings();
+
+            if (form.cbRememberPassword.Checked)
+            {
+                s.loginUsername = form.userLogin.Text;
+                s.loginPassword = form.passwordLogin.Text;
+            }
+            else 
+            {
+                s.loginUsername = "";
+                s.loginPassword = "";
+            }
+
+            s.rememberPassword = form.cbRememberPassword.Checked;
+
+            s.Save();
         }
         public static void beepSound()
         {

@@ -139,6 +139,15 @@
   <data name="btn_login.Text" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="lb_show_dungeons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="lb_show_dungeons.Text" xml:space="preserve">
+    <value>Remember Password</value>
+  </data>
+  <data name="cbRememberPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABADjsAAA47AAAAAAAAAAA
