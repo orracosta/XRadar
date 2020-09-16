@@ -23,7 +23,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string appVersion = "1190";
+        private string appVersion = "1191";
         private string baseURL = "https://teclandotec.com/api/login/";
         private string appLogin;
         private string appPassword;

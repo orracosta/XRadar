@@ -365,6 +365,14 @@ namespace AlbionNetwork2D
             else if (m.Msg == 0x0312 && m.WParam.ToInt32() == MYACTION_HOTKEY_ID3)
             {
                 this.cbAlertSound.Checked = !cbAlertSound.Checked;
+
+                if (this.cbAlertSound.Checked)
+                {
+                    new Thread(() =>
+                    {
+                        Console.Beep(500, 100);
+                    }).Start();
+                }
             }
 
             base.WndProc(ref m);
