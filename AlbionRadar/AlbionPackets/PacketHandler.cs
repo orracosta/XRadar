@@ -476,7 +476,7 @@ namespace AlbionNetwork2D
             int id = int.Parse(parameters[0].ToString());
             bool mounted = false;
 
-            if (parameters.ContainsKey(8))
+            if (parameters.ContainsKey(2))
                 mounted = true;
 
             playerHandler.UpdatePlayerMount(id, mounted);
