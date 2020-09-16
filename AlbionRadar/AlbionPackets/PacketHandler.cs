@@ -105,6 +105,9 @@ namespace AlbionNetwork2D
                     case OperationCodes.Move:
                         onLocalPlayerMovementRequest(parameters);
                         break;
+                    case OperationCodes.ChangeCluster:
+                        onChangeCluster(parameters);
+                        break;
                     default:
                         debugOperationInfo(parameters, opCode, "OnRequest");
                         break;
@@ -126,9 +129,6 @@ namespace AlbionNetwork2D
                 {
                     case OperationCodes.Join:
                         opJoin(parameters);
-                        break;
-                    case OperationCodes.ChangeCluster:
-                        onChangeCluster(parameters);
                         break;
                     default:
                         debugOperationInfo(parameters, opCode, "OnResponse");
