@@ -23,7 +23,7 @@ namespace AlbionNetwork2D
 {
     public partial class Login : MaterialForm
     {
-        private string appVersion = "1183";
+        private string appVersion = "1190";
         private string baseURL = "https://teclandotec.com/api/login/";
         private string appLogin;
         private string appPassword;
@@ -70,16 +70,16 @@ namespace AlbionNetwork2D
             #endif
         }
 
-        private string generateJson()
+        private string generateJson(bool isLogin = false)
         {
             appTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
 
-            return "{\"login\":\"" + appLogin + "\",\"password\":\"" + appPassword + "\",\"hwid\":\"" + appHwid + "\",\"version\":\"" + appVersion + "\",\"timestamp\":" + appTimestamp + "}";
+            return "{\"login\":\"" + appLogin + "\",\"password\":\"" + appPassword + "\",\"hwid\":\"" + appHwid + "\",\"version\":\"" + appVersion + "\",\"isLogin\":\"" + isLogin + "\",\"timestamp\":" + appTimestamp + "}";
         }
 
         private void doLogin()
         {
-            string json = generateJson();
+            string json = generateJson(true);
 
             WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(json)));
             request.Credentials = CredentialCache.DefaultCredentials;
