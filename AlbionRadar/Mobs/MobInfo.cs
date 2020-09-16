@@ -14,13 +14,15 @@ namespace AlbionNetwork2D
         public static List<MobInfo> mobsInfo = new List<MobInfo>();
 
         int id;
+        string dangerstate;
         byte tier;
         HarvestableType harvestableType;
         byte HarvestableTier;
 
-        private MobInfo(int id, byte tier, HarvestableType harvestableType, byte HarvestableTier)
+        private MobInfo(int id, string dangerstate, byte tier, HarvestableType harvestableType, byte HarvestableTier)
         {
             this.id = id;
+            this.dangerstate = dangerstate;
             this.tier = tier;
             this.harvestableType = harvestableType;
             this.HarvestableTier = HarvestableTier;
@@ -36,7 +38,7 @@ namespace AlbionNetwork2D
                     if(item["Loot"].GetType() == typeof(JObject) && item["Loot"]["Harvestable"] != null)
                     {
                         var type = (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]);
-                        mobsInfo.Add(new MobInfo(index, (byte)item["@tier"], (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]), (byte)item["Loot"]["Harvestable"]["@tier"]));
+                        mobsInfo.Add(new MobInfo(index, (string)item["@dangerstate"], (byte)item["@tier"], (HarvestableType)Enum.Parse(typeof(HarvestableType), (string)item["Loot"]["Harvestable"]["@type"]), (byte)item["Loot"]["Harvestable"]["@tier"]));
                     }
                 }
 
@@ -51,6 +53,11 @@ namespace AlbionNetwork2D
         {
             get { return tier; }
             set { tier = value; }
+        }
+        public string Dangerstate
+        {
+            get { return dangerstate; }
+            set { dangerstate = value; }
         }
         public HarvestableType HarvestableMobType
         {

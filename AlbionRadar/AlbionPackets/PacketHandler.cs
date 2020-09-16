@@ -106,7 +106,7 @@ namespace AlbionNetwork2D
                         onLocalPlayerMovementRequest(parameters);
                         break;
                     default:
-                        //debugOperationInfo(parameters, opCode, "OnRequest");
+                        debugOperationInfo(parameters, opCode, "OnRequest");
                         break;
                 }
             });
@@ -131,7 +131,7 @@ namespace AlbionNetwork2D
                         onChangeCluster(parameters);
                         break;
                     default:
-                        //debugOperationInfo(parameters, opCode, "OnResponse");
+                        debugOperationInfo(parameters, opCode, "OnResponse");
                         break;
                 }
             });

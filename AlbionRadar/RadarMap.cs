@@ -210,7 +210,10 @@ namespace AlbionNetwork2D
                             g.TranslateTransform(hX, hY);
                             g.RotateTransform(135f);
 
-                            g.DrawString((h.Size * HarvestableSizes.charges[h.Tier]) + "/" + HarvestableSizes.sizes[h.Tier], font, Brushes.White, 5, -3);
+                            int charges = (h.Size * HarvestableSizes.charges[h.Tier]);
+                            int size = charges > 9 ? charges : HarvestableSizes.sizes[h.Tier];
+
+                            g.DrawString(charges + "/" + size, font, Brushes.White, 5, -3);
 
                             g.RotateTransform(-135f);
                             g.TranslateTransform(-hX, -hY);
@@ -268,12 +271,21 @@ namespace AlbionNetwork2D
                             float iconWidth = iconImage.Width / 20;
                             float iconHeight = iconImage.Height / 20;
 
-                            if (m.Health > 20000)
+                            string mobName = null;
+
+                            if (m.MobInfo.Dangerstate == "elite")
+                                mobName = "Elite";
+                            else if (m.MobInfo.Dangerstate == "veteran")
+                                mobName = "Veteran";
+                            else if (m.MobInfo.Tier > 6 && (m.MobInfo.HarvestableMobType == HarvestableType.HIDE_FOREST || m.MobInfo.HarvestableMobType == HarvestableType.HIDE_STEPPE))
+                                mobName = "Big";
+
+                            if (mobName != null)
                             {
                                 g.TranslateTransform(hX, hY);
                                 g.RotateTransform(135f);
 
-                                g.DrawString("BOSS", font, Brushes.White, 5, -3);
+                                g.DrawString(mobName, font, Brushes.White, 5, -3);
 
                                 g.RotateTransform(-135f);
                                 g.TranslateTransform(-hX, -hY);
