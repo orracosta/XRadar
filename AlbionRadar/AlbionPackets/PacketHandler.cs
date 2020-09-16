@@ -27,114 +27,106 @@ namespace AlbionNetwork2D
 
         protected override void OnEvent(byte code, Dictionary<byte, object> parameters)
         {
-            _ = Task.Run(() =>
+            if (code == 2)
             {
-                if (code == 2)
-                {
-                    onEntityMovementEvent(parameters);
-                    return;
-                }
+                onEntityMovementEvent(parameters);
+                return;
+            }
 
-                parameters.TryGetValue((byte)252, out object val);
-                if (val == null) return;
+            parameters.TryGetValue((byte)252, out object val);
+            if (val == null) return;
 
-                if (!int.TryParse(val.ToString(), out int iCode)) return;
+            if (!int.TryParse(val.ToString(), out int iCode)) return;
 
-                EventCodes evCode = (EventCodes)iCode;
+            EventCodes evCode = (EventCodes)iCode;
 
-                switch (evCode)
-                {
-                    case EventCodes.NewCharacter:
-                        onNewCharacter(parameters);
-                        break;
-                    case EventCodes.Mounted:
-                        onMounted(parameters);
-                        break;
-                    case EventCodes.NewMob:
-                        onNewMob(parameters);
-                        break;
-                    case EventCodes.Leave:
-                        onLeave(parameters);
-                        break;
-                    case EventCodes.NewSimpleHarvestableObjectList:
-                        onNewSimpleHarvestableObjectList(parameters);
-                        break;
-                    case EventCodes.NewHarvestableObject:
-                        onNewHarvestableObject(parameters);
-                        break;
-                    case EventCodes.NewSimpleHarvestableObject:
-                        onNewSimpleHarvestableObject(parameters);
-                        break;
-                    case EventCodes.MobChangeState:
-                        onMobChangeState(parameters);
-                        break;
-                    case EventCodes.HarvestableChangeState:
-                        onHarvestableChangeState(parameters);
-                        break;
-                    case EventCodes.NewRandomDungeonExit:
-                        onNewRandomDungeonExit(parameters);
-                        break;
-                    case EventCodes.CharacterEquipmentChanged:
-                        onCharacterEquipmentChanged(parameters);
-                        break;
-                    case EventCodes.OtherGrabbedLoot:
-                        onOtherGrabbedLoot(parameters);
-                        break;
-                    case EventCodes.GuildUpdate:
-                    case EventCodes.GuildPlayerUpdated:
-                        break;
-                    default:
-                        debugEventInfo(parameters, evCode, "OnEvent");
-                        break;
-                }
-            });
+            switch (evCode)
+            {
+                case EventCodes.NewCharacter:
+                    onNewCharacter(parameters);
+                    break;
+                case EventCodes.Mounted:
+                    onMounted(parameters);
+                    break;
+                case EventCodes.NewMob:
+                    onNewMob(parameters);
+                    break;
+                case EventCodes.Leave:
+                    onLeave(parameters);
+                    break;
+                case EventCodes.NewSimpleHarvestableObject:
+                    onNewSimpleHarvestableObject(parameters);
+                    //debugEventInfo(parameters, evCode, "OnEvent");
+                    break;
+                case EventCodes.NewSimpleHarvestableObjectList:
+                    onNewSimpleHarvestableObjectList(parameters);
+                    break;
+                case EventCodes.NewHarvestableObject:
+                    onNewHarvestableObject(parameters);
+                    break;
+                case EventCodes.MobChangeState:
+                    onMobChangeState(parameters);
+                    break;
+                case EventCodes.HarvestableChangeState:
+                    onHarvestableChangeState(parameters);
+                    break;
+                case EventCodes.NewRandomDungeonExit:
+                    onNewRandomDungeonExit(parameters);
+                    break;
+                case EventCodes.CharacterEquipmentChanged:
+                    onCharacterEquipmentChanged(parameters);
+                    break;
+                case EventCodes.OtherGrabbedLoot:
+                    onOtherGrabbedLoot(parameters);
+                    break;
+                case EventCodes.GuildUpdate:
+                case EventCodes.GuildPlayerUpdated:
+                    break;
+                default:
+                    //debugEventInfo(parameters, evCode, "OnEvent");
+                    break;
+            }
         }
         protected override void OnRequest(byte operationCode, Dictionary<byte, object> parameters)
         {
-            _ = Task.Run(() =>
+            parameters.TryGetValue((byte)253, out object val);
+            if (val == null) return;
+
+            if (!int.TryParse(val.ToString(), out int iCode)) return;
+
+            OperationCodes opCode = (OperationCodes)iCode;
+
+            switch (opCode)
             {
-                parameters.TryGetValue((byte)253, out object val);
-                if (val == null) return;
-
-                if (!int.TryParse(val.ToString(), out int iCode)) return;
-
-                OperationCodes opCode = (OperationCodes)iCode;
-
-                switch (opCode)
-                {
-                    case OperationCodes.Move:
-                        onLocalPlayerMovementRequest(parameters);
-                        break;
-                    case OperationCodes.ChangeCluster:
-                        onChangeCluster(parameters);
-                        break;
-                    default:
-                        debugOperationInfo(parameters, opCode, "OnRequest");
-                        break;
-                }
-            });
+                case OperationCodes.Move:
+                    onLocalPlayerMovementRequest(parameters);
+                    break;
+                case OperationCodes.ChangeCluster:
+                    onChangeCluster(parameters);
+                    break;
+                default:
+                    //debugOperationInfo(parameters, opCode, "OnRequest");
+                    break;
+            }
         }
         protected override void OnResponse(byte operationCode, short returnCode, string debugMessage, Dictionary<byte, object> parameters)
         {
-            _ = Task.Run(() =>
+            parameters.TryGetValue((byte)253, out object val);
+            if (val == null) return;
+
+            if (!int.TryParse(val.ToString(), out int iCode)) return;
+
+            OperationCodes opCode = (OperationCodes)iCode;
+
+            switch (opCode)
             {
-                parameters.TryGetValue((byte)253, out object val);
-                if (val == null) return;
-
-                if (!int.TryParse(val.ToString(), out int iCode)) return;
-
-                OperationCodes opCode = (OperationCodes)iCode;
-
-                switch (opCode)
-                {
-                    case OperationCodes.Join:
-                        opJoin(parameters);
-                        break;
-                    default:
-                        debugOperationInfo(parameters, opCode, "OnResponse");
-                        break;
-                }
-            });
+                case OperationCodes.Join:
+                    opJoin(parameters);
+                    break;
+                default:
+                    //debugOperationInfo(parameters, opCode, "OnResponse");
+                    break;
+            }
         }
         private void debugEventInfo(Dictionary<byte, object> parameters, EventCodes evCode, String typeInfo)
         {
@@ -404,6 +396,15 @@ namespace AlbionNetwork2D
         private void onNewSimpleHarvestableObject(Dictionary<byte, object> parameters)
         {
             int id = int.Parse(parameters[0].ToString());
+            byte type = byte.Parse(parameters[1].ToString());
+            byte tier = byte.Parse(parameters[2].ToString());
+            Single[] loc = (Single[])parameters[3];
+            Single posX = (Single)loc[0];
+            Single posY = (Single)loc[1];
+            Byte count = byte.Parse(parameters[4].ToString());
+            byte charges = (byte)0;
+
+            harvestableHandler.AddHarvestable(id, type, tier, posX, posY, charges, count);
         }
         private void onHarvestableChangeState(Dictionary<byte, object> parameters)
         {
