@@ -137,10 +137,10 @@
     <value>Players</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
+    <value>85, 17</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Royal Continent</value>
+    <value>Faction Mode</value>
   </data>
   <data name="cbRoyalContinent.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
@@ -292,14 +292,26 @@
   <data name="cbShowEnch3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowEnch3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowEnch2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowEnch2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="cbShowEnch1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowEnch1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowEnch0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowEnch0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="lb_resources.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 17</value>
@@ -312,6 +324,9 @@
   </data>
   <data name="cbResourceFilterAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="lb_wood2.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 17</value>
@@ -328,8 +343,14 @@
   <data name="cbResourceFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbResourceFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbResourceFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="lb_ore2.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 17</value>
@@ -340,6 +361,9 @@
   <data name="cbResourceFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbResourceFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="lb_rock2.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 17</value>
   </data>
@@ -349,11 +373,17 @@
   <data name="cbResourceFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbResourceFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="lb_fiber2.Text" xml:space="preserve">
     <value>Fiber</value>
   </data>
   <data name="cbResourceFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbResourceFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="lb_monsters.Text" xml:space="preserve">
     <value>Monsters</value>
@@ -367,6 +397,9 @@
   <data name="cbMobFilterMadeira.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbMobFilterMadeira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="lb_hide1.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 17</value>
   </data>
@@ -375,6 +408,9 @@
   </data>
   <data name="cbMobFilterPelego.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbMobFilterPelego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="lb_ore1.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 17</value>
@@ -385,6 +421,9 @@
   <data name="cbMobFilterMinerio.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbMobFilterMinerio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="lb_rock1.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 17</value>
   </data>
@@ -394,35 +433,65 @@
   <data name="cbMobFilterPedra.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbMobFilterPedra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="lb_fiber1.Text" xml:space="preserve">
     <value>Fiber</value>
   </data>
   <data name="cbMobFilterFibra.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbMobFilterFibra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowTier8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowTier8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="cbShowTier7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowTier7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowTier6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowTier6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="cbShowTier5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowTier5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowTier4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowTier4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="cbShowTier3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowTier3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowTier2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
   </data>
+  <data name="cbShowTier2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
+  </data>
   <data name="cbShowTier1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowTier1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 30</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>License:</value>

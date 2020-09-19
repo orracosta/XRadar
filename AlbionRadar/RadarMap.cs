@@ -403,7 +403,7 @@ namespace AlbionNetwork2D
                                 if (options.cbRangedMelee.Checked)
                                 {
                                     if (PlayerItem.isRanged(p.Items[0]))
-                                        playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Orange : Brushes.Yellow;
+                                        playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Yellow : Brushes.Orange;
                                 }
                             }
                         }
