@@ -77,7 +77,8 @@ namespace AlbionNetwork2D
                     {
                         timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds();
 
-                        drawerThread();
+                        if (options.cbShowRadar.Checked)
+                            drawerThread();
 
                         timeElapsed = DateTimeOffset.Now.ToUnixTimeMilliseconds() - timestamp;
 
