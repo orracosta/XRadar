@@ -36,8 +36,8 @@ namespace AlbionNetwork2D
                 new SolidBrush(Color.FromArgb(200, 208, 208, 208))
             };
 
-        Single localX;
-        Single localY;
+        Player localPlayer;
+
         int localScale = 0;
 
         float scale = 2.6f;
@@ -162,8 +162,7 @@ namespace AlbionNetwork2D
 
                 g.ScaleTransform(scale, scale);
 
-                localX = playerHandler.localPlayerPosX();
-                localY = playerHandler.localPlayerPosY();
+                localPlayer = playerHandler.getLocalPlayer();
 
                 if (options.cbShowHarvestable.Checked)
                 {
@@ -210,8 +209,8 @@ namespace AlbionNetwork2D
                         float iconWidth = iconImage.Width / 20;
                         float iconHeight = iconImage.Height / 20;
 
-                        Single hX = -1 * h.PosX + localX;
-                        Single hY = h.PosY - localY;
+                        Single hX = -1 * h.PosX + localPlayer.PosX;
+                        Single hY = h.PosY - localPlayer.PosY;
 
                         if (options.cbResourceFilterAmount.Checked && h.Tier != 1)
                         {
@@ -241,9 +240,8 @@ namespace AlbionNetwork2D
                         if (m == null)
                             continue;
 
-                        Single hX = -1 * m.PosX + localX;
-                        Single hY = m.PosY - localY;
-
+                        Single hX = -1 * m.PosX + localPlayer.PosX;
+                        Single hY = m.PosY - localPlayer.PosY;
 
                         if (options.cbShowMobs.Checked)
                         {
@@ -318,8 +316,8 @@ namespace AlbionNetwork2D
                     {
                         var d = item.Value;
 
-                        Single hX = -1 * d.PosX + localX;
-                        Single hY = d.PosY - localY;
+                        Single hX = -1 * d.PosX + localPlayer.PosX;
+                        Single hY = d.PosY - localPlayer.PosY;
 
                         var type = d.getType();
                         string typeName = "group";
@@ -377,14 +375,17 @@ namespace AlbionNetwork2D
                     {
                         var p = item.Value;
 
-                        Single hX = -1 * p.PosX + localX;
-                        Single hY = p.PosY - localY;
+                        Single hX = -1 * p.PosX + localPlayer.PosX;
+                        Single hY = p.PosY - localPlayer.PosY;
 
                         Brush playerBrush = !playerHandler.PlayerIsMounted(p.Id) ? Brushes.Red : Brushes.IndianRed;
 
                         bool isAlly = false;
 
                         if (options.lbTrustGuilds.Items.Contains(p.Guild) || options.lbTrustAlliances.Items.Contains(p.Alliance))
+                            isAlly = true;
+
+                        if (localPlayer.Alliance.Length > 1 && localPlayer.Alliance == p.Alliance || localPlayer.Guild.Length > 1 && localPlayer.Guild == p.Guild)
                             isAlly = true;
 
                         if (isAlly)
