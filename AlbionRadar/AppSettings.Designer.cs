@@ -478,5 +478,53 @@ namespace AlbionNetwork2D {
                 this["rememberPassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showEnch0 {
+            get {
+                return ((bool)(this["showEnch0"]));
+            }
+            set {
+                this["showEnch0"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showEnch1 {
+            get {
+                return ((bool)(this["showEnch1"]));
+            }
+            set {
+                this["showEnch1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showEnch2 {
+            get {
+                return ((bool)(this["showEnch2"]));
+            }
+            set {
+                this["showEnch2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showEnch3 {
+            get {
+                return ((bool)(this["showEnch3"]));
+            }
+            set {
+                this["showEnch3"] = value;
+            }
+        }
     }
 }

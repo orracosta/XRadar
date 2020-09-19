@@ -113,6 +113,20 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pEnchList = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.cbShowEnch3 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.cbShowEnch2 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbShowEnch1 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.cbShowEnch0 = new MaterialSkin.Controls.MaterialCheckBox();
             this.lb_resources = new System.Windows.Forms.Label();
             this.pFilterResource = new System.Windows.Forms.Panel();
             this.lb_amount = new System.Windows.Forms.Label();
@@ -187,6 +201,7 @@
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.pEnchList.SuspendLayout();
             this.pFilterResource.SuspendLayout();
             this.pFilterMobResource.SuspendLayout();
             this.pTierList.SuspendLayout();
@@ -978,6 +993,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.pEnchList);
             this.tabPage2.Controls.Add(this.lb_resources);
             this.tabPage2.Controls.Add(this.pFilterResource);
             this.tabPage2.Controls.Add(this.lb_monsters);
@@ -987,6 +1004,126 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // pEnchList
+            // 
+            this.pEnchList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pEnchList.Controls.Add(this.label4);
+            this.pEnchList.Controls.Add(this.panel38);
+            this.pEnchList.Controls.Add(this.cbShowEnch3);
+            this.pEnchList.Controls.Add(this.panel39);
+            this.pEnchList.Controls.Add(this.label5);
+            this.pEnchList.Controls.Add(this.panel40);
+            this.pEnchList.Controls.Add(this.cbShowEnch2);
+            this.pEnchList.Controls.Add(this.panel41);
+            this.pEnchList.Controls.Add(this.label6);
+            this.pEnchList.Controls.Add(this.label7);
+            this.pEnchList.Controls.Add(this.cbShowEnch1);
+            this.pEnchList.Controls.Add(this.cbShowEnch0);
+            resources.ApplyResources(this.pEnchList, "pEnchList");
+            this.pEnchList.Name = "pEnchList";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Name = "label4";
+            // 
+            // panel38
+            // 
+            this.panel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel38, "panel38");
+            this.panel38.Name = "panel38";
+            // 
+            // cbShowEnch3
+            // 
+            resources.ApplyResources(this.cbShowEnch3, "cbShowEnch3");
+            this.cbShowEnch3.Checked = true;
+            this.cbShowEnch3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowEnch3.Depth = 0;
+            this.cbShowEnch3.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowEnch3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowEnch3.Name = "cbShowEnch3";
+            this.cbShowEnch3.Ripple = true;
+            this.cbShowEnch3.UseVisualStyleBackColor = true;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel39, "panel39");
+            this.panel39.Name = "panel39";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Name = "label5";
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel40, "panel40");
+            this.panel40.Name = "panel40";
+            // 
+            // cbShowEnch2
+            // 
+            resources.ApplyResources(this.cbShowEnch2, "cbShowEnch2");
+            this.cbShowEnch2.Checked = true;
+            this.cbShowEnch2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowEnch2.Depth = 0;
+            this.cbShowEnch2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowEnch2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowEnch2.Name = "cbShowEnch2";
+            this.cbShowEnch2.Ripple = true;
+            this.cbShowEnch2.UseVisualStyleBackColor = true;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            resources.ApplyResources(this.panel41, "panel41");
+            this.panel41.Name = "panel41";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Name = "label7";
+            // 
+            // cbShowEnch1
+            // 
+            resources.ApplyResources(this.cbShowEnch1, "cbShowEnch1");
+            this.cbShowEnch1.Checked = true;
+            this.cbShowEnch1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowEnch1.Depth = 0;
+            this.cbShowEnch1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowEnch1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowEnch1.Name = "cbShowEnch1";
+            this.cbShowEnch1.Ripple = true;
+            this.cbShowEnch1.UseVisualStyleBackColor = true;
+            // 
+            // cbShowEnch0
+            // 
+            resources.ApplyResources(this.cbShowEnch0, "cbShowEnch0");
+            this.cbShowEnch0.Checked = true;
+            this.cbShowEnch0.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbShowEnch0.Depth = 0;
+            this.cbShowEnch0.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.cbShowEnch0.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cbShowEnch0.Name = "cbShowEnch0";
+            this.cbShowEnch0.Ripple = true;
+            this.cbShowEnch0.UseVisualStyleBackColor = true;
             // 
             // lb_resources
             // 
@@ -1584,6 +1721,8 @@
             this.panel6.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.pEnchList.ResumeLayout(false);
+            this.pEnchList.PerformLayout();
             this.pFilterResource.ResumeLayout(false);
             this.pFilterResource.PerformLayout();
             this.pFilterMobResource.ResumeLayout(false);
@@ -1742,6 +1881,20 @@
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer updateExpires;
         private MaterialSkin.Controls.MaterialRaisedButton btn_open_lootlog;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Panel pEnchList;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel38;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowEnch3;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel40;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowEnch2;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowEnch1;
+        public MaterialSkin.Controls.MaterialCheckBox cbShowEnch0;
     }
 }
 

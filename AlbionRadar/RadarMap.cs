@@ -81,8 +81,8 @@ namespace AlbionNetwork2D
 
                         timeElapsed = DateTimeOffset.Now.ToUnixTimeMilliseconds() - timestamp;
 
-                        if (timeElapsed < 30)
-                            Thread.Sleep(30 - (int)timeElapsed);
+                        if (timeElapsed < 40)
+                            Thread.Sleep(40 - (int)timeElapsed);
                     }
                 });
 
@@ -179,15 +179,22 @@ namespace AlbionNetwork2D
                         TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
 
                         String cbName = "cbShowTier" + h.Tier;
+                        String cbEnch = "cbShowEnch" + h.Charges;
                         String cbNameFilter = "cbResourceFilter" + myTI.ToTitleCase(h.getMapInfo());
 
                         var canShowTier = options.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
                             .FirstOrDefault(r => r.Name == cbName);
 
+                        var canShowEnch = options.pEnchList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                            .FirstOrDefault(r => r.Name == cbEnch);
+
                         var canShowResource = options.pFilterResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
                             .FirstOrDefault(r => r.Name == cbNameFilter);
 
                         if (canShowTier != null && !canShowTier.Checked)
+                            continue;
+
+                        if (canShowEnch != null && !canShowEnch.Checked)
                             continue;
 
                         if (canShowResource != null && !canShowResource.Checked)
@@ -248,15 +255,22 @@ namespace AlbionNetwork2D
                             TextInfo myTI = new CultureInfo("pt-BR", false).TextInfo;
 
                             String cbName = "cbShowTier" + m.MobInfo.Tier;
+                            String cbEnch = "cbShowEnch" + m.EnchantmentLevel;
                             String cbNameFilter = "cbMobFilter" + myTI.ToTitleCase(m.MobInfo.getMapInfo(m.TypeId));
 
                             var canShowTier = options.pTierList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
                                 .FirstOrDefault(r => r.Name == cbName);
 
+                            var canShowEnch = options.pEnchList.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
+                                .FirstOrDefault(r => r.Name == cbEnch);
+
                             var canShowResource = options.pFilterMobResource.Controls.OfType<MaterialSkin.Controls.MaterialCheckBox>()
                                 .FirstOrDefault(r => r.Name == cbNameFilter);
 
                             if (canShowTier != null && !canShowTier.Checked)
+                                continue;
+
+                            if (canShowEnch != null && !canShowEnch.Checked)
                                 continue;
 
                             if (canShowResource != null && !canShowResource.Checked)

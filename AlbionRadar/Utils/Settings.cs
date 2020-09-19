@@ -60,6 +60,12 @@ namespace AlbionNetwork2D
             s.showTier7 = form.cbShowTier7.Checked;
             s.showTier8 = form.cbShowTier8.Checked;
 
+            // Coleta - Encantamento
+            s.showEnch0 = form.cbShowEnch0.Checked;
+            s.showEnch1 = form.cbShowEnch1.Checked;
+            s.showEnch2 = form.cbShowEnch2.Checked;
+            s.showEnch3 = form.cbShowEnch3.Checked;
+
             // Coleta - Recursos
             s.mobFilterFibra = form.cbMobFilterFibra.Checked;
             s.mobFilterPedra = form.cbMobFilterPedra.Checked;
@@ -123,6 +129,12 @@ namespace AlbionNetwork2D
             form.cbShowTier6.Checked = s.showTier6;
             form.cbShowTier7.Checked = s.showTier7;
             form.cbShowTier8.Checked = s.showTier8;
+
+            // Coleta - Encantamento
+            form.cbShowEnch0.Checked = s.showEnch0;
+            form.cbShowEnch1.Checked = s.showEnch1;
+            form.cbShowEnch2.Checked = s.showEnch2;
+            form.cbShowEnch3.Checked = s.showEnch3;
 
             // Coleta - Recursos
             form.cbMobFilterFibra.Checked = s.mobFilterFibra;

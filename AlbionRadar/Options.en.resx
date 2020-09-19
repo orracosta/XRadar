@@ -283,6 +283,24 @@
   <data name="lb_guilds.Text" xml:space="preserve">
     <value>Guilds</value>
   </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Enchantment</value>
+  </data>
+  <data name="cbShowEnch3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowEnch2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowEnch1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
+  <data name="cbShowEnch0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 10pt</value>
+  </data>
   <data name="lb_resources.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 17</value>
   </data>
