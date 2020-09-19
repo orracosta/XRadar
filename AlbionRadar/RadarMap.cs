@@ -48,7 +48,7 @@ namespace AlbionNetwork2D
         #endregion
 
         Pen linePen = new Pen(Color.FromArgb(155, 255, 255, 0), 2);
-        Font font = new Font("Calibri", 3f, FontStyle.Regular);
+        Font font = new Font("Calibri", 3.5f, FontStyle.Regular);
 
 
         public RadarMap(Options options, PlayerHandler playerHandler, MobsHandler mobsHandler, HarvestableHandler harvestableHandler, DungeonHandler dungeonHandler)
@@ -220,7 +220,7 @@ namespace AlbionNetwork2D
                             int charges = (h.Size * HarvestableSizes.charges[h.Tier]);
                             int size = charges > 9 ? charges : HarvestableSizes.sizes[h.Tier];
 
-                            g.DrawString(charges + "/" + size, font, Brushes.White, 5, -3);
+                            g.DrawString(charges + "/" + size, font, Brushes.White, 5, -3.5f);
 
                             g.RotateTransform(-135f);
                             g.TranslateTransform(-hX, -hY);
@@ -299,7 +299,7 @@ namespace AlbionNetwork2D
                                 g.TranslateTransform(hX, hY);
                                 g.RotateTransform(135f);
 
-                                g.DrawString(mobName, font, Brushes.White, 5, -3);
+                                g.DrawString(mobName, font, Brushes.White, 5, -3.5f);
 
                                 g.RotateTransform(-135f);
                                 g.TranslateTransform(-hX, -hY);
@@ -356,7 +356,7 @@ namespace AlbionNetwork2D
                             g.TranslateTransform(hX, hY);
                             g.RotateTransform(135f);
 
-                            g.DrawString(dungeonName, font, Brushes.White, 4, -3);
+                            g.DrawString(dungeonName, font, Brushes.White, 4, -3.5f);
 
                             g.RotateTransform(-135f);
                             g.TranslateTransform(-hX, -hY);
@@ -416,14 +416,14 @@ namespace AlbionNetwork2D
 
                             if (options.cbName.Checked)
                             {
-                                g.DrawString(p.Nickname, font, Brushes.White, 2, -5);
+                                g.DrawString(p.Nickname, font, Brushes.White, 2, -5.5f);
                             }
                             else
                             {
                                 if (p.Alliance != "")
-                                    g.DrawString("[" + p.Alliance + "]" + p.Guild, font, Brushes.White, 2, -5);
+                                    g.DrawString("[" + p.Alliance + "]" + p.Guild, font, Brushes.White, 2, -5.5f);
                                 else
-                                    g.DrawString(p.Guild, font, Brushes.White, 2, -5);
+                                    g.DrawString(p.Guild, font, Brushes.White, 2, -5.5f);
                             }
 
                             g.RotateTransform(-135f);
