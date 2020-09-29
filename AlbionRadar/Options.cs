@@ -456,7 +456,8 @@ namespace AlbionNetwork2D
 
                 if (udp == null || (udp.SourcePort != 5056 && udp.DestinationPort != 5056))
                 {
-                    return;
+                    if(udp.SourcePort != 5055 && udp.DestinationPort != 5055)
+                        return;
                 }
 
                 photonParser.ReceivePacket(udp.Payload.ToArray());
