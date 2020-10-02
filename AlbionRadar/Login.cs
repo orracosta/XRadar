@@ -83,6 +83,16 @@ namespace AlbionNetwork2D
 
         private void doLogin()
         {
+            // DEBUG = TRUE | RELEASE = FALSE
+            //
+            bool debug = false;
+            if (debug)
+            {
+                startRadar();
+                this.Hide();
+                return;
+            }
+
             string json = generateJson(true);
 
             WebRequest request = WebRequest.Create(baseURL + Utils.Encryption.StringToHex(Utils.Encryption.EncryptString(json)));
@@ -112,9 +122,7 @@ namespace AlbionNetwork2D
                             }
 
                             Settings.saveLoginSettings(this);
-                            options = new Options();
-                            this.Hide();
-                            options.Show();
+                            startRadar();
                         }
                         else
                         {
@@ -142,6 +150,13 @@ namespace AlbionNetwork2D
             {
                 throwError();
             }
+        }
+
+        private void startRadar()
+        {
+            options = new Options();
+            this.Hide();
+            options.Show();
         }
 
         private void licenseTimer_Tick(object sender, EventArgs e)
