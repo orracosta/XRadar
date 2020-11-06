@@ -8,7 +8,7 @@ namespace AlbionNetwork2D
 {
     public enum OperationCodes
     {
-        Unused,
+        Unused = 0,
         Ping,
         Join,
         CreateAccount,

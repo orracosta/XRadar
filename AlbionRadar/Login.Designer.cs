@@ -135,6 +135,7 @@
             this.Name = "Login";
             this.Sizable = false;
             this.Load += new System.EventHandler(this.Login_Load);
+            this.Shown += new System.EventHandler(this.Login_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

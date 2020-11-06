@@ -166,7 +166,7 @@ namespace AlbionNetwork2D
         MatchPlayerJoinedEvent,
         MatchPlayerStatsEvent,
         MatchPlayerStatsCompleteEvent,
-        MatchTimeLineEventEvent,
+        MatchTimeLineEvent,
         MatchPlayerMainGearStatsEvent,
         MatchPlayerChangedAvatarEvent,
         InvitationPlayerTrade,
@@ -181,8 +181,8 @@ namespace AlbionNetwork2D
         NewDuellingPost,
         DuelStarted,
         DuelEnded,
+        Unknown173,
         DuelDenied,
-        Unknown174,
         DuelLeftArea,
         DuelReEnteredArea,
         NewRealEstate,
@@ -296,6 +296,7 @@ namespace AlbionNetwork2D
         DefenseUnitAttackDamage,
         UnrestrictedPvpZoneUpdate,
         ReputationImplicationUpdate,
+        Unknown288, // ???
         NewMountObject,
         MountHealthUpdate,
         MountCooldownUpdate,
@@ -417,7 +418,6 @@ namespace AlbionNetwork2D
         NewHomeObject,
         HideoutObjectUpdate,
         UpdateInfamy,
-        Unknown409,
         Unknown410,
         Unknown411,
         Unknown412,
@@ -431,6 +431,7 @@ namespace AlbionNetwork2D
         Unknown420,
         Unknown421,
         Unknown422,
-        Unknown423
+        Unknown423,
+        Unknown424
     }
 }

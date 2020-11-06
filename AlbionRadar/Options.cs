@@ -122,6 +122,15 @@ namespace AlbionNetwork2D
         {
             expiresLabel.Text = Login.appExpires;
         }
+        private void btn_open_lootlog_Click(object sender, EventArgs e)
+        {
+            if (lootLog == null || !lootLog.Visible)
+            {
+                lootLog = new LootLog();
+                PlayerLoot.canAdd = true;
+                lootLog.Show();
+            }
+        }
         public PlayerHandler PlayerHandler { get => playerHandler; }
 
         #region OptionEvents
@@ -468,15 +477,5 @@ namespace AlbionNetwork2D
             }
         }
         #endregion
-
-        private void btn_open_lootlog_Click(object sender, EventArgs e)
-        {
-            if (lootLog == null || !lootLog.Visible)
-            {
-                lootLog = new LootLog();
-                PlayerLoot.canAdd = true;
-                lootLog.Show();
-            }
-        }
     }
 }
