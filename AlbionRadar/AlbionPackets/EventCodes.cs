@@ -198,7 +198,7 @@ namespace AlbionNetwork2D
         NewUnreadMails,
         Unknown188,
         GuildLogoObjectUpdate,
-        StartLogout,
+        StartLogout = 195,
         NewChatChannels,
         JoinedChatChannel,
         LeftChatChannel,
