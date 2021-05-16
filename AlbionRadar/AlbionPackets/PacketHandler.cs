@@ -320,8 +320,14 @@ namespace AlbionNetwork2D
         {
             int id = int.Parse(parameters[0].ToString());
             Byte[] a = (Byte[])parameters[1];
-            Single posX = BitConverter.ToSingle(a, 9);
-            Single posY = BitConverter.ToSingle(a, 13);
+
+            long time = BitConverter.ToInt64(a, 1); // 1-8
+            Single posX = BitConverter.ToSingle(a, 9); // 9-12
+            Single posY = BitConverter.ToSingle(a, 13); //13-16
+            Single speed = BitConverter.ToSingle(a, 18); // 18-21 - Possível Speed
+            Single nextPosX = BitConverter.ToSingle(a, 22); // 22-25 - Possível NextPosX
+            Single nextPosY = BitConverter.ToSingle(a, 26); // 26-29 - Possível NextPosY
+
 
             bool isPlayer = playerHandler.UpdatePlayerPosition(id, posX, posY);
 
