@@ -290,7 +290,7 @@ namespace AlbionNetwork2D
                                 mobName = "Elite";
                             else if (m.MobInfo.Dangerstate == "veteran")
                                 mobName = "Veteran";
-                            else if (m.MobInfo.Tier > 6 && (m.MobInfo.HarvestableMobType == HarvestableType.HIDE_FOREST || m.MobInfo.HarvestableMobType == HarvestableType.HIDE_STEPPE))
+                            else if (m.MobInfo.Tier > 6 && (m.MobInfo.HarvestableMobType == HarvestableType.HIDE_FOREST || m.MobInfo.HarvestableMobType == HarvestableType.HIDE_FOREST_02 || m.MobInfo.HarvestableMobType == HarvestableType.HIDE_STEPPE))
                                 mobName = "Big";
 
                             if (mobName != null)

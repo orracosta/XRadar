@@ -35,6 +35,7 @@ namespace AlbionNetwork2D
 
         HIDE,
         HIDE_FOREST,
+        HIDE_FOREST_02,
         HIDE_FOREST_SMALL,
         HIDE_STEPPE,
         HIDE_STEPPE_SMALL,

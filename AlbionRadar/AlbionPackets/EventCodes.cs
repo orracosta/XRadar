@@ -204,7 +204,7 @@ namespace AlbionNetwork2D
         LeftChatChannel,
         RemovedChatChannel,
         AccessStatus,
-        Mounted,
+        Mounted = 196,
         MountStart,
         MountCancel,
         NewTravelpoint,

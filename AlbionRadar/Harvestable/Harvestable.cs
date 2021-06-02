@@ -114,6 +114,7 @@ namespace AlbionNetwork2D
                     return "fibra";
                 case HarvestableType.HIDE:
                 case HarvestableType.HIDE_FOREST:
+                case HarvestableType.HIDE_FOREST_02:
                 case HarvestableType.HIDE_FOREST_SMALL:
                 case HarvestableType.HIDE_STEPPE:
                 case HarvestableType.HIDE_STEPPE_SMALL:
