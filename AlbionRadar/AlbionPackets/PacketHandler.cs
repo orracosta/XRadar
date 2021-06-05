@@ -82,6 +82,22 @@ namespace AlbionNetwork2D
                 case EventCodes.GuildUpdate:
                 case EventCodes.GuildPlayerUpdated:
                     break;
+                //case EventCodes.RatingEvent:
+                //case EventCodes.NewArenaAgent:
+                //case EventCodes.BoostFarmable:
+                //case EventCodes.UseFunction:
+                //case EventCodes.NewPortalEntrance:
+                //case EventCodes.NewPortalExit:
+                //case EventCodes.NewRandomDungeonExit:
+                //case EventCodes.WaitingQueueUpdate:
+                //case EventCodes.PlayerMovementRateUpdate:
+                //case EventCodes.ObserveStart:
+                //case EventCodes.MinimapZergs:
+                //case EventCodes.MinimapSmartClusterZergs:
+                //case EventCodes.PaymentTransactions:
+                //case EventCodes.PerformanceStatsUpdate:
+                //    debugEventInfo(parameters, evCode, "OnEvent");
+                //    break;
                 default:
                     //debugEventInfo(parameters, evCode, "OnEvent");
                     break;

@@ -310,7 +310,7 @@ namespace AlbionNetwork2D
         UseFunction,
         NewPortalEntrance,
         NewPortalExit,
-        NewRandomDungeonExit,
+        NewRandomDungeonExit = 306,
         WaitingQueueUpdate,
         PlayerMovementRateUpdate,
         ObserveStart,
